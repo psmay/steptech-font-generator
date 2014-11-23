@@ -1,0 +1,5936 @@
+[
+   {
+      "name" : "lower_a",
+      "lines" : [
+         {
+            "to" : {
+               "cap" : "s",
+               "y" : -50,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "c",
+               "y" : -400,
+               "x" : 400
+            },
+            "guide_color" : "Black"
+         },
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : -50,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -50,
+               "x" : 50
+            },
+            "guide_color" : "Blue"
+         },
+         {
+            "to" : {
+               "cap" : "c",
+               "y" : -50,
+               "x" : 50
+            },
+            "from" : {
+               "cap" : "c",
+               "y" : -250,
+               "x" : 50
+            },
+            "guide_color" : "Fuchsia"
+         },
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : -250,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -250,
+               "x" : 50
+            },
+            "guide_color" : "Orange"
+         },
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : -400,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "s",
+               "y" : -400,
+               "x" : 50
+            },
+            "guide_color" : "Green"
+         }
+      ]
+   },
+   {
+      "name" : "lower_b",
+      "lines" : [
+         {
+            "to" : {
+               "cap" : "s",
+               "y" : -50,
+               "x" : 50
+            },
+            "from" : {
+               "cap" : "s",
+               "y" : -500,
+               "x" : 50
+            },
+            "guide_color" : "Black"
+         },
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : -400,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -400,
+               "x" : 50
+            },
+            "guide_color" : "Blue"
+         },
+         {
+            "to" : {
+               "cap" : "c",
+               "y" : -50,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "c",
+               "y" : -400,
+               "x" : 400
+            },
+            "guide_color" : "Fuchsia"
+         },
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : -50,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -50,
+               "x" : 50
+            },
+            "guide_color" : "Orange"
+         }
+      ]
+   },
+   {
+      "name" : "lower_c",
+      "lines" : [
+         {
+            "to" : {
+               "cap" : "s",
+               "y" : -400,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "c",
+               "y" : -400,
+               "x" : 50
+            },
+            "guide_color" : "Black"
+         },
+         {
+            "to" : {
+               "cap" : "s",
+               "y" : -50,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "c",
+               "y" : -50,
+               "x" : 50
+            },
+            "guide_color" : "Blue"
+         },
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : -50,
+               "x" : 50
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -400,
+               "x" : 50
+            },
+            "guide_color" : "Fuchsia"
+         }
+      ]
+   },
+   {
+      "name" : "lower_d",
+      "lines" : [
+         {
+            "to" : {
+               "cap" : "s",
+               "y" : -50,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "s",
+               "y" : -500,
+               "x" : 400
+            },
+            "guide_color" : "Black"
+         },
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : -400,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -400,
+               "x" : 50
+            },
+            "guide_color" : "Blue"
+         },
+         {
+            "to" : {
+               "cap" : "c",
+               "y" : -50,
+               "x" : 50
+            },
+            "from" : {
+               "cap" : "c",
+               "y" : -400,
+               "x" : 50
+            },
+            "guide_color" : "Fuchsia"
+         },
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : -50,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -50,
+               "x" : 50
+            },
+            "guide_color" : "Orange"
+         }
+      ]
+   },
+   {
+      "name" : "lower_e",
+      "lines" : [
+         {
+            "to" : {
+               "cap" : "s",
+               "y" : -50,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -50,
+               "x" : 50
+            },
+            "guide_color" : "Black"
+         },
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : -250,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -250,
+               "x" : 50
+            },
+            "guide_color" : "Blue"
+         },
+         {
+            "to" : {
+               "cap" : "s",
+               "y" : -250,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "c",
+               "y" : -400,
+               "x" : 400
+            },
+            "guide_color" : "Fuchsia"
+         },
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : -400,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -400,
+               "x" : 50
+            },
+            "guide_color" : "Orange"
+         },
+         {
+            "to" : {
+               "cap" : "c",
+               "y" : -50,
+               "x" : 50
+            },
+            "from" : {
+               "cap" : "c",
+               "y" : -400,
+               "x" : 50
+            },
+            "guide_color" : "Green"
+         }
+      ]
+   },
+   {
+      "name" : "lower_f",
+      "lines" : [
+         {
+            "to" : {
+               "cap" : "s",
+               "y" : -50,
+               "x" : 50
+            },
+            "from" : {
+               "cap" : "c",
+               "y" : -500,
+               "x" : 50
+            },
+            "guide_color" : "Black"
+         },
+         {
+            "to" : {
+               "cap" : "s",
+               "y" : -350,
+               "x" : 200
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -350,
+               "x" : 50
+            },
+            "guide_color" : "Blue"
+         },
+         {
+            "to" : {
+               "cap" : "s",
+               "y" : -500,
+               "x" : 200
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -500,
+               "x" : 50
+            },
+            "guide_color" : "Fuchsia"
+         }
+      ]
+   },
+   {
+      "name" : "lower_g",
+      "lines" : [
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : 100,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "s",
+               "y" : 100,
+               "x" : 50
+            },
+            "guide_color" : "Black"
+         },
+         {
+            "to" : {
+               "cap" : "c",
+               "y" : 100,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "s",
+               "y" : -400,
+               "x" : 400
+            },
+            "guide_color" : "Blue"
+         },
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : -400,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -400,
+               "x" : 50
+            },
+            "guide_color" : "Fuchsia"
+         },
+         {
+            "to" : {
+               "cap" : "c",
+               "y" : -50,
+               "x" : 50
+            },
+            "from" : {
+               "cap" : "c",
+               "y" : -400,
+               "x" : 50
+            },
+            "guide_color" : "Orange"
+         },
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : -50,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -50,
+               "x" : 50
+            },
+            "guide_color" : "Green"
+         }
+      ]
+   },
+   {
+      "name" : "lower_h",
+      "lines" : [
+         {
+            "to" : {
+               "cap" : "s",
+               "y" : -50,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -400,
+               "x" : 400
+            },
+            "guide_color" : "Black"
+         },
+         {
+            "to" : {
+               "cap" : "s",
+               "y" : -50,
+               "x" : 50
+            },
+            "from" : {
+               "cap" : "s",
+               "y" : -500,
+               "x" : 50
+            },
+            "guide_color" : "Blue"
+         },
+         {
+            "to" : {
+               "cap" : "c",
+               "y" : -400,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -400,
+               "x" : 50
+            },
+            "guide_color" : "Fuchsia"
+         }
+      ]
+   },
+   {
+      "name" : "lower_i",
+      "lines" : [
+         {
+            "to" : {
+               "cap" : "s",
+               "y" : -50,
+               "x" : 50
+            },
+            "from" : {
+               "cap" : "sc",
+               "y" : -400,
+               "x" : 50
+            },
+            "guide_color" : "Black"
+         }
+      ]
+   },
+   {
+      "name" : "lower_j",
+      "lines" : [
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : 100,
+               "x" : 50
+            },
+            "from" : {
+               "cap" : "cs",
+               "y" : 100,
+               "x" : -100
+            },
+            "guide_color" : "Black"
+         },
+         {
+            "to" : {
+               "cap" : "c",
+               "y" : 100,
+               "x" : 50
+            },
+            "from" : {
+               "cap" : "s",
+               "y" : -400,
+               "x" : 50
+            },
+            "guide_color" : "Blue"
+         }
+      ]
+   },
+   {
+      "name" : "lower_k",
+      "lines" : [
+         {
+            "to" : {
+               "cap" : "s",
+               "y" : -50,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "c",
+               "y" : -75,
+               "x" : 400
+            },
+            "guide_color" : "Black"
+         },
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : -75,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -250,
+               "x" : 50
+            },
+            "guide_color" : "Blue"
+         },
+         {
+            "to" : {
+               "cap" : "c",
+               "y" : -375,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "s",
+               "y" : -400,
+               "x" : 400
+            },
+            "guide_color" : "Fuchsia"
+         },
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : -375,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -225,
+               "x" : 50
+            },
+            "guide_color" : "Orange"
+         },
+         {
+            "to" : {
+               "cap" : "s",
+               "y" : -50,
+               "x" : 50
+            },
+            "from" : {
+               "cap" : "s",
+               "y" : -500,
+               "x" : 50
+            },
+            "guide_color" : "Green"
+         }
+      ]
+   },
+   {
+      "name" : "lower_l",
+      "lines" : [
+         {
+            "to" : {
+               "cap" : "s",
+               "y" : -50,
+               "x" : 50
+            },
+            "from" : {
+               "cap" : "sc",
+               "y" : -500,
+               "x" : 50
+            },
+            "guide_color" : "Black"
+         }
+      ]
+   },
+   {
+      "name" : "lower_m",
+      "lines" : [
+         {
+            "to" : {
+               "cap" : "s",
+               "y" : -50,
+               "x" : 250
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -400,
+               "x" : 250
+            },
+            "guide_color" : "Black"
+         },
+         {
+            "to" : {
+               "cap" : "s",
+               "y" : -50,
+               "x" : 450
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -400,
+               "x" : 450
+            },
+            "guide_color" : "Blue"
+         },
+         {
+            "to" : {
+               "cap" : "c",
+               "y" : -400,
+               "x" : 450
+            },
+            "from" : {
+               "cap" : "s",
+               "y" : -400,
+               "x" : 50
+            },
+            "guide_color" : "Fuchsia"
+         },
+         {
+            "to" : {
+               "cap" : "s",
+               "y" : -50,
+               "x" : 50
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -400,
+               "x" : 50
+            },
+            "guide_color" : "Orange"
+         }
+      ]
+   },
+   {
+      "name" : "lower_n",
+      "lines" : [
+         {
+            "to" : {
+               "cap" : "s",
+               "y" : -50,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "c",
+               "y" : -400,
+               "x" : 400
+            },
+            "guide_color" : "Black"
+         },
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : -400,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -400,
+               "x" : 50
+            },
+            "guide_color" : "Blue"
+         },
+         {
+            "to" : {
+               "cap" : "s",
+               "y" : -50,
+               "x" : 50
+            },
+            "from" : {
+               "cap" : "s",
+               "y" : -400,
+               "x" : 50
+            },
+            "guide_color" : "Fuchsia"
+         }
+      ]
+   },
+   {
+      "name" : "lower_o",
+      "lines" : [
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : -50,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -50,
+               "x" : 50
+            },
+            "guide_color" : "Black"
+         },
+         {
+            "to" : {
+               "cap" : "c",
+               "y" : -50,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "c",
+               "y" : -400,
+               "x" : 400
+            },
+            "guide_color" : "Blue"
+         },
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : -400,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -400,
+               "x" : 50
+            },
+            "guide_color" : "Fuchsia"
+         },
+         {
+            "to" : {
+               "cap" : "c",
+               "y" : -50,
+               "x" : 50
+            },
+            "from" : {
+               "cap" : "c",
+               "y" : -400,
+               "x" : 50
+            },
+            "guide_color" : "Orange"
+         }
+      ]
+   },
+   {
+      "name" : "lower_p",
+      "lines" : [
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : -50,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -50,
+               "x" : 50
+            },
+            "guide_color" : "Black"
+         },
+         {
+            "to" : {
+               "cap" : "c",
+               "y" : -50,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "c",
+               "y" : -400,
+               "x" : 400
+            },
+            "guide_color" : "Blue"
+         },
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : -400,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -400,
+               "x" : 50
+            },
+            "guide_color" : "Fuchsia"
+         },
+         {
+            "to" : {
+               "cap" : "s",
+               "y" : 100,
+               "x" : 50
+            },
+            "from" : {
+               "cap" : "s",
+               "y" : -400,
+               "x" : 50
+            },
+            "guide_color" : "Orange"
+         }
+      ]
+   },
+   {
+      "name" : "lower_q",
+      "lines" : [
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : -50,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -50,
+               "x" : 50
+            },
+            "guide_color" : "Black"
+         },
+         {
+            "to" : {
+               "cap" : "c",
+               "y" : -50,
+               "x" : 50
+            },
+            "from" : {
+               "cap" : "c",
+               "y" : -400,
+               "x" : 50
+            },
+            "guide_color" : "Blue"
+         },
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : -400,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -400,
+               "x" : 50
+            },
+            "guide_color" : "Fuchsia"
+         },
+         {
+            "to" : {
+               "cap" : "s",
+               "y" : 100,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "s",
+               "y" : -400,
+               "x" : 400
+            },
+            "guide_color" : "Orange"
+         }
+      ]
+   },
+   {
+      "name" : "lower_r",
+      "lines" : [
+         {
+            "to" : {
+               "cap" : "cs",
+               "y" : -400,
+               "x" : 250
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -400,
+               "x" : 50
+            },
+            "guide_color" : "Black"
+         },
+         {
+            "to" : {
+               "cap" : "s",
+               "y" : -50,
+               "x" : 50
+            },
+            "from" : {
+               "cap" : "s",
+               "y" : -400,
+               "x" : 50
+            },
+            "guide_color" : "Blue"
+         }
+      ]
+   },
+   {
+      "name" : "lower_s",
+      "lines" : [
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : -50,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "s",
+               "y" : -50,
+               "x" : 50
+            },
+            "guide_color" : "Black"
+         },
+         {
+            "to" : {
+               "cap" : "c",
+               "y" : -50,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "c",
+               "y" : -250,
+               "x" : 400
+            },
+            "guide_color" : "Blue"
+         },
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : -250,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -250,
+               "x" : 50
+            },
+            "guide_color" : "Fuchsia"
+         },
+         {
+            "to" : {
+               "cap" : "c",
+               "y" : -250,
+               "x" : 50
+            },
+            "from" : {
+               "cap" : "c",
+               "y" : -400,
+               "x" : 50
+            },
+            "guide_color" : "Orange"
+         },
+         {
+            "to" : {
+               "cap" : "s",
+               "y" : -400,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -400,
+               "x" : 50
+            },
+            "guide_color" : "Green"
+         }
+      ]
+   },
+   {
+      "name" : "lower_t",
+      "lines" : [
+         {
+            "to" : {
+               "cap" : "s",
+               "y" : -400,
+               "x" : 250
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -400,
+               "x" : 50
+            },
+            "guide_color" : "Black"
+         },
+         {
+            "to" : {
+               "cap" : "s",
+               "y" : -50,
+               "x" : 250
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -50,
+               "x" : 50
+            },
+            "guide_color" : "Blue"
+         },
+         {
+            "to" : {
+               "cap" : "c",
+               "y" : -50,
+               "x" : 50
+            },
+            "from" : {
+               "cap" : "s",
+               "y" : -500,
+               "x" : 50
+            },
+            "guide_color" : "Fuchsia"
+         }
+      ]
+   },
+   {
+      "name" : "lower_u",
+      "lines" : [
+         {
+            "to" : {
+               "cap" : "s",
+               "y" : -50,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "s",
+               "y" : -400,
+               "x" : 400
+            },
+            "guide_color" : "Black"
+         },
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : -50,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -50,
+               "x" : 50
+            },
+            "guide_color" : "Blue"
+         },
+         {
+            "to" : {
+               "cap" : "c",
+               "y" : -50,
+               "x" : 50
+            },
+            "from" : {
+               "cap" : "s",
+               "y" : -400,
+               "x" : 50
+            },
+            "guide_color" : "Fuchsia"
+         }
+      ]
+   },
+   {
+      "name" : "lower_v",
+      "lines" : [
+         {
+            "to" : {
+               "cap" : "c",
+               "y" : -350,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "s",
+               "y" : -400,
+               "x" : 400
+            },
+            "guide_color" : "Black"
+         },
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : -350,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "shear",
+			   "shear" : -0.5,
+               "y" : 0,
+               "x" : 225
+            },
+            "guide_color" : "Blue"
+         },
+         {
+            "to" : {
+               "cap" : "shear",
+			   "shear" : 0.5,
+               "y" : 0,
+               "x" : 225
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -350,
+               "x" : 50
+            },
+            "guide_color" : "Fuchsia"
+         },
+         {
+            "to" : {
+               "cap" : "c",
+               "y" : -350,
+               "x" : 50
+            },
+            "from" : {
+               "cap" : "s",
+               "y" : -400,
+               "x" : 50
+            },
+            "guide_color" : "Orange"
+         }
+      ]
+   },
+   {
+      "name" : "lower_w",
+      "lines" : [
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : -50,
+               "x" : 250
+            },
+            "from" : {
+               "cap" : "s",
+               "y" : -400,
+               "x" : 250
+            },
+            "guide_color" : "Black"
+         },
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : -50,
+               "x" : 450
+            },
+            "from" : {
+               "cap" : "s",
+               "y" : -400,
+               "x" : 450
+            },
+            "guide_color" : "Blue"
+         },
+         {
+            "to" : {
+               "cap" : "s",
+               "y" : -50,
+               "x" : 450
+            },
+            "from" : {
+               "cap" : "c",
+               "y" : -50,
+               "x" : 50
+            },
+            "guide_color" : "Fuchsia"
+         },
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : -50,
+               "x" : 50
+            },
+            "from" : {
+               "cap" : "s",
+               "y" : -400,
+               "x" : 50
+            },
+            "guide_color" : "Orange"
+         }
+      ]
+   },
+   {
+      "name" : "lower_x",
+      "lines" : [
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : -350,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "s",
+               "y" : -400,
+               "x" : 400
+            },
+            "guide_color" : "Black"
+         },
+         {
+            "to" : {
+               "cap" : "c",
+               "y" : -350,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "c",
+               "y" : -100,
+               "x" : 50
+            },
+            "guide_color" : "Blue"
+         },
+         {
+            "to" : {
+               "cap" : "s",
+               "y" : -50,
+               "x" : 50
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -100,
+               "x" : 50
+            },
+            "guide_color" : "Fuchsia"
+         },
+         {
+            "to" : {
+               "cap" : "s",
+               "y" : -50,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -100,
+               "x" : 400
+            },
+            "guide_color" : "Orange"
+         },
+         {
+            "to" : {
+               "cap" : "c",
+               "y" : -100,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "c",
+               "y" : -350,
+               "x" : 50
+            },
+            "guide_color" : "Green"
+         },
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : -350,
+               "x" : 50
+            },
+            "from" : {
+               "cap" : "s",
+               "y" : -400,
+               "x" : 50
+            },
+            "guide_color" : "Maroon"
+         }
+      ]
+   },
+   {
+      "name" : "lower_y",
+      "lines" : [
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : 100,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "s",
+               "y" : 100,
+               "x" : 50
+            },
+            "guide_color" : "Black"
+         },
+         {
+            "to" : {
+               "cap" : "c",
+               "y" : 100,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "s",
+               "y" : -400,
+               "x" : 400
+            },
+            "guide_color" : "Blue"
+         },
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : -50,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -50,
+               "x" : 50
+            },
+            "guide_color" : "Fuchsia"
+         },
+         {
+            "to" : {
+               "cap" : "c",
+               "y" : -50,
+               "x" : 50
+            },
+            "from" : {
+               "cap" : "s",
+               "y" : -400,
+               "x" : 50
+            },
+            "guide_color" : "Orange"
+         }
+      ]
+   },
+   {
+      "name" : "lower_z",
+      "lines" : [
+         {
+            "to" : {
+               "cap" : "s",
+               "y" : -50,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "sc",
+               "y" : -50,
+               "x" : 50
+            },
+            "guide_color" : "Black"
+         },
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : -400,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -50,
+               "x" : 50
+            },
+            "guide_color" : "Blue"
+         },
+         {
+            "to" : {
+               "cap" : "sc",
+               "y" : -400,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "s",
+               "y" : -400,
+               "x" : 50
+            },
+            "guide_color" : "Fuchsia"
+         }
+      ]
+   },
+   {
+      "name" : "u0021",
+      "lines" : [
+         {
+            "to" : {
+               "cap" : "s",
+               "y" : -50,
+               "x" : 50
+            },
+            "from" : {
+               "cap" : "s",
+               "y" : -50,
+               "x" : 50
+            },
+            "guide_color" : "Black"
+         },
+         {
+            "to" : {
+               "cap" : "s",
+               "y" : -200,
+               "x" : 50
+            },
+            "from" : {
+               "cap" : "sc",
+               "y" : -600,
+               "x" : 50
+            },
+            "guide_color" : "Blue"
+         }
+      ]
+   },
+   {
+      "name" : "u0022",
+      "lines" : [
+         {
+            "to" : {
+               "cap" : "s",
+               "y" : -500,
+               "x" : 200
+            },
+            "from" : {
+               "cap" : "sc",
+               "y" : -600,
+               "x" : 200
+            },
+            "guide_color" : "Black"
+         },
+         {
+            "to" : {
+               "cap" : "s",
+               "y" : -500,
+               "x" : 50
+            },
+            "from" : {
+               "cap" : "cs",
+               "y" : -600,
+               "x" : 50
+            },
+            "guide_color" : "Blue"
+         }
+      ]
+   },
+   {
+      "name" : "u0023",
+      "lines" : [
+         {
+            "to" : {
+               "cap" : "cs",
+               "y" : -200,
+               "x" : 550
+            },
+            "from" : {
+               "cap" : "cs",
+               "y" : -200,
+               "x" : 50
+            },
+            "guide_color" : "Black"
+         },
+         {
+            "to" : {
+               "cap" : "cs",
+               "y" : -450,
+               "x" : 550
+            },
+            "from" : {
+               "cap" : "cs",
+               "y" : -450,
+               "x" : 50
+            },
+            "guide_color" : "Blue"
+         },
+         {
+            "to" : {
+               "cap" : "cs",
+               "y" : -50,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "sc",
+               "y" : -600,
+               "x" : 400
+            },
+            "guide_color" : "Fuchsia"
+         },
+         {
+            "to" : {
+               "cap" : "sc",
+               "y" : -50,
+               "x" : 200
+            },
+            "from" : {
+               "cap" : "cs",
+               "y" : -600,
+               "x" : 200
+            },
+            "guide_color" : "Orange"
+         }
+      ]
+   },
+   {
+      "name" : "u0024",
+      "lines" : [
+         {
+            "to" : {
+               "cap" : "sc",
+               "y" : -50,
+               "x" : 200
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -200,
+               "x" : 200
+            },
+            "guide_color" : "Black"
+         },
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : -200,
+               "x" : 350
+            },
+            "from" : {
+               "cap" : "s",
+               "y" : -200,
+               "x" : 50
+            },
+            "guide_color" : "Blue"
+         },
+         {
+            "to" : {
+               "cap" : "c",
+               "y" : -200,
+               "x" : 350
+            },
+            "from" : {
+               "cap" : "c",
+               "y" : -300,
+               "x" : 350
+            },
+            "guide_color" : "Fuchsia"
+         },
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : -300,
+               "x" : 350
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -350,
+               "x" : 50
+            },
+            "guide_color" : "Orange"
+         },
+         {
+            "to" : {
+               "cap" : "c",
+               "y" : -350,
+               "x" : 50
+            },
+            "from" : {
+               "cap" : "c",
+               "y" : -450,
+               "x" : 50
+            },
+            "guide_color" : "Green"
+         },
+         {
+            "to" : {
+               "cap" : "s",
+               "y" : -450,
+               "x" : 350
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -450,
+               "x" : 50
+            },
+            "guide_color" : "Maroon"
+         },
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : -450,
+               "x" : 200
+            },
+            "from" : {
+               "cap" : "sc",
+               "y" : -600,
+               "x" : 200
+            },
+            "guide_color" : "Navy"
+         }
+      ]
+   },
+   {
+      "name" : "u0025",
+      "lines" : [
+         {
+            "to" : {
+               "cap" : "c",
+               "y" : -50,
+               "x" : 300
+            },
+            "from" : {
+               "cap" : "c",
+               "y" : -150,
+               "x" : 300
+            },
+            "guide_color" : "Black"
+         },
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : -50,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -50,
+               "x" : 300
+            },
+            "guide_color" : "Blue"
+         },
+         {
+            "to" : {
+               "cap" : "c",
+               "y" : -50,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "c",
+               "y" : -150,
+               "x" : 400
+            },
+            "guide_color" : "Fuchsia"
+         },
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : -150,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -150,
+               "x" : 300
+            },
+            "guide_color" : "Orange"
+         },
+         {
+            "to" : {
+               "cap" : "c",
+               "y" : -550,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "s",
+               "y" : -600,
+               "x" : 400
+            },
+            "guide_color" : "Green"
+         },
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : -550,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -100,
+               "x" : 50
+            },
+            "guide_color" : "Maroon"
+         },
+         {
+            "to" : {
+               "cap" : "s",
+               "y" : -50,
+               "x" : 50
+            },
+            "from" : {
+               "cap" : "c",
+               "y" : -100,
+               "x" : 50
+            },
+            "guide_color" : "Navy"
+         },
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : -500,
+               "x" : 150
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -500,
+               "x" : 50
+            },
+            "guide_color" : "Olive"
+         },
+         {
+            "to" : {
+               "cap" : "c",
+               "y" : -500,
+               "x" : 150
+            },
+            "from" : {
+               "cap" : "c",
+               "y" : -600,
+               "x" : 150
+            },
+            "guide_color" : "Purple"
+         },
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : -600,
+               "x" : 150
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -600,
+               "x" : 50
+            },
+            "guide_color" : "Red"
+         },
+         {
+            "to" : {
+               "cap" : "c",
+               "y" : -500,
+               "x" : 50
+            },
+            "from" : {
+               "cap" : "c",
+               "y" : -600,
+               "x" : 50
+            },
+            "guide_color" : "Teal"
+         }
+      ]
+   },
+   {
+      "name" : "u0026",
+      "lines" : [
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : -50,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "s",
+               "y" : -450,
+               "x" : 400
+            },
+            "guide_color" : "Black"
+         },
+         {
+            "to" : {
+               "cap" : "s",
+               "y" : -350,
+               "x" : 550
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -350,
+               "x" : 50
+            },
+            "guide_color" : "Blue"
+         },
+         {
+            "to" : {
+               "cap" : "s",
+               "y" : -50,
+               "x" : 550
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -50,
+               "x" : 50
+            },
+            "guide_color" : "Fuchsia"
+         },
+         {
+            "to" : {
+               "cap" : "c",
+               "y" : -50,
+               "x" : 50
+            },
+            "from" : {
+               "cap" : "c",
+               "y" : -600,
+               "x" : 50
+            },
+            "guide_color" : "Orange"
+         },
+         {
+            "to" : {
+               "cap" : "s",
+               "y" : -600,
+               "x" : 300
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -600,
+               "x" : 50
+            },
+            "guide_color" : "Green"
+         }
+      ]
+   },
+   {
+      "name" : "u0027",
+      "lines" : [
+         {
+            "to" : {
+               "cap" : "c",
+               "y" : -500,
+               "x" : 50
+            },
+            "from" : {
+               "cap" : "s",
+               "y" : -600,
+               "x" : 50
+            },
+            "guide_color" : "Black"
+         }
+      ]
+   },
+   {
+      "name" : "u0028",
+      "lines" : [
+         {
+            "to" : {
+               "cap" : "sc",
+               "y" : -50,
+               "x" : 150
+            },
+            "from" : {
+               "cap" : "c",
+               "y" : -50,
+               "x" : 100
+            },
+            "guide_color" : "Black"
+         },
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : -50,
+               "x" : 100
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -100,
+               "x" : 50
+            },
+            "guide_color" : "Blue"
+         },
+         {
+            "to" : {
+               "cap" : "c",
+               "y" : -100,
+               "x" : 50
+            },
+            "from" : {
+               "cap" : "c",
+               "y" : -550,
+               "x" : 50
+            },
+            "guide_color" : "Fuchsia"
+         },
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : -600,
+               "x" : 100
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -550,
+               "x" : 50
+            },
+            "guide_color" : "Orange"
+         },
+         {
+            "to" : {
+               "cap" : "cs",
+               "y" : -600,
+               "x" : 150
+            },
+            "from" : {
+               "cap" : "c",
+               "y" : -600,
+               "x" : 100
+            },
+            "guide_color" : "Green"
+         }
+      ]
+   },
+   {
+      "name" : "u0029",
+      "lines" : [
+         {
+            "to" : {
+               "cap" : "c",
+               "y" : -600,
+               "x" : 100
+            },
+            "from" : {
+               "cap" : "sc",
+               "y" : -600,
+               "x" : 50
+            },
+            "guide_color" : "Black"
+         },
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : -550,
+               "x" : 150
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -600,
+               "x" : 100
+            },
+            "guide_color" : "Blue"
+         },
+         {
+            "to" : {
+               "cap" : "c",
+               "y" : -100,
+               "x" : 150
+            },
+            "from" : {
+               "cap" : "c",
+               "y" : -550,
+               "x" : 150
+            },
+            "guide_color" : "Fuchsia"
+         },
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : -100,
+               "x" : 150
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -50,
+               "x" : 100
+            },
+            "guide_color" : "Orange"
+         },
+         {
+            "to" : {
+               "cap" : "c",
+               "y" : -50,
+               "x" : 100
+            },
+            "from" : {
+               "cap" : "cs",
+               "y" : -50,
+               "x" : 50
+            },
+            "guide_color" : "Green"
+         }
+      ]
+   },
+   {
+      "name" : "u002a",
+      "lines" : [
+         {
+            "to" : {
+               "cap" : "cs",
+               "y" : -350,
+               "x" : 350
+            },
+            "from" : {
+               "cap" : "cs",
+               "y" : -350,
+               "x" : 50
+            },
+            "guide_color" : "Black"
+         },
+         {
+            "to" : {
+               "cap" : "c",
+               "y" : -500,
+               "x" : 300
+            },
+            "from" : {
+               "cap" : "c",
+               "y" : -200,
+               "x" : 100
+            },
+            "guide_color" : "Blue"
+         },
+         {
+            "to" : {
+               "cap" : "c",
+               "y" : -200,
+               "x" : 300
+            },
+            "from" : {
+               "cap" : "c",
+               "y" : -500,
+               "x" : 100
+            },
+            "guide_color" : "Fuchsia"
+         }
+      ]
+   },
+   {
+      "name" : "u002b",
+      "lines" : [
+         {
+            "to" : {
+               "cap" : "s",
+               "y" : -350,
+               "x" : 350
+            },
+            "from" : {
+               "cap" : "s",
+               "y" : -350,
+               "x" : 50
+            },
+            "guide_color" : "Black"
+         },
+         {
+            "to" : {
+               "cap" : "s",
+               "y" : -200,
+               "x" : 200
+            },
+            "from" : {
+               "cap" : "s",
+               "y" : -500,
+               "x" : 200
+            },
+            "guide_color" : "Blue"
+         }
+      ]
+   },
+   {
+      "name" : "u002c",
+      "lines" : [
+         {
+            "to" : {
+               "cap" : "cs",
+               "y" : 0,
+               "x" : 50
+            },
+            "from" : {
+               "cap" : "s",
+               "y" : -50,
+               "x" : 50
+            },
+            "guide_color" : "Black"
+         }
+      ]
+   },
+   {
+      "name" : "u002d",
+      "lines" : [
+         {
+            "to" : {
+               "cap" : "cs",
+               "y" : -350,
+               "x" : 350
+            },
+            "from" : {
+               "cap" : "cs",
+               "y" : -350,
+               "x" : 50
+            },
+            "guide_color" : "Black"
+         }
+      ]
+   },
+   {
+      "name" : "u002e",
+      "lines" : [
+         {
+            "to" : {
+               "cap" : "s",
+               "y" : -50,
+               "x" : 50
+            },
+            "from" : {
+               "cap" : "s",
+               "y" : -50,
+               "x" : 50
+            },
+            "guide_color" : "Black"
+         }
+      ]
+   },
+   {
+      "name" : "u002f",
+      "lines" : [
+         {
+            "to" : {
+               "cap" : "c",
+               "y" : -550,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "s",
+               "y" : -600,
+               "x" : 400
+            },
+            "guide_color" : "Black"
+         },
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : -550,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -100,
+               "x" : 50
+            },
+            "guide_color" : "Blue"
+         },
+         {
+            "to" : {
+               "cap" : "s",
+               "y" : -50,
+               "x" : 50
+            },
+            "from" : {
+               "cap" : "c",
+               "y" : -100,
+               "x" : 50
+            },
+            "guide_color" : "Fuchsia"
+         }
+      ]
+   },
+   {
+      "name" : "u003a",
+      "lines" : [
+         {
+            "to" : {
+               "cap" : "s",
+               "y" : -50,
+               "x" : 50
+            },
+            "from" : {
+               "cap" : "s",
+               "y" : -50,
+               "x" : 50
+            },
+            "guide_color" : "Black"
+         },
+         {
+            "to" : {
+               "cap" : "s",
+               "y" : -350,
+               "x" : 50
+            },
+            "from" : {
+               "cap" : "s",
+               "y" : -350,
+               "x" : 50
+            },
+            "guide_color" : "Blue"
+         }
+      ]
+   },
+   {
+      "name" : "u003b",
+      "lines" : [
+         {
+            "to" : {
+               "cap" : "cs",
+               "y" : 0,
+               "x" : 50
+            },
+            "from" : {
+               "cap" : "s",
+               "y" : -50,
+               "x" : 50
+            },
+            "guide_color" : "Black"
+         },
+         {
+            "to" : {
+               "cap" : "s",
+               "y" : -350,
+               "x" : 60
+            },
+            "from" : {
+               "cap" : "s",
+               "y" : -350,
+               "x" : 50
+            },
+            "guide_color" : "Blue"
+         }
+      ]
+   },
+   {
+      "name" : "u003c",
+      "lines" : [
+         {
+            "to" : {
+               "cap" : "s",
+               "y" : -200,
+               "x" : 300
+            },
+            "from" : {
+               "cap" : "c",
+               "y" : -200,
+               "x" : 250
+            },
+            "guide_color" : "Black"
+         },
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : -200,
+               "x" : 250
+            },
+            "from" : {
+               "cap" : "c",
+               "y" : -350,
+               "x" : 50
+            },
+            "guide_color" : "Blue"
+         },
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : -500,
+               "x" : 250
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -350,
+               "x" : 50
+            },
+            "guide_color" : "Fuchsia"
+         },
+         {
+            "to" : {
+               "cap" : "s",
+               "y" : -500,
+               "x" : 300
+            },
+            "from" : {
+               "cap" : "c",
+               "y" : -500,
+               "x" : 250
+            },
+            "guide_color" : "Orange"
+         }
+      ]
+   },
+   {
+      "name" : "u003d",
+      "lines" : [
+         {
+            "to" : {
+               "cap" : "s",
+               "y" : -250,
+               "x" : 350
+            },
+            "from" : {
+               "cap" : "s",
+               "y" : -250,
+               "x" : 50
+            },
+            "guide_color" : "Black"
+         },
+         {
+            "to" : {
+               "cap" : "s",
+               "y" : -450,
+               "x" : 350
+            },
+            "from" : {
+               "cap" : "s",
+               "y" : -450,
+               "x" : 50
+            },
+            "guide_color" : "Blue"
+         }
+      ]
+   },
+   {
+      "name" : "u003e",
+      "lines" : [
+         {
+            "to" : {
+               "cap" : "c",
+               "y" : -200,
+               "x" : 100
+            },
+            "from" : {
+               "cap" : "s",
+               "y" : -200,
+               "x" : 50
+            },
+            "guide_color" : "Black"
+         },
+         {
+            "to" : {
+               "cap" : "c",
+               "y" : -350,
+               "x" : 300
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -200,
+               "x" : 100
+            },
+            "guide_color" : "Blue"
+         },
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : -350,
+               "x" : 300
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -500,
+               "x" : 100
+            },
+            "guide_color" : "Fuchsia"
+         },
+         {
+            "to" : {
+               "cap" : "c",
+               "y" : -500,
+               "x" : 100
+            },
+            "from" : {
+               "cap" : "s",
+               "y" : -500,
+               "x" : 50
+            },
+            "guide_color" : "Orange"
+         }
+      ]
+   },
+   {
+      "name" : "u003f",
+      "lines" : [
+         {
+            "to" : {
+               "cap" : "s",
+               "y" : -50,
+               "x" : 200
+            },
+            "from" : {
+               "cap" : "s",
+               "y" : -50,
+               "x" : 200
+            },
+            "guide_color" : "Black"
+         },
+         {
+            "to" : {
+               "cap" : "s",
+               "y" : -200,
+               "x" : 200
+            },
+            "from" : {
+               "cap" : "c",
+               "y" : -250,
+               "x" : 200
+            },
+            "guide_color" : "Blue"
+         },
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : -450,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -250,
+               "x" : 200
+            },
+            "guide_color" : "Fuchsia"
+         },
+         {
+            "to" : {
+               "cap" : "c",
+               "y" : -450,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "c",
+               "y" : -600,
+               "x" : 400
+            },
+            "guide_color" : "Orange"
+         },
+         {
+            "to" : {
+               "cap" : "s",
+               "y" : -550,
+               "x" : 50
+            },
+            "from" : {
+               "cap" : "c",
+               "y" : -600,
+               "x" : 50
+            },
+            "guide_color" : "Green"
+         },
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : -600,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -600,
+               "x" : 50
+            },
+            "guide_color" : "Maroon"
+         }
+      ]
+   },
+   {
+      "name" : "u0040",
+      "lines" : [
+         {
+            "to" : {
+               "cap" : "s",
+               "y" : -50,
+               "x" : 600
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -50,
+               "x" : 50
+            },
+            "guide_color" : "Black"
+         },
+         {
+            "to" : {
+               "cap" : "c",
+               "y" : -50,
+               "x" : 50
+            },
+            "from" : {
+               "cap" : "c",
+               "y" : -600,
+               "x" : 50
+            },
+            "guide_color" : "Blue"
+         },
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : -600,
+               "x" : 600
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -600,
+               "x" : 50
+            },
+            "guide_color" : "Fuchsia"
+         },
+         {
+            "to" : {
+               "cap" : "c",
+               "y" : -200,
+               "x" : 600
+            },
+            "from" : {
+               "cap" : "c",
+               "y" : -600,
+               "x" : 600
+            },
+            "guide_color" : "Orange"
+         },
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : -200,
+               "x" : 600
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -200,
+               "x" : 200
+            },
+            "guide_color" : "Green"
+         },
+         {
+            "to" : {
+               "cap" : "c",
+               "y" : -200,
+               "x" : 200
+            },
+            "from" : {
+               "cap" : "c",
+               "y" : -450,
+               "x" : 200
+            },
+            "guide_color" : "Purple"
+         },
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : -450,
+               "x" : 450
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -450,
+               "x" : 200
+            },
+            "guide_color" : "Navy"
+         },
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : -200,
+               "x" : 450
+            },
+            "from" : {
+               "cap" : "c",
+               "y" : -450,
+               "x" : 450
+            },
+            "guide_color" : "Olive"
+         }
+      ]
+   },
+   {
+      "name" : "u005b",
+      "lines" : [
+         {
+            "to" : {
+               "cap" : "s",
+               "y" : -50,
+               "x" : 150
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -50,
+               "x" : 50
+            },
+            "guide_color" : "Black"
+         },
+         {
+            "to" : {
+               "cap" : "s",
+               "y" : -50,
+               "x" : 50
+            },
+            "from" : {
+               "cap" : "s",
+               "y" : -600,
+               "x" : 50
+            },
+            "guide_color" : "Blue"
+         },
+         {
+            "to" : {
+               "cap" : "s",
+               "y" : -600,
+               "x" : 150
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -600,
+               "x" : 50
+            },
+            "guide_color" : "Fuchsia"
+         }
+      ]
+   },
+   {
+      "name" : "u005c",
+      "lines" : [
+         {
+            "to" : {
+               "cap" : "s",
+               "y" : -50,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "c",
+               "y" : -100,
+               "x" : 400
+            },
+            "guide_color" : "Black"
+         },
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : -100,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -550,
+               "x" : 50
+            },
+            "guide_color" : "Blue"
+         },
+         {
+            "to" : {
+               "cap" : "c",
+               "y" : -550,
+               "x" : 50
+            },
+            "from" : {
+               "cap" : "s",
+               "y" : -600,
+               "x" : 50
+            },
+            "guide_color" : "Fuchsia"
+         }
+      ]
+   },
+   {
+      "name" : "u005d",
+      "lines" : [
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : -50,
+               "x" : 150
+            },
+            "from" : {
+               "cap" : "s",
+               "y" : -50,
+               "x" : 50
+            },
+            "guide_color" : "Black"
+         },
+         {
+            "to" : {
+               "cap" : "s",
+               "y" : -50,
+               "x" : 150
+            },
+            "from" : {
+               "cap" : "s",
+               "y" : -600,
+               "x" : 150
+            },
+            "guide_color" : "Blue"
+         },
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : -600,
+               "x" : 150
+            },
+            "from" : {
+               "cap" : "s",
+               "y" : -600,
+               "x" : 50
+            },
+            "guide_color" : "Fuchsia"
+         }
+      ]
+   },
+   {
+      "name" : "u005e",
+      "lines" : [
+         {
+            "to" : {
+               "cap" : "s",
+               "y" : -400,
+               "x" : 350
+            },
+            "from" : {
+               "cap" : "c",
+               "y" : -400.0000000000001,
+               "x" : 350
+            },
+            "guide_color" : "Black"
+         },
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : -400,
+               "x" : 350
+            },
+            "from" : {
+               "cap" : "shear",
+			   "shear" : 0.75,
+               "y" : -600,
+               "x" : 200
+            },
+            "guide_color" : "Blue"
+         },
+         {
+            "to" : {
+               "cap" : "shear",
+			   "shear" : -0.75,
+               "y" : -600,
+               "x" : 200
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -400,
+               "x" : 50
+            },
+            "guide_color" : "Fuchsia"
+         },
+         {
+            "to" : {
+               "cap" : "s",
+               "y" : -400,
+               "x" : 50
+            },
+            "from" : {
+               "cap" : "c",
+               "y" : -400.0000000000001,
+               "x" : 50
+            },
+            "guide_color" : "Orange"
+         }
+      ]
+   },
+   {
+      "name" : "u005f",
+      "lines" : [
+         {
+            "to" : {
+               "cap" : "s",
+               "y" : -50,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "s",
+               "y" : -50,
+               "x" : 50
+            },
+            "guide_color" : "Black"
+         }
+      ]
+   },
+   {
+      "name" : "u0060",
+      "lines" : [
+         {
+            "to" : {
+               "cap" : "c",
+               "y" : -750,
+               "x" : 200
+            },
+            "from" : {
+               "cap" : "c",
+               "y" : -800,
+               "x" : 50
+            },
+            "guide_color" : "Black"
+         }
+      ]
+   },
+   {
+      "name" : "u007b",
+      "lines" : [
+         {
+            "to" : {
+               "cap" : "s",
+               "y" : -50,
+               "x" : 250
+            },
+            "from" : {
+               "cap" : "c",
+               "y" : -50,
+               "x" : 175
+            },
+            "guide_color" : "Black"
+         },
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : -50,
+               "x" : 175
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -100,
+               "x" : 125
+            },
+            "guide_color" : "Blue"
+         },
+         {
+            "to" : {
+               "cap" : "c",
+               "y" : -100,
+               "x" : 125
+            },
+            "from" : {
+               "cap" : "c",
+               "y" : -250,
+               "x" : 125
+            },
+            "guide_color" : "Fuchsia"
+         },
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : -250,
+               "x" : 125
+            },
+            "from" : {
+               "cap" : "s",
+               "y" : -325,
+               "x" : 50
+            },
+            "guide_color" : "Orange"
+         },
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : -400,
+               "x" : 125
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -325,
+               "x" : 50
+            },
+            "guide_color" : "Green"
+         },
+         {
+            "to" : {
+               "cap" : "c",
+               "y" : -400,
+               "x" : 125
+            },
+            "from" : {
+               "cap" : "c",
+               "y" : -550,
+               "x" : 125
+            },
+            "guide_color" : "Maroon"
+         },
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : -600,
+               "x" : 175
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -550,
+               "x" : 125
+            },
+            "guide_color" : "Navy"
+         },
+         {
+            "to" : {
+               "cap" : "s",
+               "y" : -600,
+               "x" : 250
+            },
+            "from" : {
+               "cap" : "c",
+               "y" : -600,
+               "x" : 175
+            },
+            "guide_color" : "Olive"
+         }
+      ]
+   },
+   {
+      "name" : "u007c",
+      "lines" : [
+         {
+            "to" : {
+               "cap" : "s",
+               "y" : 50,
+               "x" : 50
+            },
+            "from" : {
+               "cap" : "s",
+               "y" : -600,
+               "x" : 50
+            },
+            "guide_color" : "Black"
+         }
+      ]
+   },
+   {
+      "name" : "u007d",
+      "lines" : [
+         {
+            "to" : {
+               "cap" : "c",
+               "y" : -50,
+               "x" : 125
+            },
+            "from" : {
+               "cap" : "s",
+               "y" : -50,
+               "x" : 50
+            },
+            "guide_color" : "Black"
+         },
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : -100,
+               "x" : 175
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -50,
+               "x" : 125
+            },
+            "guide_color" : "Blue"
+         },
+         {
+            "to" : {
+               "cap" : "c",
+               "y" : -100,
+               "x" : 175
+            },
+            "from" : {
+               "cap" : "c",
+               "y" : -250,
+               "x" : 175
+            },
+            "guide_color" : "Fuchsia"
+         },
+         {
+            "to" : {
+               "cap" : "s",
+               "y" : -325,
+               "x" : 250
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -250,
+               "x" : 175
+            },
+            "guide_color" : "Orange"
+         },
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : -325,
+               "x" : 250
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -400,
+               "x" : 175
+            },
+            "guide_color" : "Green"
+         },
+         {
+            "to" : {
+               "cap" : "c",
+               "y" : -400,
+               "x" : 175
+            },
+            "from" : {
+               "cap" : "c",
+               "y" : -550,
+               "x" : 175
+            },
+            "guide_color" : "Maroon"
+         },
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : -550,
+               "x" : 175
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -600,
+               "x" : 125
+            },
+            "guide_color" : "Navy"
+         },
+         {
+            "to" : {
+               "cap" : "c",
+               "y" : -600,
+               "x" : 125
+            },
+            "from" : {
+               "cap" : "s",
+               "y" : -600,
+               "x" : 50
+            },
+            "guide_color" : "Olive"
+         }
+      ]
+   },
+   {
+      "name" : "u007e",
+      "lines" : [
+         {
+            "to" : {
+               "cap" : "c",
+               "y" : -350,
+               "x" : 350
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -300,
+               "x" : 250
+            },
+            "guide_color" : "Black"
+         },
+         {
+            "to" : {
+               "cap" : "c",
+               "y" : -300,
+               "x" : 250
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -350,
+               "x" : 150
+            },
+            "guide_color" : "Blue"
+         },
+         {
+            "to" : {
+               "cap" : "c",
+               "y" : -350,
+               "x" : 150
+            },
+            "from" : {
+               "cap" : "c",
+               "y" : -300,
+               "x" : 50
+            },
+            "guide_color" : "Fuchsia"
+         }
+      ]
+   },
+   {
+      "name" : "u20ac",
+      "lines" : [
+         {
+            "to" : {
+               "cap" : "s",
+               "y" : -600,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -600,
+               "x" : 150
+            },
+            "guide_color" : "Black"
+         },
+         {
+            "to" : {
+               "cap" : "c",
+               "y" : -50,
+               "x" : 150
+            },
+            "from" : {
+               "cap" : "c",
+               "y" : -600,
+               "x" : 150
+            },
+            "guide_color" : "Blue"
+         },
+         {
+            "to" : {
+               "cap" : "s",
+               "y" : -50,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -50,
+               "x" : 150
+            },
+            "guide_color" : "Fuchsia"
+         },
+         {
+            "to" : {
+               "cap" : "cs",
+               "y" : -400,
+               "x" : 350
+            },
+            "from" : {
+               "cap" : "s",
+               "y" : -400,
+               "x" : 50
+            },
+            "guide_color" : "Orange"
+         },
+         {
+            "to" : {
+               "cap" : "s",
+               "y" : -250,
+               "x" : 350
+            },
+            "from" : {
+               "cap" : "cs",
+               "y" : -250,
+               "x" : 50
+            },
+            "guide_color" : "Green"
+         }
+      ]
+   },
+   {
+      "name" : "u201a",
+      "lines" : [
+         {
+            "to" : {
+               "cap" : "cs",
+               "y" : 50,
+               "x" : 50
+            },
+            "from" : {
+               "cap" : "s",
+               "y" : -50,
+               "x" : 50
+            },
+            "guide_color" : "Black"
+         }
+      ]
+   },
+   {
+      "name" : "u0192",
+      "lines" : [
+         {
+            "to" : {
+               "cap" : "s",
+               "y" : -350,
+               "x" : 200
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -350,
+               "x" : 50
+            },
+            "guide_color" : "Black"
+         },
+         {
+            "to" : {
+               "cap" : "s",
+               "y" : -500,
+               "x" : 200
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -500,
+               "x" : 50
+            },
+            "guide_color" : "Blue"
+         },
+         {
+            "to" : {
+               "cap" : "c",
+               "y" : 100,
+               "x" : 50
+            },
+            "from" : {
+               "cap" : "c",
+               "y" : -500,
+               "x" : 50
+            },
+            "guide_color" : "Fuchsia"
+         },
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : 100,
+               "x" : 50
+            },
+            "from" : {
+               "cap" : "s",
+               "y" : 100,
+               "x" : -100
+            },
+            "guide_color" : "Orange"
+         }
+      ]
+   },
+   {
+      "name" : "u201e",
+      "lines" : [
+         {
+            "to" : {
+               "cap" : "cs",
+               "y" : 50,
+               "x" : 200
+            },
+            "from" : {
+               "cap" : "s",
+               "y" : -50,
+               "x" : 200
+            },
+            "guide_color" : "Black"
+         },
+         {
+            "to" : {
+               "cap" : "cs",
+               "y" : 50,
+               "x" : 50
+            },
+            "from" : {
+               "cap" : "s",
+               "y" : -50,
+               "x" : 50
+            },
+            "guide_color" : "Blue"
+         }
+      ]
+   },
+   {
+      "name" : "u2026",
+      "lines" : [
+         {
+            "to" : {
+               "cap" : "s",
+               "y" : -50,
+               "x" : 350
+            },
+            "from" : {
+               "cap" : "s",
+               "y" : -50,
+               "x" : 350
+            },
+            "guide_color" : "Black"
+         },
+         {
+            "to" : {
+               "cap" : "s",
+               "y" : -50,
+               "x" : 200
+            },
+            "from" : {
+               "cap" : "s",
+               "y" : -50,
+               "x" : 200
+            },
+            "guide_color" : "Blue"
+         },
+         {
+            "to" : {
+               "cap" : "s",
+               "y" : -50,
+               "x" : 50
+            },
+            "from" : {
+               "cap" : "s",
+               "y" : -50,
+               "x" : 50
+            },
+            "guide_color" : "Fuchsia"
+         }
+      ]
+   },
+   {
+      "name" : "u2020",
+      "lines" : [
+         {
+            "to" : {
+               "cap" : "s",
+               "y" : -450,
+               "x" : 350
+            },
+            "from" : {
+               "cap" : "s",
+               "y" : -450,
+               "x" : 50
+            },
+            "guide_color" : "Black"
+         },
+         {
+            "to" : {
+               "cap" : "s",
+               "y" : -50,
+               "x" : 200
+            },
+            "from" : {
+               "cap" : "s",
+               "y" : -600,
+               "x" : 200
+            },
+            "guide_color" : "Blue"
+         }
+      ]
+   },
+   {
+      "name" : "u2021",
+      "lines" : [
+         {
+            "to" : {
+               "cap" : "s",
+               "y" : -200,
+               "x" : 350
+            },
+            "from" : {
+               "cap" : "s",
+               "y" : -200,
+               "x" : 50
+            },
+            "guide_color" : "Black"
+         },
+         {
+            "to" : {
+               "cap" : "s",
+               "y" : -450,
+               "x" : 350
+            },
+            "from" : {
+               "cap" : "s",
+               "y" : -450,
+               "x" : 50
+            },
+            "guide_color" : "Blue"
+         },
+         {
+            "to" : {
+               "cap" : "s",
+               "y" : -50,
+               "x" : 200
+            },
+            "from" : {
+               "cap" : "s",
+               "y" : -600,
+               "x" : 200
+            },
+            "guide_color" : "Fuchsia"
+         }
+      ]
+   },
+   {
+      "name" : "u02c6",
+      "lines" : [
+         {
+            "to" : {
+               "cap" : "c",
+               "y" : -750,
+               "x" : 200
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -800,
+               "x" : 125
+            },
+            "guide_color" : "Black"
+         },
+         {
+            "to" : {
+               "cap" : "c",
+               "y" : -800,
+               "x" : 125
+            },
+            "from" : {
+               "cap" : "c",
+               "y" : -750,
+               "x" : 50
+            },
+            "guide_color" : "Blue"
+         }
+      ]
+   },
+   {
+      "name" : "u02c7",
+      "lines" : [
+         {
+            "to" : {
+               "cap" : "c",
+               "y" : -800,
+               "x" : 200
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -750,
+               "x" : 125
+            },
+            "guide_color" : "Black"
+         },
+         {
+            "to" : {
+               "cap" : "c",
+               "y" : -750,
+               "x" : 125
+            },
+            "from" : {
+               "cap" : "c",
+               "y" : -800,
+               "x" : 50
+            },
+            "guide_color" : "Blue"
+         }
+      ]
+   },
+   {
+      "name" : "u2030",
+      "lines" : [
+         {
+            "to" : {
+               "cap" : "c",
+               "y" : -50,
+               "x" : 550
+            },
+            "from" : {
+               "cap" : "c",
+               "y" : -150,
+               "x" : 550
+            },
+            "guide_color" : "Black"
+         },
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : -50,
+               "x" : 650
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -50,
+               "x" : 550
+            },
+            "guide_color" : "Blue"
+         },
+         {
+            "to" : {
+               "cap" : "c",
+               "y" : -50,
+               "x" : 650
+            },
+            "from" : {
+               "cap" : "c",
+               "y" : -150,
+               "x" : 650
+            },
+            "guide_color" : "Fuchsia"
+         },
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : -150,
+               "x" : 650
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -150,
+               "x" : 550
+            },
+            "guide_color" : "Orange"
+         },
+         {
+            "to" : {
+               "cap" : "c",
+               "y" : -50,
+               "x" : 300
+            },
+            "from" : {
+               "cap" : "c",
+               "y" : -150,
+               "x" : 300
+            },
+            "guide_color" : "Green"
+         },
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : -50,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -50,
+               "x" : 300
+            },
+            "guide_color" : "Maroon"
+         },
+         {
+            "to" : {
+               "cap" : "c",
+               "y" : -50,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "c",
+               "y" : -150,
+               "x" : 400
+            },
+            "guide_color" : "Navy"
+         },
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : -150,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -150,
+               "x" : 300
+            },
+            "guide_color" : "Olive"
+         },
+         {
+            "to" : {
+               "cap" : "s",
+               "y" : -50,
+               "x" : 50
+            },
+            "from" : {
+               "cap" : "c",
+               "y" : -100,
+               "x" : 50
+            },
+            "guide_color" : "Purple"
+         },
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : -550,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -100,
+               "x" : 50
+            },
+            "guide_color" : "Red"
+         },
+         {
+            "to" : {
+               "cap" : "c",
+               "y" : -550,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "s",
+               "y" : -600,
+               "x" : 400
+            },
+            "guide_color" : "Teal"
+         },
+         {
+            "to" : {
+               "cap" : "c",
+               "y" : -500,
+               "x" : 50
+            },
+            "from" : {
+               "cap" : "c",
+               "y" : -600,
+               "x" : 50
+            },
+            "guide_color" : "Black"
+         },
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : -500,
+               "x" : 150
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -500,
+               "x" : 50
+            },
+            "guide_color" : "Blue"
+         },
+         {
+            "to" : {
+               "cap" : "c",
+               "y" : -500,
+               "x" : 150
+            },
+            "from" : {
+               "cap" : "c",
+               "y" : -600,
+               "x" : 150
+            },
+            "guide_color" : "Fuchsia"
+         },
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : -600,
+               "x" : 150
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -600,
+               "x" : 50
+            },
+            "guide_color" : "Orange"
+         }
+      ]
+   },
+   {
+      "name" : "upper_a",
+      "lines" : [
+         {
+            "to" : {
+               "cap" : "s",
+               "y" : -50,
+               "x" : 50
+            },
+            "from" : {
+               "cap" : "c",
+               "y" : -600,
+               "x" : 50
+            },
+            "guide_color" : "Black"
+         },
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : -600,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -600,
+               "x" : 50
+            },
+            "guide_color" : "Blue"
+         },
+         {
+            "to" : {
+               "cap" : "s",
+               "y" : -50,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "c",
+               "y" : -600,
+               "x" : 400
+            },
+            "guide_color" : "Fuchsia"
+         },
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : -350,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -350,
+               "x" : 50
+            },
+            "guide_color" : "Orange"
+         }
+      ]
+   },
+   {
+      "name" : "upper_b",
+      "lines" : [
+         {
+            "to" : {
+               "cap" : "s",
+               "y" : -50,
+               "x" : 50
+            },
+            "from" : {
+               "cap" : "s",
+               "y" : -600,
+               "x" : 50
+            },
+            "guide_color" : "Black"
+         },
+         {
+            "to" : {
+               "cap" : "c",
+               "y" : -600,
+               "x" : 350
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -600,
+               "x" : 50
+            },
+            "guide_color" : "Blue"
+         },
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : -550,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -600,
+               "x" : 350
+            },
+            "guide_color" : "Fuchsia"
+         },
+         {
+            "to" : {
+               "cap" : "c",
+               "y" : -400,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "c",
+               "y" : -550,
+               "x" : 400
+            },
+            "guide_color" : "Orange"
+         },
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : -400,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -350,
+               "x" : 350
+            },
+            "guide_color" : "Green"
+         },
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : -350,
+               "x" : 350
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -350,
+               "x" : 50
+            },
+            "guide_color" : "Maroon"
+         },
+         {
+            "to" : {
+               "cap" : "c",
+               "y" : -50,
+               "x" : 350
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -50,
+               "x" : 50
+            },
+            "guide_color" : "Navy"
+         },
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : -100,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -50,
+               "x" : 350
+            },
+            "guide_color" : "Olive"
+         },
+         {
+            "to" : {
+               "cap" : "c",
+               "y" : -100,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "c",
+               "y" : -300,
+               "x" : 400
+            },
+            "guide_color" : "Purple"
+         },
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : -300,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -350,
+               "x" : 350
+            },
+            "guide_color" : "Red"
+         }
+      ]
+   },
+   {
+      "name" : "upper_c",
+      "lines" : [
+         {
+            "to" : {
+               "cap" : "s",
+               "y" : -50,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -50,
+               "x" : 50
+            },
+            "guide_color" : "Black"
+         },
+         {
+            "to" : {
+               "cap" : "c",
+               "y" : -50,
+               "x" : 50
+            },
+            "from" : {
+               "cap" : "c",
+               "y" : -600,
+               "x" : 50
+            },
+            "guide_color" : "Blue"
+         },
+         {
+            "to" : {
+               "cap" : "s",
+               "y" : -600,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -600,
+               "x" : 50
+            },
+            "guide_color" : "Fuchsia"
+         }
+      ]
+   },
+   {
+      "name" : "upper_d",
+      "lines" : [
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : -50,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -50,
+               "x" : 50
+            },
+            "guide_color" : "Black"
+         },
+         {
+            "to" : {
+               "cap" : "c",
+               "y" : -50,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "c",
+               "y" : -600,
+               "x" : 400
+            },
+            "guide_color" : "Blue"
+         },
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : -600,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -600,
+               "x" : 50
+            },
+            "guide_color" : "Fuchsia"
+         },
+         {
+            "to" : {
+               "cap" : "s",
+               "y" : -50,
+               "x" : 50
+            },
+            "from" : {
+               "cap" : "s",
+               "y" : -600,
+               "x" : 50
+            },
+            "guide_color" : "Orange"
+         }
+      ]
+   },
+   {
+      "name" : "upper_e",
+      "lines" : [
+         {
+            "to" : {
+               "cap" : "s",
+               "y" : -350,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -350,
+               "x" : 50
+            },
+            "guide_color" : "Black"
+         },
+         {
+            "to" : {
+               "cap" : "s",
+               "y" : -50,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -50,
+               "x" : 50
+            },
+            "guide_color" : "Blue"
+         },
+         {
+            "to" : {
+               "cap" : "s",
+               "y" : -50,
+               "x" : 50
+            },
+            "from" : {
+               "cap" : "s",
+               "y" : -600,
+               "x" : 50
+            },
+            "guide_color" : "Fuchsia"
+         },
+         {
+            "to" : {
+               "cap" : "s",
+               "y" : -600,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -600,
+               "x" : 50
+            },
+            "guide_color" : "Orange"
+         }
+      ]
+   },
+   {
+      "name" : "upper_f",
+      "lines" : [
+         {
+            "to" : {
+               "cap" : "s",
+               "y" : -350,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -350,
+               "x" : 50
+            },
+            "guide_color" : "Black"
+         },
+         {
+            "to" : {
+               "cap" : "s",
+               "y" : -50,
+               "x" : 50
+            },
+            "from" : {
+               "cap" : "s",
+               "y" : -600,
+               "x" : 50
+            },
+            "guide_color" : "Blue"
+         },
+         {
+            "to" : {
+               "cap" : "s",
+               "y" : -600,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -600,
+               "x" : 50
+            },
+            "guide_color" : "Fuchsia"
+         }
+      ]
+   },
+   {
+      "name" : "upper_g",
+      "lines" : [
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : -350,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "s",
+               "y" : -350,
+               "x" : 225
+            },
+            "guide_color" : "Black"
+         },
+         {
+            "to" : {
+               "cap" : "s",
+               "y" : -50,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "s",
+               "y" : -350,
+               "x" : 400
+            },
+            "guide_color" : "Blue"
+         },
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : -50,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -50,
+               "x" : 50
+            },
+            "guide_color" : "Fuchsia"
+         },
+         {
+            "to" : {
+               "cap" : "c",
+               "y" : -50,
+               "x" : 50
+            },
+            "from" : {
+               "cap" : "c",
+               "y" : -600,
+               "x" : 50
+            },
+            "guide_color" : "Orange"
+         },
+         {
+            "to" : {
+               "cap" : "cs",
+               "y" : -600,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -600,
+               "x" : 50
+            },
+            "guide_color" : "Green"
+         }
+      ]
+   },
+   {
+      "name" : "upper_h",
+      "lines" : [
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : -350,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -350,
+               "x" : 50
+            },
+            "guide_color" : "Black"
+         },
+         {
+            "to" : {
+               "cap" : "s",
+               "y" : -50,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "s",
+               "y" : -600,
+               "x" : 400
+            },
+            "guide_color" : "Blue"
+         },
+         {
+            "to" : {
+               "cap" : "s",
+               "y" : -50,
+               "x" : 50
+            },
+            "from" : {
+               "cap" : "s",
+               "y" : -600,
+               "x" : 50
+            },
+            "guide_color" : "Fuchsia"
+         }
+      ]
+   },
+   {
+      "name" : "upper_i",
+      "lines" : [
+         {
+            "to" : {
+               "cap" : "s",
+               "y" : -50,
+               "x" : 50
+            },
+            "from" : {
+               "cap" : "s",
+               "y" : -600,
+               "x" : 50
+            },
+            "guide_color" : "Black"
+         }
+      ]
+   },
+   {
+      "name" : "upper_j",
+      "lines" : [
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : -50,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "cs",
+               "y" : -50,
+               "x" : 50
+            },
+            "guide_color" : "Black"
+         },
+         {
+            "to" : {
+               "cap" : "c",
+               "y" : -50,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "s",
+               "y" : -600,
+               "x" : 400
+            },
+            "guide_color" : "Blue"
+         }
+      ]
+   },
+   {
+      "name" : "upper_k",
+      "lines" : [
+         {
+            "to" : {
+               "cap" : "s",
+               "y" : -50,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "c",
+               "y" : -100,
+               "x" : 400
+            },
+            "guide_color" : "Black"
+         },
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : -100,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -325,
+               "x" : 175
+            },
+            "guide_color" : "Blue"
+         },
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : -325,
+               "x" : 175
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -325,
+               "x" : 50
+            },
+            "guide_color" : "Fuchsia"
+         },
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : -550,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -325,
+               "x" : 175
+            },
+            "guide_color" : "Orange"
+         },
+         {
+            "to" : {
+               "cap" : "c",
+               "y" : -550,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "s",
+               "y" : -600,
+               "x" : 400
+            },
+            "guide_color" : "Green"
+         },
+         {
+            "to" : {
+               "cap" : "s",
+               "y" : -50,
+               "x" : 50
+            },
+            "from" : {
+               "cap" : "s",
+               "y" : -600,
+               "x" : 50
+            },
+            "guide_color" : "Maroon"
+         }
+      ]
+   },
+   {
+      "name" : "upper_l",
+      "lines" : [
+         {
+            "to" : {
+               "cap" : "s",
+               "y" : -50,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -50,
+               "x" : 50
+            },
+            "guide_color" : "Black"
+         },
+         {
+            "to" : {
+               "cap" : "s",
+               "y" : -50,
+               "x" : 50
+            },
+            "from" : {
+               "cap" : "s",
+               "y" : -600,
+               "x" : 50
+            },
+            "guide_color" : "Blue"
+         }
+      ]
+   },
+   {
+      "name" : "upper_m",
+      "lines" : [
+         {
+            "to" : {
+               "cap" : "s",
+               "y" : -50,
+               "x" : 250
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -600,
+               "x" : 250
+            },
+            "guide_color" : "Black"
+         },
+         {
+            "to" : {
+               "cap" : "s",
+               "y" : -50,
+               "x" : 450
+            },
+            "from" : {
+               "cap" : "c",
+               "y" : -600,
+               "x" : 450
+            },
+            "guide_color" : "Blue"
+         },
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : -600,
+               "x" : 450
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -600,
+               "x" : 50
+            },
+            "guide_color" : "Fuchsia"
+         },
+         {
+            "to" : {
+               "cap" : "s",
+               "y" : -50,
+               "x" : 50
+            },
+            "from" : {
+               "cap" : "s",
+               "y" : -600,
+               "x" : 50
+            },
+            "guide_color" : "Orange"
+         }
+      ]
+   },
+   {
+      "name" : "upper_n",
+      "lines" : [
+         {
+            "to" : {
+               "cap" : "s",
+               "y" : -50,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "c",
+               "y" : -600,
+               "x" : 400
+            },
+            "guide_color" : "Black"
+         },
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : -600,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -600,
+               "x" : 50
+            },
+            "guide_color" : "Blue"
+         },
+         {
+            "to" : {
+               "cap" : "s",
+               "y" : -50,
+               "x" : 50
+            },
+            "from" : {
+               "cap" : "s",
+               "y" : -600,
+               "x" : 50
+            },
+            "guide_color" : "Fuchsia"
+         }
+      ]
+   },
+   {
+      "name" : "upper_o",
+      "lines" : [
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : -50,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -50,
+               "x" : 50
+            },
+            "guide_color" : "Black"
+         },
+         {
+            "to" : {
+               "cap" : "c",
+               "y" : -50,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "c",
+               "y" : -600,
+               "x" : 400
+            },
+            "guide_color" : "Blue"
+         },
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : -600,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -600,
+               "x" : 50
+            },
+            "guide_color" : "Fuchsia"
+         },
+         {
+            "to" : {
+               "cap" : "c",
+               "y" : -50,
+               "x" : 50
+            },
+            "from" : {
+               "cap" : "c",
+               "y" : -600,
+               "x" : 50
+            },
+            "guide_color" : "Orange"
+         }
+      ]
+   },
+   {
+      "name" : "upper_p",
+      "lines" : [
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : -350,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -350,
+               "x" : 50
+            },
+            "guide_color" : "Black"
+         },
+         {
+            "to" : {
+               "cap" : "c",
+               "y" : -350,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "c",
+               "y" : -600,
+               "x" : 400
+            },
+            "guide_color" : "Blue"
+         },
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : -600,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -600,
+               "x" : 50
+            },
+            "guide_color" : "Fuchsia"
+         },
+         {
+            "to" : {
+               "cap" : "s",
+               "y" : -50,
+               "x" : 50
+            },
+            "from" : {
+               "cap" : "s",
+               "y" : -600,
+               "x" : 50
+            },
+            "guide_color" : "Orange"
+         }
+      ]
+   },
+   {
+      "name" : "upper_q",
+      "lines" : [
+         {
+            "to" : {
+               "cap" : "s",
+               "y" : -150,
+               "x" : 300
+            },
+            "from" : {
+               "cap" : "s",
+               "y" : -100,
+               "x" : 300
+            },
+            "guide_color" : "Aqua"
+         },
+         {
+            "to" : {
+               "cap" : "s",
+               "y" : -150,
+               "x" : 350
+            },
+            "from" : {
+               "cap" : "s",
+               "y" : -150,
+               "x" : 300
+            },
+            "guide_color" : "Aqua"
+         },
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : -50,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "c",
+               "y" : -150,
+               "x" : 300
+            },
+            "guide_color" : "Black"
+         },
+         {
+            "to" : {
+               "cap" : "s",
+               "y" : -50,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "c",
+               "y" : -600,
+               "x" : 400
+            },
+            "guide_color" : "Blue"
+         },
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : -600,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -600,
+               "x" : 50
+            },
+            "guide_color" : "Fuchsia"
+         },
+         {
+            "to" : {
+               "cap" : "c",
+               "y" : -50,
+               "x" : 50
+            },
+            "from" : {
+               "cap" : "c",
+               "y" : -600,
+               "x" : 50
+            },
+            "guide_color" : "Orange"
+         },
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : -50,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -50,
+               "x" : 50
+            },
+            "guide_color" : "Green"
+         }
+      ]
+   },
+   {
+      "name" : "upper_r",
+      "lines" : [
+         {
+            "to" : {
+               "cap" : "s",
+               "y" : -50,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "c",
+               "y" : -75,
+               "x" : 400
+            },
+            "guide_color" : "Black"
+         },
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : -75,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -350,
+               "x" : 225
+            },
+            "guide_color" : "Blue"
+         },
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : -350,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -350,
+               "x" : 50
+            },
+            "guide_color" : "Fuchsia"
+         },
+         {
+            "to" : {
+               "cap" : "c",
+               "y" : -350,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "c",
+               "y" : -600,
+               "x" : 400
+            },
+            "guide_color" : "Orange"
+         },
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : -600,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -600,
+               "x" : 50
+            },
+            "guide_color" : "Green"
+         },
+         {
+            "to" : {
+               "cap" : "s",
+               "y" : -50,
+               "x" : 50
+            },
+            "from" : {
+               "cap" : "s",
+               "y" : -600,
+               "x" : 50
+            },
+            "guide_color" : "Maroon"
+         }
+      ]
+   },
+   {
+      "name" : "upper_s",
+      "lines" : [
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : -50,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "s",
+               "y" : -50,
+               "x" : 50
+            },
+            "guide_color" : "Black"
+         },
+         {
+            "to" : {
+               "cap" : "c",
+               "y" : -50,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "c",
+               "y" : -350,
+               "x" : 400
+            },
+            "guide_color" : "Blue"
+         },
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : -350,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -350,
+               "x" : 50
+            },
+            "guide_color" : "Fuchsia"
+         },
+         {
+            "to" : {
+               "cap" : "c",
+               "y" : -350,
+               "x" : 50
+            },
+            "from" : {
+               "cap" : "c",
+               "y" : -600,
+               "x" : 50
+            },
+            "guide_color" : "Orange"
+         },
+         {
+            "to" : {
+               "cap" : "s",
+               "y" : -600,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -600,
+               "x" : 50
+            },
+            "guide_color" : "Green"
+         }
+      ]
+   },
+   {
+      "name" : "upper_t",
+      "lines" : [
+         {
+            "to" : {
+               "cap" : "s",
+               "y" : -50,
+               "x" : 225
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -600,
+               "x" : 225
+            },
+            "guide_color" : "Black"
+         },
+         {
+            "to" : {
+               "cap" : "s",
+               "y" : -600,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "s",
+               "y" : -600,
+               "x" : 50
+            },
+            "guide_color" : "Blue"
+         }
+      ]
+   },
+   {
+      "name" : "upper_u",
+      "lines" : [
+         {
+            "to" : {
+               "cap" : "s",
+               "y" : -50,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "s",
+               "y" : -600,
+               "x" : 400
+            },
+            "guide_color" : "Black"
+         },
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : -50,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -50,
+               "x" : 50
+            },
+            "guide_color" : "Blue"
+         },
+         {
+            "to" : {
+               "cap" : "c",
+               "y" : -50,
+               "x" : 50
+            },
+            "from" : {
+               "cap" : "s",
+               "y" : -600,
+               "x" : 50
+            },
+            "guide_color" : "Fuchsia"
+         }
+      ]
+   },
+   {
+      "name" : "upper_v",
+      "lines" : [
+         {
+            "to" : {
+               "cap" : "c",
+               "y" : -500,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "s",
+               "y" : -600,
+               "x" : 400
+            },
+            "guide_color" : "Black"
+         },
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : -500,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "shear",
+			   "shear" : -0.35,
+               "y" : 0,
+               "x" : 225
+            },
+            "guide_color" : "Blue"
+         },
+         {
+            "to" : {
+               "cap" : "shear",
+			   "shear" : 0.35,
+               "y" : 0,
+               "x" : 225
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -500,
+               "x" : 50
+            },
+            "guide_color" : "Fuchsia"
+         },
+         {
+            "to" : {
+               "cap" : "c",
+               "y" : -500,
+               "x" : 50
+            },
+            "from" : {
+               "cap" : "s",
+               "y" : -600,
+               "x" : 50
+            },
+            "guide_color" : "Orange"
+         }
+      ]
+   },
+   {
+      "name" : "upper_w",
+      "lines" : [
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : -50,
+               "x" : 250
+            },
+            "from" : {
+               "cap" : "s",
+               "y" : -600,
+               "x" : 250
+            },
+            "guide_color" : "Black"
+         },
+         {
+            "to" : {
+               "cap" : "s",
+               "y" : -50,
+               "x" : 450
+            },
+            "from" : {
+               "cap" : "s",
+               "y" : -600,
+               "x" : 450
+            },
+            "guide_color" : "Blue"
+         },
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : -50,
+               "x" : 450
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -50,
+               "x" : 50
+            },
+            "guide_color" : "Fuchsia"
+         },
+         {
+            "to" : {
+               "cap" : "c",
+               "y" : -50,
+               "x" : 50
+            },
+            "from" : {
+               "cap" : "s",
+               "y" : -600,
+               "x" : 50
+            },
+            "guide_color" : "Orange"
+         }
+      ]
+   },
+   {
+      "name" : "upper_x",
+      "lines" : [
+         {
+            "to" : {
+               "cap" : "c",
+               "y" : -575,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "s",
+               "y" : -600,
+               "x" : 400
+            },
+            "guide_color" : "Black"
+         },
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : -575,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -75,
+               "x" : 50
+            },
+            "guide_color" : "Blue"
+         },
+         {
+            "to" : {
+               "cap" : "s",
+               "y" : -50,
+               "x" : 50
+            },
+            "from" : {
+               "cap" : "c",
+               "y" : -75,
+               "x" : 50
+            },
+            "guide_color" : "Fuchsia"
+         },
+         {
+            "to" : {
+               "cap" : "s",
+               "y" : -50,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "c",
+               "y" : -75,
+               "x" : 400
+            },
+            "guide_color" : "Orange"
+         },
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : -75,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -575,
+               "x" : 50
+            },
+            "guide_color" : "Green"
+         },
+         {
+            "to" : {
+               "cap" : "c",
+               "y" : -575,
+               "x" : 50
+            },
+            "from" : {
+               "cap" : "s",
+               "y" : -600,
+               "x" : 50
+            },
+            "guide_color" : "Maroon"
+         }
+      ]
+   },
+   {
+      "name" : "upper_y",
+      "lines" : [
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : -50,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "s",
+               "y" : -50,
+               "x" : 50
+            },
+            "guide_color" : "Black"
+         },
+         {
+            "to" : {
+               "cap" : "c",
+               "y" : -50,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "s",
+               "y" : -600,
+               "x" : 400
+            },
+            "guide_color" : "Blue"
+         },
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : -225,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -225,
+               "x" : 50
+            },
+            "guide_color" : "Fuchsia"
+         },
+         {
+            "to" : {
+               "cap" : "c",
+               "y" : -225,
+               "x" : 50
+            },
+            "from" : {
+               "cap" : "s",
+               "y" : -600,
+               "x" : 50
+            },
+            "guide_color" : "Orange"
+         }
+      ]
+   },
+   {
+      "name" : "upper_z",
+      "lines" : [
+         {
+            "to" : {
+               "cap" : "s",
+               "y" : -50,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -50,
+               "x" : 50
+            },
+            "guide_color" : "Black"
+         },
+         {
+            "to" : {
+               "cap" : "s",
+               "y" : -50,
+               "x" : 50
+            },
+            "from" : {
+               "cap" : "c",
+               "y" : -150,
+               "x" : 50
+            },
+            "guide_color" : "Blue"
+         },
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : -500,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -150,
+               "x" : 50
+            },
+            "guide_color" : "Fuchsia"
+         },
+         {
+            "to" : {
+               "cap" : "c",
+               "y" : -500,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "s",
+               "y" : -600,
+               "x" : 400
+            },
+            "guide_color" : "Orange"
+         },
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : -600,
+               "x" : 400
+            },
+            "from" : {
+               "cap" : "s",
+               "y" : -600,
+               "x" : 50
+            },
+            "guide_color" : "Green"
+         }
+      ]
+   },
+   {
+      "name" : "digit_0",
+      "lines" : [
+         {
+            "to" : {
+               "cap" : "s",
+               "y" : -300,
+               "x" : 200
+            },
+            "from" : {
+               "cap" : "s",
+               "y" : -350,
+               "x" : 200
+            },
+            "guide_color" : "Black"
+         },
+         {
+            "to" : {
+               "cap" : "c",
+               "y" : -50,
+               "x" : 50
+            },
+            "from" : {
+               "cap" : "c",
+               "y" : -600,
+               "x" : 50
+            },
+            "guide_color" : "Blue"
+         },
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : -50,
+               "x" : 350
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -50,
+               "x" : 50
+            },
+            "guide_color" : "Fuchsia"
+         },
+         {
+            "to" : {
+               "cap" : "c",
+               "y" : -50,
+               "x" : 350
+            },
+            "from" : {
+               "cap" : "c",
+               "y" : -600,
+               "x" : 350
+            },
+            "guide_color" : "Orange"
+         },
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : -600,
+               "x" : 350
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -600,
+               "x" : 50
+            },
+            "guide_color" : "Green"
+         }
+      ]
+   },
+   {
+      "name" : "digit_1",
+      "lines" : [
+         {
+            "to" : {
+               "cap" : "s",
+               "y" : -50,
+               "x" : 350
+            },
+            "from" : {
+               "cap" : "s",
+               "y" : -50,
+               "x" : 50
+            },
+            "guide_color" : "Black"
+         },
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : -50,
+               "x" : 200
+            },
+            "from" : {
+               "cap" : "c",
+               "y" : -600,
+               "x" : 200
+            },
+            "guide_color" : "Blue"
+         },
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : -600,
+               "x" : 200
+            },
+            "from" : {
+               "cap" : "s",
+               "y" : -600,
+               "x" : 50
+            },
+            "guide_color" : "Fuchsia"
+         }
+      ]
+   },
+   {
+      "name" : "digit_2",
+      "lines" : [
+         {
+            "to" : {
+               "cap" : "s",
+               "y" : -50,
+               "x" : 350
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -50,
+               "x" : 50
+            },
+            "guide_color" : "Black"
+         },
+         {
+            "to" : {
+               "cap" : "s",
+               "y" : -50,
+               "x" : 50
+            },
+            "from" : {
+               "cap" : "c",
+               "y" : -250,
+               "x" : 50
+            },
+            "guide_color" : "Blue"
+         },
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : -400,
+               "x" : 350
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -250,
+               "x" : 50
+            },
+            "guide_color" : "Fuchsia"
+         },
+         {
+            "to" : {
+               "cap" : "c",
+               "y" : -400,
+               "x" : 350
+            },
+            "from" : {
+               "cap" : "c",
+               "y" : -600,
+               "x" : 350
+            },
+            "guide_color" : "Orange"
+         },
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : -600,
+               "x" : 350
+            },
+            "from" : {
+               "cap" : "sc",
+               "y" : -600,
+               "x" : 50
+            },
+            "guide_color" : "Green"
+         }
+      ]
+   },
+   {
+      "name" : "digit_3",
+      "lines" : [
+         {
+            "to" : {
+               "cap" : "c",
+               "y" : -600,
+               "x" : 300
+            },
+            "from" : {
+               "cap" : "s",
+               "y" : -600,
+               "x" : 50
+            },
+            "guide_color" : "Black"
+         },
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : -550,
+               "x" : 350
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -600,
+               "x" : 300
+            },
+            "guide_color" : "Blue"
+         },
+         {
+            "to" : {
+               "cap" : "c",
+               "y" : -425,
+               "x" : 350
+            },
+            "from" : {
+               "cap" : "c",
+               "y" : -550,
+               "x" : 350
+            },
+            "guide_color" : "Fuchsia"
+         },
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : -425,
+               "x" : 350
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -375,
+               "x" : 300
+            },
+            "guide_color" : "Orange"
+         },
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : -325,
+               "x" : 350
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -375,
+               "x" : 300
+            },
+            "guide_color" : "Green"
+         },
+         {
+            "to" : {
+               "cap" : "c",
+               "y" : -100,
+               "x" : 350
+            },
+            "from" : {
+               "cap" : "c",
+               "y" : -325,
+               "x" : 350
+            },
+            "guide_color" : "Maroon"
+         },
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : -100,
+               "x" : 350
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -50,
+               "x" : 300
+            },
+            "guide_color" : "Navy"
+         },
+         {
+            "to" : {
+               "cap" : "c",
+               "y" : -50,
+               "x" : 300
+            },
+            "from" : {
+               "cap" : "s",
+               "y" : -50,
+               "x" : 50
+            },
+            "guide_color" : "Olive"
+         },
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : -375,
+               "x" : 300
+            },
+            "from" : {
+               "cap" : "s",
+               "y" : -375,
+               "x" : 100
+            },
+            "guide_color" : "Purple"
+         }
+      ]
+   },
+   {
+      "name" : "digit_4",
+      "lines" : [
+         {
+            "to" : {
+               "cap" : "s",
+               "y" : -50,
+               "x" : 350
+            },
+            "from" : {
+               "cap" : "sc",
+               "y" : -600,
+               "x" : 350
+            },
+            "guide_color" : "Black"
+         },
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : -300,
+               "x" : 350
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -300,
+               "x" : 50
+            },
+            "guide_color" : "Blue"
+         },
+         {
+            "to" : {
+               "cap" : "s",
+               "y" : -300,
+               "x" : 50
+            },
+            "from" : {
+               "cap" : "s",
+               "y" : -550,
+               "x" : 50
+            },
+            "guide_color" : "Fuchsia"
+         }
+      ]
+   },
+   {
+      "name" : "digit_5",
+      "lines" : [
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : -50,
+               "x" : 350
+            },
+            "from" : {
+               "cap" : "s",
+               "y" : -50,
+               "x" : 50
+            },
+            "guide_color" : "Black"
+         },
+         {
+            "to" : {
+               "cap" : "c",
+               "y" : -50,
+               "x" : 350
+            },
+            "from" : {
+               "cap" : "c",
+               "y" : -375,
+               "x" : 350
+            },
+            "guide_color" : "Blue"
+         },
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : -375,
+               "x" : 350
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -375,
+               "x" : 50
+            },
+            "guide_color" : "Fuchsia"
+         },
+         {
+            "to" : {
+               "cap" : "s",
+               "y" : -375,
+               "x" : 50
+            },
+            "from" : {
+               "cap" : "s",
+               "y" : -600,
+               "x" : 50
+            },
+            "guide_color" : "Orange"
+         },
+         {
+            "to" : {
+               "cap" : "s",
+               "y" : -600,
+               "x" : 350
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -600,
+               "x" : 50
+            },
+            "guide_color" : "Green"
+         }
+      ]
+   },
+   {
+      "name" : "digit_6",
+      "lines" : [
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : -375,
+               "x" : 350
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -375,
+               "x" : 50
+            },
+            "guide_color" : "Black"
+         },
+         {
+            "to" : {
+               "cap" : "c",
+               "y" : -50,
+               "x" : 350
+            },
+            "from" : {
+               "cap" : "c",
+               "y" : -375,
+               "x" : 350
+            },
+            "guide_color" : "Blue"
+         },
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : -50,
+               "x" : 350
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -50,
+               "x" : 50
+            },
+            "guide_color" : "Fuchsia"
+         },
+         {
+            "to" : {
+               "cap" : "c",
+               "y" : -50,
+               "x" : 50
+            },
+            "from" : {
+               "cap" : "c",
+               "y" : -600,
+               "x" : 50
+            },
+            "guide_color" : "Orange"
+         },
+         {
+            "to" : {
+               "cap" : "cs",
+               "y" : -600,
+               "x" : 350
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -600,
+               "x" : 50
+            },
+            "guide_color" : "Green"
+         }
+      ]
+   },
+   {
+      "name" : "digit_7",
+      "lines" : [
+         {
+            "to" : {
+               "cap" : "s",
+               "y" : -50,
+               "x" : 50
+            },
+            "from" : {
+               "cap" : "c",
+               "y" : -100,
+               "x" : 50
+            },
+            "guide_color" : "Black"
+         },
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : -500,
+               "x" : 350
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -100,
+               "x" : 50
+            },
+            "guide_color" : "Blue"
+         },
+         {
+            "to" : {
+               "cap" : "c",
+               "y" : -500,
+               "x" : 350
+            },
+            "from" : {
+               "cap" : "s",
+               "y" : -600,
+               "x" : 350
+            },
+            "guide_color" : "Fuchsia"
+         },
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : -600,
+               "x" : 350
+            },
+            "from" : {
+               "cap" : "s",
+               "y" : -600,
+               "x" : 50
+            },
+            "guide_color" : "Orange"
+         }
+      ]
+   },
+   {
+      "name" : "digit_8",
+      "lines" : [
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : -600,
+               "x" : 100
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -550,
+               "x" : 50
+            },
+            "guide_color" : "Black"
+         },
+         {
+            "to" : {
+               "cap" : "c",
+               "y" : -600,
+               "x" : 300
+            },
+            "from" : {
+               "cap" : "c",
+               "y" : -600,
+               "x" : 100
+            },
+            "guide_color" : "Blue"
+         },
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : -550,
+               "x" : 350
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -600,
+               "x" : 300
+            },
+            "guide_color" : "Fuchsia"
+         },
+         {
+            "to" : {
+               "cap" : "c",
+               "y" : -425,
+               "x" : 350
+            },
+            "from" : {
+               "cap" : "c",
+               "y" : -550,
+               "x" : 350
+            },
+            "guide_color" : "Gray"
+         },
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : -425,
+               "x" : 350
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -375,
+               "x" : 300
+            },
+            "guide_color" : "Green"
+         },
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : -375,
+               "x" : 300
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -375,
+               "x" : 100
+            },
+            "guide_color" : "Maroon"
+         },
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : -375,
+               "x" : 100
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -425,
+               "x" : 50
+            },
+            "guide_color" : "Navy"
+         },
+         {
+            "to" : {
+               "cap" : "c",
+               "y" : -425,
+               "x" : 50
+            },
+            "from" : {
+               "cap" : "c",
+               "y" : -550,
+               "x" : 50
+            },
+            "guide_color" : "Olive"
+         },
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : -50,
+               "x" : 100
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -100,
+               "x" : 50
+            },
+            "guide_color" : "Purple"
+         },
+         {
+            "to" : {
+               "cap" : "c",
+               "y" : -100,
+               "x" : 50
+            },
+            "from" : {
+               "cap" : "c",
+               "y" : -325,
+               "x" : 50
+            },
+            "guide_color" : "Red"
+         },
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : -375,
+               "x" : 100
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -325,
+               "x" : 50
+            },
+            "guide_color" : "Teal"
+         },
+         {
+            "to" : {
+               "cap" : "c",
+               "y" : -50,
+               "x" : 300
+            },
+            "from" : {
+               "cap" : "c",
+               "y" : -50,
+               "x" : 100
+            },
+            "guide_color" : "Black"
+         },
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : -100,
+               "x" : 350
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -50,
+               "x" : 300
+            },
+            "guide_color" : "Blue"
+         },
+         {
+            "to" : {
+               "cap" : "c",
+               "y" : -100,
+               "x" : 350
+            },
+            "from" : {
+               "cap" : "c",
+               "y" : -325,
+               "x" : 350
+            },
+            "guide_color" : "Fuchsia"
+         },
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : -325,
+               "x" : 350
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -375,
+               "x" : 300
+            },
+            "guide_color" : "Gray"
+         }
+      ]
+   },   
+   {
+      "name" : "digit_9",
+      "lines" : [
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : -375,
+               "x" : 350
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -375,
+               "x" : 50
+            },
+            "guide_color" : "Black"
+         },
+         {
+            "to" : {
+               "cap" : "c",
+               "y" : -375,
+               "x" : 50
+            },
+            "from" : {
+               "cap" : "c",
+               "y" : -600,
+               "x" : 50
+            },
+            "guide_color" : "Blue"
+         },
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : -600,
+               "x" : 350
+            },
+            "from" : {
+               "cap" : "none",
+               "y" : -600,
+               "x" : 50
+            },
+            "guide_color" : "Fuchsia"
+         },
+         {
+            "to" : {
+               "cap" : "c",
+               "y" : -50,
+               "x" : 350
+            },
+            "from" : {
+               "cap" : "c",
+               "y" : -600,
+               "x" : 350
+            },
+            "guide_color" : "Orange"
+         },
+         {
+            "to" : {
+               "cap" : "none",
+               "y" : -50,
+               "x" : 350
+            },
+            "from" : {
+               "cap" : "cs",
+               "y" : -50,
+               "x" : 50
+            },
+            "guide_color" : "Green"
+         }
+      ]
+   }
+]
