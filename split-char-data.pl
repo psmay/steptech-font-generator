@@ -17,7 +17,7 @@ my $elements = do {
 
 for my $element (@$elements) {
 	my $path = $out_dir . '/' . $element->{name} . '.json';
-	say STDERR "Writing $path";
+	#say STDERR "Writing $path";
 	open(my $fh, '>', $path) or die "Open '$path' failed: $!";
 	binmode $fh;
 	print $fh $j->encode($element);
