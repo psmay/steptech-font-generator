@@ -1,6 +1,6 @@
 [
    {
-      "name" : "lower_a",
+      "name" : "a",
       "lines" : [
          {
             "to" : {
@@ -70,7 +70,7 @@
       ]
    },
    {
-      "name" : "lower_b",
+      "name" : "b",
       "lines" : [
          {
             "to" : {
@@ -127,7 +127,7 @@
       ]
    },
    {
-      "name" : "lower_c",
+      "name" : "c",
       "lines" : [
          {
             "to" : {
@@ -171,7 +171,7 @@
       ]
    },
    {
-      "name" : "lower_d",
+      "name" : "d",
       "lines" : [
          {
             "to" : {
@@ -228,7 +228,7 @@
       ]
    },
    {
-      "name" : "lower_e",
+      "name" : "e",
       "lines" : [
          {
             "to" : {
@@ -298,7 +298,7 @@
       ]
    },
    {
-      "name" : "lower_f",
+      "name" : "f",
       "lines" : [
          {
             "to" : {
@@ -342,7 +342,7 @@
       ]
    },
    {
-      "name" : "lower_g",
+      "name" : "g",
       "lines" : [
          {
             "to" : {
@@ -412,7 +412,7 @@
       ]
    },
    {
-      "name" : "lower_h",
+      "name" : "h",
       "lines" : [
          {
             "to" : {
@@ -456,7 +456,7 @@
       ]
    },
    {
-      "name" : "lower_i",
+      "name" : "i",
       "lines" : [
          {
             "to" : {
@@ -474,7 +474,7 @@
       ]
    },
    {
-      "name" : "lower_j",
+      "name" : "j",
       "lines" : [
          {
             "to" : {
@@ -505,7 +505,7 @@
       ]
    },
    {
-      "name" : "lower_k",
+      "name" : "k",
       "lines" : [
          {
             "to" : {
@@ -575,7 +575,7 @@
       ]
    },
    {
-      "name" : "lower_l",
+      "name" : "l",
       "lines" : [
          {
             "to" : {
@@ -593,7 +593,7 @@
       ]
    },
    {
-      "name" : "lower_m",
+      "name" : "m",
       "lines" : [
          {
             "to" : {
@@ -650,7 +650,7 @@
       ]
    },
    {
-      "name" : "lower_n",
+      "name" : "n",
       "lines" : [
          {
             "to" : {
@@ -694,7 +694,7 @@
       ]
    },
    {
-      "name" : "lower_o",
+      "name" : "o",
       "lines" : [
          {
             "to" : {
@@ -751,7 +751,7 @@
       ]
    },
    {
-      "name" : "lower_p",
+      "name" : "p",
       "lines" : [
          {
             "to" : {
@@ -808,7 +808,7 @@
       ]
    },
    {
-      "name" : "lower_q",
+      "name" : "q",
       "lines" : [
          {
             "to" : {
@@ -865,7 +865,7 @@
       ]
    },
    {
-      "name" : "lower_r",
+      "name" : "r",
       "lines" : [
          {
             "to" : {
@@ -896,7 +896,7 @@
       ]
    },
    {
-      "name" : "lower_s",
+      "name" : "s",
       "lines" : [
          {
             "to" : {
@@ -966,7 +966,7 @@
       ]
    },
    {
-      "name" : "lower_t",
+      "name" : "t",
       "lines" : [
          {
             "to" : {
@@ -1010,7 +1010,7 @@
       ]
    },
    {
-      "name" : "lower_u",
+      "name" : "u",
       "lines" : [
          {
             "to" : {
@@ -1054,7 +1054,7 @@
       ]
    },
    {
-      "name" : "lower_v",
+      "name" : "v",
       "lines" : [
          {
             "to" : {
@@ -1113,7 +1113,7 @@
       ]
    },
    {
-      "name" : "lower_w",
+      "name" : "w",
       "lines" : [
          {
             "to" : {
@@ -1170,7 +1170,7 @@
       ]
    },
    {
-      "name" : "lower_x",
+      "name" : "x",
       "lines" : [
          {
             "to" : {
@@ -1253,7 +1253,7 @@
       ]
    },
    {
-      "name" : "lower_y",
+      "name" : "y",
       "lines" : [
          {
             "to" : {
@@ -1310,7 +1310,7 @@
       ]
    },
    {
-      "name" : "lower_z",
+      "name" : "z",
       "lines" : [
          {
             "to" : {
@@ -1354,7 +1354,7 @@
       ]
    },
    {
-      "name" : "u0021",
+      "name" : "exclam",
       "lines" : [
          {
             "to" : {
@@ -1385,7 +1385,7 @@
       ]
    },
    {
-      "name" : "u0022",
+      "name" : "quotedbl",
       "lines" : [
          {
             "to" : {
@@ -1416,7 +1416,7 @@
       ]
    },
    {
-      "name" : "u0023",
+      "name" : "numbersign",
       "lines" : [
          {
             "to" : {
@@ -1473,7 +1473,7 @@
       ]
    },
    {
-      "name" : "u0024",
+      "name" : "dollar",
       "lines" : [
          {
             "to" : {
@@ -1569,7 +1569,7 @@
       ]
    },
    {
-      "name" : "u0025",
+      "name" : "percent",
       "lines" : [
          {
             "to" : {
@@ -1717,7 +1717,7 @@
       ]
    },
    {
-      "name" : "u0026",
+      "name" : "ampersand",
       "lines" : [
          {
             "to" : {
@@ -1787,7 +1787,7 @@
       ]
    },
    {
-      "name" : "u0027",
+      "name" : "quotesingle",
       "lines" : [
          {
             "to" : {
@@ -1805,7 +1805,7 @@
       ]
    },
    {
-      "name" : "u0028",
+      "name" : "parenleft",
       "lines" : [
          {
             "to" : {
@@ -1875,7 +1875,7 @@
       ]
    },
    {
-      "name" : "u0029",
+      "name" : "parenright",
       "lines" : [
          {
             "to" : {
@@ -1945,7 +1945,7 @@
       ]
    },
    {
-      "name" : "u002a",
+      "name" : "asterisk",
       "lines" : [
          {
             "to" : {
@@ -1960,27 +1960,31 @@
             },
             "guide_color" : "Black"
          },
+         { "to" : { "cap":"c","x":300,"y":-500 }, "from" : { "cap":"cs","x":300,"y":-500 }, "dotdir":"y", "guide_color":"Red" },
+         { "to" : { "cap":"cs","x":100,"y":-200 }, "from" : { "cap":"c","x":100,"y":-200 }, "dotdir":"y", "guide_color":"Green" },
          {
             "to" : {
-               "cap" : "c",
+               "cap" : "none",
                "y" : -500,
                "x" : 300
             },
             "from" : {
-               "cap" : "c",
+               "cap" : "none",
                "y" : -200,
                "x" : 100
             },
             "guide_color" : "Blue"
          },
+         { "to" : { "cap":"sc","x":300,"y":-200 }, "from" : { "cap":"c","x":300,"y":-200 }, "dotdir":"y", "guide_color":"Purple" },
+         { "to" : { "cap":"c","x":100,"y":-500 }, "from" : { "cap":"sc","x":100,"y":-500 }, "dotdir":"y", "guide_color":"Orange" },
          {
             "to" : {
-               "cap" : "c",
+               "cap" : "none",
                "y" : -200,
                "x" : 300
             },
             "from" : {
-               "cap" : "c",
+               "cap" : "none",
                "y" : -500,
                "x" : 100
             },
@@ -1989,7 +1993,7 @@
       ]
    },
    {
-      "name" : "u002b",
+      "name" : "plus",
       "lines" : [
          {
             "to" : {
@@ -2020,7 +2024,7 @@
       ]
    },
    {
-      "name" : "u002c",
+      "name" : "comma",
       "lines" : [
          {
             "to" : {
@@ -2038,7 +2042,7 @@
       ]
    },
    {
-      "name" : "u002d",
+      "name" : "hyphen",
       "lines" : [
          {
             "to" : {
@@ -2056,7 +2060,7 @@
       ]
    },
    {
-      "name" : "u002e",
+      "name" : "period",
       "lines" : [
          {
             "to" : {
@@ -2074,7 +2078,7 @@
       ]
    },
    {
-      "name" : "u002f",
+      "name" : "slash",
       "lines" : [
          {
             "to" : {
@@ -2118,7 +2122,7 @@
       ]
    },
    {
-      "name" : "u003a",
+      "name" : "colon",
       "lines" : [
          {
             "to" : {
@@ -2149,7 +2153,7 @@
       ]
    },
    {
-      "name" : "u003b",
+      "name" : "semicolon",
       "lines" : [
          {
             "to" : {
@@ -2180,13 +2184,13 @@
       ]
    },
    {
-      "name" : "u003c",
+      "name" : "less",
       "lines" : [
          {
             "to" : {
-               "cap" : "s",
+               "cap" : "cs",
                "y" : -200,
-               "x" : 300
+               "x" : 250
             },
             "from" : {
                "cap" : "c",
@@ -2223,9 +2227,9 @@
          },
          {
             "to" : {
-               "cap" : "s",
+               "cap" : "sc",
                "y" : -500,
-               "x" : 300
+               "x" : 250
             },
             "from" : {
                "cap" : "c",
@@ -2237,7 +2241,7 @@
       ]
    },
    {
-      "name" : "u003d",
+      "name" : "equal",
       "lines" : [
          {
             "to" : {
@@ -2268,16 +2272,16 @@
       ]
    },
    {
-      "name" : "u003e",
+      "name" : "greater",
       "lines" : [
          {
             "to" : {
                "cap" : "c",
                "y" : -200,
-               "x" : 100
+               "x" : 50
             },
             "from" : {
-               "cap" : "s",
+               "cap" : "sc",
                "y" : -200,
                "x" : 50
             },
@@ -2287,12 +2291,12 @@
             "to" : {
                "cap" : "c",
                "y" : -350,
-               "x" : 300
+               "x" : 250
             },
             "from" : {
                "cap" : "none",
                "y" : -200,
-               "x" : 100
+               "x" : 50
             },
             "guide_color" : "Blue"
          },
@@ -2300,12 +2304,12 @@
             "to" : {
                "cap" : "none",
                "y" : -350,
-               "x" : 300
+               "x" : 250
             },
             "from" : {
                "cap" : "none",
                "y" : -500,
-               "x" : 100
+               "x" : 50
             },
             "guide_color" : "Fuchsia"
          },
@@ -2313,10 +2317,10 @@
             "to" : {
                "cap" : "c",
                "y" : -500,
-               "x" : 100
+               "x" : 50
             },
             "from" : {
-               "cap" : "s",
+               "cap" : "cs",
                "y" : -500,
                "x" : 50
             },
@@ -2325,7 +2329,7 @@
       ]
    },
    {
-      "name" : "u003f",
+      "name" : "question",
       "lines" : [
          {
             "to" : {
@@ -2408,7 +2412,7 @@
       ]
    },
    {
-      "name" : "u0040",
+      "name" : "at",
       "lines" : [
          {
             "to" : {
@@ -2517,7 +2521,7 @@
       ]
    },
    {
-      "name" : "u005b",
+      "name" : "bracketleft",
       "lines" : [
          {
             "to" : {
@@ -2561,7 +2565,7 @@
       ]
    },
    {
-      "name" : "u005c",
+      "name" : "backslash",
       "lines" : [
          {
             "to" : {
@@ -2605,7 +2609,7 @@
       ]
    },
    {
-      "name" : "u005d",
+      "name" : "bracketright",
       "lines" : [
          {
             "to" : {
@@ -2649,11 +2653,11 @@
       ]
    },
    {
-      "name" : "u005e",
+      "name" : "asciicircum",
       "lines" : [
          {
             "to" : {
-               "cap" : "s",
+               "cap" : "sc",
                "y" : -400,
                "x" : 350
             },
@@ -2695,7 +2699,7 @@
          },
          {
             "to" : {
-               "cap" : "s",
+               "cap" : "cs",
                "y" : -400,
                "x" : 50
             },
@@ -2710,7 +2714,7 @@
       ]
    },
    {
-      "name" : "u005f",
+      "name" : "underscore",
       "lines" : [
          {
             "to" : {
@@ -2728,16 +2732,16 @@
       ]
    },
    {
-      "name" : "u0060",
+      "name" : "grave",
       "lines" : [
          {
             "to" : {
-               "cap" : "c",
+               "cap" : "cs",
                "y" : -750,
                "x" : 200
             },
             "from" : {
-               "cap" : "c",
+               "cap" : "cs",
                "y" : -800,
                "x" : 50
             },
@@ -2746,7 +2750,7 @@
       ]
    },
    {
-      "name" : "u007b",
+      "name" : "braceleft",
       "lines" : [
          {
             "to" : {
@@ -2855,7 +2859,7 @@
       ]
    },
    {
-      "name" : "u007c",
+      "name" : "verticalbar",
       "lines" : [
          {
             "to" : {
@@ -2873,7 +2877,7 @@
       ]
    },
    {
-      "name" : "u007d",
+      "name" : "braceright",
       "lines" : [
          {
             "to" : {
@@ -2982,11 +2986,11 @@
       ]
    },
    {
-      "name" : "u007e",
+      "name" : "asciitilde",
       "lines" : [
          {
             "to" : {
-               "cap" : "c",
+               "cap" : "cs",
                "y" : -350,
                "x" : 350
             },
@@ -3017,7 +3021,7 @@
                "x" : 150
             },
             "from" : {
-               "cap" : "c",
+               "cap" : "cs",
                "y" : -300,
                "x" : 50
             },
@@ -3026,7 +3030,7 @@
       ]
    },
    {
-      "name" : "u20ac",
+      "name" : "euro",
       "lines" : [
          {
             "to" : {
@@ -3096,7 +3100,7 @@
       ]
    },
    {
-      "name" : "u201a",
+      "name" : "quotesinglbase",
       "lines" : [
          {
             "to" : {
@@ -3114,7 +3118,7 @@
       ]
    },
    {
-      "name" : "u0192",
+      "name" : "florin",
       "lines" : [
          {
             "to" : {
@@ -3171,7 +3175,7 @@
       ]
    },
    {
-      "name" : "u201e",
+      "name" : "quotedblbase",
       "lines" : [
          {
             "to" : {
@@ -3202,7 +3206,7 @@
       ]
    },
    {
-      "name" : "u2026",
+      "name" : "ellipsis",
       "lines" : [
          {
             "to" : {
@@ -3246,7 +3250,7 @@
       ]
    },
    {
-      "name" : "u2020",
+      "name" : "dagger",
       "lines" : [
          {
             "to" : {
@@ -3277,7 +3281,7 @@
       ]
    },
    {
-      "name" : "u2021",
+      "name" : "daggerdbl",
       "lines" : [
          {
             "to" : {
@@ -3321,11 +3325,11 @@
       ]
    },
    {
-      "name" : "u02c6",
+      "name" : "circumflex",
       "lines" : [
          {
             "to" : {
-               "cap" : "c",
+               "cap" : "none",
                "y" : -750,
                "x" : 200
             },
@@ -3336,6 +3340,7 @@
             },
             "guide_color" : "Black"
          },
+         {"from":{"x":200,"y":-750,"cap":"c"},"to":{"x":200,"y":-750,"cap":"sc"},"guide_color":"Orange","dotdir":"y"},
          {
             "to" : {
                "cap" : "c",
@@ -3343,16 +3348,17 @@
                "x" : 125
             },
             "from" : {
-               "cap" : "c",
+               "cap" : "none",
                "y" : -750,
                "x" : 50
             },
             "guide_color" : "Blue"
-         }
+         },
+         {"from":{"x":50,"y":-750,"cap":"c"},"to":{"x":50,"y":-750,"cap":"cs"},"guide_color":"Purple","dotdir":"y"}
       ]
    },
    {
-      "name" : "u02c7",
+      "name" : "caron",
       "lines" : [
          {
             "to" : {
@@ -3383,7 +3389,7 @@
       ]
    },
    {
-      "name" : "u2030",
+      "name" : "perthousand",
       "lines" : [
          {
             "to" : {
@@ -3583,7 +3589,7 @@
       ]
    },
    {
-      "name" : "upper_a",
+      "name" : "A",
       "lines" : [
          {
             "to" : {
@@ -3640,7 +3646,7 @@
       ]
    },
    {
-      "name" : "upper_b",
+      "name" : "B",
       "lines" : [
          {
             "to" : {
@@ -3775,7 +3781,7 @@
       ]
    },
    {
-      "name" : "upper_c",
+      "name" : "C",
       "lines" : [
          {
             "to" : {
@@ -3819,7 +3825,7 @@
       ]
    },
    {
-      "name" : "upper_d",
+      "name" : "D",
       "lines" : [
          {
             "to" : {
@@ -3876,7 +3882,7 @@
       ]
    },
    {
-      "name" : "upper_e",
+      "name" : "E",
       "lines" : [
          {
             "to" : {
@@ -3933,7 +3939,7 @@
       ]
    },
    {
-      "name" : "upper_f",
+      "name" : "F",
       "lines" : [
          {
             "to" : {
@@ -3977,7 +3983,7 @@
       ]
    },
    {
-      "name" : "upper_g",
+      "name" : "G",
       "lines" : [
          {
             "to" : {
@@ -4047,7 +4053,7 @@
       ]
    },
    {
-      "name" : "upper_h",
+      "name" : "H",
       "lines" : [
          {
             "to" : {
@@ -4091,7 +4097,7 @@
       ]
    },
    {
-      "name" : "upper_i",
+      "name" : "I",
       "lines" : [
          {
             "to" : {
@@ -4109,7 +4115,7 @@
       ]
    },
    {
-      "name" : "upper_j",
+      "name" : "J",
       "lines" : [
          {
             "to" : {
@@ -4140,7 +4146,7 @@
       ]
    },
    {
-      "name" : "upper_k",
+      "name" : "K",
       "lines" : [
          {
             "to" : {
@@ -4223,7 +4229,7 @@
       ]
    },
    {
-      "name" : "upper_l",
+      "name" : "L",
       "lines" : [
          {
             "to" : {
@@ -4254,7 +4260,7 @@
       ]
    },
    {
-      "name" : "upper_m",
+      "name" : "M",
       "lines" : [
          {
             "to" : {
@@ -4311,7 +4317,7 @@
       ]
    },
    {
-      "name" : "upper_n",
+      "name" : "N",
       "lines" : [
          {
             "to" : {
@@ -4355,7 +4361,7 @@
       ]
    },
    {
-      "name" : "upper_o",
+      "name" : "O",
       "lines" : [
          {
             "to" : {
@@ -4412,7 +4418,7 @@
       ]
    },
    {
-      "name" : "upper_p",
+      "name" : "P",
       "lines" : [
          {
             "to" : {
@@ -4469,7 +4475,7 @@
       ]
    },
    {
-      "name" : "upper_q",
+      "name" : "Q",
       "lines" : [
          {
             "to" : {
@@ -4565,7 +4571,7 @@
       ]
    },
    {
-      "name" : "upper_r",
+      "name" : "R",
       "lines" : [
          {
             "to" : {
@@ -4648,7 +4654,7 @@
       ]
    },
    {
-      "name" : "upper_s",
+      "name" : "S",
       "lines" : [
          {
             "to" : {
@@ -4718,7 +4724,7 @@
       ]
    },
    {
-      "name" : "upper_t",
+      "name" : "T",
       "lines" : [
          {
             "to" : {
@@ -4749,7 +4755,7 @@
       ]
    },
    {
-      "name" : "upper_u",
+      "name" : "U",
       "lines" : [
          {
             "to" : {
@@ -4793,7 +4799,7 @@
       ]
    },
    {
-      "name" : "upper_v",
+      "name" : "V",
       "lines" : [
          {
             "to" : {
@@ -4852,7 +4858,7 @@
       ]
    },
    {
-      "name" : "upper_w",
+      "name" : "W",
       "lines" : [
          {
             "to" : {
@@ -4909,7 +4915,7 @@
       ]
    },
    {
-      "name" : "upper_x",
+      "name" : "X",
       "lines" : [
          {
             "to" : {
@@ -4992,7 +4998,7 @@
       ]
    },
    {
-      "name" : "upper_y",
+      "name" : "Y",
       "lines" : [
          {
             "to" : {
@@ -5049,7 +5055,7 @@
       ]
    },
    {
-      "name" : "upper_z",
+      "name" : "Z",
       "lines" : [
          {
             "to" : {
@@ -5119,7 +5125,7 @@
       ]
    },
    {
-      "name" : "digit_0",
+      "name" : "zero",
       "lines" : [
          {
             "to" : {
@@ -5189,7 +5195,7 @@
       ]
    },
    {
-      "name" : "digit_1",
+      "name" : "one",
       "lines" : [
          {
             "to" : {
@@ -5233,7 +5239,7 @@
       ]
    },
    {
-      "name" : "digit_2",
+      "name" : "two",
       "lines" : [
          {
             "to" : {
@@ -5303,7 +5309,7 @@
       ]
    },
    {
-      "name" : "digit_3",
+      "name" : "three",
       "lines" : [
          {
             "to" : {
@@ -5425,7 +5431,7 @@
       ]
    },
    {
-      "name" : "digit_4",
+      "name" : "four",
       "lines" : [
          {
             "to" : {
@@ -5469,7 +5475,7 @@
       ]
    },
    {
-      "name" : "digit_5",
+      "name" : "five",
       "lines" : [
          {
             "to" : {
@@ -5539,7 +5545,7 @@
       ]
    },
    {
-      "name" : "digit_6",
+      "name" : "six",
       "lines" : [
          {
             "to" : {
@@ -5609,7 +5615,7 @@
       ]
    },
    {
-      "name" : "digit_7",
+      "name" : "seven",
       "lines" : [
          {
             "to" : {
@@ -5666,7 +5672,7 @@
       ]
    },
    {
-      "name" : "digit_8",
+      "name" : "eight",
       "lines" : [
          {
             "to" : {
@@ -5866,7 +5872,7 @@
       ]
    },   
    {
-      "name" : "digit_9",
+      "name" : "nine",
       "lines" : [
          {
             "to" : {
