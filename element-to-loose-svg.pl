@@ -14,7 +14,6 @@ my $baseline_x = 0;
 my $baseline_y = 800;
 
 
-
 sub get_cap_0 {
 	my($cap0, $shear0) = @_;
 
@@ -153,7 +152,7 @@ sub draw_element_lines
 			y1 => $to->{y},
 			cap1 => $to->{cap},
 			shear1 => $to->{shear},
-			fill => $line->{guide_color},
+			fill => lc $line->{guide_color},
 			radius => $stroke_width / 2,
 			dotdir => $line->{dotdir},
 		);
@@ -199,10 +198,13 @@ sub draw_element_svg
 	my $pw = $page_width + $right;
 
 	push @out, qq{
+		<!--[STFGMETA[ {"width":$pw,"height":$ph,"stroke_width":$stroke_width,"x":$baseline_x,"y":$baseline_y,"codepoint":$element->{codepoint},"glyph_name":"$element->{name}"} ]STFGMETA]-->
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
+			xmlns:stfg="https://github.com/psmay/steptech-font-generator/ns:stfg"
 			xmlns:xlink="http://www.w3.org/1999/xlink"
-			width="$pw" height="$ph">
+			width="$pw" height="$ph"
+			>
 	};
 	push @out, draw_element_lines(@{$element->{lines}});
 	push @out, qq{
