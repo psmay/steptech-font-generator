@@ -39,6 +39,21 @@ Currently, the steps involved are these:
     -   The result of `inkscape` processing is run through `scour` to revert it to a form simple enough for FontForge.
         -   Without the `scour` step, FontForge sees a triple outline on the shapes instead of the desired single outline.
 
+Requirements
+------------
+
+* Relatively recent Perl and Python
+* Perl JSON module (Ubuntu package `libjson-perl`)
+* Inkscape (Ubuntu package `inkscape`)
+* scour (Ubuntu package `python-scour`)
+* FontForge Python bindings (Ubuntu package `python-fontforge`)
+
+The `loose` target converts each JSON description into a "loose" SVG with one path per stroke. This target only requires the Perl JSON module.
+
+The `tight` target unions all of the paths in the loose SVG into a single path, resulting in a "tight" SVG. This target requires Inkscape (to union the paths) and scour (to remove parts of the Inkscape result too complex for FontForge to read correctly).
+
+The font building targets (not yet created; watch this space) will aggregate the tight SVGs into a FontForge file and/or a TrueType or OpenType font. Doing this will require FontForge configured with Python bindings.
+
 PCB
 ---
 
