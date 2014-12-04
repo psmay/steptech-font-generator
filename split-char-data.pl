@@ -4289,7 +4289,11 @@ my %glyph_name_to_cp = (
 	zukatakana => 12474
 );
 
-my %cp_to_glyph_name = reverse %glyph_name_to_cp;
+my %cp_to_glyph_name = do {
+	# This bit is to prevent the codepoints from looking like strings to JSON
+	my @tmp = %glyph_name_to_cp;
+	reverse @tmp;
+};
 
 
 use JSON;
