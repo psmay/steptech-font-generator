@@ -6,8 +6,8 @@ ELEMENTS_TEMP_DIR=.tmp.elements
 ELEMENTS_DIR=elements
 # Discorporate SVG files containing individual pseudo-stroke shapes
 LOOSE_SHAPES_DIR=loose-shapes
-# Metadata included in the loose SVGs
-LOOSE_META_DIR=loose-meta
+# Metadata included in the loose SVGs, combined with the original elements
+EXT_META_DIR=ext-meta
 # SVG files with loose shapes unioned together
 TIGHT_SHAPES_DIR=tight-shapes
 TIGHT_SHAPES_TEMP_DIR=.tmp.tight-shapes
@@ -35,26 +35,26 @@ $(DEFINE_ELEMENT_FILES): $(ELEMENTS_DIR)
 -include $(DEFINE_ELEMENT_FILES)
 
 LOOSE_SHAPE_FILES=$(ELEMENT_FILES:$(ELEMENTS_DIR)/%.json=$(LOOSE_SHAPES_DIR)/%.svg)
-LOOSE_META_FILES=$(ELEMENT_FILES:$(ELEMENTS_DIR)/%.json=$(LOOSE_META_DIR)/%.json)
+EXT_META_FILES=$(ELEMENT_FILES:$(ELEMENTS_DIR)/%.json=$(EXT_META_DIR)/%.json)
 TIGHT_SHAPE_FILES=$(ELEMENT_FILES:$(ELEMENTS_DIR)/%.json=$(TIGHT_SHAPES_DIR)/%.svg)
 
 # Prevent auto-delete of intermediates
-.SECONDARY: $(ELEMENT_FILES) $(LOOSE_SHAPE_FILES) $(TIGHT_SHAPE_FILES) $(LOOSE_META_FILES)
+.SECONDARY: $(ELEMENT_FILES) $(LOOSE_SHAPE_FILES) $(TIGHT_SHAPE_FILES) $(EXT_META_FILES)
 
-.PHONY: tight loose extract-loose-meta
+.PHONY: tight loose extract-ext-meta
 
 tight: $(TIGHT_SHAPE_FILES)
 
 loose: $(LOOSE_SHAPE_FILES)
 
-extract-loose-meta: $(LOOSE_META_FILES)
+extract-ext-meta: $(EXT_META_FILES)
 
 $(ELEMENT_FILES): | $(ELEMENTS_DIR)
 
 $(LOOSE_SHAPES_DIR):
 	+@[ -d $@ ] || mkdir -p $@
 
-$(LOOSE_META_DIR):
+$(EXT_META_DIR):
 	+@[ -d $@ ] || mkdir -p $@
 
 $(TIGHT_SHAPES_DIR):
@@ -66,8 +66,16 @@ $(TIGHT_SHAPES_TEMP_DIR):
 $(LOOSE_SHAPES_DIR)/%.svg: $(ELEMENTS_DIR)/%.json ../element-to-loose-svg.pl | $(LOOSE_SHAPES_DIR)
 	../element-to-loose-svg.pl < $< > $@
 
-$(LOOSE_META_DIR)/%.json: $(LOOSE_SHAPES_DIR)/%.svg | $(LOOSE_META_DIR)
-	perl -n -E 'while(/\G.*?<!--\[STFGMETA\[(.*?)\]STFGMETA\]-->/g) { say $$1; }' < $< > $@
+$(EXT_META_DIR)/%.json: $(ELEMENTS_DIR)/%.json $(LOOSE_SHAPES_DIR)/%.svg | $(EXT_META_DIR)
+	echo -n '' > $@
+	echo '{' >> $@
+	echo $(word 2,$^) | perl -p -E 's!^.*\/(.*)\..*?$$!"file_basename":"$$1",!' >> $@
+	echo '"loose":' >> $@
+	perl -n -E 'while(/\G.*?<!--\[STFGMETA\[(.*?)\]STFGMETA\]-->/g) { say $$1; }' < $(word 2,$^) >> $@
+	echo ',' >> $@
+	echo '"element":' >> $@
+	cat $< >> $@
+	echo '}' >> $@
 
 $(TIGHT_SHAPES_DIR)/%.svg: $(LOOSE_SHAPES_DIR)/%.svg | $(TIGHT_SHAPES_DIR) $(TIGHT_SHAPES_TEMP_DIR)
 	@$(eval ENTRE := $(TIGHT_SHAPES_TEMP_DIR)/$(notdir $@))
