@@ -8,6 +8,8 @@ ELEMENTS_DIR=elements
 LOOSE_SHAPES_DIR=loose-shapes
 # Metadata included in the loose SVGs, combined with the original elements
 EXT_META_DIR=ext-meta
+# Aggregated ext-meta
+EXT_META_ALL=ext-meta-all.json
 # SVG files with loose shapes unioned together
 TIGHT_SHAPES_DIR=tight-shapes
 TIGHT_SHAPES_TEMP_DIR=.tmp.tight-shapes
@@ -41,13 +43,18 @@ TIGHT_SHAPE_FILES=$(ELEMENT_FILES:$(ELEMENTS_DIR)/%.json=$(TIGHT_SHAPES_DIR)/%.s
 # Prevent auto-delete of intermediates
 .SECONDARY: $(ELEMENT_FILES) $(LOOSE_SHAPE_FILES) $(TIGHT_SHAPE_FILES) $(EXT_META_FILES)
 
-.PHONY: tight loose extract-ext-meta
+.PHONY: tight loose extract-ext-meta ext-meta-all
 
 tight: $(TIGHT_SHAPE_FILES)
 
 loose: $(LOOSE_SHAPE_FILES)
 
 extract-ext-meta: $(EXT_META_FILES)
+
+ext-meta-all: $(EXT_META_ALL)
+
+$(EXT_META_ALL): $(EXT_META_FILES)
+	../json-files-to-array.sh $^ > $@
 
 $(ELEMENT_FILES): | $(ELEMENTS_DIR)
 
