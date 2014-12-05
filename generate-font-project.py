@@ -11,6 +11,10 @@ import tempfile
 def generate_font_project_file(meta, outfile):
     font = fontforge.font()
     font.fontname = "STDevGen-1stMix-%s" % datetime.datetime.utcnow().isoformat()
+    # FIXME: Have this defined in elements-all somehow
+    space_glyph = font.createChar(32)
+    space_glyph.width = 150
+
     for em in meta:
         codepoint = em["loose"]["codepoint"]
         basename = em["file_basename"]
@@ -20,6 +24,7 @@ def generate_font_project_file(meta, outfile):
         glyph.importOutlines(tight_svg_filename(basename))
         glyph.width = width
         glyph.simplify()
+
     font.save(outfile)
 
 def tight_svg_filename(basename):
