@@ -13,6 +13,8 @@ EXT_META_ALL=ext-meta-all.json
 # SVG files with loose shapes unioned together
 TIGHT_SHAPES_DIR=tight-shapes
 TIGHT_SHAPES_TEMP_DIR=.tmp.tight-shapes
+# FontForge project
+FONTFORGE_PROJECT=project.sfd
 
 DEFINE_ELEMENT_FILES=element-files.dep
 
@@ -30,9 +32,10 @@ $(ELEMENTS_DIR): $(JSON_ALL)
 
 # Generate a makefile include for the element file list
 $(DEFINE_ELEMENT_FILES): $(ELEMENTS_DIR)
-	+@echo -n "ELEMENT_FILES =" > $@
-	+@find $< -type f -name '*.json' -print0 | sort -z | xargs -0 -i echo -n " {}" >> $@
-	+@echo "" >> $@
+	+@echo -n "ELEMENT_FILES =" > .mk.$@.tmp
+	+@find $< -type f -name '*.json' -print0 | sort -z | xargs -0 -i echo -n " {}" >> .mk.$@.tmp
+	+@echo "" >> .mk.$@.tmp
+	mv .mk.$@.tmp $@
 
 -include $(DEFINE_ELEMENT_FILES)
 
@@ -53,8 +56,15 @@ extract-ext-meta: $(EXT_META_FILES)
 
 ext-meta-all: $(EXT_META_ALL)
 
+fontforge-project: $(FONTFORGE_PROJECT)
+
 $(EXT_META_ALL): $(EXT_META_FILES)
-	../json-files-to-array.sh $^ > $@
+	../json-files-to-array.sh $^ > .mk.$@.tmp
+	mv .mk.$@.tmp $@
+
+$(FONTFORGE_PROJECT): $(EXT_META_ALL) $(TIGHT_SHAPE_FILES)
+	../generate-font-project.py < $< > .mk.$@.tmp
+	mv .mk.$@.tmp $@
 
 $(ELEMENT_FILES): | $(ELEMENTS_DIR)
 
@@ -71,18 +81,20 @@ $(TIGHT_SHAPES_TEMP_DIR):
 	+@[ -d $@ ] || mkdir -p $@
 
 $(LOOSE_SHAPES_DIR)/%.svg: $(ELEMENTS_DIR)/%.json ../element-to-loose-svg.pl | $(LOOSE_SHAPES_DIR)
-	../element-to-loose-svg.pl < $< > $@
+	../element-to-loose-svg.pl < $< > .mk.$@.tmp
+	mv .mk.$@.tmp $@
 
 $(EXT_META_DIR)/%.json: $(ELEMENTS_DIR)/%.json $(LOOSE_SHAPES_DIR)/%.svg | $(EXT_META_DIR)
-	echo -n '' > $@
-	echo '{' >> $@
-	echo $(word 2,$^) | perl -p -E 's!^.*\/(.*)\..*?$$!"file_basename":"$$1",!' >> $@
-	echo '"loose":' >> $@
-	perl -n -E 'while(/\G.*?<!--\[STFGMETA\[(.*?)\]STFGMETA\]-->/g) { say $$1; }' < $(word 2,$^) >> $@
-	echo ',' >> $@
-	echo '"element":' >> $@
-	cat $< >> $@
-	echo '}' >> $@
+	echo -n '' > .mk.$@.tmp
+	echo '{' >> .mk.$@.tmp
+	echo $(word 2,$^) | perl -p -E 's!^.*\/(.*)\..*?$$!"file_basename":"$$1",!' >> .mk.$@.tmp
+	echo '"loose":' >> .mk.$@.tmp
+	perl -n -E 'while(/\G.*?<!--\[STFGMETA\[(.*?)\]STFGMETA\]-->/g) { say $$1; }' < $(word 2,$^) >> .mk.$@.tmp
+	echo ',' >> .mk.$@.tmp
+	echo '"element":' >> .mk.$@.tmp
+	cat $< >> .mk.$@.tmp
+	echo '}' >> .mk.$@.tmp
+	mv .mk.$@.tmp $@
 
 $(TIGHT_SHAPES_DIR)/%.svg: $(LOOSE_SHAPES_DIR)/%.svg | $(TIGHT_SHAPES_DIR) $(TIGHT_SHAPES_TEMP_DIR)
 	@$(eval ENTRE := $(TIGHT_SHAPES_TEMP_DIR)/$(notdir $@))
