@@ -14,8 +14,9 @@ EXT_META_DIR=ext-meta
 # Aggregated ext-meta
 EXT_META_ALL=ext-meta-all.json
 # SVG files with loose shapes unioned together
+UNIONED_SHAPES_DIR=unioned-shapes
+UNIONED_SHAPES_TEMP_DIR=.tmp.unioned-shapes
 TIGHT_SHAPES_DIR=tight-shapes
-TIGHT_SHAPES_TEMP_DIR=.tmp.tight-shapes
 # FontForge project
 FONTFORGE_PROJECT=project.sfd
 
@@ -44,14 +45,20 @@ $(DEFINE_ELEMENT_FILES): $(ELEMENTS_DIR)
 
 LOOSE_SHAPE_FILES=$(ELEMENT_FILES:$(ELEMENTS_DIR)/%.json=$(LOOSE_SHAPES_DIR)/%.svg)
 EXT_META_FILES=$(ELEMENT_FILES:$(ELEMENTS_DIR)/%.json=$(EXT_META_DIR)/%.json)
+UNIONED_SHAPE_FILES=$(ELEMENT_FILES:$(ELEMENTS_DIR)/%.json=$(UNIONED_SHAPES_DIR)/%.svg)
 TIGHT_SHAPE_FILES=$(ELEMENT_FILES:$(ELEMENTS_DIR)/%.json=$(TIGHT_SHAPES_DIR)/%.svg)
 
 # Prevent auto-delete of intermediates
-.SECONDARY: $(ELEMENT_FILES) $(LOOSE_SHAPE_FILES) $(TIGHT_SHAPE_FILES) $(EXT_META_FILES)
+.SECONDARY: $(ELEMENT_FILES) $(LOOSE_SHAPE_FILES) $(UNIONED_SHAPE_FILES) $(TIGHT_SHAPE_FILES) $(EXT_META_FILES)
 
-.PHONY: tight loose extract-ext-meta ext-meta-all
+.PHONY: tight clean-tight unioned loose extract-ext-meta ext-meta-all
 
 tight: $(TIGHT_SHAPE_FILES)
+
+clean-tight:
+	rm -rf $(TIGHT_SHAPES_DIR)
+
+unioned: $(UNIONED_SHAPE_FILES)
 
 loose: $(LOOSE_SHAPE_FILES)
 
@@ -80,7 +87,10 @@ $(EXT_META_DIR):
 $(TIGHT_SHAPES_DIR):
 	+@[ -d $@ ] || mkdir -p $@
 
-$(TIGHT_SHAPES_TEMP_DIR):
+$(UNIONED_SHAPES_DIR):
+	+@[ -d $@ ] || mkdir -p $@
+
+$(UNIONED_SHAPES_TEMP_DIR):
 	+@[ -d $@ ] || mkdir -p $@
 
 $(LOOSE_SHAPES_DIR)/%.svg: $(ELEMENTS_DIR)/%.json ../element-to-loose-svg.pl | $(LOOSE_SHAPES_DIR)
@@ -99,9 +109,13 @@ $(EXT_META_DIR)/%.json: $(ELEMENTS_DIR)/%.json $(LOOSE_SHAPES_DIR)/%.svg | $(EXT
 	echo '}' >> $@$(RT)
 	mv $@$(RT) $@
 
-$(TIGHT_SHAPES_DIR)/%.svg: $(LOOSE_SHAPES_DIR)/%.svg | $(TIGHT_SHAPES_DIR) $(TIGHT_SHAPES_TEMP_DIR)
-	@$(eval ENTRE := $(TIGHT_SHAPES_TEMP_DIR)/$(notdir $@))
-	cp $^ $(ENTRE)
-	inkscape --verb EditSelectAllInAllLayers --verb SelectionUnion --verb FileSave --verb FileClose $(ENTRE)
-	scour -i $(ENTRE) -o $@
+$(UNIONED_SHAPES_DIR)/%.svg: $(LOOSE_SHAPES_DIR)/%.svg | $(UNIONED_SHAPES_DIR) $(UNIONED_SHAPES_TEMP_DIR)
+	@# $(RT) not used here because Inkscape considers the suffix important
+	@$(eval UNIONED_SHAPE_TEMP := $(UNIONED_SHAPES_TEMP_DIR)/$(notdir $@))
+	cp $< $(UNIONED_SHAPE_TEMP)
+	inkscape --verb EditSelectAllInAllLayers --verb SelectionUnion --verb FileSave --verb FileClose $(UNIONED_SHAPE_TEMP)
+	mv $(UNIONED_SHAPE_TEMP) $@
+
+$(TIGHT_SHAPES_DIR)/%.svg: $(UNIONED_SHAPES_DIR)/%.svg | $(TIGHT_SHAPES_DIR)
+	scour -i $< -o $@
 

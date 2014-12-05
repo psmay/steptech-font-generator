@@ -198,13 +198,13 @@ sub draw_element_svg
 	my $pw = $page_width + $right;
 
 	push @out, qq{
-		<!--[STFGMETA[ {"width":$pw,"height":$ph,"stroke_width":$stroke_width,"x":$baseline_x,"y":$baseline_y,"codepoint":$element->{codepoint},"glyph_name":"$element->{name}"} ]STFGMETA]-->
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
 			xmlns:stfg="https://github.com/psmay/steptech-font-generator/ns:stfg"
 			xmlns:xlink="http://www.w3.org/1999/xlink"
 			width="$pw" height="$ph"
 			>
+			<!--[STFGMETA[ {"width":$pw,"height":$ph,"stroke_width":$stroke_width,"x":$baseline_x,"y":$baseline_y,"codepoint":$element->{codepoint},"glyph_name":"$element->{name}"} ]STFGMETA]-->
 	};
 	push @out, draw_element_lines(@{$element->{lines}});
 	push @out, qq{
