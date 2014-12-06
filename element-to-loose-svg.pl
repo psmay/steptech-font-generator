@@ -140,6 +140,10 @@ sub draw_element_lines
 	my @out = ();
 
 	for my $line (@lines) {
+		# Some lines are only for spacing purposes
+		my $draw = $line->{draw} // 1;
+		next unless $draw;
+
 		my $from = $line->{from};
 		my $to = $line->{to};
 
@@ -152,7 +156,7 @@ sub draw_element_lines
 			y1 => $to->{y},
 			cap1 => $to->{cap},
 			shear1 => $to->{shear},
-			fill => lc $line->{guide_color},
+			fill => lc ($line->{guide_color} // ""),
 			radius => $stroke_width / 2,
 			dotdir => $line->{dotdir},
 		);
