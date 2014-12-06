@@ -23,6 +23,7 @@ my @key_order = qw/
 	name
 	lines
 
+	draw
 	guide_color
 	from
 	to

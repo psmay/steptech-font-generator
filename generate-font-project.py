@@ -19,9 +19,23 @@ def generate_font_project_file(meta, outfile):
         codepoint = em["loose"]["codepoint"]
         basename = em["file_basename"]
         width = em["loose"]["width"]
+        lines = em["element"]["lines"]
 
         glyph = font.createChar(codepoint)
-        glyph.importOutlines(tight_svg_filename(basename))
+
+        # Reportedly, importOutlines() doesn't like importing files without
+        # any paths. If there are none, we can just skip it anyway.
+        draw = False
+        for line in lines:
+            draw = bool(line.get("draw", True))
+            if draw:
+                break
+
+        if draw:
+            glyph.importOutlines(tight_svg_filename(basename))
+        else:
+            print >> sys.stderr, "Note: %s rendered as spacing-only" % codepoint
+
         glyph.width = width
         glyph.simplify()
 
