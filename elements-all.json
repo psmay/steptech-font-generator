@@ -6,7 +6,7 @@
 				"guide_color" : "Black",
 				"from" : {
 					"x" : 50,
-					"y" : -600,
+					"y" : -500,
 					"cap" : "c"
 				},
 				"to" : {
@@ -19,12 +19,12 @@
 				"guide_color" : "Blue",
 				"from" : {
 					"x" : 50,
-					"y" : -600,
+					"y" : -500,
 					"cap" : "none"
 				},
 				"to" : {
 					"x" : 400,
-					"y" : -600,
+					"y" : -500,
 					"cap" : "none"
 				}
 			},
@@ -32,7 +32,7 @@
 				"guide_color" : "Fuchsia",
 				"from" : {
 					"x" : 400,
-					"y" : -600,
+					"y" : -500,
 					"cap" : "c"
 				},
 				"to" : {
@@ -45,12 +45,12 @@
 				"guide_color" : "Orange",
 				"from" : {
 					"x" : 50,
-					"y" : -350,
+					"y" : -250,
 					"cap" : "none"
 				},
 				"to" : {
 					"x" : 400,
-					"y" : -350,
+					"y" : -250,
 					"cap" : "none"
 				}
 			}
@@ -211,7 +211,7 @@
 				"guide_color" : "Blue",
 				"from" : {
 					"x" : 50,
-					"y" : -600,
+					"y" : -500,
 					"cap" : "c"
 				},
 				"to" : {
@@ -224,12 +224,12 @@
 				"guide_color" : "Fuchsia",
 				"from" : {
 					"x" : 50,
-					"y" : -600,
+					"y" : -500,
 					"cap" : "none"
 				},
 				"to" : {
 					"x" : 400,
-					"y" : -600,
+					"y" : -500,
 					"cap" : "s"
 				}
 			}
@@ -255,7 +255,7 @@
 				"guide_color" : "Blue",
 				"from" : {
 					"x" : 400,
-					"y" : -600,
+					"y" : -500,
 					"cap" : "c"
 				},
 				"to" : {
@@ -268,12 +268,12 @@
 				"guide_color" : "Fuchsia",
 				"from" : {
 					"x" : 50,
-					"y" : -600,
+					"y" : -500,
 					"cap" : "none"
 				},
 				"to" : {
 					"x" : 400,
-					"y" : -600,
+					"y" : -500,
 					"cap" : "none"
 				}
 			},
@@ -281,7 +281,7 @@
 				"guide_color" : "Orange",
 				"from" : {
 					"x" : 50,
-					"y" : -600,
+					"y" : -500,
 					"cap" : "s"
 				},
 				"to" : {
@@ -514,7 +514,7 @@
 				"guide_color" : "Black",
 				"from" : {
 					"x" : 50,
-					"y" : -600,
+					"y" : -500,
 					"cap" : "s"
 				},
 				"to" : {
@@ -545,7 +545,7 @@
 				"guide_color" : "Blue",
 				"from" : {
 					"x" : 400,
-					"y" : -600,
+					"y" : -500,
 					"cap" : "s"
 				},
 				"to" : {
@@ -659,7 +659,7 @@
 				"guide_color" : "Blue",
 				"from" : {
 					"x" : 50,
-					"y" : -600,
+					"y" : -500,
 					"cap" : "s"
 				},
 				"to" : {
@@ -677,7 +677,7 @@
 				"guide_color" : "Black",
 				"from" : {
 					"x" : 250,
-					"y" : -600,
+					"y" : -500,
 					"cap" : "none"
 				},
 				"to" : {
@@ -690,7 +690,7 @@
 				"guide_color" : "Blue",
 				"from" : {
 					"x" : 450,
-					"y" : -600,
+					"y" : -500,
 					"cap" : "c"
 				},
 				"to" : {
@@ -703,12 +703,12 @@
 				"guide_color" : "Fuchsia",
 				"from" : {
 					"x" : 50,
-					"y" : -600,
+					"y" : -500,
 					"cap" : "none"
 				},
 				"to" : {
 					"x" : 450,
-					"y" : -600,
+					"y" : -500,
 					"cap" : "none"
 				}
 			},
@@ -716,7 +716,7 @@
 				"guide_color" : "Orange",
 				"from" : {
 					"x" : 50,
-					"y" : -600,
+					"y" : -500,
 					"cap" : "s"
 				},
 				"to" : {
@@ -734,7 +734,7 @@
 				"guide_color" : "Black",
 				"from" : {
 					"x" : 400,
-					"y" : -600,
+					"y" : -500,
 					"cap" : "c"
 				},
 				"to" : {
@@ -747,12 +747,12 @@
 				"guide_color" : "Blue",
 				"from" : {
 					"x" : 50,
-					"y" : -600,
+					"y" : -500,
 					"cap" : "none"
 				},
 				"to" : {
 					"x" : 400,
-					"y" : -600,
+					"y" : -500,
 					"cap" : "none"
 				}
 			},
@@ -760,7 +760,7 @@
 				"guide_color" : "Fuchsia",
 				"from" : {
 					"x" : 50,
-					"y" : -600,
+					"y" : -500,
 					"cap" : "s"
 				},
 				"to" : {
@@ -791,7 +791,7 @@
 				"guide_color" : "Blue",
 				"from" : {
 					"x" : 400,
-					"y" : -600,
+					"y" : -500,
 					"cap" : "c"
 				},
 				"to" : {
@@ -804,12 +804,12 @@
 				"guide_color" : "Fuchsia",
 				"from" : {
 					"x" : 50,
-					"y" : -600,
+					"y" : -500,
 					"cap" : "none"
 				},
 				"to" : {
 					"x" : 400,
-					"y" : -600,
+					"y" : -500,
 					"cap" : "none"
 				}
 			},
@@ -817,7 +817,7 @@
 				"guide_color" : "Orange",
 				"from" : {
 					"x" : 50,
-					"y" : -600,
+					"y" : -500,
 					"cap" : "c"
 				},
 				"to" : {
@@ -931,7 +931,7 @@
 				"guide_color" : "Blue",
 				"from" : {
 					"x" : 400,
-					"y" : -600,
+					"y" : -500,
 					"cap" : "c"
 				},
 				"to" : {
@@ -944,12 +944,12 @@
 				"guide_color" : "Fuchsia",
 				"from" : {
 					"x" : 50,
-					"y" : -600,
+					"y" : -500,
 					"cap" : "none"
 				},
 				"to" : {
 					"x" : 400,
-					"y" : -600,
+					"y" : -500,
 					"cap" : "none"
 				}
 			},
@@ -957,7 +957,7 @@
 				"guide_color" : "Orange",
 				"from" : {
 					"x" : 50,
-					"y" : -600,
+					"y" : -500,
 					"cap" : "c"
 				},
 				"to" : {
@@ -1141,7 +1141,7 @@
 				"guide_color" : "Black",
 				"from" : {
 					"x" : 225,
-					"y" : -600,
+					"y" : -500,
 					"cap" : "none"
 				},
 				"to" : {
@@ -1154,12 +1154,12 @@
 				"guide_color" : "Blue",
 				"from" : {
 					"x" : 50,
-					"y" : -600,
+					"y" : -500,
 					"cap" : "s"
 				},
 				"to" : {
 					"x" : 400,
-					"y" : -600,
+					"y" : -500,
 					"cap" : "s"
 				}
 			}
@@ -1172,7 +1172,7 @@
 				"guide_color" : "Black",
 				"from" : {
 					"x" : 400,
-					"y" : -600,
+					"y" : -500,
 					"cap" : "s"
 				},
 				"to" : {
@@ -1198,7 +1198,7 @@
 				"guide_color" : "Fuchsia",
 				"from" : {
 					"x" : 50,
-					"y" : -600,
+					"y" : -500,
 					"cap" : "s"
 				},
 				"to" : {
@@ -1216,7 +1216,7 @@
 				"guide_color" : "Black",
 				"from" : {
 					"x" : 400,
-					"y" : -600,
+					"y" : -500,
 					"cap" : "s"
 				},
 				"to" : {
@@ -1257,7 +1257,7 @@
 				"guide_color" : "Orange",
 				"from" : {
 					"x" : 50,
-					"y" : -600,
+					"y" : -500,
 					"cap" : "s"
 				},
 				"to" : {
@@ -1275,7 +1275,7 @@
 				"guide_color" : "Black",
 				"from" : {
 					"x" : 250,
-					"y" : -600,
+					"y" : -500,
 					"cap" : "s"
 				},
 				"to" : {
@@ -1288,7 +1288,7 @@
 				"guide_color" : "Blue",
 				"from" : {
 					"x" : 450,
-					"y" : -600,
+					"y" : -500,
 					"cap" : "s"
 				},
 				"to" : {
@@ -1314,7 +1314,7 @@
 				"guide_color" : "Orange",
 				"from" : {
 					"x" : 50,
-					"y" : -600,
+					"y" : -500,
 					"cap" : "s"
 				},
 				"to" : {
@@ -1428,7 +1428,7 @@
 				"guide_color" : "Blue",
 				"from" : {
 					"x" : 400,
-					"y" : -600,
+					"y" : -500,
 					"cap" : "s"
 				},
 				"to" : {
@@ -1454,7 +1454,7 @@
 				"guide_color" : "Orange",
 				"from" : {
 					"x" : 50,
-					"y" : -600,
+					"y" : -500,
 					"cap" : "s"
 				},
 				"to" : {
@@ -2328,7 +2328,7 @@
 				"guide_color" : "Blue",
 				"from" : {
 					"x" : 50,
-					"y" : -600,
+					"y" : -500,
 					"cap" : "s"
 				},
 				"to" : {
@@ -2341,12 +2341,12 @@
 				"guide_color" : "Fuchsia",
 				"from" : {
 					"x" : 50,
-					"y" : -600,
+					"y" : -500,
 					"cap" : "none"
 				},
 				"to" : {
 					"x" : 150,
-					"y" : -600,
+					"y" : -500,
 					"cap" : "s"
 				}
 			}
@@ -2372,7 +2372,7 @@
 				"guide_color" : "Blue",
 				"from" : {
 					"x" : 150,
-					"y" : -600,
+					"y" : -500,
 					"cap" : "s"
 				},
 				"to" : {
@@ -2385,12 +2385,12 @@
 				"guide_color" : "Fuchsia",
 				"from" : {
 					"x" : 50,
-					"y" : -600,
+					"y" : -500,
 					"cap" : "s"
 				},
 				"to" : {
 					"x" : 150,
-					"y" : -600,
+					"y" : -500,
 					"cap" : "none"
 				}
 			}
@@ -3270,7 +3270,7 @@
 				"guide_color" : "Blue",
 				"from" : {
 					"x" : 50,
-					"y" : -600,
+					"y" : -500,
 					"cap" : "sc"
 				},
 				"to" : {
@@ -4101,7 +4101,7 @@
 				"guide_color" : "Fuchsia",
 				"from" : {
 					"x" : 350,
-					"y" : -600,
+					"y" : -500,
 					"cap" : "sc"
 				},
 				"to" : {
@@ -4114,7 +4114,7 @@
 				"guide_color" : "Orange",
 				"from" : {
 					"x" : 150,
-					"y" : -600,
+					"y" : -500,
 					"cap" : "cs"
 				},
 				"to" : {
@@ -5757,7 +5757,7 @@
 				"guide_color" : "Black",
 				"from" : {
 					"x" : 50,
-					"y" : -600,
+					"y" : -500,
 					"cap" : "s"
 				},
 				"to" : {
