@@ -72,7 +72,7 @@ $(EXT_META_ALL): $(EXT_META_FILES)
 	../json-files-to-array.sh $^ > $@$(RT)
 	mv $@$(RT) $@
 
-$(FONTFORGE_PROJECT): $(EXT_META_ALL) $(TIGHT_SHAPE_FILES)
+$(FONTFORGE_PROJECT): $(EXT_META_ALL) ../generate-font-project.py $(TIGHT_SHAPE_FILES)
 	../generate-font-project.py < $< > $@$(RT)
 	mv $@$(RT) $@
 
