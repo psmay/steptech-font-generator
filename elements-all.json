@@ -1571,6 +1571,52 @@
 		]
 	},
 	{
+		"name" : "acute",
+		"lines" : [
+			{
+				"guide_color" : "Black",
+				"from" : {
+					"x" : 100,
+					"y" : -700,
+					"cap" : "none"
+				},
+				"to" : {
+					"x" : 100,
+					"y" : -700,
+					"cap" : "s"
+				},
+				"dotdir" : "x"
+			},
+			{
+				"guide_color" : "Blue",
+				"from" : {
+					"x" : 100,
+					"y" : -700,
+					"cap" : "c"
+				},
+				"to" : {
+					"x" : 50,
+					"y" : -650,
+					"cap" : "c"
+				}
+			},
+			{
+				"guide_color" : "Green",
+				"from" : {
+					"x" : 50,
+					"y" : -650,
+					"cap" : "s"
+				},
+				"to" : {
+					"x" : 50,
+					"y" : -650,
+					"cap" : "none"
+				},
+				"dotdir" : "x"
+			}
+		]
+	},
+	{
 		"name" : "ampersand",
 		"lines" : [
 			{
@@ -2454,7 +2500,7 @@
 				"from" : {
 					"x" : 200,
 					"y" : -700,
-					"cap" : "cs"
+					"cap" : "s"
 				},
 				"to" : {
 					"x" : 200,
@@ -2494,7 +2540,7 @@
 				"from" : {
 					"x" : 50,
 					"y" : -700,
-					"cap" : "sc"
+					"cap" : "s"
 				},
 				"to" : {
 					"x" : 50,
@@ -2502,6 +2548,63 @@
 					"cap" : "c"
 				},
 				"dotdir" : "y"
+			}
+		]
+	},
+	{
+		"name" : "cedilla",
+		"lines" : [
+			{
+				"guide_color" : "Black",
+				"from" : {
+					"x" : 50,
+					"y" : -25,
+					"cap" : "s"
+				},
+				"to" : {
+					"x" : 50,
+					"y" : 25,
+					"cap" : "c"
+				}
+			},
+			{
+				"guide_color" : "Brown",
+				"from" : {
+					"x" : 50,
+					"y" : 25,
+					"cap" : "none"
+				},
+				"to" : {
+					"x" : 100,
+					"y" : 50,
+					"cap" : "c"
+				}
+			},
+			{
+				"guide_color" : "Green",
+				"from" : {
+					"x" : 100,
+					"y" : 50,
+					"cap" : "none"
+				},
+				"to" : {
+					"x" : 100,
+					"y" : 125,
+					"cap" : "c"
+				}
+			},
+			{
+				"guide_color" : "Blue",
+				"from" : {
+					"x" : 100,
+					"y" : 125,
+					"cap" : "none"
+				},
+				"to" : {
+					"x" : 50,
+					"y" : 125,
+					"cap" : "s"
+				}
 			}
 		]
 	},
@@ -2531,7 +2634,7 @@
 				"to" : {
 					"x" : 200,
 					"y" : -650,
-					"cap" : "sc"
+					"cap" : "s"
 				},
 				"dotdir" : "y"
 			},
@@ -2558,7 +2661,7 @@
 				"to" : {
 					"x" : 50,
 					"y" : -650,
-					"cap" : "cs"
+					"cap" : "s"
 				},
 				"dotdir" : "y"
 			}
@@ -2746,6 +2849,37 @@
 		]
 	},
 	{
+		"name" : "dieresis",
+		"lines" : [
+			{
+				"guide_color" : "Black",
+				"from" : {
+					"x" : 50,
+					"y" : -650,
+					"cap" : "s"
+				},
+				"to" : {
+					"x" : 50,
+					"y" : -650,
+					"cap" : "s"
+				}
+			},
+			{
+				"guide_color" : "Brown",
+				"from" : {
+					"x" : 200,
+					"y" : -650,
+					"cap" : "s"
+				},
+				"to" : {
+					"x" : 200,
+					"y" : -650,
+					"cap" : "s"
+				}
+			}
+		]
+	},
+	{
 		"name" : "dollar",
 		"lines" : [
 			{
@@ -2837,6 +2971,24 @@
 					"x" : 200,
 					"y" : -400,
 					"cap" : "none"
+				}
+			}
+		]
+	},
+	{
+		"name" : "dotaccent",
+		"lines" : [
+			{
+				"guide_color" : "Black",
+				"from" : {
+					"x" : 50,
+					"y" : -650,
+					"cap" : "s"
+				},
+				"to" : {
+					"x" : 50,
+					"y" : -650,
+					"cap" : "s"
 				}
 			}
 		]
@@ -3587,7 +3739,7 @@
 					"y" : -700,
 					"cap" : "none"
 				},
-				"dotdir" : "y"
+				"dotdir" : "x"
 			},
 			{
 				"guide_color" : "Blue",
@@ -3614,7 +3766,7 @@
 					"y" : -650,
 					"cap" : "s"
 				},
-				"dotdir" : "y"
+				"dotdir" : "x"
 			}
 		]
 	},
@@ -3983,6 +4135,24 @@
 				"to" : {
 					"x" : 50,
 					"y" : -50,
+					"cap" : "s"
+				}
+			}
+		]
+	},
+	{
+		"name" : "macron",
+		"lines" : [
+			{
+				"guide_color" : "Black",
+				"from" : {
+					"x" : 50,
+					"y" : -650,
+					"cap" : "s"
+				},
+				"to" : {
+					"x" : 400,
+					"y" : -650,
 					"cap" : "s"
 				}
 			}
@@ -5138,6 +5308,63 @@
 		]
 	},
 	{
+		"name" : "ring",
+		"lines" : [
+			{
+				"guide_color" : "Black",
+				"from" : {
+					"x" : 50,
+					"y" : -800,
+					"cap" : "c"
+				},
+				"to" : {
+					"x" : 50,
+					"y" : -650,
+					"cap" : "c"
+				}
+			},
+			{
+				"guide_color" : "Red",
+				"from" : {
+					"x" : 50,
+					"y" : -650,
+					"cap" : "none"
+				},
+				"to" : {
+					"x" : 200,
+					"y" : -650,
+					"cap" : "none"
+				}
+			},
+			{
+				"guide_color" : "Green",
+				"from" : {
+					"x" : 200,
+					"y" : -800,
+					"cap" : "c"
+				},
+				"to" : {
+					"x" : 200,
+					"y" : -650,
+					"cap" : "c"
+				}
+			},
+			{
+				"guide_color" : "Blue",
+				"from" : {
+					"x" : 50,
+					"y" : -800,
+					"cap" : "none"
+				},
+				"to" : {
+					"x" : 200,
+					"y" : -800,
+					"cap" : "none"
+				}
+			}
+		]
+	},
+	{
 		"name" : "s",
 		"lines" : [
 			{
@@ -5591,6 +5818,78 @@
 					"y" : -300,
 					"cap" : "c"
 				}
+			}
+		]
+	},
+	{
+		"name" : "tilde",
+		"lines" : [
+			{
+				"guide_color" : "Purple",
+				"from" : {
+					"x" : 50,
+					"y" : -650,
+					"cap" : "c"
+				},
+				"to" : {
+					"x" : 50,
+					"y" : -650,
+					"cap" : "s"
+				},
+				"dotdir" : "y"
+			},
+			{
+				"guide_color" : "Blue",
+				"from" : {
+					"x" : 50,
+					"y" : -650,
+					"cap" : "none"
+				},
+				"to" : {
+					"x" : 125,
+					"y" : -700,
+					"cap" : "c"
+				}
+			},
+			{
+				"guide_color" : "Black",
+				"from" : {
+					"x" : 125,
+					"y" : -700,
+					"cap" : "none"
+				},
+				"to" : {
+					"x" : 200,
+					"y" : -650,
+					"cap" : "c"
+				}
+			},
+			{
+				"guide_color" : "Green",
+				"from" : {
+					"x" : 200,
+					"y" : -650,
+					"cap" : "none"
+				},
+				"to" : {
+					"x" : 275,
+					"y" : -700,
+					"cap" : "none"
+				}
+			},
+			{
+				"guide_color" : "Orange",
+				"from" : {
+					"x" : 275,
+					"y" : -700,
+					"cap" : "s"
+				},
+				"to" : {
+					"x" : 275,
+					"y" : -700,
+					"cap" : "c"
+				},
+				"dotdir" : "y"
 			}
 		]
 	},
