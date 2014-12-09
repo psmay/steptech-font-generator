@@ -10,7 +10,10 @@ import tempfile
 
 def generate_font_project_file(meta, outfile):
     font = fontforge.font()
-    font.fontname = "STDevGen-1stMix-%s" % datetime.datetime.utcnow().isoformat()
+    familyname = "STDevGen_1stMix"
+    font.familyname = familyname
+    font.fullname = familyname + "-Normal"
+    font.fontname = familyname
     for em in meta:
         codepoint = em["loose"]["codepoint"]
         basename = em["file_basename"]
