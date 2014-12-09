@@ -1572,47 +1572,15 @@
 	},
 	{
 		"name" : "acute",
-		"lines" : [
+		"compose" : [
 			{
-				"guide_color" : "Black",
-				"from" : {
-					"x" : 100,
-					"y" : -700,
-					"cap" : "none"
-				},
-				"to" : {
-					"x" : 100,
-					"y" : -700,
-					"cap" : "s"
-				},
-				"dotdir" : "x"
-			},
-			{
-				"guide_color" : "Blue",
-				"from" : {
-					"x" : 100,
-					"y" : -700,
-					"cap" : "c"
-				},
-				"to" : {
-					"x" : 50,
-					"y" : -650,
-					"cap" : "c"
-				}
-			},
-			{
-				"guide_color" : "Green",
-				"from" : {
-					"x" : 50,
-					"y" : -650,
-					"cap" : "s"
-				},
-				"to" : {
-					"x" : 50,
-					"y" : -650,
-					"cap" : "none"
-				},
-				"dotdir" : "x"
+				"glyph" : "grave",
+				"op" : [
+					[
+						"flip",
+						"x"
+					]
+				]
 			}
 		]
 	},
@@ -2253,110 +2221,15 @@
 	},
 	{
 		"name" : "braceright",
-		"lines" : [
+		"compose" : [
 			{
-				"guide_color" : "Black",
-				"from" : {
-					"x" : 125,
-					"y" : -50,
-					"cap" : "c"
-				},
-				"to" : {
-					"x" : 50,
-					"y" : -50,
-					"cap" : "s"
-				}
-			},
-			{
-				"guide_color" : "Blue",
-				"from" : {
-					"x" : 175,
-					"y" : -100,
-					"cap" : "none"
-				},
-				"to" : {
-					"x" : 125,
-					"y" : -50,
-					"cap" : "none"
-				}
-			},
-			{
-				"guide_color" : "Fuchsia",
-				"from" : {
-					"x" : 175,
-					"y" : -200,
-					"cap" : "c"
-				},
-				"to" : {
-					"x" : 175,
-					"y" : -100,
-					"cap" : "c"
-				}
-			},
-			{
-				"guide_color" : "Orange",
-				"from" : {
-					"x" : 250,
-					"y" : -275,
-					"cap" : "s"
-				},
-				"to" : {
-					"x" : 175,
-					"y" : -200,
-					"cap" : "none"
-				}
-			},
-			{
-				"guide_color" : "Green",
-				"from" : {
-					"x" : 250,
-					"y" : -275,
-					"cap" : "none"
-				},
-				"to" : {
-					"x" : 175,
-					"y" : -350,
-					"cap" : "none"
-				}
-			},
-			{
-				"guide_color" : "Maroon",
-				"from" : {
-					"x" : 175,
-					"y" : -450,
-					"cap" : "c"
-				},
-				"to" : {
-					"x" : 175,
-					"y" : -350,
-					"cap" : "c"
-				}
-			},
-			{
-				"guide_color" : "Navy",
-				"from" : {
-					"x" : 175,
-					"y" : -450,
-					"cap" : "none"
-				},
-				"to" : {
-					"x" : 125,
-					"y" : -500,
-					"cap" : "none"
-				}
-			},
-			{
-				"guide_color" : "Olive",
-				"from" : {
-					"x" : 125,
-					"y" : -500,
-					"cap" : "c"
-				},
-				"to" : {
-					"x" : 50,
-					"y" : -500,
-					"cap" : "s"
-				}
+				"glyph" : "braceleft",
+				"op" : [
+					[
+						"flip",
+						"x"
+					]
+				]
 			}
 		]
 	},
@@ -2406,45 +2279,15 @@
 	},
 	{
 		"name" : "bracketright",
-		"lines" : [
+		"compose" : [
 			{
-				"guide_color" : "Black",
-				"from" : {
-					"x" : 50,
-					"y" : -50,
-					"cap" : "s"
-				},
-				"to" : {
-					"x" : 150,
-					"y" : -50,
-					"cap" : "none"
-				}
-			},
-			{
-				"guide_color" : "Blue",
-				"from" : {
-					"x" : 150,
-					"y" : -500,
-					"cap" : "s"
-				},
-				"to" : {
-					"x" : 150,
-					"y" : -50,
-					"cap" : "s"
-				}
-			},
-			{
-				"guide_color" : "Fuchsia",
-				"from" : {
-					"x" : 50,
-					"y" : -500,
-					"cap" : "s"
-				},
-				"to" : {
-					"x" : 150,
-					"y" : -500,
-					"cap" : "none"
-				}
+				"glyph" : "bracketleft",
+				"op" : [
+					[
+						"flip",
+						"x"
+					]
+				]
 			}
 		]
 	},
@@ -3772,58 +3615,15 @@
 	},
 	{
 		"name" : "greater",
-		"lines" : [
+		"compose" : [
 			{
-				"guide_color" : "Black",
-				"from" : {
-					"x" : 50,
-					"y" : -100,
-					"cap" : "sc"
-				},
-				"to" : {
-					"x" : 50,
-					"y" : -100,
-					"cap" : "c"
-				}
-			},
-			{
-				"guide_color" : "Blue",
-				"from" : {
-					"x" : 50,
-					"y" : -100,
-					"cap" : "none"
-				},
-				"to" : {
-					"x" : 250,
-					"y" : -250,
-					"cap" : "c"
-				}
-			},
-			{
-				"guide_color" : "Fuchsia",
-				"from" : {
-					"x" : 50,
-					"y" : -400,
-					"cap" : "none"
-				},
-				"to" : {
-					"x" : 250,
-					"y" : -250,
-					"cap" : "none"
-				}
-			},
-			{
-				"guide_color" : "Orange",
-				"from" : {
-					"x" : 50,
-					"y" : -400,
-					"cap" : "cs"
-				},
-				"to" : {
-					"x" : 50,
-					"y" : -400,
-					"cap" : "c"
-				}
+				"glyph" : "less",
+				"op" : [
+					[
+						"flip",
+						"x"
+					]
+				]
 			}
 		]
 	},
@@ -4573,71 +4373,15 @@
 	},
 	{
 		"name" : "parenright",
-		"lines" : [
+		"compose" : [
 			{
-				"guide_color" : "Black",
-				"from" : {
-					"x" : 50,
-					"y" : -500,
-					"cap" : "sc"
-				},
-				"to" : {
-					"x" : 100,
-					"y" : -500,
-					"cap" : "c"
-				}
-			},
-			{
-				"guide_color" : "Blue",
-				"from" : {
-					"x" : 100,
-					"y" : -500,
-					"cap" : "none"
-				},
-				"to" : {
-					"x" : 150,
-					"y" : -450,
-					"cap" : "none"
-				}
-			},
-			{
-				"guide_color" : "Fuchsia",
-				"from" : {
-					"x" : 150,
-					"y" : -450,
-					"cap" : "c"
-				},
-				"to" : {
-					"x" : 150,
-					"y" : -100,
-					"cap" : "c"
-				}
-			},
-			{
-				"guide_color" : "Orange",
-				"from" : {
-					"x" : 100,
-					"y" : -50,
-					"cap" : "none"
-				},
-				"to" : {
-					"x" : 150,
-					"y" : -100,
-					"cap" : "none"
-				}
-			},
-			{
-				"guide_color" : "Green",
-				"from" : {
-					"x" : 50,
-					"y" : -50,
-					"cap" : "cs"
-				},
-				"to" : {
-					"x" : 100,
-					"y" : -50,
-					"cap" : "c"
-				}
+				"glyph" : "parenleft",
+				"op" : [
+					[
+						"flip",
+						"x"
+					]
+				]
 			}
 		]
 	},
