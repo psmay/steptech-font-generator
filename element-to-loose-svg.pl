@@ -165,11 +165,11 @@ sub draw_element_lines
 	return join("", @out);
 }
 
-sub get_element_bounds
+sub get_generic_bounds
 {
+	my $radius = shift;
 	my @lines = @_;
 
-	my $radius = $stroke_width/2;
 	my $left = 0;
 	my $top = 0;
 	my $right = 0;
@@ -191,16 +191,103 @@ sub get_element_bounds
 	return ($left, $top, $right, $bottom);
 }
 
+sub get_element_bounds
+{
+	return get_generic_bounds($stroke_width/2, @_);
+}
+
 # Parameter is { "glyph":{...}, "op":[[opname,...],[opname,...],...] }
 sub get_compose_lines
 {
 	my $compose_item = shift;
 	my %glyph = %{ $compose_item->{glyph} || { lines=>[] } };
-	my @op = @{ $compose_item->{op} || [] };
+	# The op point defaults to the result of bmove0
+	my @op = (['bmove0'], @{ $compose_item->{op} || [] });
 
 	my @lines = @{ $glyph{lines} };
+	my $op_x;
+	my $op_y;
 
 	# TODO: Process operations here
+	while (@op) {
+		my $op = shift(@op);
+		$op = [$op] unless ref $op;
+		my($kw,@p) = @$op;
+
+		my ($l, $t, $r, $b) = get_element_bounds(@lines);
+		my $bxunit = $r - $l;
+		my $byunit = $b - $t;
+
+		if($kw eq 'move0') {
+			$op_x = 0;
+			$op_y = 0;
+		}
+		elsif($kw eq 'moveby') {
+			my($dx, $dy) = @p;
+			$op_x += 0 + $dx;
+			$op_y += 0 + $dy;
+		}
+		elsif($kw eq 'moveto') {
+			@op = (['move0'],['moveby',@p],@op);
+		}
+		elsif($kw eq 'bmove0') {
+			$op_x = ($l + $r) / 2;
+			$op_y = ($t + $b) / 2;
+		}
+		elsif($kw eq 'bmoveby') {
+			my($dx, $dy) = @p;
+			$op_x += 0 + ($bxunit * $dx);
+			$op_y += 0 + ($byunit * $dy);
+		}
+		elsif($kw eq 'bmoveto') {
+			@op = (['bmove0'],['moveby',@p],@op);
+		}
+		elsif($kw eq 'translate') {
+			my($dx, $dy) = @p;
+			$dx += 0;
+			$dy += 0;
+			for my $line (@lines) {
+				for my $endpoint ($line->{from}, $line->{to}) {
+					$endpoint->{x} += $dx;
+					$endpoint->{y} += $dy;
+				}
+			}
+			$op_x += $dx;
+			$op_y += $dy;
+		}
+		elsif($kw eq '_bscale_g0') {
+			# Perform bscale about global origin rather than op point
+			# (and don't touch op point)
+			my($sx, $sy) = @p;
+			my $reverse_lines = +($sx * $sy < 0);
+			for my $line (@lines) {
+				if($reverse_lines) {
+					($line->{from},$line->{to}) = ($line->{to},$line->{from});
+				}
+				for my $endpoint ($line->{from}, $line->{to}) {
+					if($reverse_lines) {
+						my %revs = ( sc => 'cs', cs => 'sc' );
+						my $rev = $revs{$endpoint->{cap}};
+						$endpoint->{cap} = $rev if defined $rev;
+					}
+					$endpoint->{x} *= $sx;
+					$endpoint->{y} *= $sy;
+				}
+			}
+		}
+		elsif($kw eq 'bscale') {
+			# Translate to origin, scale, translate back
+			my($sx, $sy) = @p;
+			@op = (
+				['translate', -$op_x, -$op_y],
+				['_bscale_g0', $sx, $sy],
+				['translate', $op_x, $op_y],
+				@op);
+		}
+		else {
+			die "Don't know what to do with compose op `$kw`";
+		}
+	}
 
 	return @lines;
 }

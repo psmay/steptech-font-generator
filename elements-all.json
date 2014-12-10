@@ -1577,8 +1577,9 @@
 				"glyph" : "grave",
 				"op" : [
 					[
-						"flip",
-						"x"
+						"bscale",
+						-1,
+						1
 					]
 				]
 			}
@@ -2226,8 +2227,9 @@
 				"glyph" : "braceleft",
 				"op" : [
 					[
-						"flip",
-						"x"
+						"bscale",
+						-1,
+						1
 					]
 				]
 			}
@@ -2284,8 +2286,9 @@
 				"glyph" : "bracketleft",
 				"op" : [
 					[
-						"flip",
-						"x"
+						"bscale",
+						-1,
+						1
 					]
 				]
 			}
@@ -3620,8 +3623,9 @@
 				"glyph" : "less",
 				"op" : [
 					[
-						"flip",
-						"x"
+						"bscale",
+						-1,
+						1
 					]
 				]
 			}
@@ -4378,8 +4382,9 @@
 				"glyph" : "parenleft",
 				"op" : [
 					[
-						"flip",
-						"x"
+						"bscale",
+						-1,
+						1
 					]
 				]
 			}
