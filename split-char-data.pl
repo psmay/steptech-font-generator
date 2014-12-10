@@ -4306,6 +4306,9 @@ my $elements = do {
 	$j->decode(<>);
 };
 
+my %elements_by_name;
+
+# Pass to cross-reference codepoints to names.
 my $index = -1;
 for my $element (@$elements) {
 	++$index;
@@ -4313,6 +4316,7 @@ for my $element (@$elements) {
 	$element->{codepoint} += 0 if defined $element->{codepoint};
 
 	if(defined $element->{name}) {
+		# This might be null.
 		$element->{codepoint} = $glyph_name_to_cp{$element->{name}};
 	}
 	elsif(defined $element->{codepoint}) {
@@ -4322,6 +4326,30 @@ for my $element (@$elements) {
 		die "Element index $index has no name or codepoint";
 	}
 
+	die "Element index $index duplicates the name $element->{name}"
+		if defined $elements_by_name{$element->{name}};
+	
+	$elements_by_name{$element->{name}} = $element;
+}
+
+# Pass to resolve compose references.
+for my $element (@$elements) {
+	my $compose_list = $element->{compose};
+	next unless defined $compose_list;
+	for my $compose_item (@$compose_list) {
+		my $glyph_name = $compose_item->{glyph};
+		next unless defined $glyph_name;
+		# Glyph might also be inlined already
+		next if ref $glyph_name;
+		if(not defined $elements_by_name{$glyph_name}) {
+			die "Element `$element->{name}` references nonexistent element `$glyph_name`";
+		}
+		$compose_item->{glyph} = $elements_by_name{$glyph_name};
+	}
+}
+
+# Pass to save individual elements.
+for my $element (@$elements) {
 	# Codepoint is given first in decimal (for sorting) and then in hex (for
 	# identification).
 	my $basename = sprintf('%05d-U+%04x-%s', $element->{codepoint},
