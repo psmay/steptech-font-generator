@@ -176,6 +176,10 @@ sub get_generic_bounds
 	my $bottom = 0;
 
 	for my $line (@lines) {
+		# Some lines don't get counted when spacing
+		my $spread = $line->{spread} // 1;
+		next unless $spread;
+
 		for my $endpoint ($line->{from}, $line->{to}) {
 			my $pleft = $endpoint->{x} - $radius;
 			my $pright = $endpoint->{x} + $radius;
@@ -201,6 +205,8 @@ sub get_compose_lines
 {
 	my $compose_item = shift;
 	my $element = $compose_item->{glyph} || {};
+	# If a glyph is composed with spread=false, mark the resulting lines.
+	my $spread = $compose_item->{spread} // 1;
 	# The op point defaults to the result of bmove0
 	my @op = (['bmove0'], @{ $compose_item->{op} || [] });
 
@@ -286,6 +292,10 @@ sub get_compose_lines
 		else {
 			die "Don't know what to do with compose op `$kw`";
 		}
+	}
+
+	if(not $spread) {
+		$_->{spread} = 0 for @lines;
 	}
 
 	return @lines;
