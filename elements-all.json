@@ -1501,6 +1501,63 @@
 		]
 	},
 	{
+		"name" : "_perring",
+		"lines" : [
+			{
+				"guide_color" : "Blue",
+				"from" : {
+					"x" : 50,
+					"y" : -150,
+					"cap" : "c"
+				},
+				"to" : {
+					"x" : 50,
+					"y" : -50,
+					"cap" : "c"
+				}
+			},
+			{
+				"guide_color" : "Blue",
+				"from" : {
+					"x" : 50,
+					"y" : -50,
+					"cap" : "none"
+				},
+				"to" : {
+					"x" : 150,
+					"y" : -50,
+					"cap" : "none"
+				}
+			},
+			{
+				"guide_color" : "Blue",
+				"from" : {
+					"x" : 150,
+					"y" : -150,
+					"cap" : "c"
+				},
+				"to" : {
+					"x" : 150,
+					"y" : -50,
+					"cap" : "c"
+				}
+			},
+			{
+				"guide_color" : "Blue",
+				"from" : {
+					"x" : 50,
+					"y" : -150,
+					"cap" : "none"
+				},
+				"to" : {
+					"x" : 150,
+					"y" : -150,
+					"cap" : "none"
+				}
+			}
+		]
+	},
+	{
 		"name" : "a",
 		"lines" : [
 			{
@@ -4392,149 +4449,29 @@
 	},
 	{
 		"name" : "percent",
-		"lines" : [
+		"compose" : [
 			{
-				"guide_color" : "Black",
-				"from" : {
-					"x" : 300,
-					"y" : -150,
-					"cap" : "c"
-				},
-				"to" : {
-					"x" : 300,
-					"y" : -50,
-					"cap" : "c"
-				}
+				"glyph" : "slash"
 			},
 			{
-				"guide_color" : "Blue",
-				"from" : {
-					"x" : 300,
-					"y" : -50,
-					"cap" : "none"
-				},
-				"to" : {
-					"x" : 400,
-					"y" : -50,
-					"cap" : "none"
-				}
+				"glyph" : "_perring",
+				"op" : [
+					[
+						"translate",
+						0,
+						-350
+					]
+				]
 			},
 			{
-				"guide_color" : "Fuchsia",
-				"from" : {
-					"x" : 400,
-					"y" : -150,
-					"cap" : "c"
-				},
-				"to" : {
-					"x" : 400,
-					"y" : -50,
-					"cap" : "c"
-				}
-			},
-			{
-				"guide_color" : "Orange",
-				"from" : {
-					"x" : 300,
-					"y" : -150,
-					"cap" : "none"
-				},
-				"to" : {
-					"x" : 400,
-					"y" : -150,
-					"cap" : "none"
-				}
-			},
-			{
-				"guide_color" : "Green",
-				"from" : {
-					"x" : 400,
-					"y" : -500,
-					"cap" : "s"
-				},
-				"to" : {
-					"x" : 400,
-					"y" : -450,
-					"cap" : "c"
-				}
-			},
-			{
-				"guide_color" : "Maroon",
-				"from" : {
-					"x" : 50,
-					"y" : -100,
-					"cap" : "none"
-				},
-				"to" : {
-					"x" : 400,
-					"y" : -450,
-					"cap" : "none"
-				}
-			},
-			{
-				"guide_color" : "Navy",
-				"from" : {
-					"x" : 50,
-					"y" : -100,
-					"cap" : "c"
-				},
-				"to" : {
-					"x" : 50,
-					"y" : -50,
-					"cap" : "s"
-				}
-			},
-			{
-				"guide_color" : "Olive",
-				"from" : {
-					"x" : 50,
-					"y" : -400,
-					"cap" : "none"
-				},
-				"to" : {
-					"x" : 150,
-					"y" : -400,
-					"cap" : "none"
-				}
-			},
-			{
-				"guide_color" : "Purple",
-				"from" : {
-					"x" : 150,
-					"y" : -500,
-					"cap" : "c"
-				},
-				"to" : {
-					"x" : 150,
-					"y" : -400,
-					"cap" : "c"
-				}
-			},
-			{
-				"guide_color" : "Red",
-				"from" : {
-					"x" : 50,
-					"y" : -500,
-					"cap" : "none"
-				},
-				"to" : {
-					"x" : 150,
-					"y" : -500,
-					"cap" : "none"
-				}
-			},
-			{
-				"guide_color" : "Teal",
-				"from" : {
-					"x" : 50,
-					"y" : -500,
-					"cap" : "c"
-				},
-				"to" : {
-					"x" : 50,
-					"y" : -400,
-					"cap" : "c"
-				}
+				"glyph" : "_perring",
+				"op" : [
+					[
+						"translate",
+						250,
+						0
+					]
+				]
 			}
 		]
 	},
@@ -4558,201 +4495,39 @@
 	},
 	{
 		"name" : "perthousand",
-		"lines" : [
+		"compose" : [
 			{
-				"guide_color" : "Black",
-				"from" : {
-					"x" : 300,
-					"y" : -150,
-					"cap" : "c"
-				},
-				"to" : {
-					"x" : 300,
-					"y" : -50,
-					"cap" : "c"
-				}
+				"glyph" : "slash"
 			},
 			{
-				"guide_color" : "Blue",
-				"from" : {
-					"x" : 300,
-					"y" : -50,
-					"cap" : "none"
-				},
-				"to" : {
-					"x" : 400,
-					"y" : -50,
-					"cap" : "none"
-				}
+				"glyph" : "_perring",
+				"op" : [
+					[
+						"translate",
+						0,
+						-350
+					]
+				]
 			},
 			{
-				"guide_color" : "Fuchsia",
-				"from" : {
-					"x" : 400,
-					"y" : -150,
-					"cap" : "c"
-				},
-				"to" : {
-					"x" : 400,
-					"y" : -50,
-					"cap" : "c"
-				}
+				"glyph" : "_perring",
+				"op" : [
+					[
+						"translate",
+						250,
+						0
+					]
+				]
 			},
 			{
-				"guide_color" : "Orange",
-				"from" : {
-					"x" : 300,
-					"y" : -150,
-					"cap" : "none"
-				},
-				"to" : {
-					"x" : 400,
-					"y" : -150,
-					"cap" : "none"
-				}
-			},
-			{
-				"guide_color" : "Green",
-				"from" : {
-					"x" : 400,
-					"y" : -500,
-					"cap" : "s"
-				},
-				"to" : {
-					"x" : 400,
-					"y" : -450,
-					"cap" : "c"
-				}
-			},
-			{
-				"guide_color" : "Maroon",
-				"from" : {
-					"x" : 50,
-					"y" : -100,
-					"cap" : "none"
-				},
-				"to" : {
-					"x" : 400,
-					"y" : -450,
-					"cap" : "none"
-				}
-			},
-			{
-				"guide_color" : "Navy",
-				"from" : {
-					"x" : 50,
-					"y" : -100,
-					"cap" : "c"
-				},
-				"to" : {
-					"x" : 50,
-					"y" : -50,
-					"cap" : "s"
-				}
-			},
-			{
-				"guide_color" : "Olive",
-				"from" : {
-					"x" : 50,
-					"y" : -400,
-					"cap" : "none"
-				},
-				"to" : {
-					"x" : 150,
-					"y" : -400,
-					"cap" : "none"
-				}
-			},
-			{
-				"guide_color" : "Purple",
-				"from" : {
-					"x" : 150,
-					"y" : -500,
-					"cap" : "c"
-				},
-				"to" : {
-					"x" : 150,
-					"y" : -400,
-					"cap" : "c"
-				}
-			},
-			{
-				"guide_color" : "Red",
-				"from" : {
-					"x" : 50,
-					"y" : -500,
-					"cap" : "none"
-				},
-				"to" : {
-					"x" : 150,
-					"y" : -500,
-					"cap" : "none"
-				}
-			},
-			{
-				"guide_color" : "Teal",
-				"from" : {
-					"x" : 50,
-					"y" : -500,
-					"cap" : "c"
-				},
-				"to" : {
-					"x" : 50,
-					"y" : -400,
-					"cap" : "c"
-				}
-			},
-			{
-				"guide_color" : "Blue",
-				"from" : {
-					"x" : 550,
-					"y" : -150,
-					"cap" : "c"
-				},
-				"to" : {
-					"x" : 550,
-					"y" : -50,
-					"cap" : "c"
-				}
-			},
-			{
-				"guide_color" : "Blue",
-				"from" : {
-					"x" : 550,
-					"y" : -50,
-					"cap" : "none"
-				},
-				"to" : {
-					"x" : 650,
-					"y" : -50,
-					"cap" : "none"
-				}
-			},
-			{
-				"guide_color" : "Blue",
-				"from" : {
-					"x" : 650,
-					"y" : -150,
-					"cap" : "c"
-				},
-				"to" : {
-					"x" : 650,
-					"y" : -50,
-					"cap" : "c"
-				}
-			},
-			{
-				"guide_color" : "Blue",
-				"from" : {
-					"x" : 550,
-					"y" : -150,
-					"cap" : "none"
-				},
-				"to" : {
-					"x" : 650,
-					"y" : -150,
-					"cap" : "none"
-				}
+				"glyph" : "_perring",
+				"op" : [
+					[
+						"translate",
+						500,
+						0
+					]
+				]
 			}
 		]
 	},
