@@ -57,6 +57,78 @@
 		]
 	},
 	{
+		"name" : "Aacute",
+		"compose" : [
+			{
+				"glyph" : "A"
+			},
+			{
+				"glyph" : "acute",
+				"fix" : "above"
+			}
+		]
+	},
+	{
+		"name" : "Acircumflex",
+		"compose" : [
+			{
+				"glyph" : "A"
+			},
+			{
+				"glyph" : "circumflex",
+				"fix" : "above"
+			}
+		]
+	},
+	{
+		"name" : "Adieresis",
+		"compose" : [
+			{
+				"glyph" : "A"
+			},
+			{
+				"glyph" : "dieresis",
+				"fix" : "above"
+			}
+		]
+	},
+	{
+		"name" : "Agrave",
+		"compose" : [
+			{
+				"glyph" : "A"
+			},
+			{
+				"glyph" : "grave",
+				"fix" : "above"
+			}
+		]
+	},
+	{
+		"name" : "Aring",
+		"compose" : [
+			{
+				"glyph" : "A"
+			},
+			{
+				"glyph" : "ring",
+				"fix" : "above"
+			}
+		]
+	},
+	{
+		"name" : "Atilde",
+		"compose" : [
+			{
+				"glyph" : "A"
+			},
+			{
+				"glyph" : "tilde",
+				"fix" : "above"
+			}
+		]
+	},
+	{
 		"name" : "B",
 		"lines" : [
 			{
@@ -350,6 +422,66 @@
 		]
 	},
 	{
+		"name" : "Eacute",
+		"compose" : [
+			{
+				"glyph" : "E"
+			},
+			{
+				"glyph" : "acute",
+				"fix" : "above"
+			}
+		]
+	},
+	{
+		"name" : "Ecircumflex",
+		"compose" : [
+			{
+				"glyph" : "E"
+			},
+			{
+				"glyph" : "circumflex",
+				"fix" : "above"
+			}
+		]
+	},
+	{
+		"name" : "Edieresis",
+		"compose" : [
+			{
+				"glyph" : "E"
+			},
+			{
+				"glyph" : "dieresis",
+				"fix" : "above"
+			}
+		]
+	},
+	{
+		"name" : "Egrave",
+		"compose" : [
+			{
+				"glyph" : "E"
+			},
+			{
+				"glyph" : "grave",
+				"fix" : "above"
+			}
+		]
+	},
+	{
+		"name" : "Etilde",
+		"compose" : [
+			{
+				"glyph" : "E"
+			},
+			{
+				"glyph" : "tilde",
+				"fix" : "above"
+			}
+		]
+	},
+	{
 		"name" : "F",
 		"lines" : [
 			{
@@ -522,6 +654,66 @@
 					"y" : -50,
 					"cap" : "s"
 				}
+			}
+		]
+	},
+	{
+		"name" : "Iacute",
+		"compose" : [
+			{
+				"glyph" : "I"
+			},
+			{
+				"glyph" : "acute",
+				"fix" : "above"
+			}
+		]
+	},
+	{
+		"name" : "Icircumflex",
+		"compose" : [
+			{
+				"glyph" : "I"
+			},
+			{
+				"glyph" : "circumflex",
+				"fix" : "above"
+			}
+		]
+	},
+	{
+		"name" : "Idieresis",
+		"compose" : [
+			{
+				"glyph" : "I"
+			},
+			{
+				"glyph" : "dieresis",
+				"fix" : "above"
+			}
+		]
+	},
+	{
+		"name" : "Igrave",
+		"compose" : [
+			{
+				"glyph" : "I"
+			},
+			{
+				"glyph" : "grave",
+				"fix" : "above"
+			}
+		]
+	},
+	{
+		"name" : "Itilde",
+		"compose" : [
+			{
+				"glyph" : "I"
+			},
+			{
+				"glyph" : "tilde",
+				"fix" : "above"
 			}
 		]
 	},
@@ -774,6 +966,18 @@
 		]
 	},
 	{
+		"name" : "Ntilde",
+		"compose" : [
+			{
+				"glyph" : "N"
+			},
+			{
+				"glyph" : "tilde",
+				"fix" : "above"
+			}
+		]
+	},
+	{
 		"name" : "O",
 		"lines" : [
 			{
@@ -827,6 +1031,66 @@
 					"y" : -50,
 					"cap" : "c"
 				}
+			}
+		]
+	},
+	{
+		"name" : "Oacute",
+		"compose" : [
+			{
+				"glyph" : "O"
+			},
+			{
+				"glyph" : "acute",
+				"fix" : "above"
+			}
+		]
+	},
+	{
+		"name" : "Ocircumflex",
+		"compose" : [
+			{
+				"glyph" : "O"
+			},
+			{
+				"glyph" : "circumflex",
+				"fix" : "above"
+			}
+		]
+	},
+	{
+		"name" : "Odieresis",
+		"compose" : [
+			{
+				"glyph" : "O"
+			},
+			{
+				"glyph" : "dieresis",
+				"fix" : "above"
+			}
+		]
+	},
+	{
+		"name" : "Ograve",
+		"compose" : [
+			{
+				"glyph" : "O"
+			},
+			{
+				"glyph" : "grave",
+				"fix" : "above"
+			}
+		]
+	},
+	{
+		"name" : "Otilde",
+		"compose" : [
+			{
+				"glyph" : "O"
+			},
+			{
+				"glyph" : "tilde",
+				"fix" : "above"
 			}
 		]
 	},
@@ -1126,6 +1390,18 @@
 		]
 	},
 	{
+		"name" : "Scaron",
+		"compose" : [
+			{
+				"glyph" : "S"
+			},
+			{
+				"glyph" : "caron",
+				"fix" : "above"
+			}
+		]
+	},
+	{
 		"name" : "T",
 		"lines" : [
 			{
@@ -1197,6 +1473,78 @@
 					"y" : -50,
 					"cap" : "c"
 				}
+			}
+		]
+	},
+	{
+		"name" : "Uacute",
+		"compose" : [
+			{
+				"glyph" : "U"
+			},
+			{
+				"glyph" : "acute",
+				"fix" : "above"
+			}
+		]
+	},
+	{
+		"name" : "Ucircumflex",
+		"compose" : [
+			{
+				"glyph" : "U"
+			},
+			{
+				"glyph" : "circumflex",
+				"fix" : "above"
+			}
+		]
+	},
+	{
+		"name" : "Udieresis",
+		"compose" : [
+			{
+				"glyph" : "U"
+			},
+			{
+				"glyph" : "dieresis",
+				"fix" : "above"
+			}
+		]
+	},
+	{
+		"name" : "Ugrave",
+		"compose" : [
+			{
+				"glyph" : "U"
+			},
+			{
+				"glyph" : "grave",
+				"fix" : "above"
+			}
+		]
+	},
+	{
+		"name" : "Uring",
+		"compose" : [
+			{
+				"glyph" : "U"
+			},
+			{
+				"glyph" : "ring",
+				"fix" : "above"
+			}
+		]
+	},
+	{
+		"name" : "Utilde",
+		"compose" : [
+			{
+				"glyph" : "U"
+			},
+			{
+				"glyph" : "tilde",
+				"fix" : "above"
 			}
 		]
 	},
@@ -1457,6 +1805,66 @@
 		]
 	},
 	{
+		"name" : "Yacute",
+		"compose" : [
+			{
+				"glyph" : "Y"
+			},
+			{
+				"glyph" : "acute",
+				"fix" : "above"
+			}
+		]
+	},
+	{
+		"name" : "Ycircumflex",
+		"compose" : [
+			{
+				"glyph" : "Y"
+			},
+			{
+				"glyph" : "circumflex",
+				"fix" : "above"
+			}
+		]
+	},
+	{
+		"name" : "Ydieresis",
+		"compose" : [
+			{
+				"glyph" : "Y"
+			},
+			{
+				"glyph" : "dieresis",
+				"fix" : "above"
+			}
+		]
+	},
+	{
+		"name" : "Ygrave",
+		"compose" : [
+			{
+				"glyph" : "Y"
+			},
+			{
+				"glyph" : "grave",
+				"fix" : "above"
+			}
+		]
+	},
+	{
+		"name" : "Ytilde",
+		"compose" : [
+			{
+				"glyph" : "Y"
+			},
+			{
+				"glyph" : "tilde",
+				"fix" : "above"
+			}
+		]
+	},
+	{
 		"name" : "Z",
 		"lines" : [
 			{
@@ -1497,6 +1905,18 @@
 					"y" : -500,
 					"cap" : "sc"
 				}
+			}
+		]
+	},
+	{
+		"name" : "Zcaron",
+		"compose" : [
+			{
+				"glyph" : "Z"
+			},
+			{
+				"glyph" : "caron",
+				"fix" : "above"
 			}
 		]
 	},
@@ -1554,6 +1974,17 @@
 					"y" : -150,
 					"cap" : "none"
 				}
+			}
+		]
+	},
+	{
+		"name" : "_todo",
+		"compose" : [
+			{
+				"glyph" : "X"
+			},
+			{
+				"glyph" : "O"
 			}
 		]
 	},
@@ -1628,6 +2059,30 @@
 		]
 	},
 	{
+		"name" : "aacute",
+		"compose" : [
+			{
+				"glyph" : "a"
+			},
+			{
+				"glyph" : "acute",
+				"fix" : "above"
+			}
+		]
+	},
+	{
+		"name" : "acircumflex",
+		"compose" : [
+			{
+				"glyph" : "a"
+			},
+			{
+				"glyph" : "circumflex",
+				"fix" : "above"
+			}
+		]
+	},
+	{
 		"name" : "acute",
 		"compose" : [
 			{
@@ -1639,6 +2094,30 @@
 						1
 					]
 				]
+			}
+		]
+	},
+	{
+		"name" : "adieresis",
+		"compose" : [
+			{
+				"glyph" : "a"
+			},
+			{
+				"glyph" : "dieresis",
+				"fix" : "above"
+			}
+		]
+	},
+	{
+		"name" : "agrave",
+		"compose" : [
+			{
+				"glyph" : "a"
+			},
+			{
+				"glyph" : "grave",
+				"fix" : "above"
 			}
 		]
 	},
@@ -1722,6 +2201,18 @@
 					"y" : -500,
 					"cap" : "s"
 				}
+			}
+		]
+	},
+	{
+		"name" : "aring",
+		"compose" : [
+			{
+				"glyph" : "a"
+			},
+			{
+				"glyph" : "ring",
+				"fix" : "above"
 			}
 		]
 	},
@@ -2068,6 +2559,18 @@
 		]
 	},
 	{
+		"name" : "atilde",
+		"compose" : [
+			{
+				"glyph" : "a"
+			},
+			{
+				"glyph" : "tilde",
+				"fix" : "above"
+			}
+		]
+	},
+	{
 		"name" : "b",
 		"lines" : [
 			{
@@ -2126,45 +2629,16 @@
 	},
 	{
 		"name" : "backslash",
-		"lines" : [
+		"compose" : [
 			{
-				"guide_color" : "Black",
-				"from" : {
-					"x" : 400,
-					"y" : -100,
-					"cap" : "c"
-				},
-				"to" : {
-					"x" : 400,
-					"y" : -50,
-					"cap" : "s"
-				}
-			},
-			{
-				"guide_color" : "Blue",
-				"from" : {
-					"x" : 50,
-					"y" : -450,
-					"cap" : "none"
-				},
-				"to" : {
-					"x" : 400,
-					"y" : -100,
-					"cap" : "none"
-				}
-			},
-			{
-				"guide_color" : "Fuchsia",
-				"from" : {
-					"x" : 50,
-					"y" : -500,
-					"cap" : "s"
-				},
-				"to" : {
-					"x" : 50,
-					"y" : -450,
-					"cap" : "c"
-				}
+				"glyph" : "slash",
+				"op" : [
+					[
+						"bscale",
+						-1,
+						1
+					]
+				]
 			}
 		]
 	},
@@ -2967,6 +3441,54 @@
 		]
 	},
 	{
+		"name" : "eacute",
+		"compose" : [
+			{
+				"glyph" : "e"
+			},
+			{
+				"glyph" : "acute",
+				"fix" : "above"
+			}
+		]
+	},
+	{
+		"name" : "ecircumflex",
+		"compose" : [
+			{
+				"glyph" : "e"
+			},
+			{
+				"glyph" : "circumflex",
+				"fix" : "above"
+			}
+		]
+	},
+	{
+		"name" : "edieresis",
+		"compose" : [
+			{
+				"glyph" : "e"
+			},
+			{
+				"glyph" : "dieresis",
+				"fix" : "above"
+			}
+		]
+	},
+	{
+		"name" : "egrave",
+		"compose" : [
+			{
+				"glyph" : "e"
+			},
+			{
+				"glyph" : "grave",
+				"fix" : "above"
+			}
+		]
+	},
+	{
 		"name" : "eight",
 		"lines" : [
 			{
@@ -3242,6 +3764,18 @@
 		]
 	},
 	{
+		"name" : "etilde",
+		"compose" : [
+			{
+				"glyph" : "e"
+			},
+			{
+				"glyph" : "tilde",
+				"fix" : "above"
+			}
+		]
+	},
+	{
 		"name" : "euro",
 		"lines" : [
 			{
@@ -3339,6 +3873,21 @@
 					"y" : -200,
 					"cap" : "s"
 				}
+			}
+		]
+	},
+	{
+		"name" : "exclamdown",
+		"compose" : [
+			{
+				"glyph" : "exclam",
+				"op" : [
+					[
+						"bscale",
+						-1,
+						-1
+					]
+				]
 			}
 		]
 	},
@@ -3769,6 +4318,66 @@
 		]
 	},
 	{
+		"name" : "iacute",
+		"compose" : [
+			{
+				"glyph" : "i"
+			},
+			{
+				"glyph" : "acute",
+				"fix" : "above"
+			}
+		]
+	},
+	{
+		"name" : "icircumflex",
+		"compose" : [
+			{
+				"glyph" : "i"
+			},
+			{
+				"glyph" : "circumflex",
+				"fix" : "above"
+			}
+		]
+	},
+	{
+		"name" : "idieresis",
+		"compose" : [
+			{
+				"glyph" : "i"
+			},
+			{
+				"glyph" : "dieresis",
+				"fix" : "above"
+			}
+		]
+	},
+	{
+		"name" : "igrave",
+		"compose" : [
+			{
+				"glyph" : "i"
+			},
+			{
+				"glyph" : "grave",
+				"fix" : "above"
+			}
+		]
+	},
+	{
+		"name" : "itilde",
+		"compose" : [
+			{
+				"glyph" : "i"
+			},
+			{
+				"glyph" : "tilde",
+				"fix" : "above"
+			}
+		]
+	},
+	{
 		"name" : "j",
 		"lines" : [
 			{
@@ -4064,6 +4673,14 @@
 		]
 	},
 	{
+		"name" : "nbspace",
+		"compose" : [
+			{
+				"glyph" : "space"
+			}
+		]
+	},
+	{
 		"name" : "nine",
 		"lines" : [
 			{
@@ -4130,6 +4747,18 @@
 					"y" : -50,
 					"cap" : "none"
 				}
+			}
+		]
+	},
+	{
+		"name" : "ntilde",
+		"compose" : [
+			{
+				"glyph" : "n"
+			},
+			{
+				"glyph" : "tilde",
+				"fix" : "above"
 			}
 		]
 	},
@@ -4248,6 +4877,54 @@
 		]
 	},
 	{
+		"name" : "oacute",
+		"compose" : [
+			{
+				"glyph" : "o"
+			},
+			{
+				"glyph" : "acute",
+				"fix" : "above"
+			}
+		]
+	},
+	{
+		"name" : "ocircumflex",
+		"compose" : [
+			{
+				"glyph" : "o"
+			},
+			{
+				"glyph" : "circumflex",
+				"fix" : "above"
+			}
+		]
+	},
+	{
+		"name" : "odieresis",
+		"compose" : [
+			{
+				"glyph" : "o"
+			},
+			{
+				"glyph" : "dieresis",
+				"fix" : "above"
+			}
+		]
+	},
+	{
+		"name" : "ograve",
+		"compose" : [
+			{
+				"glyph" : "o"
+			},
+			{
+				"glyph" : "grave",
+				"fix" : "above"
+			}
+		]
+	},
+	{
 		"name" : "one",
 		"lines" : [
 			{
@@ -4302,6 +4979,18 @@
 					"y" : -500,
 					"cap" : "none"
 				}
+			}
+		]
+	},
+	{
+		"name" : "otilde",
+		"compose" : [
+			{
+				"glyph" : "o"
+			},
+			{
+				"glyph" : "tilde",
+				"fix" : "above"
 			}
 		]
 	},
@@ -4683,6 +5372,21 @@
 		]
 	},
 	{
+		"name" : "questiondown",
+		"compose" : [
+			{
+				"glyph" : "question",
+				"op" : [
+					[
+						"bscale",
+						-1,
+						-1
+					]
+				]
+			}
+		]
+	},
+	{
 		"name" : "quotedbl",
 		"lines" : [
 			{
@@ -4935,6 +5639,18 @@
 					"y" : -400,
 					"cap" : "s"
 				}
+			}
+		]
+	},
+	{
+		"name" : "scaron",
+		"compose" : [
+			{
+				"glyph" : "s"
+			},
+			{
+				"glyph" : "caron",
+				"fix" : "above"
 			}
 		]
 	},
@@ -5512,6 +6228,54 @@
 		]
 	},
 	{
+		"name" : "uacute",
+		"compose" : [
+			{
+				"glyph" : "u"
+			},
+			{
+				"glyph" : "acute",
+				"fix" : "above"
+			}
+		]
+	},
+	{
+		"name" : "ucircumflex",
+		"compose" : [
+			{
+				"glyph" : "u"
+			},
+			{
+				"glyph" : "circumflex",
+				"fix" : "above"
+			}
+		]
+	},
+	{
+		"name" : "udieresis",
+		"compose" : [
+			{
+				"glyph" : "u"
+			},
+			{
+				"glyph" : "dieresis",
+				"fix" : "above"
+			}
+		]
+	},
+	{
+		"name" : "ugrave",
+		"compose" : [
+			{
+				"glyph" : "u"
+			},
+			{
+				"glyph" : "grave",
+				"fix" : "above"
+			}
+		]
+	},
+	{
 		"name" : "underscore",
 		"lines" : [
 			{
@@ -5526,6 +6290,30 @@
 					"y" : -50,
 					"cap" : "s"
 				}
+			}
+		]
+	},
+	{
+		"name" : "uring",
+		"compose" : [
+			{
+				"glyph" : "u"
+			},
+			{
+				"glyph" : "ring",
+				"fix" : "above"
+			}
+		]
+	},
+	{
+		"name" : "utilde",
+		"compose" : [
+			{
+				"glyph" : "u"
+			},
+			{
+				"glyph" : "tilde",
+				"fix" : "above"
 			}
 		]
 	},
@@ -5804,6 +6592,66 @@
 		]
 	},
 	{
+		"name" : "yacute",
+		"compose" : [
+			{
+				"glyph" : "y"
+			},
+			{
+				"glyph" : "acute",
+				"fix" : "above"
+			}
+		]
+	},
+	{
+		"name" : "ycircumflex",
+		"compose" : [
+			{
+				"glyph" : "y"
+			},
+			{
+				"glyph" : "circumflex",
+				"fix" : "above"
+			}
+		]
+	},
+	{
+		"name" : "ydieresis",
+		"compose" : [
+			{
+				"glyph" : "y"
+			},
+			{
+				"glyph" : "dieresis",
+				"fix" : "above"
+			}
+		]
+	},
+	{
+		"name" : "ygrave",
+		"compose" : [
+			{
+				"glyph" : "y"
+			},
+			{
+				"glyph" : "grave",
+				"fix" : "above"
+			}
+		]
+	},
+	{
+		"name" : "ytilde",
+		"compose" : [
+			{
+				"glyph" : "y"
+			},
+			{
+				"glyph" : "tilde",
+				"fix" : "above"
+			}
+		]
+	},
+	{
 		"name" : "z",
 		"lines" : [
 			{
@@ -5844,6 +6692,18 @@
 					"y" : -400,
 					"cap" : "sc"
 				}
+			}
+		]
+	},
+	{
+		"name" : "zcaron",
+		"compose" : [
+			{
+				"glyph" : "z"
+			},
+			{
+				"glyph" : "caron",
+				"fix" : "above"
 			}
 		]
 	},

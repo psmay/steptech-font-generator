@@ -5,6 +5,13 @@ use strict;
 use 5.010;
 use Carp;
 
+# List of codepoints with glyphs that appear in Windows-1252
+my @cp_in_1252 = (
+	0x20..0x7E, 0x20AC, 0x201A, 0x192, 0x201E, 0x2026, 0x2020, 0x2021,
+	0x2C6, 0x2030, 0x160, 0x2039, 0x152, 0x17D, 0x2018, 0x2019, 0x201C,
+	0x201D, 0x2022, 0x2013, 0x2014, 0x2DC, 0x2122, 0x161, 0x203A, 0x153,
+	0x17E, 0x178, 0xA0..0xFF);
+
 my %glyph_name_to_cp = (
 	A => 65,
 	AE => 198,
@@ -4289,11 +4296,14 @@ my %glyph_name_to_cp = (
 	zukatakana => 12474
 );
 
-my %cp_to_glyph_name = do {
-	# This bit is to prevent the codepoints from looking like strings to JSON
-	my @tmp = %glyph_name_to_cp;
-	reverse @tmp;
-};
+my %cp_to_glyph_name;
+{
+	# Because glyph_name_to_cp is not 1:1, the keys are sorted for the reverse
+	for(sort keys %glyph_name_to_cp) {
+		my $cp = $glyph_name_to_cp{$_};
+		$cp_to_glyph_name{$cp} = $_ unless exists $cp_to_glyph_name{$cp};
+	}
+}
 
 
 use JSON;
@@ -4306,6 +4316,7 @@ my $elements = do {
 	$j->decode(<>);
 };
 
+my %missing_1252_cps = map { $_ => 1 } @cp_in_1252;
 my %elements_by_name;
 
 # Pass to cross-reference codepoints to names.
@@ -4326,9 +4337,26 @@ for my $element (@$elements) {
 		die "Element index $index has no name or codepoint";
 	}
 
+	if(defined $element->{codepoint}) {
+		my $key = $element->{codepoint};
+		delete $missing_1252_cps{$key};
+	}
+
 	die "Element index $index duplicates the name $element->{name}"
 		if defined $elements_by_name{$element->{name}};
 	
+	$elements_by_name{$element->{name}} = $element;
+}
+
+# Insert "_todo" glyphs for missing characters
+for my $cp (sort { $a <=> $b } keys %missing_1252_cps) {
+	my $ncp = $cp + 0;
+	my $element = {
+		codepoint => $ncp,
+		name => $cp_to_glyph_name{$cp},
+		compose => [{ glyph => '_todo' }],
+	};
+	push @$elements, $element;
 	$elements_by_name{$element->{name}} = $element;
 }
 
