@@ -191,14 +191,34 @@ sub get_element_bounds
 	return ($left, $top, $right, $bottom);
 }
 
+# Parameter is { "glyph":{...}, "op":[[opname,...],[opname,...],...] }
+sub get_compose_lines
+{
+	my $compose_item = shift;
+	my %glyph = %{ $compose_item->{glyph} || { lines=>[] } };
+	my @op = @{ $compose_item->{op} || [] };
+
+	my @lines = @{ $glyph{lines} };
+
+	# TODO: Process operations here
+
+	return @lines;
+}
+
 sub draw_element_svg
 {
 	my $element = shift;
 	my @out = ();
 
+	my @element_lines = @{$element->{lines} || []};
+
+	# Composition adds more lines.
+	for(@{( $element->{compose} || [] )}) {
+		push @element_lines, get_compose_lines($_);
+	}
+
 	my $ph = $page_height;
-	my($left, $top, $right, $bottom) =
-		get_element_bounds(@{$element->{lines}});
+	my($left, $top, $right, $bottom) = get_element_bounds(@element_lines);
 	my $pw = $page_width + $right;
 
 	push @out, qq{
@@ -210,7 +230,7 @@ sub draw_element_svg
 			>
 			<!--[STFGMETA[ {"width":$pw,"height":$ph,"stroke_width":$stroke_width,"x":$baseline_x,"y":$baseline_y,"codepoint":$element->{codepoint},"glyph_name":"$element->{name}"} ]STFGMETA]-->
 	};
-	push @out, draw_element_lines(@{$element->{lines}});
+	push @out, draw_element_lines(@element_lines);
 	push @out, qq{
 	</svg>
 	};
