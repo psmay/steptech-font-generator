@@ -200,15 +200,14 @@ sub get_element_bounds
 sub get_compose_lines
 {
 	my $compose_item = shift;
-	my %glyph = %{ $compose_item->{glyph} || { lines=>[] } };
+	my $element = $compose_item->{glyph} || {};
 	# The op point defaults to the result of bmove0
 	my @op = (['bmove0'], @{ $compose_item->{op} || [] });
 
-	my @lines = @{ $glyph{lines} };
+	my @lines = get_all_element_lines($element);
 	my $op_x;
 	my $op_y;
 
-	# TODO: Process operations here
 	while (@op) {
 		my $op = shift(@op);
 		$op = [$op] unless ref $op;
@@ -292,17 +291,27 @@ sub get_compose_lines
 	return @lines;
 }
 
+sub get_all_element_lines
+{
+	my $element = shift;
+	my $compose_list = $element->{compose} || [];
+	my $element_lines = $element->{lines} || [];
+
+	my @result = @$element_lines;
+
+	for my $compose_item (@$compose_list) {
+		push @result, get_compose_lines($compose_item);
+	}
+
+	return @result;
+}
+
 sub draw_element_svg
 {
 	my $element = shift;
 	my @out = ();
 
-	my @element_lines = @{$element->{lines} || []};
-
-	# Composition adds more lines.
-	for(@{( $element->{compose} || [] )}) {
-		push @element_lines, get_compose_lines($_);
-	}
+	my @element_lines = get_all_element_lines($element);
 
 	my $ph = $page_height;
 	my($left, $top, $right, $bottom) = get_element_bounds(@element_lines);

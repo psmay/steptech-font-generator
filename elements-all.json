@@ -4497,27 +4497,7 @@
 		"name" : "perthousand",
 		"compose" : [
 			{
-				"glyph" : "slash"
-			},
-			{
-				"glyph" : "_perring",
-				"op" : [
-					[
-						"translate",
-						0,
-						-350
-					]
-				]
-			},
-			{
-				"glyph" : "_perring",
-				"op" : [
-					[
-						"translate",
-						250,
-						0
-					]
-				]
+				"glyph" : "percent"
 			},
 			{
 				"glyph" : "_perring",
