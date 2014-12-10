@@ -72,10 +72,18 @@
 		"name" : "Acircumflex",
 		"compose" : [
 			{
-				"glyph" : "A"
+				"glyph" : "A",
+				"name" : "letter"
 			},
 			{
 				"glyph" : "circumflex",
+				"op" : [
+					["bmoveto", 0, 0.5],
+					["moveby", 0, 50],
+					["push"],
+					["omoveto", "letter", 0, -0.5],
+					["ptranslate"]
+					],
 				"fix" : "above"
 			}
 		]
@@ -96,10 +104,18 @@
 		"name" : "Agrave",
 		"compose" : [
 			{
+				"name": "letter",
 				"glyph" : "A"
 			},
 			{
 				"glyph" : "grave",
+				"op" : [
+					["bmoveto", 0, 0.5],
+					["moveby", 0, 50],
+					["push"],
+					["omoveto", "letter", 0, -0.5],
+					["ptranslate"]
+					],
 				"fix" : "above"
 			}
 		]
@@ -4349,7 +4365,8 @@
 			},
 			{
 				"glyph" : "dieresis",
-				"fix" : "above"
+				"fix" : "above",
+				"spread" : false
 			}
 		]
 	},

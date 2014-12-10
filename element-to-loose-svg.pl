@@ -200,10 +200,60 @@ sub get_element_bounds
 	return get_generic_bounds($stroke_width/2, @_);
 }
 
+sub dmin {
+	my $current = undef;
+	for(@_) {
+		next unless defined $_;
+		$current = $_ if (!defined($current) || ($_ < $current));
+	}
+	$current;
+}
+
+sub dmax {
+	my $current = undef;
+	for(@_) {
+		next unless defined $_;
+		$current = $_ if (!defined($current) || ($_ > $current));
+	}
+	$current;
+}
+
+sub get_unzeroed_element_bounds
+{
+	my $radius = $stroke_width/2;
+	my @lines = @_;
+
+	my($left,$top,$right,$bottom);
+
+	for my $line (@lines) {
+		# Some lines don't get counted when spacing
+		my $spread = $line->{spread} // 1;
+		next unless $spread;
+
+		for my $endpoint ($line->{from}, $line->{to}) {
+			my $pleft = $endpoint->{x} - $radius;
+			$left //= $pleft;
+			my $pright = $endpoint->{x} + $radius;
+			$right //= $pright;
+			my $ptop = $endpoint->{y} - $radius;
+			$top //= $ptop;
+			my $pbottom = $endpoint->{y} + $radius;
+			$bottom //= $pbottom;
+			$left = dmin($left, $pleft);
+			$right = dmax($right, $pright);
+			$top = dmin($top, $ptop);
+			$bottom = dmax($bottom, $pbottom);
+		}
+	}
+
+	return ($left, $top, $right, $bottom);
+}
+
 # Parameter is { "glyph":{...}, "op":[[opname,...],[opname,...],...] }
 sub get_compose_lines
 {
 	my $compose_item = shift;
+	my $previous_compose_items = shift // [];
 	my $element = $compose_item->{glyph} || {};
 	# If a glyph is composed with spread=false, mark the resulting lines.
 	my $spread = $compose_item->{spread} // 1;
@@ -211,41 +261,121 @@ sub get_compose_lines
 	my @op = (['bmove0'], @{ $compose_item->{op} || [] });
 
 	my @lines = get_all_element_lines($element);
-	my $op_x;
-	my $op_y;
+	my @h = ({});
+	my $pushh = sub {
+		my %new = %{$h[0]};
+		unshift @h, \%new;
+	};
+	my $peekh = sub {
+		my $count = shift;
+		$count //= 1;
+		if(@h < $count) {
+			die "Not enough points on stack";
+		}
+		return @h[0 .. $count-1];
+	};
+	my $splh = sub {
+		my $count = shift;
+		$count //= 1;
+		my @repl = @_;
+		if(@h + @repl - $count < 1) {
+			die "Not enough points left on stack";
+		}
+		return splice(@h, 0, $count, @repl);
+	};
+	my $geth = sub {
+		my $index = shift;
+		$index //= 0;
+		return ($h[$index]{x}, $h[$index]{y});
+	};
+	my $seth = sub {
+		my $x = shift;
+		my $y = shift;
+		my $index = shift;
+		$index //= 0;
+		$h[$index]{x} = 0 + $x;
+		$h[$index]{y} = 0 + $y;
+	};
+	my $mvh = sub {
+		my $dx = shift;
+		my $dy = shift;
+		my $index = shift;
+		$index //= 0;
+		my($x, $y) = $geth->($index);
+		$seth->($x + $dx, $y + $dy);
+	};
+	my $get_previous_item = sub {
+		my $name = shift;
+		croak "Name is empty" unless defined $name;
+		for(reverse @$previous_compose_items) {
+			my $item_name = $_->{name};
+			next unless defined $item_name;
+			next unless $item_name eq $name;
+			return $_;
+		}
+		die "Could not find previous compose item named `$name`";
+	};
+	my $get_previous_bounds = sub {
+		my $name = shift;
+		croak "Name is empty" unless defined $name;
+		my $item = $get_previous_item->($name);
+		return get_unzeroed_element_bounds(@{$item->{composed_lines}});
+	};
 
 	while (@op) {
 		my $op = shift(@op);
 		$op = [$op] unless ref $op;
 		my($kw,@p) = @$op;
 
-		my ($l, $t, $r, $b) = get_element_bounds(@lines);
+		my ($l, $t, $r, $b) = get_unzeroed_element_bounds(@lines);
 		my $bxunit = $r - $l;
 		my $byunit = $b - $t;
+		say STDERR "l=$l t=$t r=$r b=$b xu=$bxunit yu=$byunit";
 
-		if($kw eq 'move0') {
-			$op_x = 0;
-			$op_y = 0;
+		if($kw eq 'push') {
+			$pushh->();
+		}
+		elsif($kw eq 'pop') {
+			$splh->(1);
+		}
+		elsif($kw eq 'move0') {
+			$seth->(0,0);
 		}
 		elsif($kw eq 'moveby') {
 			my($dx, $dy) = @p;
-			$op_x += 0 + $dx;
-			$op_y += 0 + $dy;
+			$mvh->($dx, $dy);
+			my($x,$y)=$geth->(); say STDERR "moveby moved us to $x $y";
 		}
 		elsif($kw eq 'moveto') {
 			@op = (['move0'],['moveby',@p],@op);
 		}
 		elsif($kw eq 'bmove0') {
-			$op_x = ($l + $r) / 2;
-			$op_y = ($t + $b) / 2;
+			$seth->(($l + $r) / 2, ($t + $b) / 2);
+			my($x,$y)=$geth->(); say STDERR "bmove0 moved us to $x $y";
 		}
 		elsif($kw eq 'bmoveby') {
 			my($dx, $dy) = @p;
-			$op_x += 0 + ($bxunit * $dx);
-			$op_y += 0 + ($byunit * $dy);
+			say STDERR "bmoveby dx=$dx dy=$dy xunit=$bxunit yunit=$byunit";
+			$mvh->($bxunit * $dx, $byunit * $dy);
+			my($x,$y)=$geth->(); say STDERR "bmoveby moved us to $x $y";
 		}
 		elsif($kw eq 'bmoveto') {
-			@op = (['bmove0'],['moveby',@p],@op);
+			@op = (['bmove0'],['bmoveby',@p],@op);
+		}
+		elsif($kw eq 'omove0') {
+			my($og) = @p;
+			my($ol, $ot, $or, $ob) = $get_previous_bounds->($og);
+			$seth->(($ol + $or) / 2, ($ot + $ob) / 2);
+		}
+		elsif($kw eq 'omoveby') {
+			my($og, $dx, $dy) = @p;
+			my($ol, $ot, $or, $ob) = $get_previous_bounds->($og);
+			$mvh->(($or - $ol) * $dx, ($ob - $ot) * $dy);
+			my($x,$y)=$geth->(); say STDERR "omoveby moved us to $x $y";
+		}
+		elsif($kw eq 'omoveto') {
+			my($og, @px) = @p;
+			@op = (['omove0', $og], ['omoveby', $og, @px], @op);
 		}
 		elsif($kw eq 'translate') {
 			my($dx, $dy) = @p;
@@ -257,8 +387,17 @@ sub get_compose_lines
 					$endpoint->{y} += $dy;
 				}
 			}
-			$op_x += $dx;
-			$op_y += $dy;
+			$mvh->($dx, $dy);
+		}
+		elsif($kw eq 'ptranslate') {
+			# Translate the shape the displacement between the current point and the previous point on the stack.
+			# Remove the previous point.
+			my($current) = $peekh->(1);
+			my($cx, $cy) = $geth->(0);
+			my($px, $py) = $geth->(1);
+			say STDERR "ptranslate is from $px $py to $cx $cy";
+			$splh->(2, $current);
+			@op = (['translate', $cx - $px, $cy - $py]);
 		}
 		elsif($kw eq '_bscale_g0') {
 			# Perform bscale about global origin rather than op point
@@ -283,10 +422,11 @@ sub get_compose_lines
 		elsif($kw eq 'bscale') {
 			# Translate to origin, scale, translate back
 			my($sx, $sy) = @p;
+			my($x, $y) = $geth->();
 			@op = (
-				['translate', -$op_x, -$op_y],
+				['translate', -$x, -$y],
 				['_bscale_g0', $sx, $sy],
-				['translate', $op_x, $op_y],
+				['translate', $x, $y],
 				@op);
 		}
 		else {
@@ -298,6 +438,9 @@ sub get_compose_lines
 		$_->{spread} = 0 for @lines;
 	}
 
+
+	$compose_item->{composed_lines} = [@lines];
+
 	return @lines;
 }
 
@@ -306,11 +449,17 @@ sub get_all_element_lines
 	my $element = shift;
 	my $compose_list = $element->{compose} || [];
 	my $element_lines = $element->{lines} || [];
+	my $previous_compose_items = [];
 
 	my @result = @$element_lines;
 
 	for my $compose_item (@$compose_list) {
-		push @result, get_compose_lines($compose_item);
+		my $caption = "Processing compose unit";
+		$caption .= " $compose_item->{name}" if defined $compose_item->{name};
+		say STDERR $caption;
+
+		push @result, get_compose_lines($compose_item, $previous_compose_items);
+		push @$previous_compose_items, $compose_item;
 	}
 
 	return @result;
