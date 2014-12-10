@@ -37,7 +37,7 @@ $(ELEMENTS_DIR): $(JSON_ALL)
 # Generate a makefile include for the element file list
 $(DEFINE_ELEMENT_FILES): $(ELEMENTS_DIR)
 	+@echo -n "ELEMENT_FILES =" > $@$(RT)
-	+@find $< -type f -name '*.json' -print0 | sort -z | xargs -0 -i echo -n " {}" >> $@$(RT)
+	+@find $< -type f -name 'char-*.json' -print0 | sort -z | xargs -0 -i echo -n " {}" >> $@$(RT)
 	+@echo "" >> $@$(RT)
 	mv $@$(RT) $@
 

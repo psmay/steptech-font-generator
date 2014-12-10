@@ -308,6 +308,23 @@ sub draw_element_svg
 	my($left, $top, $right, $bottom) = get_element_bounds(@element_lines);
 	my $pw = $page_width + $right;
 
+	my $meta = do {
+		use JSON;
+		my %data = (
+			width => $pw,
+			height => $ph,
+			stroke_width => $stroke_width,
+			x => $baseline_x,
+			y => $baseline_y,
+			codepoint => $element->{codepoint},
+			glyph_name => $element->{name}
+		);
+		local $_ = JSON->new->ascii->encode(\%data);
+		s/--/-\\u002d/g;
+		$_;
+	};
+
+
 	push @out, qq{
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
@@ -315,7 +332,7 @@ sub draw_element_svg
 			xmlns:xlink="http://www.w3.org/1999/xlink"
 			width="$pw" height="$ph"
 			>
-			<!--[STFGMETA[ {"width":$pw,"height":$ph,"stroke_width":$stroke_width,"x":$baseline_x,"y":$baseline_y,"codepoint":$element->{codepoint},"glyph_name":"$element->{name}"} ]STFGMETA]-->
+			<!--[STFGMETA[ $meta ]STFGMETA]-->
 	};
 	push @out, draw_element_lines(@element_lines);
 	push @out, qq{

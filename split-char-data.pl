@@ -4352,8 +4352,15 @@ for my $element (@$elements) {
 for my $element (@$elements) {
 	# Codepoint is given first in decimal (for sorting) and then in hex (for
 	# identification).
-	my $basename = sprintf('%05d-U+%04x-%s', $element->{codepoint},
-		$element->{codepoint}, $element->{name});
+	
+	my $codepoint = $element->{codepoint};
+	my $basename;
+	if(defined $codepoint) {
+		$basename = sprintf('char-%05d-U+%04x-%s', $codepoint, $codepoint, $element->{name});
+	}
+	else {
+		$basename = "additional-$element->{name}";
+	}
 	my $path = "$out_dir/$basename.json";
 	#say STDERR "Writing $path";
 	open(my $fh, '>', $path) or die "Open '$path' failed: $!";
