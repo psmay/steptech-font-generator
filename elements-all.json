@@ -2089,7 +2089,7 @@
 				"glyph" : "grave",
 				"op" : [
 					[
-						"bscale",
+						"scale",
 						-1,
 						1
 					]
@@ -2634,7 +2634,7 @@
 				"glyph" : "slash",
 				"op" : [
 					[
-						"bscale",
+						"scale",
 						-1,
 						1
 					]
@@ -2758,7 +2758,7 @@
 				"glyph" : "braceleft",
 				"op" : [
 					[
-						"bscale",
+						"scale",
 						-1,
 						1
 					]
@@ -2817,7 +2817,7 @@
 				"glyph" : "bracketleft",
 				"op" : [
 					[
-						"bscale",
+						"scale",
 						-1,
 						1
 					]
@@ -3883,7 +3883,7 @@
 				"glyph" : "exclam",
 				"op" : [
 					[
-						"bscale",
+						"scale",
 						-1,
 						-1
 					]
@@ -4229,7 +4229,7 @@
 				"glyph" : "less",
 				"op" : [
 					[
-						"bscale",
+						"scale",
 						-1,
 						1
 					]
@@ -5128,7 +5128,7 @@
 				"glyph" : "parenleft",
 				"op" : [
 					[
-						"bscale",
+						"scale",
 						-1,
 						1
 					]
@@ -5378,7 +5378,7 @@
 				"glyph" : "question",
 				"op" : [
 					[
-						"bscale",
+						"scale",
 						-1,
 						-1
 					]
