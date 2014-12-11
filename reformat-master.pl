@@ -23,6 +23,7 @@ my @key_order = qw/
 	name
 	compose
 	lines
+	anchors
 
 	glyph
 	op

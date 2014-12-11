@@ -3254,7 +3254,13 @@
 					"cap" : "s"
 				}
 			}
-		]
+		],
+		"anchors" : {
+			"accent_top" : {
+				"x" : 125,
+				"y" : -500
+			}
+		}
 	},
 	{
 		"name" : "dollar",
@@ -4220,7 +4226,13 @@
 				},
 				"dotdir" : "x"
 			}
-		]
+		],
+		"anchors" : {
+			"accent_top" : {
+				"x" : 100,
+				"y" : -500
+			}
+		}
 	},
 	{
 		"name" : "greater",

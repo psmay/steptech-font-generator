@@ -5,6 +5,8 @@ use strict;
 use 5.010;
 use Carp;
 
+use JSON;
+
 use Math::Trig 'rad2deg';
 
 my $stroke_width = 100;
@@ -208,11 +210,42 @@ sub get_element_bounds
 	return get_generic_bounds($stroke_width/2, @_);
 }
 
+sub get_anchors {
+	my $element = shift;
+	$element->{anchors} //= {};
+	my $anchors = $element->{anchors};
+
+	my @lines;
+	my @bounds;
+	for my $req_key (qw/top bottom/) {
+		if(not $anchors->{$req_key}) {
+			@lines = get_all_element_lines($element);
+			@bounds = get_element_bounds(@lines);
+			last;
+		}
+	}
+
+	my($l, $t, $r, $b) = @bounds;
+
+	$anchors->{top} //= {
+		auto => JSON::true,
+		x => ($l + $r) / 2,
+		y => $t
+	};
+	$anchors->{bottom} //= {
+		auto => JSON::true,
+		x => ($l + $r) / 2,
+		y => $b
+	};
+	return $anchors;
+}
+
 # Parameter is { "glyph":{...}, "op":[[opname,...],[opname,...],...] }
 sub get_compose_lines
 {
 	my $compose_item = shift;
 	my $element = $compose_item->{glyph} || {};
+	my $anchors = get_anchors($element);
 	# If a glyph is composed with spread=false, mark the resulting lines.
 	my $spread = $compose_item->{spread} // 1;
 	# The op point defaults to the result of bmove0
