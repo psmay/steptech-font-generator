@@ -170,10 +170,10 @@ sub get_generic_bounds
 	my $radius = shift;
 	my @lines = @_;
 
-	my $left = 0;
-	my $top = 0;
-	my $right = 0;
-	my $bottom = 0;
+	my $left;
+	my $top;
+	my $right;
+	my $bottom;
 
 	for my $line (@lines) {
 		# Some lines don't get counted when spacing
@@ -185,14 +185,22 @@ sub get_generic_bounds
 			my $pright = $endpoint->{x} + $radius;
 			my $ptop = $endpoint->{y} - $radius;
 			my $pbottom = $endpoint->{y} + $radius;
+
+			$left //= $pleft;
 			$left = $pleft if $left > $pleft;
+
+			$right //= $pright;
 			$right = $pright if $right < $pright;
+
+			$top //= $ptop;
 			$top = $ptop if $top > $ptop;
+
+			$bottom //= $pbottom;
 			$bottom = $pbottom if $bottom < $pbottom;
 		}
 	}
 
-	return ($left, $top, $right, $bottom);
+	return ($left // 0, $top // 0, $right // 0, $bottom // 0);
 }
 
 sub get_element_bounds
