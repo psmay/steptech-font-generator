@@ -3227,6 +3227,12 @@
 	},
 	{
 		"name" : "dieresis",
+		"anchors" : {
+			"d-top" : {
+				"x" : 125,
+				"y" : -550
+			}
+		},
 		"lines" : [
 			{
 				"guide_color" : "Black",
@@ -4345,10 +4351,28 @@
 		"name" : "idieresis",
 		"compose" : [
 			{
+				"name" : "base",
 				"glyph" : "i"
 			},
 			{
 				"glyph" : "dieresis",
+				"op" : [
+					[
+						"movetoanchor",
+						"d-top"
+					],
+					[
+						"push"
+					],
+					[
+						"itemmovetoanchor",
+						"base",
+						"top"
+					],
+					[
+						"translatefromprevious"
+					]
+				],
 				"fix" : "above"
 			}
 		]

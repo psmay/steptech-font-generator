@@ -210,25 +210,23 @@ sub get_element_bounds
 	return get_generic_bounds($stroke_width/2, @_);
 }
 
-# Parameter is { "glyph":{...}, "op":[[opname,...],[opname,...],...] }
-sub get_compose_lines
-{
-	my $compose_item = shift;
-	my $cr = new ComposeRunner $compose_item, $stroke_width/2;
-	$cr->run_item_ops;
-	return $cr->get_result_lines;
-}
-
 sub get_all_element_lines
 {
 	my $element = shift;
 	my $compose_list = $element->{compose} || [];
 	my $element_lines = $element->{lines} || [];
+	my $named_items = {};
 
 	my @result = @$element_lines;
 
 	for my $compose_item (@$compose_list) {
-		push @result, get_compose_lines($compose_item);
+		my $cr = new ComposeRunner $compose_item, $stroke_width/2,
+			named_items => $named_items;
+		$cr->run_item_ops;
+		my %results = $cr->get_results;
+		$named_items = $results{named_items};
+		
+		push @result, @{$results{lines}};
 	}
 
 	return @result;

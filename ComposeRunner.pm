@@ -30,14 +30,6 @@ sub _dmax {
 	$result;
 }
 
-sub _get_compose_lines {
-	my $compose_item = shift;
-	my $stroke_radius = shift;
-	my $cr = new ComposeRunner $compose_item, $stroke_radius;
-	$cr->run_item_ops;
-	$cr->get_result_lines;
-}
-
 sub _get_all_element_lines {
 	my $element = shift;
 	my $stroke_radius = shift;
@@ -47,7 +39,10 @@ sub _get_all_element_lines {
 	my @result = @$element_lines;
 
 	for my $compose_item (@$compose_list) {
-		push @result, _get_compose_lines($compose_item, $stroke_radius);
+		my $cr = new ComposeRunner $compose_item, $stroke_radius;
+		$cr->run_item_ops;
+		my %results = $cr->get_results;
+		push @result, @{ $results{lines} };
 	}
 
 	return @result;
@@ -105,11 +100,14 @@ sub new {
 	my %args = @_;
 
 	$self->{stroke_radius} = $radius + 0;
+	$self->{named_items} = { %{ $args{named_items} // {} } };
 
 	my $compose_item = dclone($orig_compose_item);
 	my $element = $compose_item->{glyph} || {};
+	$self->{name} = $compose_item->{name};
 	$self->{spread} = $compose_item->{spread} // 1;
 	$self->{ops} = [['localmove0'], @{ $compose_item->{op} || [] }];
+	$self->{ops_have_run} = 0;
 
 	$self->{anchors} = $element->{anchors} || {};
 	$self->{lines} = [ _get_all_element_lines($element, $radius) ];
@@ -120,16 +118,40 @@ sub new {
 
 sub run_item_ops {
 	my $self = shift;
+	croak "Already ran item ops" if $self->{ops_have_run};
+	$self->{ops_have_run} ||= !!1;
 	my $ops = $self->{ops};
 	use Data::Dumper;
 	for my $op (@$ops) {
 		$op = [$op] unless ref $op;
-		$self->run_op(@$op);
+		$self->_run_op(@$op);
 	}
+
+	my $a = $self->{anchors};
+	my $l = dclone($self->{lines});
+	if(not $self->{spread}) {
+		$_->{spread} = !!0 for @$l;
+	}
+	my $ii = $self->{named_items};
+	if(defined $self->{name}) {
+		$ii = { %$ii };
+		$ii->{$self->{name}} = $self;
+	}
+
+	$self->{result} = {
+		anchors => $a,
+		lines => $l,
+		named_items => $ii
+	};
 }
 
+sub get_results {
+	my $self = shift;
+	$self->run_item_ops if not $self->{ops_have_run};
+	return %{$self->{result}};
+}
 
-sub run_op {
+sub _run_op {
 	my $self = shift;
 	my $name = shift;
 	my $method_name = "op_$name";
@@ -141,15 +163,6 @@ sub run_op {
 	}
 }
 
-sub get_result_lines {
-	my $self = shift;
-	my $lines = dclone($self->_lines);
-	if(not $self->{spread}) {
-		$_->{spread} = !!0 for @$lines;
-	}
-	return @$lines;
-}
-
 sub _lines {
 	my $lines = $_[0]->{lines};
 	croak "Current lines value is not array ref"
@@ -159,6 +172,31 @@ sub _lines {
 
 sub _anchors {
 	return $_[0]->{anchors};
+}
+
+my %_default_anchors = (
+	left =>			[ -0.5, 0    ],
+	topleft =>		[ -0.5, -0.5 ],
+	top =>			[ 0   , -0.5 ],
+	topright =>		[ +0.5, -0.5 ],
+	right =>		[ +0.5, 0    ],
+	bottomright =>	[ +0.5, +0.5 ],
+	bottom =>		[ 0   , +0.5 ],
+	bottomleft =>	[ -0.5, +0.5 ],
+	center =>		[ 0   , 0    ],
+);
+
+sub _anchor {
+	my $self = shift;
+	my $name = shift;
+	my $anchor = $self->_anchors->{$name};
+	if(not defined $anchor) {
+		my $lc = $_default_anchors{$name};
+		croak "Anchor named `$name` does not exist" unless defined $lc;
+		my($x, $y) = $self->get_local_coords(@{$lc});
+		$anchor = { x => $x, y => $y };
+	}
+	return ($anchor->{x}, $anchor->{y});
 }
 
 sub _get_point {
@@ -199,7 +237,7 @@ sub _pop_point {
 	my @repl = @_;
 
 	my $p = $self->{points};
-	if(@$p <= $count) {
+	if(@$p < $count) {
 		croak "Cannot pop this many points";
 	}
 	if(@$p + @repl - $count < 1) {
@@ -302,25 +340,85 @@ sub op_moveto {
 	$self->set_point($x, $y);
 }
 
-sub op_localmove0 {
-	my $self = shift;
-	$self->op_localmoveto(0, 0);
+sub op_movetoanchor {
+	$_[0]->_rel_movetoanchor(@_);
 }
 
-sub op_localmoveto {
+sub _rel_move0 {
 	my $self = shift;
+	my $coord_source = shift;
+	$self->_rel_moveto($coord_source, 0, 0);
+}
+
+sub _rel_moveto {
+	my $self = shift;
+	my $coord_source = shift;
 	my $lx = shift;
 	my $ly = shift;
-	my($x, $y) = $self->get_local_coords($lx, $ly);
+	my($x, $y) = $coord_source->get_local_coords($lx, $ly);
 	$self->set_point($x, $y);
 }
 
-sub op_localmoveby {
+sub _rel_moveby {
 	my $self = shift;
+	my $coord_source = shift;
 	my $ldx = shift;
 	my $ldy = shift;
 	my($x0, $y0) = $self->get_point;
-	$self->set_point($self->get_local_coords($ldx, $ldy, $x0, $x0));
+	$self->set_point($coord_source->get_local_coords($ldx, $ldy, $x0, $y0));
+}
+
+sub _rel_movetoanchor {
+	my $self = shift;
+	my $anchor_source = shift;
+	my $anchor_name = shift;
+	my($x, $y) = $anchor_source->_anchor($anchor_name);
+	say STDERR "move to anchor $anchor_name moved us to $x $y";
+	$self->set_point($x, $y);
+}
+
+sub op_localmove0 {
+	$_[0]->_rel_move0(@_);
+}
+
+sub op_localmoveto {
+	$_[0]->_rel_moveto(@_);
+}
+
+sub op_localmoveby {
+	$_[0]->_rel_moveby(@_);
+}
+
+sub _named_item {
+	my $self = shift;
+	my $item_name = shift;
+	my $item = $self->{named_items}{$item_name};
+	croak "Could not find named item `$item_name`" unless defined $item;
+	return $item;
+}
+
+sub op_itemmove0 {
+	my $self = shift;
+	my $item = $self->_named_item(shift);
+	$self->_rel_move0($item, @_);
+}
+
+sub op_itemmoveto {
+	my $self = shift;
+	my $item = $self->_named_item(shift);
+	$self->_rel_moveto($item, @_);
+}
+
+sub op_itemmoveby {
+	my $self = shift;
+	my $item = $self->_named_item(shift);
+	$self->_rel_moveby($item, @_);
+}
+
+sub op_itemmovetoanchor {
+	my $self = shift;
+	my $item = $self->_named_item(shift);
+	$self->_rel_movetoanchor($item, @_);
 }
 
 sub _translate_by {
@@ -363,7 +461,7 @@ sub op_translatefromprevious {
 	my @new = $self->get_point(0);
 	my $dx = $new[0] - $old[0];
 	my $dy = $new[1] - $old[1];
-	$self->op_translateby($dx, $dy);
+	$self->op_translate($dx, $dy);
 	$self->_pop_point(2, \@new);
 }
 
