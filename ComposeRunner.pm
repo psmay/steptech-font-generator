@@ -449,6 +449,15 @@ sub op_translate {
 	$self->_translate_by($dx, $dy);
 }
 
+# Translate so that what is currently at [0] will be at [1] instead.
+sub _translate_point_to_point {
+	my $self = shift;
+	my($x0,$y0,$x1,$y1) = @_;
+	my $dx = $x1 - $x0;
+	my $dy = $y1 - $y0;
+	$self->op_translate($dx, $dy);
+}
+
 # To use:
 # 1. Move to the reference point.
 # 2. Push.
@@ -456,12 +465,24 @@ sub op_translate {
 # 4. Use this command. The reference point is removed from the stack.
 sub op_translatefromprevious {
 	my $self = shift;
-	my @old = $self->get_point(1);
-	my @new = $self->get_point(0);
-	my $dx = $new[0] - $old[0];
-	my $dy = $new[1] - $old[1];
-	$self->op_translate($dx, $dy);
-	$self->_pop_point(2, \@new);
+	my @from = $self->get_point(1);
+	my @to = $self->get_point(0);
+	$self->_translate_point_to_point(@from, @to);
+	$self->_pop_point(2, \@to);
+}
+
+
+# To use:
+# 1. Move to the destination.
+# 2. Push.
+# 3. Move to the reference point.
+# 4. Use this command. The reference point is removed from the stack.
+sub op_translatetoprevious {
+	my $self = shift;
+	my @from = $self->get_point(0);
+	my @to = $self->get_point(1);
+	$self->_translate_point_to_point(@from, @to);
+	$self->_pop_point(1);
 }
 
 # Scale about the global origin.
