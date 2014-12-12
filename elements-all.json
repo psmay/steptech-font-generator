@@ -2203,6 +2203,296 @@
 		]
 	},
 	{
+		"name" : "_0shrunk",
+		"compose" : [
+			{
+				"glyph" : "zero",
+				"op" : [
+					[
+						"movetoanchor",
+						"bottomleft"
+					],
+					[
+						"push"
+					],
+					[
+						"scale",
+						0.5,
+						0.75
+					],
+					[
+						"movetoanchor",
+						"bottomleft"
+					],
+					[
+						"translatetoprevious"
+					]
+				]
+			}
+		]
+	},
+	{
+		"name" : "_1shrunk",
+		"compose" : [
+			{
+				"glyph" : "one",
+				"op" : [
+					[
+						"movetoanchor",
+						"bottomleft"
+					],
+					[
+						"push"
+					],
+					[
+						"scale",
+						0.5,
+						0.75
+					],
+					[
+						"movetoanchor",
+						"bottomleft"
+					],
+					[
+						"translatetoprevious"
+					]
+				]
+			}
+		]
+	},
+	{
+		"name" : "_2shrunk",
+		"compose" : [
+			{
+				"glyph" : "two",
+				"op" : [
+					[
+						"movetoanchor",
+						"bottomleft"
+					],
+					[
+						"push"
+					],
+					[
+						"scale",
+						0.5,
+						0.75
+					],
+					[
+						"movetoanchor",
+						"bottomleft"
+					],
+					[
+						"translatetoprevious"
+					]
+				]
+			}
+		]
+	},
+	{
+		"name" : "_3shrunk",
+		"compose" : [
+			{
+				"glyph" : "three",
+				"op" : [
+					[
+						"movetoanchor",
+						"bottomleft"
+					],
+					[
+						"push"
+					],
+					[
+						"scale",
+						0.5,
+						0.75
+					],
+					[
+						"movetoanchor",
+						"bottomleft"
+					],
+					[
+						"translatetoprevious"
+					]
+				]
+			}
+		]
+	},
+	{
+		"name" : "_4shrunk",
+		"compose" : [
+			{
+				"glyph" : "four",
+				"op" : [
+					[
+						"movetoanchor",
+						"bottomleft"
+					],
+					[
+						"push"
+					],
+					[
+						"scale",
+						0.5,
+						0.75
+					],
+					[
+						"movetoanchor",
+						"bottomleft"
+					],
+					[
+						"translatetoprevious"
+					]
+				]
+			}
+		]
+	},
+	{
+		"name" : "_5shrunk",
+		"compose" : [
+			{
+				"glyph" : "five",
+				"op" : [
+					[
+						"movetoanchor",
+						"bottomleft"
+					],
+					[
+						"push"
+					],
+					[
+						"scale",
+						0.5,
+						0.75
+					],
+					[
+						"movetoanchor",
+						"bottomleft"
+					],
+					[
+						"translatetoprevious"
+					]
+				]
+			}
+		]
+	},
+	{
+		"name" : "_6shrunk",
+		"compose" : [
+			{
+				"glyph" : "six",
+				"op" : [
+					[
+						"movetoanchor",
+						"bottomleft"
+					],
+					[
+						"push"
+					],
+					[
+						"scale",
+						0.5,
+						0.75
+					],
+					[
+						"movetoanchor",
+						"bottomleft"
+					],
+					[
+						"translatetoprevious"
+					]
+				]
+			}
+		]
+	},
+	{
+		"name" : "_7shrunk",
+		"compose" : [
+			{
+				"glyph" : "seven",
+				"op" : [
+					[
+						"movetoanchor",
+						"bottomleft"
+					],
+					[
+						"push"
+					],
+					[
+						"scale",
+						0.5,
+						0.75
+					],
+					[
+						"movetoanchor",
+						"bottomleft"
+					],
+					[
+						"translatetoprevious"
+					]
+				]
+			}
+		]
+	},
+	{
+		"name" : "_8shrunk",
+		"compose" : [
+			{
+				"glyph" : "eight",
+				"op" : [
+					[
+						"movetoanchor",
+						"bottomleft"
+					],
+					[
+						"push"
+					],
+					[
+						"scale",
+						0.5,
+						0.75
+					],
+					[
+						"movetoanchor",
+						"bottomleft"
+					],
+					[
+						"translatetoprevious"
+					]
+				]
+			}
+		]
+	},
+	{
+		"name" : "_9shrunk",
+		"compose" : [
+			{
+				"glyph" : "nine",
+				"op" : [
+					[
+						"movetoanchor",
+						"bottomleft"
+					],
+					[
+						"push"
+					],
+					[
+						"scale",
+						0.5,
+						0.75
+					],
+					[
+						"movetoanchor",
+						"bottomleft"
+					],
+					[
+						"translatetoprevious"
+					]
+				]
+			}
+		]
+	},
+	{
 		"name" : "_ashrunk",
 		"compose" : [
 			{
@@ -2373,6 +2663,19 @@
 				}
 			}
 		]
+	},
+	{
+		"name" : "_place",
+		"anchors" : {
+			"subbottomleft" : {
+				"x" : 0,
+				"y" : 50
+			},
+			"suptopleft" : {
+				"x" : 0,
+				"y" : -550
+			}
+		}
 	},
 	{
 		"name" : "_todo",
@@ -5764,6 +6067,35 @@
 		]
 	},
 	{
+		"name" : "onesuperior",
+		"compose" : [
+			{
+				"name" : "place",
+				"glyph" : "_place"
+			},
+			{
+				"glyph" : "_1shrunk",
+				"op" : [
+					[
+						"movetoanchor",
+						"topleft"
+					],
+					[
+						"push"
+					],
+					[
+						"itemmovetoanchor",
+						"place",
+						"suptopleft"
+					],
+					[
+						"translatefromprevious"
+					]
+				]
+			}
+		]
+	},
+	{
 		"name" : "ordfeminine",
 		"compose" : [
 			{
@@ -6980,6 +7312,31 @@
 		]
 	},
 	{
+		"name" : "threesuperior",
+		"compose" : [
+			{
+				"glyph" : "_3shrunk",
+				"op" : [
+					[
+						"movetoanchor",
+						"topleft"
+					],
+					[
+						"push"
+					],
+					[
+						"moveto",
+						0,
+						-600
+					],
+					[
+						"translatefromprevious"
+					]
+				]
+			}
+		]
+	},
+	{
 		"name" : "tilde",
 		"anchors" : {
 			"d-top" : {
@@ -7124,6 +7481,31 @@
 					"y" : -500,
 					"cap" : "none"
 				}
+			}
+		]
+	},
+	{
+		"name" : "twosuperior",
+		"compose" : [
+			{
+				"glyph" : "_2shrunk",
+				"op" : [
+					[
+						"movetoanchor",
+						"topleft"
+					],
+					[
+						"push"
+					],
+					[
+						"moveto",
+						0,
+						-600
+					],
+					[
+						"translatefromprevious"
+					]
+				]
 			}
 		]
 	},
