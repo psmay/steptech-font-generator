@@ -483,15 +483,17 @@ sub _scale_about_origin
 	push @pointlike, (values %{$self->_anchors});
 
 	for my $line (@{$self->_lines}) {
+		my @p = ($line->{from}, $line->{to});
+
 		if($flip_lines) {
-			($line->{from},$line->{to}) = ($line->{to},$line->{from});
-			for($line->{from}, $line->{to}) {
+			($line->{to},$line->{from}) = @p;
+			for(@p) {
 				my %cap_reversals = (sc => 'cs', cs => 'sc');
 				my $reversal = $cap_reversals{$_->{cap}};
 				$_->{cap} = $reversal if defined $reversal;
-				push @pointlike, $_;
 			}
 		}
+		push @pointlike, @p;
 	}
 
 	for(@pointlike) {
