@@ -1,6 +1,12 @@
 [
 	{
 		"name" : "A",
+		"anchors" : {
+			"Eligmatch" : {
+				"x" : 400,
+				"y" : -275
+			}
+		},
 		"lines" : [
 			{
 				"guide_color" : "Black",
@@ -53,6 +59,24 @@
 					"y" : -250,
 					"cap" : "none"
 				}
+			}
+		]
+	},
+	{
+		"name" : "AE",
+		"compose" : [
+			{
+				"name" : "base",
+				"glyph" : "A"
+			},
+			{
+				"glyph" : "E",
+				"op" : [
+					[
+						"aligndia",
+						"Eligmatch"
+					]
+				]
 			}
 		]
 	},
@@ -420,6 +444,12 @@
 	},
 	{
 		"name" : "E",
+		"anchors" : {
+			"d-Eligmatch" : {
+				"x" : 50,
+				"y" : -275
+			}
+		},
 		"lines" : [
 			{
 				"guide_color" : "Black",
@@ -1099,6 +1129,12 @@
 	},
 	{
 		"name" : "O",
+		"anchors" : {
+			"Eligmatch" : {
+				"x" : 400,
+				"y" : -275
+			}
+		},
 		"lines" : [
 			{
 				"guide_color" : "Black",
@@ -1151,6 +1187,24 @@
 					"y" : -50,
 					"cap" : "c"
 				}
+			}
+		]
+	},
+	{
+		"name" : "OE",
+		"compose" : [
+			{
+				"name" : "base",
+				"glyph" : "O"
+			},
+			{
+				"glyph" : "E",
+				"op" : [
+					[
+						"aligndia",
+						"Eligmatch"
+					]
+				]
 			}
 		]
 	},
@@ -2218,6 +2272,12 @@
 	},
 	{
 		"name" : "a",
+		"anchors" : {
+			"eligmatch" : {
+				"x" : 400,
+				"y" : -225
+			}
+		},
 		"lines" : [
 			{
 				"guide_color" : "Black",
@@ -2356,6 +2416,24 @@
 					[
 						"aligndia",
 						"top"
+					]
+				]
+			}
+		]
+	},
+	{
+		"name" : "ae",
+		"compose" : [
+			{
+				"name" : "base",
+				"glyph" : "a"
+			},
+			{
+				"glyph" : "e",
+				"op" : [
+					[
+						"aligndia",
+						"eligmatch"
 					]
 				]
 			}
@@ -3684,6 +3762,12 @@
 	},
 	{
 		"name" : "e",
+		"anchors" : {
+			"d-eligmatch" : {
+				"x" : 50,
+				"y" : -225
+			}
+		},
 		"lines" : [
 			{
 				"guide_color" : "Black",
@@ -5205,6 +5289,12 @@
 	},
 	{
 		"name" : "o",
+		"anchors" : {
+			"eligmatch" : {
+				"x" : 400,
+				"y" : -225
+			}
+		},
 		"lines" : [
 			{
 				"guide_color" : "Black",
@@ -5309,6 +5399,24 @@
 					[
 						"aligndia",
 						"top"
+					]
+				]
+			}
+		]
+	},
+	{
+		"name" : "oe",
+		"compose" : [
+			{
+				"name" : "base",
+				"glyph" : "o"
+			},
+			{
+				"glyph" : "e",
+				"op" : [
+					[
+						"aligndia",
+						"eligmatch"
 					]
 				]
 			}
