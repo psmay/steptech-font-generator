@@ -2203,6 +2203,63 @@
 		]
 	},
 	{
+		"name" : "_crcircle",
+		"lines" : [
+			{
+				"guide_color" : "Black",
+				"from" : {
+					"x" : 50,
+					"y" : -50,
+					"cap" : "none"
+				},
+				"to" : {
+					"x" : 500,
+					"y" : -50,
+					"cap" : "none"
+				}
+			},
+			{
+				"guide_color" : "Black",
+				"from" : {
+					"x" : 50,
+					"y" : -500,
+					"cap" : "c"
+				},
+				"to" : {
+					"x" : 50,
+					"y" : -50,
+					"cap" : "c"
+				}
+			},
+			{
+				"guide_color" : "Black",
+				"from" : {
+					"x" : 50,
+					"y" : -500,
+					"cap" : "none"
+				},
+				"to" : {
+					"x" : 500,
+					"y" : -500,
+					"cap" : "none"
+				}
+			},
+			{
+				"guide_color" : "Black",
+				"from" : {
+					"x" : 500,
+					"y" : -500,
+					"cap" : "c"
+				},
+				"to" : {
+					"x" : 500,
+					"y" : -50,
+					"cap" : "c"
+				}
+			}
+		]
+	},
+	{
 		"name" : "_perring",
 		"lines" : [
 			{
@@ -3364,6 +3421,76 @@
 		]
 	},
 	{
+		"name" : "cent",
+		"lines" : [
+			{
+				"guide_color" : "Black",
+				"from" : {
+					"x" : 200,
+					"y" : -150,
+					"cap" : "none"
+				},
+				"to" : {
+					"x" : 200,
+					"y" : -50,
+					"cap" : "sc"
+				}
+			},
+			{
+				"guide_color" : "Blue",
+				"from" : {
+					"x" : 50,
+					"y" : -150,
+					"cap" : "none"
+				},
+				"to" : {
+					"x" : 350,
+					"y" : -150,
+					"cap" : "s"
+				}
+			},
+			{
+				"guide_color" : "Green",
+				"from" : {
+					"x" : 50,
+					"y" : -400,
+					"cap" : "c"
+				},
+				"to" : {
+					"x" : 50,
+					"y" : -150,
+					"cap" : "c"
+				}
+			},
+			{
+				"guide_color" : "Maroon",
+				"from" : {
+					"x" : 50,
+					"y" : -400,
+					"cap" : "none"
+				},
+				"to" : {
+					"x" : 350,
+					"y" : -400,
+					"cap" : "s"
+				}
+			},
+			{
+				"guide_color" : "Navy",
+				"from" : {
+					"x" : 200,
+					"y" : -500,
+					"cap" : "sc"
+				},
+				"to" : {
+					"x" : 200,
+					"y" : -400,
+					"cap" : "none"
+				}
+			}
+		]
+	},
+	{
 		"name" : "circumflex",
 		"anchors" : {
 			"d-top" : {
@@ -3473,6 +3600,55 @@
 					"x" : 50,
 					"y" : 0,
 					"cap" : "cs"
+				}
+			}
+		]
+	},
+	{
+		"name" : "copyright",
+		"compose" : [
+			{
+				"glyph" : "_crcircle"
+			}
+		],
+		"lines" : [
+			{
+				"guide_color" : "Blue",
+				"from" : {
+					"x" : 350,
+					"y" : -200,
+					"cap" : "s"
+				},
+				"to" : {
+					"x" : 200,
+					"y" : -200,
+					"cap" : "c"
+				}
+			},
+			{
+				"guide_color" : "Red",
+				"from" : {
+					"x" : 200,
+					"y" : -200,
+					"cap" : "none"
+				},
+				"to" : {
+					"x" : 200,
+					"y" : -350,
+					"cap" : "none"
+				}
+			},
+			{
+				"guide_color" : "Green",
+				"from" : {
+					"x" : 350,
+					"y" : -350,
+					"cap" : "s"
+				},
+				"to" : {
+					"x" : 200,
+					"y" : -350,
+					"cap" : "c"
 				}
 			}
 		]
@@ -6033,6 +6209,95 @@
 					"x" : 50,
 					"y" : -50,
 					"cap" : "s"
+				}
+			}
+		]
+	},
+	{
+		"name" : "registered",
+		"compose" : [
+			{
+				"glyph" : "_crcircle"
+			}
+		],
+		"lines" : [
+			{
+				"guide_color" : "Blue",
+				"from" : {
+					"x" : 350,
+					"y" : -200,
+					"cap" : "none"
+				},
+				"to" : {
+					"x" : 200,
+					"y" : -275,
+					"cap" : "none"
+				}
+			},
+			{
+				"guide_color" : "Brown",
+				"from" : {
+					"x" : 350,
+					"y" : -200,
+					"cap" : "c"
+				},
+				"to" : {
+					"x" : 350,
+					"y" : -200,
+					"cap" : "s"
+				},
+				"dotdir" : "y"
+			},
+			{
+				"guide_color" : "Red",
+				"from" : {
+					"x" : 200,
+					"y" : -200,
+					"cap" : "s"
+				},
+				"to" : {
+					"x" : 200,
+					"y" : -350,
+					"cap" : "s"
+				}
+			},
+			{
+				"guide_color" : "Green",
+				"from" : {
+					"x" : 350,
+					"y" : -350,
+					"cap" : "c"
+				},
+				"to" : {
+					"x" : 200,
+					"y" : -350,
+					"cap" : "none"
+				}
+			},
+			{
+				"guide_color" : "Purple",
+				"from" : {
+					"x" : 350,
+					"y" : -325,
+					"cap" : "c"
+				},
+				"to" : {
+					"x" : 200,
+					"y" : -325,
+					"cap" : "none"
+				}
+			},
+			{
+				"guide_color" : "Orange",
+				"from" : {
+					"x" : 350,
+					"y" : -350,
+					"cap" : "c"
+				},
+				"to" : {
+					"x" : 350,
+					"y" : -325,
+					"cap" : "none"
 				}
 			}
 		]
