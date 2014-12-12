@@ -60,11 +60,17 @@
 		"name" : "Aacute",
 		"compose" : [
 			{
+				"name" : "base",
 				"glyph" : "A"
 			},
 			{
 				"glyph" : "acute",
-				"fix" : "above"
+				"op" : [
+					[
+						"aligndia",
+						"top"
+					]
+				]
 			}
 		]
 	},
@@ -72,11 +78,17 @@
 		"name" : "Acircumflex",
 		"compose" : [
 			{
+				"name" : "base",
 				"glyph" : "A"
 			},
 			{
 				"glyph" : "circumflex",
-				"fix" : "above"
+				"op" : [
+					[
+						"aligndia",
+						"top"
+					]
+				]
 			}
 		]
 	},
@@ -84,11 +96,17 @@
 		"name" : "Adieresis",
 		"compose" : [
 			{
+				"name" : "base",
 				"glyph" : "A"
 			},
 			{
 				"glyph" : "dieresis",
-				"fix" : "above"
+				"op" : [
+					[
+						"aligndia",
+						"top"
+					]
+				]
 			}
 		]
 	},
@@ -96,11 +114,17 @@
 		"name" : "Agrave",
 		"compose" : [
 			{
+				"name" : "base",
 				"glyph" : "A"
 			},
 			{
 				"glyph" : "grave",
-				"fix" : "above"
+				"op" : [
+					[
+						"aligndia",
+						"top"
+					]
+				]
 			}
 		]
 	},
@@ -108,11 +132,17 @@
 		"name" : "Aring",
 		"compose" : [
 			{
+				"name" : "base",
 				"glyph" : "A"
 			},
 			{
 				"glyph" : "ring",
-				"fix" : "above"
+				"op" : [
+					[
+						"aligndia",
+						"top"
+					]
+				]
 			}
 		]
 	},
@@ -120,11 +150,17 @@
 		"name" : "Atilde",
 		"compose" : [
 			{
+				"name" : "base",
 				"glyph" : "A"
 			},
 			{
 				"glyph" : "tilde",
-				"fix" : "above"
+				"op" : [
+					[
+						"aligndia",
+						"top"
+					]
+				]
 			}
 		]
 	},
@@ -308,6 +344,24 @@
 		]
 	},
 	{
+		"name" : "Ccedilla",
+		"compose" : [
+			{
+				"name" : "base",
+				"glyph" : "C"
+			},
+			{
+				"glyph" : "cedilla",
+				"op" : [
+					[
+						"aligndia",
+						"bottom"
+					]
+				]
+			}
+		]
+	},
+	{
 		"name" : "D",
 		"lines" : [
 			{
@@ -425,11 +479,17 @@
 		"name" : "Eacute",
 		"compose" : [
 			{
+				"name" : "base",
 				"glyph" : "E"
 			},
 			{
 				"glyph" : "acute",
-				"fix" : "above"
+				"op" : [
+					[
+						"aligndia",
+						"top"
+					]
+				]
 			}
 		]
 	},
@@ -437,11 +497,17 @@
 		"name" : "Ecircumflex",
 		"compose" : [
 			{
+				"name" : "base",
 				"glyph" : "E"
 			},
 			{
 				"glyph" : "circumflex",
-				"fix" : "above"
+				"op" : [
+					[
+						"aligndia",
+						"top"
+					]
+				]
 			}
 		]
 	},
@@ -449,11 +515,17 @@
 		"name" : "Edieresis",
 		"compose" : [
 			{
+				"name" : "base",
 				"glyph" : "E"
 			},
 			{
 				"glyph" : "dieresis",
-				"fix" : "above"
+				"op" : [
+					[
+						"aligndia",
+						"top"
+					]
+				]
 			}
 		]
 	},
@@ -461,11 +533,17 @@
 		"name" : "Egrave",
 		"compose" : [
 			{
+				"name" : "base",
 				"glyph" : "E"
 			},
 			{
 				"glyph" : "grave",
-				"fix" : "above"
+				"op" : [
+					[
+						"aligndia",
+						"top"
+					]
+				]
 			}
 		]
 	},
@@ -473,11 +551,17 @@
 		"name" : "Etilde",
 		"compose" : [
 			{
+				"name" : "base",
 				"glyph" : "E"
 			},
 			{
 				"glyph" : "tilde",
-				"fix" : "above"
+				"op" : [
+					[
+						"aligndia",
+						"top"
+					]
+				]
 			}
 		]
 	},
@@ -661,11 +745,17 @@
 		"name" : "Iacute",
 		"compose" : [
 			{
+				"name" : "base",
 				"glyph" : "I"
 			},
 			{
 				"glyph" : "acute",
-				"fix" : "above"
+				"op" : [
+					[
+						"aligndia",
+						"top"
+					]
+				]
 			}
 		]
 	},
@@ -673,11 +763,17 @@
 		"name" : "Icircumflex",
 		"compose" : [
 			{
+				"name" : "base",
 				"glyph" : "I"
 			},
 			{
 				"glyph" : "circumflex",
-				"fix" : "above"
+				"op" : [
+					[
+						"aligndia",
+						"top"
+					]
+				]
 			}
 		]
 	},
@@ -685,11 +781,17 @@
 		"name" : "Idieresis",
 		"compose" : [
 			{
+				"name" : "base",
 				"glyph" : "I"
 			},
 			{
 				"glyph" : "dieresis",
-				"fix" : "above"
+				"op" : [
+					[
+						"aligndia",
+						"top"
+					]
+				]
 			}
 		]
 	},
@@ -697,11 +799,17 @@
 		"name" : "Igrave",
 		"compose" : [
 			{
+				"name" : "base",
 				"glyph" : "I"
 			},
 			{
 				"glyph" : "grave",
-				"fix" : "above"
+				"op" : [
+					[
+						"aligndia",
+						"top"
+					]
+				]
 			}
 		]
 	},
@@ -709,11 +817,17 @@
 		"name" : "Itilde",
 		"compose" : [
 			{
+				"name" : "base",
 				"glyph" : "I"
 			},
 			{
 				"glyph" : "tilde",
-				"fix" : "above"
+				"op" : [
+					[
+						"aligndia",
+						"top"
+					]
+				]
 			}
 		]
 	},
@@ -969,11 +1083,17 @@
 		"name" : "Ntilde",
 		"compose" : [
 			{
+				"name" : "base",
 				"glyph" : "N"
 			},
 			{
 				"glyph" : "tilde",
-				"fix" : "above"
+				"op" : [
+					[
+						"aligndia",
+						"top"
+					]
+				]
 			}
 		]
 	},
@@ -1038,11 +1158,17 @@
 		"name" : "Oacute",
 		"compose" : [
 			{
+				"name" : "base",
 				"glyph" : "O"
 			},
 			{
 				"glyph" : "acute",
-				"fix" : "above"
+				"op" : [
+					[
+						"aligndia",
+						"top"
+					]
+				]
 			}
 		]
 	},
@@ -1050,11 +1176,17 @@
 		"name" : "Ocircumflex",
 		"compose" : [
 			{
+				"name" : "base",
 				"glyph" : "O"
 			},
 			{
 				"glyph" : "circumflex",
-				"fix" : "above"
+				"op" : [
+					[
+						"aligndia",
+						"top"
+					]
+				]
 			}
 		]
 	},
@@ -1062,11 +1194,17 @@
 		"name" : "Odieresis",
 		"compose" : [
 			{
+				"name" : "base",
 				"glyph" : "O"
 			},
 			{
 				"glyph" : "dieresis",
-				"fix" : "above"
+				"op" : [
+					[
+						"aligndia",
+						"top"
+					]
+				]
 			}
 		]
 	},
@@ -1074,11 +1212,17 @@
 		"name" : "Ograve",
 		"compose" : [
 			{
+				"name" : "base",
 				"glyph" : "O"
 			},
 			{
 				"glyph" : "grave",
-				"fix" : "above"
+				"op" : [
+					[
+						"aligndia",
+						"top"
+					]
+				]
 			}
 		]
 	},
@@ -1086,11 +1230,17 @@
 		"name" : "Otilde",
 		"compose" : [
 			{
+				"name" : "base",
 				"glyph" : "O"
 			},
 			{
 				"glyph" : "tilde",
-				"fix" : "above"
+				"op" : [
+					[
+						"aligndia",
+						"top"
+					]
+				]
 			}
 		]
 	},
@@ -1393,11 +1543,17 @@
 		"name" : "Scaron",
 		"compose" : [
 			{
+				"name" : "base",
 				"glyph" : "S"
 			},
 			{
 				"glyph" : "caron",
-				"fix" : "above"
+				"op" : [
+					[
+						"aligndia",
+						"top"
+					]
+				]
 			}
 		]
 	},
@@ -1480,11 +1636,17 @@
 		"name" : "Uacute",
 		"compose" : [
 			{
+				"name" : "base",
 				"glyph" : "U"
 			},
 			{
 				"glyph" : "acute",
-				"fix" : "above"
+				"op" : [
+					[
+						"aligndia",
+						"top"
+					]
+				]
 			}
 		]
 	},
@@ -1492,11 +1654,17 @@
 		"name" : "Ucircumflex",
 		"compose" : [
 			{
+				"name" : "base",
 				"glyph" : "U"
 			},
 			{
 				"glyph" : "circumflex",
-				"fix" : "above"
+				"op" : [
+					[
+						"aligndia",
+						"top"
+					]
+				]
 			}
 		]
 	},
@@ -1504,11 +1672,17 @@
 		"name" : "Udieresis",
 		"compose" : [
 			{
+				"name" : "base",
 				"glyph" : "U"
 			},
 			{
 				"glyph" : "dieresis",
-				"fix" : "above"
+				"op" : [
+					[
+						"aligndia",
+						"top"
+					]
+				]
 			}
 		]
 	},
@@ -1516,11 +1690,17 @@
 		"name" : "Ugrave",
 		"compose" : [
 			{
+				"name" : "base",
 				"glyph" : "U"
 			},
 			{
 				"glyph" : "grave",
-				"fix" : "above"
+				"op" : [
+					[
+						"aligndia",
+						"top"
+					]
+				]
 			}
 		]
 	},
@@ -1528,11 +1708,17 @@
 		"name" : "Uring",
 		"compose" : [
 			{
+				"name" : "base",
 				"glyph" : "U"
 			},
 			{
 				"glyph" : "ring",
-				"fix" : "above"
+				"op" : [
+					[
+						"aligndia",
+						"top"
+					]
+				]
 			}
 		]
 	},
@@ -1540,11 +1726,17 @@
 		"name" : "Utilde",
 		"compose" : [
 			{
+				"name" : "base",
 				"glyph" : "U"
 			},
 			{
 				"glyph" : "tilde",
-				"fix" : "above"
+				"op" : [
+					[
+						"aligndia",
+						"top"
+					]
+				]
 			}
 		]
 	},
@@ -1808,11 +2000,17 @@
 		"name" : "Yacute",
 		"compose" : [
 			{
+				"name" : "base",
 				"glyph" : "Y"
 			},
 			{
 				"glyph" : "acute",
-				"fix" : "above"
+				"op" : [
+					[
+						"aligndia",
+						"top"
+					]
+				]
 			}
 		]
 	},
@@ -1820,11 +2018,17 @@
 		"name" : "Ycircumflex",
 		"compose" : [
 			{
+				"name" : "base",
 				"glyph" : "Y"
 			},
 			{
 				"glyph" : "circumflex",
-				"fix" : "above"
+				"op" : [
+					[
+						"aligndia",
+						"top"
+					]
+				]
 			}
 		]
 	},
@@ -1832,11 +2036,17 @@
 		"name" : "Ydieresis",
 		"compose" : [
 			{
+				"name" : "base",
 				"glyph" : "Y"
 			},
 			{
 				"glyph" : "dieresis",
-				"fix" : "above"
+				"op" : [
+					[
+						"aligndia",
+						"top"
+					]
+				]
 			}
 		]
 	},
@@ -1844,11 +2054,17 @@
 		"name" : "Ygrave",
 		"compose" : [
 			{
+				"name" : "base",
 				"glyph" : "Y"
 			},
 			{
 				"glyph" : "grave",
-				"fix" : "above"
+				"op" : [
+					[
+						"aligndia",
+						"top"
+					]
+				]
 			}
 		]
 	},
@@ -1856,11 +2072,17 @@
 		"name" : "Ytilde",
 		"compose" : [
 			{
+				"name" : "base",
 				"glyph" : "Y"
 			},
 			{
 				"glyph" : "tilde",
-				"fix" : "above"
+				"op" : [
+					[
+						"aligndia",
+						"top"
+					]
+				]
 			}
 		]
 	},
@@ -1912,11 +2134,17 @@
 		"name" : "Zcaron",
 		"compose" : [
 			{
+				"name" : "base",
 				"glyph" : "Z"
 			},
 			{
 				"glyph" : "caron",
-				"fix" : "above"
+				"op" : [
+					[
+						"aligndia",
+						"top"
+					]
+				]
 			}
 		]
 	},
@@ -2062,11 +2290,17 @@
 		"name" : "aacute",
 		"compose" : [
 			{
+				"name" : "base",
 				"glyph" : "a"
 			},
 			{
 				"glyph" : "acute",
-				"fix" : "above"
+				"op" : [
+					[
+						"aligndia",
+						"top"
+					]
+				]
 			}
 		]
 	},
@@ -2074,11 +2308,17 @@
 		"name" : "acircumflex",
 		"compose" : [
 			{
+				"name" : "base",
 				"glyph" : "a"
 			},
 			{
 				"glyph" : "circumflex",
-				"fix" : "above"
+				"op" : [
+					[
+						"aligndia",
+						"top"
+					]
+				]
 			}
 		]
 	},
@@ -2095,17 +2335,29 @@
 					]
 				]
 			}
-		]
+		],
+		"anchors" : {
+			"d-top" : {
+				"x" : 50,
+				"y" : -550
+			}
+		}
 	},
 	{
 		"name" : "adieresis",
 		"compose" : [
 			{
+				"name" : "base",
 				"glyph" : "a"
 			},
 			{
 				"glyph" : "dieresis",
-				"fix" : "above"
+				"op" : [
+					[
+						"aligndia",
+						"top"
+					]
+				]
 			}
 		]
 	},
@@ -2113,11 +2365,17 @@
 		"name" : "agrave",
 		"compose" : [
 			{
+				"name" : "base",
 				"glyph" : "a"
 			},
 			{
 				"glyph" : "grave",
-				"fix" : "above"
+				"op" : [
+					[
+						"aligndia",
+						"top"
+					]
+				]
 			}
 		]
 	},
@@ -2208,11 +2466,17 @@
 		"name" : "aring",
 		"compose" : [
 			{
+				"name" : "base",
 				"glyph" : "a"
 			},
 			{
 				"glyph" : "ring",
-				"fix" : "above"
+				"op" : [
+					[
+						"aligndia",
+						"top"
+					]
+				]
 			}
 		]
 	},
@@ -2562,11 +2826,17 @@
 		"name" : "atilde",
 		"compose" : [
 			{
+				"name" : "base",
 				"glyph" : "a"
 			},
 			{
 				"glyph" : "tilde",
-				"fix" : "above"
+				"op" : [
+					[
+						"aligndia",
+						"top"
+					]
+				]
 			}
 		]
 	},
@@ -2871,6 +3141,12 @@
 	},
 	{
 		"name" : "caron",
+		"anchors" : {
+			"d-top" : {
+				"x" : 125,
+				"y" : -550
+			}
+		},
 		"lines" : [
 			{
 				"guide_color" : "Green",
@@ -2929,7 +3205,31 @@
 		]
 	},
 	{
+		"name" : "ccedilla",
+		"compose" : [
+			{
+				"name" : "base",
+				"glyph" : "c"
+			},
+			{
+				"glyph" : "cedilla",
+				"op" : [
+					[
+						"aligndia",
+						"bottom"
+					]
+				]
+			}
+		]
+	},
+	{
 		"name" : "cedilla",
+		"anchors" : {
+			"d-bottom" : {
+				"x" : 50,
+				"y" : 0
+			}
+		},
 		"lines" : [
 			{
 				"guide_color" : "Black",
@@ -2987,6 +3287,12 @@
 	},
 	{
 		"name" : "circumflex",
+		"anchors" : {
+			"d-top" : {
+				"x" : 125,
+				"y" : -550
+			}
+		},
 		"lines" : [
 			{
 				"guide_color" : "Black",
@@ -3450,11 +3756,17 @@
 		"name" : "eacute",
 		"compose" : [
 			{
+				"name" : "base",
 				"glyph" : "e"
 			},
 			{
 				"glyph" : "acute",
-				"fix" : "above"
+				"op" : [
+					[
+						"aligndia",
+						"top"
+					]
+				]
 			}
 		]
 	},
@@ -3462,11 +3774,17 @@
 		"name" : "ecircumflex",
 		"compose" : [
 			{
+				"name" : "base",
 				"glyph" : "e"
 			},
 			{
 				"glyph" : "circumflex",
-				"fix" : "above"
+				"op" : [
+					[
+						"aligndia",
+						"top"
+					]
+				]
 			}
 		]
 	},
@@ -3474,11 +3792,17 @@
 		"name" : "edieresis",
 		"compose" : [
 			{
+				"name" : "base",
 				"glyph" : "e"
 			},
 			{
 				"glyph" : "dieresis",
-				"fix" : "above"
+				"op" : [
+					[
+						"aligndia",
+						"top"
+					]
+				]
 			}
 		]
 	},
@@ -3486,11 +3810,17 @@
 		"name" : "egrave",
 		"compose" : [
 			{
+				"name" : "base",
 				"glyph" : "e"
 			},
 			{
 				"glyph" : "grave",
-				"fix" : "above"
+				"op" : [
+					[
+						"aligndia",
+						"top"
+					]
+				]
 			}
 		]
 	},
@@ -3773,11 +4103,17 @@
 		"name" : "etilde",
 		"compose" : [
 			{
+				"name" : "base",
 				"glyph" : "e"
 			},
 			{
 				"glyph" : "tilde",
-				"fix" : "above"
+				"op" : [
+					[
+						"aligndia",
+						"top"
+					]
+				]
 			}
 		]
 	},
@@ -4184,6 +4520,12 @@
 	},
 	{
 		"name" : "grave",
+		"anchors" : {
+			"d-top" : {
+				"x" : 100,
+				"y" : -550
+			}
+		},
 		"lines" : [
 			{
 				"guide_color" : "Black",
@@ -4327,11 +4669,17 @@
 		"name" : "iacute",
 		"compose" : [
 			{
+				"name" : "base",
 				"glyph" : "i"
 			},
 			{
 				"glyph" : "acute",
-				"fix" : "above"
+				"op" : [
+					[
+						"aligndia",
+						"top"
+					]
+				]
 			}
 		]
 	},
@@ -4339,11 +4687,17 @@
 		"name" : "icircumflex",
 		"compose" : [
 			{
+				"name" : "base",
 				"glyph" : "i"
 			},
 			{
 				"glyph" : "circumflex",
-				"fix" : "above"
+				"op" : [
+					[
+						"aligndia",
+						"top"
+					]
+				]
 			}
 		]
 	},
@@ -4358,22 +4712,10 @@
 				"glyph" : "dieresis",
 				"op" : [
 					[
-						"movetoanchor",
-						"d-top"
-					],
-					[
-						"push"
-					],
-					[
-						"itemmovetoanchor",
-						"base",
+						"aligndia",
 						"top"
-					],
-					[
-						"translatefromprevious"
 					]
-				],
-				"fix" : "above"
+				]
 			}
 		]
 	},
@@ -4381,11 +4723,17 @@
 		"name" : "igrave",
 		"compose" : [
 			{
+				"name" : "base",
 				"glyph" : "i"
 			},
 			{
 				"glyph" : "grave",
-				"fix" : "above"
+				"op" : [
+					[
+						"aligndia",
+						"top"
+					]
+				]
 			}
 		]
 	},
@@ -4393,11 +4741,17 @@
 		"name" : "itilde",
 		"compose" : [
 			{
+				"name" : "base",
 				"glyph" : "i"
 			},
 			{
 				"glyph" : "tilde",
-				"fix" : "above"
+				"op" : [
+					[
+						"aligndia",
+						"top"
+					]
+				]
 			}
 		]
 	},
@@ -4778,11 +5132,17 @@
 		"name" : "ntilde",
 		"compose" : [
 			{
+				"name" : "base",
 				"glyph" : "n"
 			},
 			{
 				"glyph" : "tilde",
-				"fix" : "above"
+				"op" : [
+					[
+						"aligndia",
+						"top"
+					]
+				]
 			}
 		]
 	},
@@ -4904,11 +5264,17 @@
 		"name" : "oacute",
 		"compose" : [
 			{
+				"name" : "base",
 				"glyph" : "o"
 			},
 			{
 				"glyph" : "acute",
-				"fix" : "above"
+				"op" : [
+					[
+						"aligndia",
+						"top"
+					]
+				]
 			}
 		]
 	},
@@ -4916,11 +5282,17 @@
 		"name" : "ocircumflex",
 		"compose" : [
 			{
+				"name" : "base",
 				"glyph" : "o"
 			},
 			{
 				"glyph" : "circumflex",
-				"fix" : "above"
+				"op" : [
+					[
+						"aligndia",
+						"top"
+					]
+				]
 			}
 		]
 	},
@@ -4928,11 +5300,17 @@
 		"name" : "odieresis",
 		"compose" : [
 			{
+				"name" : "base",
 				"glyph" : "o"
 			},
 			{
 				"glyph" : "dieresis",
-				"fix" : "above"
+				"op" : [
+					[
+						"aligndia",
+						"top"
+					]
+				]
 			}
 		]
 	},
@@ -4940,11 +5318,17 @@
 		"name" : "ograve",
 		"compose" : [
 			{
+				"name" : "base",
 				"glyph" : "o"
 			},
 			{
 				"glyph" : "grave",
-				"fix" : "above"
+				"op" : [
+					[
+						"aligndia",
+						"top"
+					]
+				]
 			}
 		]
 	},
@@ -5010,11 +5394,17 @@
 		"name" : "otilde",
 		"compose" : [
 			{
+				"name" : "base",
 				"glyph" : "o"
 			},
 			{
 				"glyph" : "tilde",
-				"fix" : "above"
+				"op" : [
+					[
+						"aligndia",
+						"top"
+					]
+				]
 			}
 		]
 	},
@@ -5541,6 +5931,12 @@
 	},
 	{
 		"name" : "ring",
+		"anchors" : {
+			"d-top" : {
+				"x" : 125,
+				"y" : -550
+			}
+		},
 		"lines" : [
 			{
 				"guide_color" : "Black",
@@ -5670,11 +6066,17 @@
 		"name" : "scaron",
 		"compose" : [
 			{
+				"name" : "base",
 				"glyph" : "s"
 			},
 			{
 				"glyph" : "caron",
-				"fix" : "above"
+				"op" : [
+					[
+						"aligndia",
+						"top"
+					]
+				]
 			}
 		]
 	},
@@ -6067,6 +6469,12 @@
 	},
 	{
 		"name" : "tilde",
+		"anchors" : {
+			"d-top" : {
+				"x" : 162.5,
+				"y" : -550
+			}
+		},
 		"lines" : [
 			{
 				"guide_color" : "Purple",
@@ -6255,11 +6663,17 @@
 		"name" : "uacute",
 		"compose" : [
 			{
+				"name" : "base",
 				"glyph" : "u"
 			},
 			{
 				"glyph" : "acute",
-				"fix" : "above"
+				"op" : [
+					[
+						"aligndia",
+						"top"
+					]
+				]
 			}
 		]
 	},
@@ -6267,11 +6681,17 @@
 		"name" : "ucircumflex",
 		"compose" : [
 			{
+				"name" : "base",
 				"glyph" : "u"
 			},
 			{
 				"glyph" : "circumflex",
-				"fix" : "above"
+				"op" : [
+					[
+						"aligndia",
+						"top"
+					]
+				]
 			}
 		]
 	},
@@ -6279,11 +6699,17 @@
 		"name" : "udieresis",
 		"compose" : [
 			{
+				"name" : "base",
 				"glyph" : "u"
 			},
 			{
 				"glyph" : "dieresis",
-				"fix" : "above"
+				"op" : [
+					[
+						"aligndia",
+						"top"
+					]
+				]
 			}
 		]
 	},
@@ -6291,11 +6717,17 @@
 		"name" : "ugrave",
 		"compose" : [
 			{
+				"name" : "base",
 				"glyph" : "u"
 			},
 			{
 				"glyph" : "grave",
-				"fix" : "above"
+				"op" : [
+					[
+						"aligndia",
+						"top"
+					]
+				]
 			}
 		]
 	},
@@ -6321,11 +6753,17 @@
 		"name" : "uring",
 		"compose" : [
 			{
+				"name" : "base",
 				"glyph" : "u"
 			},
 			{
 				"glyph" : "ring",
-				"fix" : "above"
+				"op" : [
+					[
+						"aligndia",
+						"top"
+					]
+				]
 			}
 		]
 	},
@@ -6333,11 +6771,17 @@
 		"name" : "utilde",
 		"compose" : [
 			{
+				"name" : "base",
 				"glyph" : "u"
 			},
 			{
 				"glyph" : "tilde",
-				"fix" : "above"
+				"op" : [
+					[
+						"aligndia",
+						"top"
+					]
+				]
 			}
 		]
 	},
@@ -6619,11 +7063,17 @@
 		"name" : "yacute",
 		"compose" : [
 			{
+				"name" : "base",
 				"glyph" : "y"
 			},
 			{
 				"glyph" : "acute",
-				"fix" : "above"
+				"op" : [
+					[
+						"aligndia",
+						"top"
+					]
+				]
 			}
 		]
 	},
@@ -6631,11 +7081,17 @@
 		"name" : "ycircumflex",
 		"compose" : [
 			{
+				"name" : "base",
 				"glyph" : "y"
 			},
 			{
 				"glyph" : "circumflex",
-				"fix" : "above"
+				"op" : [
+					[
+						"aligndia",
+						"top"
+					]
+				]
 			}
 		]
 	},
@@ -6643,11 +7099,17 @@
 		"name" : "ydieresis",
 		"compose" : [
 			{
+				"name" : "base",
 				"glyph" : "y"
 			},
 			{
 				"glyph" : "dieresis",
-				"fix" : "above"
+				"op" : [
+					[
+						"aligndia",
+						"top"
+					]
+				]
 			}
 		]
 	},
@@ -6655,11 +7117,17 @@
 		"name" : "ygrave",
 		"compose" : [
 			{
+				"name" : "base",
 				"glyph" : "y"
 			},
 			{
 				"glyph" : "grave",
-				"fix" : "above"
+				"op" : [
+					[
+						"aligndia",
+						"top"
+					]
+				]
 			}
 		]
 	},
@@ -6667,11 +7135,17 @@
 		"name" : "ytilde",
 		"compose" : [
 			{
+				"name" : "base",
 				"glyph" : "y"
 			},
 			{
 				"glyph" : "tilde",
-				"fix" : "above"
+				"op" : [
+					[
+						"aligndia",
+						"top"
+					]
+				]
 			}
 		]
 	},
@@ -6723,11 +7197,17 @@
 		"name" : "zcaron",
 		"compose" : [
 			{
+				"name" : "base",
 				"glyph" : "z"
 			},
 			{
 				"glyph" : "caron",
-				"fix" : "above"
+				"op" : [
+					[
+						"aligndia",
+						"top"
+					]
+				]
 			}
 		]
 	},
