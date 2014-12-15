@@ -5238,6 +5238,122 @@
 		]
 	},
 	{
+		"name" : "guillemotleft",
+		"compose" : [
+			{
+				"name" : "first",
+				"glyph" : "guilsinglleft"
+			},
+			{
+				"glyph" : "guilsinglleft",
+				"op" : [
+					[
+						"itemmovetoanchor",
+						"first",
+						"bottomright"
+					],
+					[
+						"push"
+					],
+					[
+						"movetoanchor",
+						"bottomleft"
+					],
+					[
+						"translatetoprevious"
+					]
+				]
+			}
+		]
+	},
+	{
+		"name" : "guillemotright",
+		"compose" : [
+			{
+				"glyph" : "guillemotleft",
+				"op" : [
+					[
+						"scale",
+						-1,
+						1
+					]
+				]
+			}
+		]
+	},
+	{
+		"name" : "guilsinglleft",
+		"lines" : [
+			{
+				"guide_color" : "Black",
+				"from" : {
+					"x" : 150,
+					"y" : -100,
+					"cap" : "c"
+				},
+				"to" : {
+					"x" : 150,
+					"y" : -100,
+					"cap" : "s"
+				}
+			},
+			{
+				"guide_color" : "Blue",
+				"from" : {
+					"x" : 50,
+					"y" : -250,
+					"cap" : "c"
+				},
+				"to" : {
+					"x" : 150,
+					"y" : -100,
+					"cap" : "none"
+				}
+			},
+			{
+				"guide_color" : "Fuchsia",
+				"from" : {
+					"x" : 50,
+					"y" : -250,
+					"cap" : "none"
+				},
+				"to" : {
+					"x" : 150,
+					"y" : -400,
+					"cap" : "none"
+				}
+			},
+			{
+				"guide_color" : "Orange",
+				"from" : {
+					"x" : 150,
+					"y" : -400,
+					"cap" : "c"
+				},
+				"to" : {
+					"x" : 150,
+					"y" : -400,
+					"cap" : "s"
+				}
+			}
+		]
+	},
+	{
+		"name" : "guilsinglright",
+		"compose" : [
+			{
+				"glyph" : "guilsinglleft",
+				"op" : [
+					[
+						"scale",
+						-1,
+						1
+					]
+				]
+			}
+		]
+	},
+	{
 		"name" : "h",
 		"lines" : [
 			{
@@ -5539,7 +5655,7 @@
 				"to" : {
 					"x" : 250,
 					"y" : -100,
-					"cap" : "cs"
+					"cap" : "s"
 				}
 			},
 			{
@@ -5578,7 +5694,7 @@
 				"to" : {
 					"x" : 250,
 					"y" : -400,
-					"cap" : "sc"
+					"cap" : "s"
 				}
 			}
 		]
