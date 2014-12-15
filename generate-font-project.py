@@ -15,10 +15,14 @@ def generate_font_project_file(meta, outfile):
     font.fullname = familyname + "-Normal"
     font.fontname = familyname
     for em in meta:
-        codepoint = em["loose"]["codepoint"]
+        codepoint = em["loose"].get("codepoint",None)
+        if codepoint is None:
+            # Some of the glyphs are not intended as actual characters.
+            continue
+
         basename = em["file_basename"]
-        width = em["loose"]["width"]
-        lines = em["element"]["lines"]
+        width = em["loose"].get("width",0)
+        lines = em["loose"].get("lines",[])
 
         glyph = font.createChar(codepoint)
 

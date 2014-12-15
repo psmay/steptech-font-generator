@@ -238,7 +238,8 @@ sub draw_element_svg
 			x => $baseline_x,
 			y => $baseline_y,
 			codepoint => $element->{codepoint},
-			glyph_name => $element->{name}
+			glyph_name => $element->{name},
+			lines => \@element_lines,
 		);
 		local $_ = JSON->new->ascii->encode(\%data);
 		s/--/-\\u002d/g;
