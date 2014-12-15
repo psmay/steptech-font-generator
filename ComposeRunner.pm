@@ -35,13 +35,17 @@ sub _get_all_element_lines {
 	my $stroke_radius = shift;
 	my $compose_list = $element->{compose} || [];
 	my $element_lines = $element->{lines} || [];
+	my $named_items = {};
 
 	my @result = @$element_lines;
 
 	for my $compose_item (@$compose_list) {
-		my $cr = new ComposeRunner $compose_item, $stroke_radius;
+		my $cr = new ComposeRunner $compose_item, $stroke_radius,
+			named_items => $named_items;
 		$cr->run_item_ops;
 		my %results = $cr->get_results;
+		$named_items = $results{named_items};
+
 		push @result, @{ $results{lines} };
 	}
 

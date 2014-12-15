@@ -213,23 +213,9 @@ sub get_element_bounds
 sub get_all_element_lines
 {
 	my $element = shift;
-	my $compose_list = $element->{compose} || [];
-	my $element_lines = $element->{lines} || [];
-	my $named_items = {};
+	my $stroke_radius = $stroke_width / 2;
 
-	my @result = @$element_lines;
-
-	for my $compose_item (@$compose_list) {
-		my $cr = new ComposeRunner $compose_item, $stroke_width/2,
-			named_items => $named_items;
-		$cr->run_item_ops;
-		my %results = $cr->get_results;
-		$named_items = $results{named_items};
-		
-		push @result, @{$results{lines}};
-	}
-
-	return @result;
+	return ComposeRunner::_get_all_element_lines($element, $stroke_radius);
 }
 
 sub draw_element_svg
