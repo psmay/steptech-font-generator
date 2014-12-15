@@ -5,6 +5,8 @@ use strict;
 use 5.010;
 use Carp;
 
+use ComposeRunner;
+
 use Math::Trig 'rad2deg';
 
 my $stroke_width = 100;
@@ -165,30 +167,55 @@ sub draw_element_lines
 	return join("", @out);
 }
 
-sub get_element_bounds
+sub get_generic_bounds
 {
+	my $radius = shift;
 	my @lines = @_;
 
-	my $radius = $stroke_width/2;
-	my $left = 0;
-	my $top = 0;
-	my $right = 0;
-	my $bottom = 0;
+	my $left;
+	my $top;
+	my $right;
+	my $bottom;
 
 	for my $line (@lines) {
+		# Some lines don't get counted when spacing
+		my $spread = $line->{spread} // 1;
+		next unless $spread;
+
 		for my $endpoint ($line->{from}, $line->{to}) {
 			my $pleft = $endpoint->{x} - $radius;
 			my $pright = $endpoint->{x} + $radius;
 			my $ptop = $endpoint->{y} - $radius;
 			my $pbottom = $endpoint->{y} + $radius;
+
+			$left //= $pleft;
 			$left = $pleft if $left > $pleft;
+
+			$right //= $pright;
 			$right = $pright if $right < $pright;
+
+			$top //= $ptop;
 			$top = $ptop if $top > $ptop;
+
+			$bottom //= $pbottom;
 			$bottom = $pbottom if $bottom < $pbottom;
 		}
 	}
 
-	return ($left, $top, $right, $bottom);
+	return ($left // 0, $top // 0, $right // 0, $bottom // 0);
+}
+
+sub get_element_bounds
+{
+	return get_generic_bounds($stroke_width/2, @_);
+}
+
+sub get_all_element_lines
+{
+	my $element = shift;
+	my $stroke_radius = $stroke_width / 2;
+
+	return ComposeRunner::_get_all_element_lines($element, $stroke_radius);
 }
 
 sub draw_element_svg
@@ -196,10 +223,29 @@ sub draw_element_svg
 	my $element = shift;
 	my @out = ();
 
+	my @element_lines = get_all_element_lines($element);
+
 	my $ph = $page_height;
-	my($left, $top, $right, $bottom) =
-		get_element_bounds(@{$element->{lines}});
+	my($left, $top, $right, $bottom) = get_element_bounds(@element_lines);
 	my $pw = $page_width + $right;
+
+	my $meta = do {
+		use JSON;
+		my %data = (
+			width => $pw,
+			height => $ph,
+			stroke_width => $stroke_width,
+			x => $baseline_x,
+			y => $baseline_y,
+			codepoint => $element->{codepoint},
+			glyph_name => $element->{name},
+			lines => \@element_lines,
+		);
+		local $_ = JSON->new->ascii->encode(\%data);
+		s/--/-\\u002d/g;
+		$_;
+	};
+
 
 	push @out, qq{
 		<svg
@@ -208,9 +254,9 @@ sub draw_element_svg
 			xmlns:xlink="http://www.w3.org/1999/xlink"
 			width="$pw" height="$ph"
 			>
-			<!--[STFGMETA[ {"width":$pw,"height":$ph,"stroke_width":$stroke_width,"x":$baseline_x,"y":$baseline_y,"codepoint":$element->{codepoint},"glyph_name":"$element->{name}"} ]STFGMETA]-->
+			<!--[STFGMETA[ $meta ]STFGMETA]-->
 	};
-	push @out, draw_element_lines(@{$element->{lines}});
+	push @out, draw_element_lines(@element_lines);
 	push @out, qq{
 	</svg>
 	};

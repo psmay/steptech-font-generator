@@ -21,7 +21,12 @@ my $j = JSON->new->utf8->pretty->relaxed->canonical;
 
 my @key_order = qw/
 	name
+	compose
+	anchors
 	lines
+
+	glyph
+	op
 
 	draw
 	guide_color

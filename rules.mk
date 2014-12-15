@@ -37,7 +37,7 @@ $(ELEMENTS_DIR): $(JSON_ALL)
 # Generate a makefile include for the element file list
 $(DEFINE_ELEMENT_FILES): $(ELEMENTS_DIR)
 	+@echo -n "ELEMENT_FILES =" > $@$(RT)
-	+@find $< -type f -name '*.json' -print0 | sort -z | xargs -0 -i echo -n " {}" >> $@$(RT)
+	+@find $< -type f -name 'char-*.json' -print0 | sort -z | xargs -0 -i echo -n " {}" >> $@$(RT)
 	+@echo "" >> $@$(RT)
 	mv $@$(RT) $@
 
@@ -94,7 +94,7 @@ $(UNIONED_SHAPES_TEMP_DIR):
 	+@[ -d $@ ] || mkdir -p $@
 
 $(LOOSE_SHAPES_DIR)/%.svg: $(ELEMENTS_DIR)/%.json ../element-to-loose-svg.pl | $(LOOSE_SHAPES_DIR)
-	../element-to-loose-svg.pl < $< > $@$(RT)
+	PERL5LIB=../ ../element-to-loose-svg.pl < $< > $@$(RT)
 	mv $@$(RT) $@
 
 $(EXT_META_DIR)/%.json: $(ELEMENTS_DIR)/%.json $(LOOSE_SHAPES_DIR)/%.svg | $(EXT_META_DIR)

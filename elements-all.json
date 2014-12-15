@@ -1,6 +1,12 @@
 [
 	{
 		"name" : "A",
+		"anchors" : {
+			"Eligmatch" : {
+				"x" : 400,
+				"y" : -275
+			}
+		},
 		"lines" : [
 			{
 				"guide_color" : "Black",
@@ -53,6 +59,132 @@
 					"y" : -250,
 					"cap" : "none"
 				}
+			}
+		]
+	},
+	{
+		"name" : "AE",
+		"compose" : [
+			{
+				"name" : "base",
+				"glyph" : "A"
+			},
+			{
+				"glyph" : "E",
+				"op" : [
+					[
+						"aligndia",
+						"Eligmatch"
+					]
+				]
+			}
+		]
+	},
+	{
+		"name" : "Aacute",
+		"compose" : [
+			{
+				"name" : "base",
+				"glyph" : "A"
+			},
+			{
+				"glyph" : "acute",
+				"op" : [
+					[
+						"aligndia",
+						"top"
+					]
+				]
+			}
+		]
+	},
+	{
+		"name" : "Acircumflex",
+		"compose" : [
+			{
+				"name" : "base",
+				"glyph" : "A"
+			},
+			{
+				"glyph" : "circumflex",
+				"op" : [
+					[
+						"aligndia",
+						"top"
+					]
+				]
+			}
+		]
+	},
+	{
+		"name" : "Adieresis",
+		"compose" : [
+			{
+				"name" : "base",
+				"glyph" : "A"
+			},
+			{
+				"glyph" : "dieresis",
+				"op" : [
+					[
+						"aligndia",
+						"top"
+					]
+				]
+			}
+		]
+	},
+	{
+		"name" : "Agrave",
+		"compose" : [
+			{
+				"name" : "base",
+				"glyph" : "A"
+			},
+			{
+				"glyph" : "grave",
+				"op" : [
+					[
+						"aligndia",
+						"top"
+					]
+				]
+			}
+		]
+	},
+	{
+		"name" : "Aring",
+		"compose" : [
+			{
+				"name" : "base",
+				"glyph" : "A"
+			},
+			{
+				"glyph" : "ring",
+				"op" : [
+					[
+						"aligndia",
+						"top"
+					]
+				]
+			}
+		]
+	},
+	{
+		"name" : "Atilde",
+		"compose" : [
+			{
+				"name" : "base",
+				"glyph" : "A"
+			},
+			{
+				"glyph" : "tilde",
+				"op" : [
+					[
+						"aligndia",
+						"top"
+					]
+				]
 			}
 		]
 	},
@@ -236,6 +368,24 @@
 		]
 	},
 	{
+		"name" : "Ccedilla",
+		"compose" : [
+			{
+				"name" : "base",
+				"glyph" : "C"
+			},
+			{
+				"glyph" : "cedilla",
+				"op" : [
+					[
+						"aligndia",
+						"bottom"
+					]
+				]
+			}
+		]
+	},
+	{
 		"name" : "D",
 		"lines" : [
 			{
@@ -294,6 +444,12 @@
 	},
 	{
 		"name" : "E",
+		"anchors" : {
+			"d-Eligmatch" : {
+				"x" : 50,
+				"y" : -275
+			}
+		},
 		"lines" : [
 			{
 				"guide_color" : "Black",
@@ -346,6 +502,119 @@
 					"y" : -500,
 					"cap" : "s"
 				}
+			}
+		]
+	},
+	{
+		"name" : "Eacute",
+		"compose" : [
+			{
+				"name" : "base",
+				"glyph" : "E"
+			},
+			{
+				"glyph" : "acute",
+				"op" : [
+					[
+						"aligndia",
+						"top"
+					]
+				]
+			}
+		]
+	},
+	{
+		"name" : "Ecircumflex",
+		"compose" : [
+			{
+				"name" : "base",
+				"glyph" : "E"
+			},
+			{
+				"glyph" : "circumflex",
+				"op" : [
+					[
+						"aligndia",
+						"top"
+					]
+				]
+			}
+		]
+	},
+	{
+		"name" : "Edieresis",
+		"compose" : [
+			{
+				"name" : "base",
+				"glyph" : "E"
+			},
+			{
+				"glyph" : "dieresis",
+				"op" : [
+					[
+						"aligndia",
+						"top"
+					]
+				]
+			}
+		]
+	},
+	{
+		"name" : "Egrave",
+		"compose" : [
+			{
+				"name" : "base",
+				"glyph" : "E"
+			},
+			{
+				"glyph" : "grave",
+				"op" : [
+					[
+						"aligndia",
+						"top"
+					]
+				]
+			}
+		]
+	},
+	{
+		"name" : "Eth",
+		"compose" : [
+			{
+				"glyph" : "D"
+			}
+		],
+		"lines" : [
+			{
+				"guide_color" : "Black",
+				"from" : {
+					"x" : -50,
+					"y" : -250,
+					"cap" : "cs"
+				},
+				"to" : {
+					"x" : 150,
+					"y" : -250,
+					"cap" : "cs"
+				}
+			}
+		]
+	},
+	{
+		"name" : "Etilde",
+		"compose" : [
+			{
+				"name" : "base",
+				"glyph" : "E"
+			},
+			{
+				"glyph" : "tilde",
+				"op" : [
+					[
+						"aligndia",
+						"top"
+					]
+				]
 			}
 		]
 	},
@@ -522,6 +791,96 @@
 					"y" : -50,
 					"cap" : "s"
 				}
+			}
+		]
+	},
+	{
+		"name" : "Iacute",
+		"compose" : [
+			{
+				"name" : "base",
+				"glyph" : "I"
+			},
+			{
+				"glyph" : "acute",
+				"op" : [
+					[
+						"aligndia",
+						"top"
+					]
+				]
+			}
+		]
+	},
+	{
+		"name" : "Icircumflex",
+		"compose" : [
+			{
+				"name" : "base",
+				"glyph" : "I"
+			},
+			{
+				"glyph" : "circumflex",
+				"op" : [
+					[
+						"aligndia",
+						"top"
+					]
+				]
+			}
+		]
+	},
+	{
+		"name" : "Idieresis",
+		"compose" : [
+			{
+				"name" : "base",
+				"glyph" : "I"
+			},
+			{
+				"glyph" : "dieresis",
+				"op" : [
+					[
+						"aligndia",
+						"top"
+					]
+				]
+			}
+		]
+	},
+	{
+		"name" : "Igrave",
+		"compose" : [
+			{
+				"name" : "base",
+				"glyph" : "I"
+			},
+			{
+				"glyph" : "grave",
+				"op" : [
+					[
+						"aligndia",
+						"top"
+					]
+				]
+			}
+		]
+	},
+	{
+		"name" : "Itilde",
+		"compose" : [
+			{
+				"name" : "base",
+				"glyph" : "I"
+			},
+			{
+				"glyph" : "tilde",
+				"op" : [
+					[
+						"aligndia",
+						"top"
+					]
+				]
 			}
 		]
 	},
@@ -774,7 +1133,31 @@
 		]
 	},
 	{
+		"name" : "Ntilde",
+		"compose" : [
+			{
+				"name" : "base",
+				"glyph" : "N"
+			},
+			{
+				"glyph" : "tilde",
+				"op" : [
+					[
+						"aligndia",
+						"top"
+					]
+				]
+			}
+		]
+	},
+	{
 		"name" : "O",
+		"anchors" : {
+			"Eligmatch" : {
+				"x" : 400,
+				"y" : -275
+			}
+		},
 		"lines" : [
 			{
 				"guide_color" : "Black",
@@ -827,6 +1210,126 @@
 					"y" : -50,
 					"cap" : "c"
 				}
+			}
+		]
+	},
+	{
+		"name" : "OE",
+		"compose" : [
+			{
+				"name" : "base",
+				"glyph" : "O"
+			},
+			{
+				"glyph" : "E",
+				"op" : [
+					[
+						"aligndia",
+						"Eligmatch"
+					]
+				]
+			}
+		]
+	},
+	{
+		"name" : "Oacute",
+		"compose" : [
+			{
+				"name" : "base",
+				"glyph" : "O"
+			},
+			{
+				"glyph" : "acute",
+				"op" : [
+					[
+						"aligndia",
+						"top"
+					]
+				]
+			}
+		]
+	},
+	{
+		"name" : "Ocircumflex",
+		"compose" : [
+			{
+				"name" : "base",
+				"glyph" : "O"
+			},
+			{
+				"glyph" : "circumflex",
+				"op" : [
+					[
+						"aligndia",
+						"top"
+					]
+				]
+			}
+		]
+	},
+	{
+		"name" : "Odieresis",
+		"compose" : [
+			{
+				"name" : "base",
+				"glyph" : "O"
+			},
+			{
+				"glyph" : "dieresis",
+				"op" : [
+					[
+						"aligndia",
+						"top"
+					]
+				]
+			}
+		]
+	},
+	{
+		"name" : "Ograve",
+		"compose" : [
+			{
+				"name" : "base",
+				"glyph" : "O"
+			},
+			{
+				"glyph" : "grave",
+				"op" : [
+					[
+						"aligndia",
+						"top"
+					]
+				]
+			}
+		]
+	},
+	{
+		"name" : "Oslash",
+		"compose" : [
+			{
+				"name" : "base",
+				"glyph" : "O"
+			},
+			{
+				"glyph" : "_ucslash"
+			}
+		]
+	},
+	{
+		"name" : "Otilde",
+		"compose" : [
+			{
+				"name" : "base",
+				"glyph" : "O"
+			},
+			{
+				"glyph" : "tilde",
+				"op" : [
+					[
+						"aligndia",
+						"top"
+					]
+				]
 			}
 		]
 	},
@@ -1126,6 +1629,24 @@
 		]
 	},
 	{
+		"name" : "Scaron",
+		"compose" : [
+			{
+				"name" : "base",
+				"glyph" : "S"
+			},
+			{
+				"glyph" : "caron",
+				"op" : [
+					[
+						"aligndia",
+						"top"
+					]
+				]
+			}
+		]
+	},
+	{
 		"name" : "T",
 		"lines" : [
 			{
@@ -1151,6 +1672,63 @@
 				"to" : {
 					"x" : 400,
 					"y" : -500,
+					"cap" : "s"
+				}
+			}
+		]
+	},
+	{
+		"name" : "Thorn",
+		"lines" : [
+			{
+				"guide_color" : "Black",
+				"from" : {
+					"x" : 50,
+					"y" : -387.5,
+					"cap" : "none"
+				},
+				"to" : {
+					"x" : 400,
+					"y" : -387.5,
+					"cap" : "c"
+				}
+			},
+			{
+				"guide_color" : "Blue",
+				"from" : {
+					"x" : 400,
+					"y" : -387.5,
+					"cap" : "none"
+				},
+				"to" : {
+					"x" : 400,
+					"y" : -162.5,
+					"cap" : "none"
+				}
+			},
+			{
+				"guide_color" : "Fuchsia",
+				"from" : {
+					"x" : 50,
+					"y" : -162.5,
+					"cap" : "none"
+				},
+				"to" : {
+					"x" : 400,
+					"y" : -162.5,
+					"cap" : "c"
+				}
+			},
+			{
+				"guide_color" : "Gray",
+				"from" : {
+					"x" : 50,
+					"y" : -500,
+					"cap" : "s"
+				},
+				"to" : {
+					"x" : 50,
+					"y" : -50,
 					"cap" : "s"
 				}
 			}
@@ -1197,6 +1775,114 @@
 					"y" : -50,
 					"cap" : "c"
 				}
+			}
+		]
+	},
+	{
+		"name" : "Uacute",
+		"compose" : [
+			{
+				"name" : "base",
+				"glyph" : "U"
+			},
+			{
+				"glyph" : "acute",
+				"op" : [
+					[
+						"aligndia",
+						"top"
+					]
+				]
+			}
+		]
+	},
+	{
+		"name" : "Ucircumflex",
+		"compose" : [
+			{
+				"name" : "base",
+				"glyph" : "U"
+			},
+			{
+				"glyph" : "circumflex",
+				"op" : [
+					[
+						"aligndia",
+						"top"
+					]
+				]
+			}
+		]
+	},
+	{
+		"name" : "Udieresis",
+		"compose" : [
+			{
+				"name" : "base",
+				"glyph" : "U"
+			},
+			{
+				"glyph" : "dieresis",
+				"op" : [
+					[
+						"aligndia",
+						"top"
+					]
+				]
+			}
+		]
+	},
+	{
+		"name" : "Ugrave",
+		"compose" : [
+			{
+				"name" : "base",
+				"glyph" : "U"
+			},
+			{
+				"glyph" : "grave",
+				"op" : [
+					[
+						"aligndia",
+						"top"
+					]
+				]
+			}
+		]
+	},
+	{
+		"name" : "Uring",
+		"compose" : [
+			{
+				"name" : "base",
+				"glyph" : "U"
+			},
+			{
+				"glyph" : "ring",
+				"op" : [
+					[
+						"aligndia",
+						"top"
+					]
+				]
+			}
+		]
+	},
+	{
+		"name" : "Utilde",
+		"compose" : [
+			{
+				"name" : "base",
+				"glyph" : "U"
+			},
+			{
+				"glyph" : "tilde",
+				"op" : [
+					[
+						"aligndia",
+						"top"
+					]
+				]
 			}
 		]
 	},
@@ -1457,6 +2143,96 @@
 		]
 	},
 	{
+		"name" : "Yacute",
+		"compose" : [
+			{
+				"name" : "base",
+				"glyph" : "Y"
+			},
+			{
+				"glyph" : "acute",
+				"op" : [
+					[
+						"aligndia",
+						"top"
+					]
+				]
+			}
+		]
+	},
+	{
+		"name" : "Ycircumflex",
+		"compose" : [
+			{
+				"name" : "base",
+				"glyph" : "Y"
+			},
+			{
+				"glyph" : "circumflex",
+				"op" : [
+					[
+						"aligndia",
+						"top"
+					]
+				]
+			}
+		]
+	},
+	{
+		"name" : "Ydieresis",
+		"compose" : [
+			{
+				"name" : "base",
+				"glyph" : "Y"
+			},
+			{
+				"glyph" : "dieresis",
+				"op" : [
+					[
+						"aligndia",
+						"top"
+					]
+				]
+			}
+		]
+	},
+	{
+		"name" : "Ygrave",
+		"compose" : [
+			{
+				"name" : "base",
+				"glyph" : "Y"
+			},
+			{
+				"glyph" : "grave",
+				"op" : [
+					[
+						"aligndia",
+						"top"
+					]
+				]
+			}
+		]
+	},
+	{
+		"name" : "Ytilde",
+		"compose" : [
+			{
+				"name" : "base",
+				"glyph" : "Y"
+			},
+			{
+				"glyph" : "tilde",
+				"op" : [
+					[
+						"aligndia",
+						"top"
+					]
+				]
+			}
+		]
+	},
+	{
 		"name" : "Z",
 		"lines" : [
 			{
@@ -1501,7 +2277,845 @@
 		]
 	},
 	{
+		"name" : "Zcaron",
+		"compose" : [
+			{
+				"name" : "base",
+				"glyph" : "Z"
+			},
+			{
+				"glyph" : "caron",
+				"op" : [
+					[
+						"aligndia",
+						"top"
+					]
+				]
+			}
+		]
+	},
+	{
+		"name" : "_0shrunk",
+		"compose" : [
+			{
+				"glyph" : "zero",
+				"op" : [
+					[
+						"movetoanchor",
+						"bottomleft"
+					],
+					[
+						"push"
+					],
+					[
+						"scale",
+						0.5,
+						0.75
+					],
+					[
+						"movetoanchor",
+						"bottomleft"
+					],
+					[
+						"translatetoprevious"
+					]
+				]
+			}
+		]
+	},
+	{
+		"name" : "_1shrunk",
+		"compose" : [
+			{
+				"glyph" : "one",
+				"op" : [
+					[
+						"movetoanchor",
+						"bottomleft"
+					],
+					[
+						"push"
+					],
+					[
+						"scale",
+						0.5,
+						0.75
+					],
+					[
+						"movetoanchor",
+						"bottomleft"
+					],
+					[
+						"translatetoprevious"
+					]
+				]
+			}
+		]
+	},
+	{
+		"name" : "_2shrunk",
+		"compose" : [
+			{
+				"glyph" : "two",
+				"op" : [
+					[
+						"movetoanchor",
+						"bottomleft"
+					],
+					[
+						"push"
+					],
+					[
+						"scale",
+						0.5,
+						0.75
+					],
+					[
+						"movetoanchor",
+						"bottomleft"
+					],
+					[
+						"translatetoprevious"
+					]
+				]
+			}
+		]
+	},
+	{
+		"name" : "_3shrunk",
+		"compose" : [
+			{
+				"glyph" : "three",
+				"op" : [
+					[
+						"movetoanchor",
+						"bottomleft"
+					],
+					[
+						"push"
+					],
+					[
+						"scale",
+						0.5,
+						0.75
+					],
+					[
+						"movetoanchor",
+						"bottomleft"
+					],
+					[
+						"translatetoprevious"
+					]
+				]
+			}
+		]
+	},
+	{
+		"name" : "_4shrunk",
+		"compose" : [
+			{
+				"glyph" : "four",
+				"op" : [
+					[
+						"movetoanchor",
+						"bottomleft"
+					],
+					[
+						"push"
+					],
+					[
+						"scale",
+						0.5,
+						0.75
+					],
+					[
+						"movetoanchor",
+						"bottomleft"
+					],
+					[
+						"translatetoprevious"
+					]
+				]
+			}
+		]
+	},
+	{
+		"name" : "_5shrunk",
+		"compose" : [
+			{
+				"glyph" : "five",
+				"op" : [
+					[
+						"movetoanchor",
+						"bottomleft"
+					],
+					[
+						"push"
+					],
+					[
+						"scale",
+						0.5,
+						0.75
+					],
+					[
+						"movetoanchor",
+						"bottomleft"
+					],
+					[
+						"translatetoprevious"
+					]
+				]
+			}
+		]
+	},
+	{
+		"name" : "_6shrunk",
+		"compose" : [
+			{
+				"glyph" : "six",
+				"op" : [
+					[
+						"movetoanchor",
+						"bottomleft"
+					],
+					[
+						"push"
+					],
+					[
+						"scale",
+						0.5,
+						0.75
+					],
+					[
+						"movetoanchor",
+						"bottomleft"
+					],
+					[
+						"translatetoprevious"
+					]
+				]
+			}
+		]
+	},
+	{
+		"name" : "_7shrunk",
+		"compose" : [
+			{
+				"glyph" : "seven",
+				"op" : [
+					[
+						"movetoanchor",
+						"bottomleft"
+					],
+					[
+						"push"
+					],
+					[
+						"scale",
+						0.5,
+						0.75
+					],
+					[
+						"movetoanchor",
+						"bottomleft"
+					],
+					[
+						"translatetoprevious"
+					]
+				]
+			}
+		]
+	},
+	{
+		"name" : "_8shrunk",
+		"compose" : [
+			{
+				"glyph" : "eight",
+				"op" : [
+					[
+						"movetoanchor",
+						"bottomleft"
+					],
+					[
+						"push"
+					],
+					[
+						"scale",
+						0.5,
+						0.75
+					],
+					[
+						"movetoanchor",
+						"bottomleft"
+					],
+					[
+						"translatetoprevious"
+					]
+				]
+			}
+		]
+	},
+	{
+		"name" : "_9shrunk",
+		"compose" : [
+			{
+				"glyph" : "nine",
+				"op" : [
+					[
+						"movetoanchor",
+						"bottomleft"
+					],
+					[
+						"push"
+					],
+					[
+						"scale",
+						0.5,
+						0.75
+					],
+					[
+						"movetoanchor",
+						"bottomleft"
+					],
+					[
+						"translatetoprevious"
+					]
+				]
+			}
+		]
+	},
+	{
+		"name" : "_ashrunk",
+		"compose" : [
+			{
+				"glyph" : "a",
+				"op" : [
+					[
+						"movetoanchor",
+						"bottomleft"
+					],
+					[
+						"push"
+					],
+					[
+						"scale",
+						0.5,
+						0.75
+					],
+					[
+						"movetoanchor",
+						"bottomleft"
+					],
+					[
+						"translatetoprevious"
+					]
+				]
+			}
+		]
+	},
+	{
+		"name" : "_bulletdot",
+		"compose" : [
+			{
+				"glyph" : "_perring"
+			}
+		]
+	},
+	{
+		"name" : "_crcircle",
+		"lines" : [
+			{
+				"guide_color" : "Black",
+				"from" : {
+					"x" : 50,
+					"y" : -50,
+					"cap" : "none"
+				},
+				"to" : {
+					"x" : 500,
+					"y" : -50,
+					"cap" : "none"
+				}
+			},
+			{
+				"guide_color" : "Black",
+				"from" : {
+					"x" : 50,
+					"y" : -500,
+					"cap" : "c"
+				},
+				"to" : {
+					"x" : 50,
+					"y" : -50,
+					"cap" : "c"
+				}
+			},
+			{
+				"guide_color" : "Black",
+				"from" : {
+					"x" : 50,
+					"y" : -500,
+					"cap" : "none"
+				},
+				"to" : {
+					"x" : 500,
+					"y" : -500,
+					"cap" : "none"
+				}
+			},
+			{
+				"guide_color" : "Black",
+				"from" : {
+					"x" : 500,
+					"y" : -500,
+					"cap" : "c"
+				},
+				"to" : {
+					"x" : 500,
+					"y" : -50,
+					"cap" : "c"
+				}
+			}
+		]
+	},
+	{
+		"name" : "_lcslash",
+		"lines" : [
+			{
+				"guide_color" : "Red",
+				"from" : {
+					"x" : 100,
+					"y" : 50,
+					"cap" : "c"
+				},
+				"to" : {
+					"x" : 100,
+					"y" : 50,
+					"cap" : "s"
+				},
+				"dotdir" : "y"
+			},
+			{
+				"guide_color" : "Black",
+				"from" : {
+					"x" : 100,
+					"y" : 50,
+					"cap" : "none"
+				},
+				"to" : {
+					"x" : 350,
+					"y" : -500,
+					"cap" : "none"
+				}
+			},
+			{
+				"guide_color" : "Blue",
+				"from" : {
+					"x" : 350,
+					"y" : -500,
+					"cap" : "s"
+				},
+				"to" : {
+					"x" : 350,
+					"y" : -500,
+					"cap" : "c"
+				},
+				"dotdir" : "y"
+			}
+		]
+	},
+	{
+		"name" : "_oshrunk",
+		"compose" : [
+			{
+				"glyph" : "o",
+				"op" : [
+					[
+						"movetoanchor",
+						"bottomleft"
+					],
+					[
+						"push"
+					],
+					[
+						"scale",
+						0.5,
+						0.75
+					],
+					[
+						"movetoanchor",
+						"bottomleft"
+					],
+					[
+						"translatetoprevious"
+					]
+				]
+			}
+		]
+	},
+	{
+		"name" : "_perring",
+		"lines" : [
+			{
+				"guide_color" : "Blue",
+				"from" : {
+					"x" : 50,
+					"y" : -150,
+					"cap" : "c"
+				},
+				"to" : {
+					"x" : 50,
+					"y" : -50,
+					"cap" : "c"
+				}
+			},
+			{
+				"guide_color" : "Blue",
+				"from" : {
+					"x" : 50,
+					"y" : -50,
+					"cap" : "none"
+				},
+				"to" : {
+					"x" : 150,
+					"y" : -50,
+					"cap" : "none"
+				}
+			},
+			{
+				"guide_color" : "Blue",
+				"from" : {
+					"x" : 150,
+					"y" : -150,
+					"cap" : "c"
+				},
+				"to" : {
+					"x" : 150,
+					"y" : -50,
+					"cap" : "c"
+				}
+			},
+			{
+				"guide_color" : "Blue",
+				"from" : {
+					"x" : 50,
+					"y" : -150,
+					"cap" : "none"
+				},
+				"to" : {
+					"x" : 150,
+					"y" : -150,
+					"cap" : "none"
+				}
+			}
+		]
+	},
+	{
+		"name" : "_place",
+		"anchors" : {
+			"quotetopleft" : {
+				"x" : 0,
+				"y" : -550
+			},
+			"subbottomleft" : {
+				"x" : 0,
+				"y" : 50
+			},
+			"suptopleft" : {
+				"x" : 0,
+				"y" : -550
+			}
+		}
+	},
+	{
+		"name" : "_quote6",
+		"compose" : [
+			{
+				"glyph" : "_quote9",
+				"op" : [
+					[
+						"scale",
+						-1,
+						-1
+					]
+				]
+			}
+		],
+		"anchors" : {
+			"next" : {
+				"x" : 150,
+				"y" : 0
+			},
+			"this" : {
+				"x" : 0,
+				"y" : 0
+			}
+		}
+	},
+	{
+		"name" : "_quote66",
+		"compose" : [
+			{
+				"glyph" : "_quote99",
+				"op" : [
+					[
+						"scale",
+						-1,
+						-1
+					]
+				]
+			}
+		],
+		"anchors" : {
+			"next" : {
+				"x" : 300,
+				"y" : 0
+			},
+			"this" : {
+				"x" : 0,
+				"y" : 0
+			}
+		}
+	},
+	{
+		"name" : "_quote9",
+		"anchors" : {
+			"next" : {
+				"x" : 150,
+				"y" : 0
+			},
+			"this" : {
+				"x" : 0,
+				"y" : 0
+			}
+		},
+		"lines" : [
+			{
+				"guide_color" : "Black",
+				"from" : {
+					"x" : 50,
+					"y" : -50,
+					"cap" : "s"
+				},
+				"to" : {
+					"x" : 50,
+					"y" : 0,
+					"cap" : "cs"
+				}
+			}
+		]
+	},
+	{
+		"name" : "_quote99",
+		"compose" : [
+			{
+				"name" : "first",
+				"glyph" : "_quote9"
+			},
+			{
+				"glyph" : "_quote9",
+				"op" : [
+					[
+						"itemmovetoanchor",
+						"first",
+						"next"
+					],
+					[
+						"push"
+					],
+					[
+						"movetoanchor",
+						"this"
+					],
+					[
+						"translatetoprevious"
+					]
+				]
+			}
+		],
+		"anchors" : {
+			"next" : {
+				"x" : 300,
+				"y" : 0
+			},
+			"this" : {
+				"x" : 0,
+				"y" : 0
+			}
+		}
+	},
+	{
+		"name" : "_quoter9",
+		"compose" : [
+			{
+				"glyph" : "_quote9",
+				"op" : [
+					[
+						"scale",
+						-1,
+						1
+					]
+				]
+			}
+		],
+		"anchors" : {
+			"next" : {
+				"x" : 150,
+				"y" : 0
+			},
+			"this" : {
+				"x" : 0,
+				"y" : 0
+			}
+		}
+	},
+	{
+		"name" : "_quoter99",
+		"compose" : [
+			{
+				"glyph" : "_quote99",
+				"op" : [
+					[
+						"scale",
+						-1,
+						1
+					]
+				]
+			}
+		],
+		"anchors" : {
+			"next" : {
+				"x" : 300,
+				"y" : 0
+			},
+			"this" : {
+				"x" : 0,
+				"y" : 0
+			}
+		}
+	},
+	{
+		"name" : "_ring",
+		"lines" : [
+			{
+				"guide_color" : "Black",
+				"from" : {
+					"x" : 50,
+					"y" : -200,
+					"cap" : "c"
+				},
+				"to" : {
+					"x" : 50,
+					"y" : -50,
+					"cap" : "c"
+				}
+			},
+			{
+				"guide_color" : "Red",
+				"from" : {
+					"x" : 50,
+					"y" : -50,
+					"cap" : "none"
+				},
+				"to" : {
+					"x" : 200,
+					"y" : -50,
+					"cap" : "none"
+				}
+			},
+			{
+				"guide_color" : "Green",
+				"from" : {
+					"x" : 200,
+					"y" : -200,
+					"cap" : "c"
+				},
+				"to" : {
+					"x" : 200,
+					"y" : -50,
+					"cap" : "c"
+				}
+			},
+			{
+				"guide_color" : "Blue",
+				"from" : {
+					"x" : 50,
+					"y" : -200,
+					"cap" : "none"
+				},
+				"to" : {
+					"x" : 200,
+					"y" : -200,
+					"cap" : "none"
+				}
+			}
+		]
+	},
+	{
+		"name" : "_todo",
+		"compose" : [
+			{
+				"glyph" : "X"
+			},
+			{
+				"glyph" : "O"
+			}
+		]
+	},
+	{
+		"name" : "_ucslash",
+		"lines" : [
+			{
+				"guide_color" : "Red",
+				"from" : {
+					"x" : 100,
+					"y" : 50,
+					"cap" : "c"
+				},
+				"to" : {
+					"x" : 100,
+					"y" : 50,
+					"cap" : "s"
+				},
+				"dotdir" : "y"
+			},
+			{
+				"guide_color" : "Black",
+				"from" : {
+					"x" : 100,
+					"y" : 50,
+					"cap" : "none"
+				},
+				"to" : {
+					"x" : 350,
+					"y" : -600,
+					"cap" : "none"
+				}
+			},
+			{
+				"guide_color" : "Blue",
+				"from" : {
+					"x" : 350,
+					"y" : -600,
+					"cap" : "s"
+				},
+				"to" : {
+					"x" : 350,
+					"y" : -600,
+					"cap" : "c"
+				},
+				"dotdir" : "y"
+			}
+		]
+	},
+	{
 		"name" : "a",
+		"anchors" : {
+			"eligmatch" : {
+				"x" : 400,
+				"y" : -225
+			}
+		},
 		"lines" : [
 			{
 				"guide_color" : "Black",
@@ -1571,48 +3185,113 @@
 		]
 	},
 	{
+		"name" : "aacute",
+		"compose" : [
+			{
+				"name" : "base",
+				"glyph" : "a"
+			},
+			{
+				"glyph" : "acute",
+				"op" : [
+					[
+						"aligndia",
+						"top"
+					]
+				]
+			}
+		]
+	},
+	{
+		"name" : "acircumflex",
+		"compose" : [
+			{
+				"name" : "base",
+				"glyph" : "a"
+			},
+			{
+				"glyph" : "circumflex",
+				"op" : [
+					[
+						"aligndia",
+						"top"
+					]
+				]
+			}
+		]
+	},
+	{
 		"name" : "acute",
-		"lines" : [
+		"compose" : [
 			{
-				"guide_color" : "Black",
-				"from" : {
-					"x" : 100,
-					"y" : -700,
-					"cap" : "none"
-				},
-				"to" : {
-					"x" : 100,
-					"y" : -700,
-					"cap" : "s"
-				},
-				"dotdir" : "x"
+				"glyph" : "grave",
+				"op" : [
+					[
+						"scale",
+						-1,
+						1
+					]
+				]
+			}
+		],
+		"anchors" : {
+			"d-top" : {
+				"x" : 50,
+				"y" : -550
+			}
+		}
+	},
+	{
+		"name" : "adieresis",
+		"compose" : [
+			{
+				"name" : "base",
+				"glyph" : "a"
 			},
 			{
-				"guide_color" : "Blue",
-				"from" : {
-					"x" : 100,
-					"y" : -700,
-					"cap" : "c"
-				},
-				"to" : {
-					"x" : 50,
-					"y" : -650,
-					"cap" : "c"
-				}
+				"glyph" : "dieresis",
+				"op" : [
+					[
+						"aligndia",
+						"top"
+					]
+				]
+			}
+		]
+	},
+	{
+		"name" : "ae",
+		"compose" : [
+			{
+				"name" : "base",
+				"glyph" : "a"
 			},
 			{
-				"guide_color" : "Green",
-				"from" : {
-					"x" : 50,
-					"y" : -650,
-					"cap" : "s"
-				},
-				"to" : {
-					"x" : 50,
-					"y" : -650,
-					"cap" : "none"
-				},
-				"dotdir" : "x"
+				"glyph" : "e",
+				"op" : [
+					[
+						"aligndia",
+						"eligmatch"
+					]
+				]
+			}
+		]
+	},
+	{
+		"name" : "agrave",
+		"compose" : [
+			{
+				"name" : "base",
+				"glyph" : "a"
+			},
+			{
+				"glyph" : "grave",
+				"op" : [
+					[
+						"aligndia",
+						"top"
+					]
+				]
 			}
 		]
 	},
@@ -1696,6 +3375,24 @@
 					"y" : -500,
 					"cap" : "s"
 				}
+			}
+		]
+	},
+	{
+		"name" : "aring",
+		"compose" : [
+			{
+				"name" : "base",
+				"glyph" : "a"
+			},
+			{
+				"glyph" : "ring",
+				"op" : [
+					[
+						"aligndia",
+						"top"
+					]
+				]
 			}
 		]
 	},
@@ -2042,6 +3739,24 @@
 		]
 	},
 	{
+		"name" : "atilde",
+		"compose" : [
+			{
+				"name" : "base",
+				"glyph" : "a"
+			},
+			{
+				"glyph" : "tilde",
+				"op" : [
+					[
+						"aligndia",
+						"top"
+					]
+				]
+			}
+		]
+	},
+	{
 		"name" : "b",
 		"lines" : [
 			{
@@ -2100,45 +3815,16 @@
 	},
 	{
 		"name" : "backslash",
-		"lines" : [
+		"compose" : [
 			{
-				"guide_color" : "Black",
-				"from" : {
-					"x" : 400,
-					"y" : -100,
-					"cap" : "c"
-				},
-				"to" : {
-					"x" : 400,
-					"y" : -50,
-					"cap" : "s"
-				}
-			},
-			{
-				"guide_color" : "Blue",
-				"from" : {
-					"x" : 50,
-					"y" : -450,
-					"cap" : "none"
-				},
-				"to" : {
-					"x" : 400,
-					"y" : -100,
-					"cap" : "none"
-				}
-			},
-			{
-				"guide_color" : "Fuchsia",
-				"from" : {
-					"x" : 50,
-					"y" : -500,
-					"cap" : "s"
-				},
-				"to" : {
-					"x" : 50,
-					"y" : -450,
-					"cap" : "c"
-				}
+				"glyph" : "slash",
+				"op" : [
+					[
+						"scale",
+						-1,
+						1
+					]
+				]
 			}
 		]
 	},
@@ -2253,110 +3939,16 @@
 	},
 	{
 		"name" : "braceright",
-		"lines" : [
+		"compose" : [
 			{
-				"guide_color" : "Black",
-				"from" : {
-					"x" : 125,
-					"y" : -50,
-					"cap" : "c"
-				},
-				"to" : {
-					"x" : 50,
-					"y" : -50,
-					"cap" : "s"
-				}
-			},
-			{
-				"guide_color" : "Blue",
-				"from" : {
-					"x" : 175,
-					"y" : -100,
-					"cap" : "none"
-				},
-				"to" : {
-					"x" : 125,
-					"y" : -50,
-					"cap" : "none"
-				}
-			},
-			{
-				"guide_color" : "Fuchsia",
-				"from" : {
-					"x" : 175,
-					"y" : -200,
-					"cap" : "c"
-				},
-				"to" : {
-					"x" : 175,
-					"y" : -100,
-					"cap" : "c"
-				}
-			},
-			{
-				"guide_color" : "Orange",
-				"from" : {
-					"x" : 250,
-					"y" : -275,
-					"cap" : "s"
-				},
-				"to" : {
-					"x" : 175,
-					"y" : -200,
-					"cap" : "none"
-				}
-			},
-			{
-				"guide_color" : "Green",
-				"from" : {
-					"x" : 250,
-					"y" : -275,
-					"cap" : "none"
-				},
-				"to" : {
-					"x" : 175,
-					"y" : -350,
-					"cap" : "none"
-				}
-			},
-			{
-				"guide_color" : "Maroon",
-				"from" : {
-					"x" : 175,
-					"y" : -450,
-					"cap" : "c"
-				},
-				"to" : {
-					"x" : 175,
-					"y" : -350,
-					"cap" : "c"
-				}
-			},
-			{
-				"guide_color" : "Navy",
-				"from" : {
-					"x" : 175,
-					"y" : -450,
-					"cap" : "none"
-				},
-				"to" : {
-					"x" : 125,
-					"y" : -500,
-					"cap" : "none"
-				}
-			},
-			{
-				"guide_color" : "Olive",
-				"from" : {
-					"x" : 125,
-					"y" : -500,
-					"cap" : "c"
-				},
-				"to" : {
-					"x" : 50,
-					"y" : -500,
-					"cap" : "s"
-				}
+				"glyph" : "braceleft",
+				"op" : [
+					[
+						"scale",
+						-1,
+						1
+					]
+				]
 			}
 		]
 	},
@@ -2406,45 +3998,62 @@
 	},
 	{
 		"name" : "bracketright",
+		"compose" : [
+			{
+				"glyph" : "bracketleft",
+				"op" : [
+					[
+						"scale",
+						-1,
+						1
+					]
+				]
+			}
+		]
+	},
+	{
+		"name" : "brokenbar",
 		"lines" : [
 			{
 				"guide_color" : "Black",
 				"from" : {
 					"x" : 50,
-					"y" : -50,
-					"cap" : "s"
-				},
-				"to" : {
-					"x" : 150,
-					"y" : -50,
-					"cap" : "none"
-				}
-			},
-			{
-				"guide_color" : "Blue",
-				"from" : {
-					"x" : 150,
 					"y" : -500,
 					"cap" : "s"
 				},
 				"to" : {
-					"x" : 150,
-					"y" : -50,
+					"x" : 50,
+					"y" : -325,
 					"cap" : "s"
 				}
 			},
 			{
-				"guide_color" : "Fuchsia",
+				"guide_color" : "Purple",
 				"from" : {
 					"x" : 50,
-					"y" : -500,
+					"y" : -125,
 					"cap" : "s"
 				},
 				"to" : {
-					"x" : 150,
-					"y" : -500,
-					"cap" : "none"
+					"x" : 50,
+					"y" : 50,
+					"cap" : "s"
 				}
+			}
+		]
+	},
+	{
+		"name" : "bullet",
+		"compose" : [
+			{
+				"glyph" : "_bulletdot",
+				"op" : [
+					[
+						"translate",
+						0,
+						-200
+					]
+				]
 			}
 		]
 	},
@@ -2494,6 +4103,12 @@
 	},
 	{
 		"name" : "caron",
+		"anchors" : {
+			"d-top" : {
+				"x" : 125,
+				"y" : -550
+			}
+		},
 		"lines" : [
 			{
 				"guide_color" : "Green",
@@ -2552,7 +4167,31 @@
 		]
 	},
 	{
+		"name" : "ccedilla",
+		"compose" : [
+			{
+				"name" : "base",
+				"glyph" : "c"
+			},
+			{
+				"glyph" : "cedilla",
+				"op" : [
+					[
+						"aligndia",
+						"bottom"
+					]
+				]
+			}
+		]
+	},
+	{
 		"name" : "cedilla",
+		"anchors" : {
+			"d-bottom" : {
+				"x" : 50,
+				"y" : 0
+			}
+		},
 		"lines" : [
 			{
 				"guide_color" : "Black",
@@ -2609,7 +4248,83 @@
 		]
 	},
 	{
+		"name" : "cent",
+		"lines" : [
+			{
+				"guide_color" : "Black",
+				"from" : {
+					"x" : 200,
+					"y" : -150,
+					"cap" : "none"
+				},
+				"to" : {
+					"x" : 200,
+					"y" : -50,
+					"cap" : "sc"
+				}
+			},
+			{
+				"guide_color" : "Blue",
+				"from" : {
+					"x" : 50,
+					"y" : -150,
+					"cap" : "none"
+				},
+				"to" : {
+					"x" : 350,
+					"y" : -150,
+					"cap" : "s"
+				}
+			},
+			{
+				"guide_color" : "Green",
+				"from" : {
+					"x" : 50,
+					"y" : -400,
+					"cap" : "c"
+				},
+				"to" : {
+					"x" : 50,
+					"y" : -150,
+					"cap" : "c"
+				}
+			},
+			{
+				"guide_color" : "Maroon",
+				"from" : {
+					"x" : 50,
+					"y" : -400,
+					"cap" : "none"
+				},
+				"to" : {
+					"x" : 350,
+					"y" : -400,
+					"cap" : "s"
+				}
+			},
+			{
+				"guide_color" : "Navy",
+				"from" : {
+					"x" : 200,
+					"y" : -500,
+					"cap" : "sc"
+				},
+				"to" : {
+					"x" : 200,
+					"y" : -400,
+					"cap" : "none"
+				}
+			}
+		]
+	},
+	{
 		"name" : "circumflex",
+		"anchors" : {
+			"d-top" : {
+				"x" : 125,
+				"y" : -550
+			}
+		},
 		"lines" : [
 			{
 				"guide_color" : "Black",
@@ -2712,6 +4427,164 @@
 					"x" : 50,
 					"y" : 0,
 					"cap" : "cs"
+				}
+			}
+		]
+	},
+	{
+		"name" : "copyright",
+		"compose" : [
+			{
+				"glyph" : "_crcircle"
+			}
+		],
+		"lines" : [
+			{
+				"guide_color" : "Blue",
+				"from" : {
+					"x" : 350,
+					"y" : -200,
+					"cap" : "s"
+				},
+				"to" : {
+					"x" : 200,
+					"y" : -200,
+					"cap" : "c"
+				}
+			},
+			{
+				"guide_color" : "Red",
+				"from" : {
+					"x" : 200,
+					"y" : -200,
+					"cap" : "none"
+				},
+				"to" : {
+					"x" : 200,
+					"y" : -350,
+					"cap" : "none"
+				}
+			},
+			{
+				"guide_color" : "Green",
+				"from" : {
+					"x" : 350,
+					"y" : -350,
+					"cap" : "s"
+				},
+				"to" : {
+					"x" : 200,
+					"y" : -350,
+					"cap" : "c"
+				}
+			}
+		]
+	},
+	{
+		"name" : "currency",
+		"lines" : [
+			{
+				"guide_color" : "Black",
+				"from" : {
+					"x" : 100,
+					"y" : -300,
+					"cap" : "none"
+				},
+				"to" : {
+					"x" : 250,
+					"y" : -300,
+					"cap" : "none"
+				}
+			},
+			{
+				"guide_color" : "Blue",
+				"from" : {
+					"x" : 250,
+					"y" : -300,
+					"cap" : "none"
+				},
+				"to" : {
+					"x" : 250,
+					"y" : -150,
+					"cap" : "none"
+				}
+			},
+			{
+				"guide_color" : "Fuchsia",
+				"from" : {
+					"x" : 100,
+					"y" : -150,
+					"cap" : "none"
+				},
+				"to" : {
+					"x" : 250,
+					"y" : -150,
+					"cap" : "none"
+				}
+			},
+			{
+				"guide_color" : "Gray",
+				"from" : {
+					"x" : 100,
+					"y" : -300,
+					"cap" : "none"
+				},
+				"to" : {
+					"x" : 100,
+					"y" : -150,
+					"cap" : "none"
+				}
+			},
+			{
+				"guide_color" : "Green",
+				"from" : {
+					"x" : 50,
+					"y" : -350,
+					"cap" : "s"
+				},
+				"to" : {
+					"x" : 100,
+					"y" : -300,
+					"cap" : "c"
+				}
+			},
+			{
+				"guide_color" : "Maroon",
+				"from" : {
+					"x" : 250,
+					"y" : -300,
+					"cap" : "c"
+				},
+				"to" : {
+					"x" : 300,
+					"y" : -350,
+					"cap" : "s"
+				}
+			},
+			{
+				"guide_color" : "Navy",
+				"from" : {
+					"x" : 50,
+					"y" : -100,
+					"cap" : "s"
+				},
+				"to" : {
+					"x" : 100,
+					"y" : -150,
+					"cap" : "c"
+				}
+			},
+			{
+				"guide_color" : "Olive",
+				"from" : {
+					"x" : 250,
+					"y" : -150,
+					"cap" : "c"
+				},
+				"to" : {
+					"x" : 300,
+					"y" : -100,
+					"cap" : "s"
 				}
 			}
 		]
@@ -2849,7 +4722,28 @@
 		]
 	},
 	{
+		"name" : "degree",
+		"compose" : [
+			{
+				"glyph" : "_ring",
+				"op" : [
+					[
+						"translate",
+						0,
+						-500
+					]
+				]
+			}
+		]
+	},
+	{
 		"name" : "dieresis",
+		"anchors" : {
+			"d-top" : {
+				"x" : 125,
+				"y" : -550
+			}
+		},
 		"lines" : [
 			{
 				"guide_color" : "Black",
@@ -2874,6 +4768,50 @@
 				"to" : {
 					"x" : 200,
 					"y" : -650,
+					"cap" : "s"
+				}
+			}
+		]
+	},
+	{
+		"name" : "divide",
+		"lines" : [
+			{
+				"guide_color" : "Black",
+				"from" : {
+					"x" : 150,
+					"y" : -375,
+					"cap" : "s"
+				},
+				"to" : {
+					"x" : 150,
+					"y" : -375,
+					"cap" : "s"
+				}
+			},
+			{
+				"guide_color" : "Blue",
+				"from" : {
+					"x" : 50,
+					"y" : -250,
+					"cap" : "s"
+				},
+				"to" : {
+					"x" : 250,
+					"y" : -250,
+					"cap" : "s"
+				}
+			},
+			{
+				"guide_color" : "Fuchsia",
+				"from" : {
+					"x" : 150,
+					"y" : -125,
+					"cap" : "s"
+				},
+				"to" : {
+					"x" : 150,
+					"y" : -125,
 					"cap" : "s"
 				}
 			}
@@ -2995,6 +4933,12 @@
 	},
 	{
 		"name" : "e",
+		"anchors" : {
+			"d-eligmatch" : {
+				"x" : 50,
+				"y" : -225
+			}
+		},
 		"lines" : [
 			{
 				"guide_color" : "Black",
@@ -3060,6 +5004,78 @@
 					"y" : -50,
 					"cap" : "c"
 				}
+			}
+		]
+	},
+	{
+		"name" : "eacute",
+		"compose" : [
+			{
+				"name" : "base",
+				"glyph" : "e"
+			},
+			{
+				"glyph" : "acute",
+				"op" : [
+					[
+						"aligndia",
+						"top"
+					]
+				]
+			}
+		]
+	},
+	{
+		"name" : "ecircumflex",
+		"compose" : [
+			{
+				"name" : "base",
+				"glyph" : "e"
+			},
+			{
+				"glyph" : "circumflex",
+				"op" : [
+					[
+						"aligndia",
+						"top"
+					]
+				]
+			}
+		]
+	},
+	{
+		"name" : "edieresis",
+		"compose" : [
+			{
+				"name" : "base",
+				"glyph" : "e"
+			},
+			{
+				"glyph" : "dieresis",
+				"op" : [
+					[
+						"aligndia",
+						"top"
+					]
+				]
+			}
+		]
+	},
+	{
+		"name" : "egrave",
+		"compose" : [
+			{
+				"name" : "base",
+				"glyph" : "e"
+			},
+			{
+				"glyph" : "grave",
+				"op" : [
+					[
+						"aligndia",
+						"top"
+					]
+				]
 			}
 		]
 	},
@@ -3308,6 +5324,42 @@
 		]
 	},
 	{
+		"name" : "emdash",
+		"lines" : [
+			{
+				"guide_color" : "Black",
+				"from" : {
+					"x" : 50,
+					"y" : -250,
+					"cap" : "s"
+				},
+				"to" : {
+					"x" : 450,
+					"y" : -250,
+					"cap" : "s"
+				}
+			}
+		]
+	},
+	{
+		"name" : "endash",
+		"lines" : [
+			{
+				"guide_color" : "Black",
+				"from" : {
+					"x" : 50,
+					"y" : -250,
+					"cap" : "s"
+				},
+				"to" : {
+					"x" : 400,
+					"y" : -250,
+					"cap" : "s"
+				}
+			}
+		]
+	},
+	{
 		"name" : "equal",
 		"lines" : [
 			{
@@ -3335,6 +5387,107 @@
 					"y" : -350,
 					"cap" : "s"
 				}
+			}
+		]
+	},
+	{
+		"name" : "eth",
+		"lines" : [
+			{
+				"guide_color" : "Black",
+				"from" : {
+					"x" : 50,
+					"y" : -50,
+					"cap" : "none"
+				},
+				"to" : {
+					"x" : 400,
+					"y" : -50,
+					"cap" : "none"
+				}
+			},
+			{
+				"guide_color" : "Blue",
+				"from" : {
+					"x" : 400,
+					"y" : -350,
+					"cap" : "c"
+				},
+				"to" : {
+					"x" : 400,
+					"y" : -50,
+					"cap" : "c"
+				}
+			},
+			{
+				"guide_color" : "Fuchsia",
+				"from" : {
+					"x" : 250,
+					"y" : -500,
+					"cap" : "s"
+				},
+				"to" : {
+					"x" : 400,
+					"y" : -350,
+					"cap" : "none"
+				}
+			},
+			{
+				"guide_color" : "Gray",
+				"from" : {
+					"x" : 250,
+					"y" : -375,
+					"cap" : "s"
+				},
+				"to" : {
+					"x" : 375,
+					"y" : -500,
+					"cap" : "s"
+				}
+			},
+			{
+				"guide_color" : "Green",
+				"from" : {
+					"x" : 50,
+					"y" : -250,
+					"cap" : "c"
+				},
+				"to" : {
+					"x" : 50,
+					"y" : -50,
+					"cap" : "c"
+				}
+			},
+			{
+				"guide_color" : "Maroon",
+				"from" : {
+					"x" : 50,
+					"y" : -250,
+					"cap" : "none"
+				},
+				"to" : {
+					"x" : 400,
+					"y" : -250,
+					"cap" : "none"
+				}
+			}
+		]
+	},
+	{
+		"name" : "etilde",
+		"compose" : [
+			{
+				"name" : "base",
+				"glyph" : "e"
+			},
+			{
+				"glyph" : "tilde",
+				"op" : [
+					[
+						"aligndia",
+						"top"
+					]
+				]
 			}
 		]
 	},
@@ -3436,6 +5589,21 @@
 					"y" : -200,
 					"cap" : "s"
 				}
+			}
+		]
+	},
+	{
+		"name" : "exclamdown",
+		"compose" : [
+			{
+				"glyph" : "exclam",
+				"op" : [
+					[
+						"scale",
+						-1,
+						-1
+					]
+				]
 			}
 		]
 	},
@@ -3725,7 +5893,122 @@
 		]
 	},
 	{
+		"name" : "germandbls",
+		"lines" : [
+			{
+				"guide_color" : "Black",
+				"from" : {
+					"x" : 50,
+					"y" : -500,
+					"cap" : "c"
+				},
+				"to" : {
+					"x" : 50,
+					"y" : -50,
+					"cap" : "s"
+				}
+			},
+			{
+				"guide_color" : "Blue",
+				"from" : {
+					"x" : 200,
+					"y" : -50,
+					"cap" : "s"
+				},
+				"to" : {
+					"x" : 350,
+					"y" : -50,
+					"cap" : "none"
+				}
+			},
+			{
+				"guide_color" : "Fuchsia",
+				"from" : {
+					"x" : 350,
+					"y" : -200,
+					"cap" : "c"
+				},
+				"to" : {
+					"x" : 350,
+					"y" : -50,
+					"cap" : "c"
+				}
+			},
+			{
+				"guide_color" : "Gray",
+				"from" : {
+					"x" : 200,
+					"y" : -200,
+					"cap" : "none"
+				},
+				"to" : {
+					"x" : 350,
+					"y" : -200,
+					"cap" : "none"
+				}
+			},
+			{
+				"guide_color" : "Green",
+				"from" : {
+					"x" : 200,
+					"y" : -350,
+					"cap" : "c"
+				},
+				"to" : {
+					"x" : 200,
+					"y" : -200,
+					"cap" : "c"
+				}
+			},
+			{
+				"guide_color" : "Maroon",
+				"from" : {
+					"x" : 200,
+					"y" : -350,
+					"cap" : "none"
+				},
+				"to" : {
+					"x" : 350,
+					"y" : -350,
+					"cap" : "none"
+				}
+			},
+			{
+				"guide_color" : "Navy",
+				"from" : {
+					"x" : 350,
+					"y" : -500,
+					"cap" : "c"
+				},
+				"to" : {
+					"x" : 350,
+					"y" : -350,
+					"cap" : "c"
+				}
+			},
+			{
+				"guide_color" : "Olive",
+				"from" : {
+					"x" : 50,
+					"y" : -500,
+					"cap" : "none"
+				},
+				"to" : {
+					"x" : 350,
+					"y" : -500,
+					"cap" : "none"
+				}
+			}
+		]
+	},
+	{
 		"name" : "grave",
+		"anchors" : {
+			"d-top" : {
+				"x" : 100,
+				"y" : -550
+			}
+		},
 		"lines" : [
 			{
 				"guide_color" : "Black",
@@ -3772,58 +6055,132 @@
 	},
 	{
 		"name" : "greater",
+		"compose" : [
+			{
+				"glyph" : "less",
+				"op" : [
+					[
+						"scale",
+						-1,
+						1
+					]
+				]
+			}
+		]
+	},
+	{
+		"name" : "guillemotleft",
+		"compose" : [
+			{
+				"name" : "first",
+				"glyph" : "guilsinglleft"
+			},
+			{
+				"glyph" : "guilsinglleft",
+				"op" : [
+					[
+						"itemmovetoanchor",
+						"first",
+						"bottomright"
+					],
+					[
+						"push"
+					],
+					[
+						"movetoanchor",
+						"bottomleft"
+					],
+					[
+						"translatetoprevious"
+					]
+				]
+			}
+		]
+	},
+	{
+		"name" : "guillemotright",
+		"compose" : [
+			{
+				"glyph" : "guillemotleft",
+				"op" : [
+					[
+						"scale",
+						-1,
+						1
+					]
+				]
+			}
+		]
+	},
+	{
+		"name" : "guilsinglleft",
 		"lines" : [
 			{
 				"guide_color" : "Black",
 				"from" : {
-					"x" : 50,
-					"y" : -100,
-					"cap" : "sc"
-				},
-				"to" : {
-					"x" : 50,
+					"x" : 150,
 					"y" : -100,
 					"cap" : "c"
+				},
+				"to" : {
+					"x" : 150,
+					"y" : -100,
+					"cap" : "s"
 				}
 			},
 			{
 				"guide_color" : "Blue",
 				"from" : {
 					"x" : 50,
-					"y" : -100,
-					"cap" : "none"
-				},
-				"to" : {
-					"x" : 250,
 					"y" : -250,
 					"cap" : "c"
+				},
+				"to" : {
+					"x" : 150,
+					"y" : -100,
+					"cap" : "none"
 				}
 			},
 			{
 				"guide_color" : "Fuchsia",
 				"from" : {
 					"x" : 50,
-					"y" : -400,
+					"y" : -250,
 					"cap" : "none"
 				},
 				"to" : {
-					"x" : 250,
-					"y" : -250,
+					"x" : 150,
+					"y" : -400,
 					"cap" : "none"
 				}
 			},
 			{
 				"guide_color" : "Orange",
 				"from" : {
-					"x" : 50,
-					"y" : -400,
-					"cap" : "cs"
-				},
-				"to" : {
-					"x" : 50,
+					"x" : 150,
 					"y" : -400,
 					"cap" : "c"
+				},
+				"to" : {
+					"x" : 150,
+					"y" : -400,
+					"cap" : "s"
 				}
+			}
+		]
+	},
+	{
+		"name" : "guilsinglright",
+		"compose" : [
+			{
+				"glyph" : "guilsinglleft",
+				"op" : [
+					[
+						"scale",
+						-1,
+						1
+					]
+				]
 			}
 		]
 	},
@@ -3904,6 +6261,96 @@
 					"y" : -50,
 					"cap" : "s"
 				}
+			}
+		]
+	},
+	{
+		"name" : "iacute",
+		"compose" : [
+			{
+				"name" : "base",
+				"glyph" : "i"
+			},
+			{
+				"glyph" : "acute",
+				"op" : [
+					[
+						"aligndia",
+						"top"
+					]
+				]
+			}
+		]
+	},
+	{
+		"name" : "icircumflex",
+		"compose" : [
+			{
+				"name" : "base",
+				"glyph" : "i"
+			},
+			{
+				"glyph" : "circumflex",
+				"op" : [
+					[
+						"aligndia",
+						"top"
+					]
+				]
+			}
+		]
+	},
+	{
+		"name" : "idieresis",
+		"compose" : [
+			{
+				"name" : "base",
+				"glyph" : "i"
+			},
+			{
+				"glyph" : "dieresis",
+				"op" : [
+					[
+						"aligndia",
+						"top"
+					]
+				]
+			}
+		]
+	},
+	{
+		"name" : "igrave",
+		"compose" : [
+			{
+				"name" : "base",
+				"glyph" : "i"
+			},
+			{
+				"glyph" : "grave",
+				"op" : [
+					[
+						"aligndia",
+						"top"
+					]
+				]
+			}
+		]
+	},
+	{
+		"name" : "itilde",
+		"compose" : [
+			{
+				"name" : "base",
+				"glyph" : "i"
+			},
+			{
+				"glyph" : "tilde",
+				"op" : [
+					[
+						"aligndia",
+						"top"
+					]
+				]
 			}
 		]
 	},
@@ -4039,7 +6486,7 @@
 				"to" : {
 					"x" : 250,
 					"y" : -100,
-					"cap" : "cs"
+					"cap" : "s"
 				}
 			},
 			{
@@ -4078,7 +6525,38 @@
 				"to" : {
 					"x" : 250,
 					"y" : -400,
-					"cap" : "sc"
+					"cap" : "s"
+				}
+			}
+		]
+	},
+	{
+		"name" : "logicalnot",
+		"lines" : [
+			{
+				"guide_color" : "Black",
+				"from" : {
+					"x" : 50,
+					"y" : -300,
+					"cap" : "s"
+				},
+				"to" : {
+					"x" : 300,
+					"y" : -300,
+					"cap" : "none"
+				}
+			},
+			{
+				"guide_color" : "Blue",
+				"from" : {
+					"x" : 300,
+					"y" : -300,
+					"cap" : "s"
+				},
+				"to" : {
+					"x" : 300,
+					"y" : -200,
+					"cap" : "s"
 				}
 			}
 		]
@@ -4159,6 +6637,173 @@
 		]
 	},
 	{
+		"name" : "middot",
+		"lines" : [
+			{
+				"guide_color" : "Black",
+				"from" : {
+					"x" : 50,
+					"y" : -250,
+					"cap" : "s"
+				},
+				"to" : {
+					"x" : 50,
+					"y" : -250,
+					"cap" : "s"
+				}
+			}
+		]
+	},
+	{
+		"name" : "minus",
+		"lines" : [
+			{
+				"guide_color" : "Black",
+				"from" : {
+					"x" : 50,
+					"y" : -250,
+					"cap" : "s"
+				},
+				"to" : {
+					"x" : 350,
+					"y" : -250,
+					"cap" : "s"
+				}
+			}
+		]
+	},
+	{
+		"name" : "mu",
+		"lines" : [
+			{
+				"guide_color" : "Black",
+				"from" : {
+					"x" : 50,
+					"y" : -50,
+					"cap" : "none"
+				},
+				"to" : {
+					"x" : 400,
+					"y" : -50,
+					"cap" : "none"
+				}
+			},
+			{
+				"guide_color" : "Blue",
+				"from" : {
+					"x" : 50,
+					"y" : -400,
+					"cap" : "s"
+				},
+				"to" : {
+					"x" : 50,
+					"y" : 100,
+					"cap" : "s"
+				}
+			},
+			{
+				"guide_color" : "Fuchsia",
+				"from" : {
+					"x" : 400,
+					"y" : -400,
+					"cap" : "s"
+				},
+				"to" : {
+					"x" : 400,
+					"y" : 0,
+					"cap" : "s"
+				}
+			}
+		]
+	},
+	{
+		"name" : "multiply",
+		"lines" : [
+			{
+				"guide_color" : "Orange",
+				"from" : {
+					"x" : 50,
+					"y" : -325,
+					"cap" : "s"
+				},
+				"to" : {
+					"x" : 50,
+					"y" : -325,
+					"cap" : "c"
+				},
+				"dotdir" : "y"
+			},
+			{
+				"guide_color" : "Orange",
+				"from" : {
+					"x" : 200,
+					"y" : -325,
+					"cap" : "s"
+				},
+				"to" : {
+					"x" : 200,
+					"y" : -325,
+					"cap" : "c"
+				},
+				"dotdir" : "y"
+			},
+			{
+				"guide_color" : "Purple",
+				"from" : {
+					"x" : 50,
+					"y" : -175,
+					"cap" : "c"
+				},
+				"to" : {
+					"x" : 50,
+					"y" : -175,
+					"cap" : "s"
+				},
+				"dotdir" : "y"
+			},
+			{
+				"guide_color" : "Purple",
+				"from" : {
+					"x" : 200,
+					"y" : -175,
+					"cap" : "c"
+				},
+				"to" : {
+					"x" : 200,
+					"y" : -175,
+					"cap" : "s"
+				},
+				"dotdir" : "y"
+			},
+			{
+				"guide_color" : "Black",
+				"from" : {
+					"x" : 50,
+					"y" : -325,
+					"cap" : "none"
+				},
+				"to" : {
+					"x" : 200,
+					"y" : -175,
+					"cap" : "none"
+				}
+			},
+			{
+				"guide_color" : "Blue",
+				"from" : {
+					"x" : 50,
+					"y" : -175,
+					"cap" : "none"
+				},
+				"to" : {
+					"x" : 200,
+					"y" : -325,
+					"cap" : "none"
+				}
+			}
+		]
+	},
+	{
 		"name" : "n",
 		"lines" : [
 			{
@@ -4199,6 +6844,14 @@
 					"y" : -50,
 					"cap" : "s"
 				}
+			}
+		]
+	},
+	{
+		"name" : "nbspace",
+		"compose" : [
+			{
+				"glyph" : "space"
 			}
 		]
 	},
@@ -4273,6 +6926,24 @@
 		]
 	},
 	{
+		"name" : "ntilde",
+		"compose" : [
+			{
+				"name" : "base",
+				"glyph" : "n"
+			},
+			{
+				"glyph" : "tilde",
+				"op" : [
+					[
+						"aligndia",
+						"top"
+					]
+				]
+			}
+		]
+	},
+	{
 		"name" : "numbersign",
 		"lines" : [
 			{
@@ -4331,6 +7002,12 @@
 	},
 	{
 		"name" : "o",
+		"anchors" : {
+			"eligmatch" : {
+				"x" : 400,
+				"y" : -225
+			}
+		},
 		"lines" : [
 			{
 				"guide_color" : "Black",
@@ -4383,6 +7060,96 @@
 					"y" : -50,
 					"cap" : "c"
 				}
+			}
+		]
+	},
+	{
+		"name" : "oacute",
+		"compose" : [
+			{
+				"name" : "base",
+				"glyph" : "o"
+			},
+			{
+				"glyph" : "acute",
+				"op" : [
+					[
+						"aligndia",
+						"top"
+					]
+				]
+			}
+		]
+	},
+	{
+		"name" : "ocircumflex",
+		"compose" : [
+			{
+				"name" : "base",
+				"glyph" : "o"
+			},
+			{
+				"glyph" : "circumflex",
+				"op" : [
+					[
+						"aligndia",
+						"top"
+					]
+				]
+			}
+		]
+	},
+	{
+		"name" : "odieresis",
+		"compose" : [
+			{
+				"name" : "base",
+				"glyph" : "o"
+			},
+			{
+				"glyph" : "dieresis",
+				"op" : [
+					[
+						"aligndia",
+						"top"
+					]
+				]
+			}
+		]
+	},
+	{
+		"name" : "oe",
+		"compose" : [
+			{
+				"name" : "base",
+				"glyph" : "o"
+			},
+			{
+				"glyph" : "e",
+				"op" : [
+					[
+						"aligndia",
+						"eligmatch"
+					]
+				]
+			}
+		]
+	},
+	{
+		"name" : "ograve",
+		"compose" : [
+			{
+				"name" : "base",
+				"glyph" : "o"
+			},
+			{
+				"glyph" : "grave",
+				"op" : [
+					[
+						"aligndia",
+						"top"
+					]
+				]
 			}
 		]
 	},
@@ -4445,6 +7212,185 @@
 		]
 	},
 	{
+		"name" : "onehalf",
+		"compose" : [
+			{
+				"glyph" : "_1shrunk",
+				"op" : [
+					[
+						"translate",
+						0,
+						-250
+					]
+				]
+			},
+			{
+				"glyph" : "slash",
+				"op" : [
+					[
+						"translate",
+						200,
+						0
+					]
+				]
+			},
+			{
+				"glyph" : "_2shrunk",
+				"op" : [
+					[
+						"translate",
+						600,
+						150
+					]
+				]
+			}
+		]
+	},
+	{
+		"name" : "onequarter",
+		"compose" : [
+			{
+				"glyph" : "_1shrunk",
+				"op" : [
+					[
+						"translate",
+						0,
+						-250
+					]
+				]
+			},
+			{
+				"glyph" : "slash",
+				"op" : [
+					[
+						"translate",
+						200,
+						0
+					]
+				]
+			},
+			{
+				"glyph" : "_4shrunk",
+				"op" : [
+					[
+						"translate",
+						525,
+						150
+					]
+				]
+			}
+		]
+	},
+	{
+		"name" : "onesuperior",
+		"compose" : [
+			{
+				"name" : "place",
+				"glyph" : "_place"
+			},
+			{
+				"glyph" : "_1shrunk",
+				"op" : [
+					[
+						"movetoanchor",
+						"topleft"
+					],
+					[
+						"push"
+					],
+					[
+						"itemmovetoanchor",
+						"place",
+						"suptopleft"
+					],
+					[
+						"translatefromprevious"
+					]
+				]
+			}
+		]
+	},
+	{
+		"name" : "ordfeminine",
+		"compose" : [
+			{
+				"glyph" : "_ashrunk",
+				"op" : [
+					[
+						"movetoanchor",
+						"topleft"
+					],
+					[
+						"push"
+					],
+					[
+						"moveto",
+						0,
+						-600
+					],
+					[
+						"translatefromprevious"
+					]
+				]
+			}
+		]
+	},
+	{
+		"name" : "ordmasculine",
+		"compose" : [
+			{
+				"glyph" : "_oshrunk",
+				"op" : [
+					[
+						"movetoanchor",
+						"topleft"
+					],
+					[
+						"push"
+					],
+					[
+						"moveto",
+						0,
+						-600
+					],
+					[
+						"translatefromprevious"
+					]
+				]
+			}
+		]
+	},
+	{
+		"name" : "oslash",
+		"compose" : [
+			{
+				"name" : "base",
+				"glyph" : "o"
+			},
+			{
+				"glyph" : "_lcslash"
+			}
+		]
+	},
+	{
+		"name" : "otilde",
+		"compose" : [
+			{
+				"name" : "base",
+				"glyph" : "o"
+			},
+			{
+				"glyph" : "tilde",
+				"op" : [
+					[
+						"aligndia",
+						"top"
+					]
+				]
+			}
+		]
+	},
+	{
 		"name" : "p",
 		"lines" : [
 			{
@@ -4496,6 +7442,76 @@
 				"to" : {
 					"x" : 50,
 					"y" : 100,
+					"cap" : "s"
+				}
+			}
+		]
+	},
+	{
+		"name" : "paragraph",
+		"lines" : [
+			{
+				"guide_color" : "Black",
+				"from" : {
+					"x" : 50,
+					"y" : -500,
+					"cap" : "none"
+				},
+				"to" : {
+					"x" : 400,
+					"y" : -500,
+					"cap" : "none"
+				}
+			},
+			{
+				"guide_color" : "Blue",
+				"from" : {
+					"x" : 400,
+					"y" : -500,
+					"cap" : "s"
+				},
+				"to" : {
+					"x" : 400,
+					"y" : -50,
+					"cap" : "s"
+				}
+			},
+			{
+				"guide_color" : "Fuchsia",
+				"from" : {
+					"x" : 50,
+					"y" : -275,
+					"cap" : "none"
+				},
+				"to" : {
+					"x" : 400,
+					"y" : -275,
+					"cap" : "none"
+				}
+			},
+			{
+				"guide_color" : "Gray",
+				"from" : {
+					"x" : 50,
+					"y" : -500,
+					"cap" : "c"
+				},
+				"to" : {
+					"x" : 50,
+					"y" : -275,
+					"cap" : "c"
+				}
+			},
+			{
+				"guide_color" : "Green",
+				"from" : {
+					"x" : 275,
+					"y" : -500,
+					"cap" : "none"
+				},
+				"to" : {
+					"x" : 275,
+					"y" : -50,
 					"cap" : "s"
 				}
 			}
@@ -4573,219 +7589,44 @@
 	},
 	{
 		"name" : "parenright",
-		"lines" : [
+		"compose" : [
 			{
-				"guide_color" : "Black",
-				"from" : {
-					"x" : 50,
-					"y" : -500,
-					"cap" : "sc"
-				},
-				"to" : {
-					"x" : 100,
-					"y" : -500,
-					"cap" : "c"
-				}
-			},
-			{
-				"guide_color" : "Blue",
-				"from" : {
-					"x" : 100,
-					"y" : -500,
-					"cap" : "none"
-				},
-				"to" : {
-					"x" : 150,
-					"y" : -450,
-					"cap" : "none"
-				}
-			},
-			{
-				"guide_color" : "Fuchsia",
-				"from" : {
-					"x" : 150,
-					"y" : -450,
-					"cap" : "c"
-				},
-				"to" : {
-					"x" : 150,
-					"y" : -100,
-					"cap" : "c"
-				}
-			},
-			{
-				"guide_color" : "Orange",
-				"from" : {
-					"x" : 100,
-					"y" : -50,
-					"cap" : "none"
-				},
-				"to" : {
-					"x" : 150,
-					"y" : -100,
-					"cap" : "none"
-				}
-			},
-			{
-				"guide_color" : "Green",
-				"from" : {
-					"x" : 50,
-					"y" : -50,
-					"cap" : "cs"
-				},
-				"to" : {
-					"x" : 100,
-					"y" : -50,
-					"cap" : "c"
-				}
+				"glyph" : "parenleft",
+				"op" : [
+					[
+						"scale",
+						-1,
+						1
+					]
+				]
 			}
 		]
 	},
 	{
 		"name" : "percent",
-		"lines" : [
+		"compose" : [
 			{
-				"guide_color" : "Black",
-				"from" : {
-					"x" : 300,
-					"y" : -150,
-					"cap" : "c"
-				},
-				"to" : {
-					"x" : 300,
-					"y" : -50,
-					"cap" : "c"
-				}
+				"glyph" : "slash"
 			},
 			{
-				"guide_color" : "Blue",
-				"from" : {
-					"x" : 300,
-					"y" : -50,
-					"cap" : "none"
-				},
-				"to" : {
-					"x" : 400,
-					"y" : -50,
-					"cap" : "none"
-				}
+				"glyph" : "_perring",
+				"op" : [
+					[
+						"translate",
+						0,
+						-350
+					]
+				]
 			},
 			{
-				"guide_color" : "Fuchsia",
-				"from" : {
-					"x" : 400,
-					"y" : -150,
-					"cap" : "c"
-				},
-				"to" : {
-					"x" : 400,
-					"y" : -50,
-					"cap" : "c"
-				}
-			},
-			{
-				"guide_color" : "Orange",
-				"from" : {
-					"x" : 300,
-					"y" : -150,
-					"cap" : "none"
-				},
-				"to" : {
-					"x" : 400,
-					"y" : -150,
-					"cap" : "none"
-				}
-			},
-			{
-				"guide_color" : "Green",
-				"from" : {
-					"x" : 400,
-					"y" : -500,
-					"cap" : "s"
-				},
-				"to" : {
-					"x" : 400,
-					"y" : -450,
-					"cap" : "c"
-				}
-			},
-			{
-				"guide_color" : "Maroon",
-				"from" : {
-					"x" : 50,
-					"y" : -100,
-					"cap" : "none"
-				},
-				"to" : {
-					"x" : 400,
-					"y" : -450,
-					"cap" : "none"
-				}
-			},
-			{
-				"guide_color" : "Navy",
-				"from" : {
-					"x" : 50,
-					"y" : -100,
-					"cap" : "c"
-				},
-				"to" : {
-					"x" : 50,
-					"y" : -50,
-					"cap" : "s"
-				}
-			},
-			{
-				"guide_color" : "Olive",
-				"from" : {
-					"x" : 50,
-					"y" : -400,
-					"cap" : "none"
-				},
-				"to" : {
-					"x" : 150,
-					"y" : -400,
-					"cap" : "none"
-				}
-			},
-			{
-				"guide_color" : "Purple",
-				"from" : {
-					"x" : 150,
-					"y" : -500,
-					"cap" : "c"
-				},
-				"to" : {
-					"x" : 150,
-					"y" : -400,
-					"cap" : "c"
-				}
-			},
-			{
-				"guide_color" : "Red",
-				"from" : {
-					"x" : 50,
-					"y" : -500,
-					"cap" : "none"
-				},
-				"to" : {
-					"x" : 150,
-					"y" : -500,
-					"cap" : "none"
-				}
-			},
-			{
-				"guide_color" : "Teal",
-				"from" : {
-					"x" : 50,
-					"y" : -500,
-					"cap" : "c"
-				},
-				"to" : {
-					"x" : 50,
-					"y" : -400,
-					"cap" : "c"
-				}
+				"glyph" : "_perring",
+				"op" : [
+					[
+						"translate",
+						250,
+						0
+					]
+				]
 			}
 		]
 	},
@@ -4809,201 +7650,19 @@
 	},
 	{
 		"name" : "perthousand",
-		"lines" : [
+		"compose" : [
 			{
-				"guide_color" : "Black",
-				"from" : {
-					"x" : 300,
-					"y" : -150,
-					"cap" : "c"
-				},
-				"to" : {
-					"x" : 300,
-					"y" : -50,
-					"cap" : "c"
-				}
+				"glyph" : "percent"
 			},
 			{
-				"guide_color" : "Blue",
-				"from" : {
-					"x" : 300,
-					"y" : -50,
-					"cap" : "none"
-				},
-				"to" : {
-					"x" : 400,
-					"y" : -50,
-					"cap" : "none"
-				}
-			},
-			{
-				"guide_color" : "Fuchsia",
-				"from" : {
-					"x" : 400,
-					"y" : -150,
-					"cap" : "c"
-				},
-				"to" : {
-					"x" : 400,
-					"y" : -50,
-					"cap" : "c"
-				}
-			},
-			{
-				"guide_color" : "Orange",
-				"from" : {
-					"x" : 300,
-					"y" : -150,
-					"cap" : "none"
-				},
-				"to" : {
-					"x" : 400,
-					"y" : -150,
-					"cap" : "none"
-				}
-			},
-			{
-				"guide_color" : "Green",
-				"from" : {
-					"x" : 400,
-					"y" : -500,
-					"cap" : "s"
-				},
-				"to" : {
-					"x" : 400,
-					"y" : -450,
-					"cap" : "c"
-				}
-			},
-			{
-				"guide_color" : "Maroon",
-				"from" : {
-					"x" : 50,
-					"y" : -100,
-					"cap" : "none"
-				},
-				"to" : {
-					"x" : 400,
-					"y" : -450,
-					"cap" : "none"
-				}
-			},
-			{
-				"guide_color" : "Navy",
-				"from" : {
-					"x" : 50,
-					"y" : -100,
-					"cap" : "c"
-				},
-				"to" : {
-					"x" : 50,
-					"y" : -50,
-					"cap" : "s"
-				}
-			},
-			{
-				"guide_color" : "Olive",
-				"from" : {
-					"x" : 50,
-					"y" : -400,
-					"cap" : "none"
-				},
-				"to" : {
-					"x" : 150,
-					"y" : -400,
-					"cap" : "none"
-				}
-			},
-			{
-				"guide_color" : "Purple",
-				"from" : {
-					"x" : 150,
-					"y" : -500,
-					"cap" : "c"
-				},
-				"to" : {
-					"x" : 150,
-					"y" : -400,
-					"cap" : "c"
-				}
-			},
-			{
-				"guide_color" : "Red",
-				"from" : {
-					"x" : 50,
-					"y" : -500,
-					"cap" : "none"
-				},
-				"to" : {
-					"x" : 150,
-					"y" : -500,
-					"cap" : "none"
-				}
-			},
-			{
-				"guide_color" : "Teal",
-				"from" : {
-					"x" : 50,
-					"y" : -500,
-					"cap" : "c"
-				},
-				"to" : {
-					"x" : 50,
-					"y" : -400,
-					"cap" : "c"
-				}
-			},
-			{
-				"guide_color" : "Blue",
-				"from" : {
-					"x" : 550,
-					"y" : -150,
-					"cap" : "c"
-				},
-				"to" : {
-					"x" : 550,
-					"y" : -50,
-					"cap" : "c"
-				}
-			},
-			{
-				"guide_color" : "Blue",
-				"from" : {
-					"x" : 550,
-					"y" : -50,
-					"cap" : "none"
-				},
-				"to" : {
-					"x" : 650,
-					"y" : -50,
-					"cap" : "none"
-				}
-			},
-			{
-				"guide_color" : "Blue",
-				"from" : {
-					"x" : 650,
-					"y" : -150,
-					"cap" : "c"
-				},
-				"to" : {
-					"x" : 650,
-					"y" : -50,
-					"cap" : "c"
-				}
-			},
-			{
-				"guide_color" : "Blue",
-				"from" : {
-					"x" : 550,
-					"y" : -150,
-					"cap" : "none"
-				},
-				"to" : {
-					"x" : 650,
-					"y" : -150,
-					"cap" : "none"
-				}
+				"glyph" : "_perring",
+				"op" : [
+					[
+						"translate",
+						500,
+						0
+					]
+				]
 			}
 		]
 	},
@@ -5035,6 +7694,24 @@
 					"y" : -100,
 					"cap" : "s"
 				}
+			}
+		]
+	},
+	{
+		"name" : "plusminus",
+		"compose" : [
+			{
+				"glyph" : "plus"
+			},
+			{
+				"glyph" : "minus",
+				"op" : [
+					[
+						"translate",
+						0,
+						300
+					]
+				]
 			}
 		]
 	},
@@ -5179,6 +7856,21 @@
 		]
 	},
 	{
+		"name" : "questiondown",
+		"compose" : [
+			{
+				"glyph" : "question",
+				"op" : [
+					[
+						"scale",
+						-1,
+						-1
+					]
+				]
+			}
+		]
+	},
+	{
 		"name" : "quotedbl",
 		"lines" : [
 			{
@@ -5211,50 +7903,133 @@
 	},
 	{
 		"name" : "quotedblbase",
-		"lines" : [
+		"compose" : [
 			{
-				"guide_color" : "Black",
-				"from" : {
-					"x" : 200,
-					"y" : -50,
-					"cap" : "s"
-				},
-				"to" : {
-					"x" : 200,
-					"y" : 0,
-					"cap" : "cs"
-				}
+				"glyph" : "_quote99"
+			}
+		]
+	},
+	{
+		"name" : "quotedblleft",
+		"compose" : [
+			{
+				"name" : "place",
+				"glyph" : "_place"
 			},
 			{
-				"guide_color" : "Blue",
-				"from" : {
-					"x" : 50,
-					"y" : -50,
-					"cap" : "s"
-				},
-				"to" : {
-					"x" : 50,
-					"y" : 0,
-					"cap" : "cs"
-				}
+				"glyph" : "_quote66",
+				"op" : [
+					[
+						"itemmovetoanchor",
+						"place",
+						"quotetopleft"
+					],
+					[
+						"push"
+					],
+					[
+						"movetoanchor",
+						"topleft"
+					],
+					[
+						"translatetoprevious"
+					]
+				]
+			}
+		]
+	},
+	{
+		"name" : "quotedblright",
+		"compose" : [
+			{
+				"name" : "place",
+				"glyph" : "_place"
+			},
+			{
+				"glyph" : "_quote99",
+				"op" : [
+					[
+						"itemmovetoanchor",
+						"place",
+						"quotetopleft"
+					],
+					[
+						"push"
+					],
+					[
+						"movetoanchor",
+						"topleft"
+					],
+					[
+						"translatetoprevious"
+					]
+				]
+			}
+		]
+	},
+	{
+		"name" : "quoteleft",
+		"compose" : [
+			{
+				"name" : "place",
+				"glyph" : "_place"
+			},
+			{
+				"glyph" : "_quote6",
+				"op" : [
+					[
+						"itemmovetoanchor",
+						"place",
+						"quotetopleft"
+					],
+					[
+						"push"
+					],
+					[
+						"movetoanchor",
+						"topleft"
+					],
+					[
+						"translatetoprevious"
+					]
+				]
+			}
+		]
+	},
+	{
+		"name" : "quoteright",
+		"compose" : [
+			{
+				"name" : "place",
+				"glyph" : "_place"
+			},
+			{
+				"glyph" : "_quote9",
+				"op" : [
+					[
+						"itemmovetoanchor",
+						"place",
+						"quotetopleft"
+					],
+					[
+						"push"
+					],
+					[
+						"movetoanchor",
+						"topleft"
+					],
+					[
+						"translatetoprevious"
+					]
+				]
 			}
 		]
 	},
 	{
 		"name" : "quotesinglbase",
-		"lines" : [
+		"compose" : [
 			{
-				"guide_color" : "Black",
-				"from" : {
-					"x" : 50,
-					"y" : -50,
-					"cap" : "s"
-				},
-				"to" : {
-					"x" : 50,
-					"y" : 0,
-					"cap" : "cs"
-				}
+				"glyph" : "_quote9"
 			}
 		]
 	},
@@ -5308,61 +8083,114 @@
 		]
 	},
 	{
-		"name" : "ring",
+		"name" : "registered",
+		"compose" : [
+			{
+				"glyph" : "_crcircle"
+			}
+		],
 		"lines" : [
 			{
-				"guide_color" : "Black",
+				"guide_color" : "Blue",
 				"from" : {
-					"x" : 50,
-					"y" : -800,
-					"cap" : "c"
-				},
-				"to" : {
-					"x" : 50,
-					"y" : -650,
-					"cap" : "c"
-				}
-			},
-			{
-				"guide_color" : "Red",
-				"from" : {
-					"x" : 50,
-					"y" : -650,
+					"x" : 350,
+					"y" : -200,
 					"cap" : "none"
 				},
 				"to" : {
 					"x" : 200,
-					"y" : -650,
+					"y" : -275,
 					"cap" : "none"
+				}
+			},
+			{
+				"guide_color" : "Brown",
+				"from" : {
+					"x" : 350,
+					"y" : -200,
+					"cap" : "c"
+				},
+				"to" : {
+					"x" : 350,
+					"y" : -200,
+					"cap" : "s"
+				},
+				"dotdir" : "y"
+			},
+			{
+				"guide_color" : "Red",
+				"from" : {
+					"x" : 200,
+					"y" : -200,
+					"cap" : "s"
+				},
+				"to" : {
+					"x" : 200,
+					"y" : -350,
+					"cap" : "s"
 				}
 			},
 			{
 				"guide_color" : "Green",
 				"from" : {
-					"x" : 200,
-					"y" : -800,
+					"x" : 350,
+					"y" : -350,
 					"cap" : "c"
 				},
 				"to" : {
 					"x" : 200,
-					"y" : -650,
-					"cap" : "c"
+					"y" : -350,
+					"cap" : "none"
 				}
 			},
 			{
-				"guide_color" : "Blue",
+				"guide_color" : "Purple",
 				"from" : {
-					"x" : 50,
-					"y" : -800,
-					"cap" : "none"
+					"x" : 350,
+					"y" : -325,
+					"cap" : "c"
 				},
 				"to" : {
 					"x" : 200,
-					"y" : -800,
+					"y" : -325,
+					"cap" : "none"
+				}
+			},
+			{
+				"guide_color" : "Orange",
+				"from" : {
+					"x" : 350,
+					"y" : -350,
+					"cap" : "c"
+				},
+				"to" : {
+					"x" : 350,
+					"y" : -325,
 					"cap" : "none"
 				}
 			}
 		]
+	},
+	{
+		"name" : "ring",
+		"compose" : [
+			{
+				"glyph" : "_ring",
+				"op" : [
+					[
+						"translate",
+						0,
+						-600
+					]
+				]
+			}
+		],
+		"anchors" : {
+			"d-top" : {
+				"x" : 125,
+				"y" : -550
+			}
+		}
 	},
 	{
 		"name" : "s",
@@ -5430,6 +8258,107 @@
 					"x" : 400,
 					"y" : -400,
 					"cap" : "s"
+				}
+			}
+		]
+	},
+	{
+		"name" : "scaron",
+		"compose" : [
+			{
+				"name" : "base",
+				"glyph" : "s"
+			},
+			{
+				"glyph" : "caron",
+				"op" : [
+					[
+						"aligndia",
+						"top"
+					]
+				]
+			}
+		]
+	},
+	{
+		"name" : "section",
+		"lines" : [
+			{
+				"guide_color" : "Black",
+				"from" : {
+					"x" : 50,
+					"y" : -50,
+					"cap" : "s"
+				},
+				"to" : {
+					"x" : 250,
+					"y" : -50,
+					"cap" : "none"
+				}
+			},
+			{
+				"guide_color" : "Blue",
+				"from" : {
+					"x" : 50,
+					"y" : -500,
+					"cap" : "none"
+				},
+				"to" : {
+					"x" : 250,
+					"y" : -500,
+					"cap" : "s"
+				}
+			},
+			{
+				"guide_color" : "Fuchsia",
+				"from" : {
+					"x" : 50,
+					"y" : -250,
+					"cap" : "none"
+				},
+				"to" : {
+					"x" : 250,
+					"y" : -150,
+					"cap" : "none"
+				}
+			},
+			{
+				"guide_color" : "Gray",
+				"from" : {
+					"x" : 50,
+					"y" : -400,
+					"cap" : "none"
+				},
+				"to" : {
+					"x" : 250,
+					"y" : -300,
+					"cap" : "none"
+				}
+			},
+			{
+				"guide_color" : "Green",
+				"from" : {
+					"x" : 50,
+					"y" : -500,
+					"cap" : "c"
+				},
+				"to" : {
+					"x" : 50,
+					"y" : -250,
+					"cap" : "c"
+				}
+			},
+			{
+				"guide_color" : "Maroon",
+				"from" : {
+					"x" : 250,
+					"y" : -300,
+					"cap" : "c"
+				},
+				"to" : {
+					"x" : 250,
+					"y" : -50,
+					"cap" : "c"
 				}
 			}
 		]
@@ -5520,6 +8449,14 @@
 					"y" : -500,
 					"cap" : "none"
 				}
+			}
+		]
+	},
+	{
+		"name" : "sfthyphen",
+		"compose" : [
+			{
+				"glyph" : "hyphen"
 			}
 		]
 	},
@@ -5656,6 +8593,63 @@
 		]
 	},
 	{
+		"name" : "sterling",
+		"lines" : [
+			{
+				"guide_color" : "Black",
+				"from" : {
+					"x" : 50,
+					"y" : -50,
+					"cap" : "s"
+				},
+				"to" : {
+					"x" : 350,
+					"y" : -50,
+					"cap" : "s"
+				}
+			},
+			{
+				"guide_color" : "Blue",
+				"from" : {
+					"x" : 150,
+					"y" : -500,
+					"cap" : "none"
+				},
+				"to" : {
+					"x" : 350,
+					"y" : -500,
+					"cap" : "cs"
+				}
+			},
+			{
+				"guide_color" : "Fuchsia",
+				"from" : {
+					"x" : 100,
+					"y" : -50,
+					"cap" : "none"
+				},
+				"to" : {
+					"x" : 150,
+					"y" : -500,
+					"cap" : "c"
+				}
+			},
+			{
+				"guide_color" : "Gray",
+				"from" : {
+					"x" : 50,
+					"y" : -300,
+					"cap" : "cs"
+				},
+				"to" : {
+					"x" : 275,
+					"y" : -300,
+					"cap" : "cs"
+				}
+			}
+		]
+	},
+	{
 		"name" : "t",
 		"lines" : [
 			{
@@ -5695,6 +8689,63 @@
 					"x" : 50,
 					"y" : -50,
 					"cap" : "c"
+				}
+			}
+		]
+	},
+	{
+		"name" : "thorn",
+		"lines" : [
+			{
+				"guide_color" : "Black",
+				"from" : {
+					"x" : 50,
+					"y" : -50,
+					"cap" : "none"
+				},
+				"to" : {
+					"x" : 400,
+					"y" : -50,
+					"cap" : "none"
+				}
+			},
+			{
+				"guide_color" : "Blue",
+				"from" : {
+					"x" : 400,
+					"y" : -400,
+					"cap" : "c"
+				},
+				"to" : {
+					"x" : 400,
+					"y" : -50,
+					"cap" : "c"
+				}
+			},
+			{
+				"guide_color" : "Fuchsia",
+				"from" : {
+					"x" : 50,
+					"y" : -400,
+					"cap" : "none"
+				},
+				"to" : {
+					"x" : 400,
+					"y" : -400,
+					"cap" : "none"
+				}
+			},
+			{
+				"guide_color" : "Gray",
+				"from" : {
+					"x" : 50,
+					"y" : -500,
+					"cap" : "s"
+				},
+				"to" : {
+					"x" : 50,
+					"y" : 50,
+					"cap" : "s"
 				}
 			}
 		]
@@ -5822,7 +8873,73 @@
 		]
 	},
 	{
+		"name" : "threequarters",
+		"compose" : [
+			{
+				"glyph" : "_3shrunk",
+				"op" : [
+					[
+						"translate",
+						0,
+						-250
+					]
+				]
+			},
+			{
+				"glyph" : "slash",
+				"op" : [
+					[
+						"translate",
+						200,
+						0
+					]
+				]
+			},
+			{
+				"glyph" : "_4shrunk",
+				"op" : [
+					[
+						"translate",
+						525,
+						150
+					]
+				]
+			}
+		]
+	},
+	{
+		"name" : "threesuperior",
+		"compose" : [
+			{
+				"glyph" : "_3shrunk",
+				"op" : [
+					[
+						"movetoanchor",
+						"topleft"
+					],
+					[
+						"push"
+					],
+					[
+						"moveto",
+						0,
+						-600
+					],
+					[
+						"translatefromprevious"
+					]
+				]
+			}
+		]
+	},
+	{
 		"name" : "tilde",
+		"anchors" : {
+			"d-top" : {
+				"x" : 162.5,
+				"y" : -550
+			}
+		},
 		"lines" : [
 			{
 				"guide_color" : "Purple",
@@ -5890,6 +9007,89 @@
 					"cap" : "c"
 				},
 				"dotdir" : "y"
+			}
+		]
+	},
+	{
+		"name" : "trademark",
+		"lines" : [
+			{
+				"guide_color" : "Black",
+				"from" : {
+					"x" : 75,
+					"y" : -500,
+					"cap" : "none"
+				},
+				"to" : {
+					"x" : 75,
+					"y" : -425,
+					"cap" : "s"
+				}
+			},
+			{
+				"guide_color" : "Blue",
+				"from" : {
+					"x" : 50,
+					"y" : -500,
+					"cap" : "s"
+				},
+				"to" : {
+					"x" : 100,
+					"y" : -500,
+					"cap" : "s"
+				}
+			},
+			{
+				"guide_color" : "Fuchsia",
+				"from" : {
+					"x" : 225,
+					"y" : -500,
+					"cap" : "none"
+				},
+				"to" : {
+					"x" : 225,
+					"y" : -425,
+					"cap" : "s"
+				}
+			},
+			{
+				"guide_color" : "Gray",
+				"from" : {
+					"x" : 350,
+					"y" : -500,
+					"cap" : "none"
+				},
+				"to" : {
+					"x" : 350,
+					"y" : -425,
+					"cap" : "s"
+				}
+			},
+			{
+				"guide_color" : "Green",
+				"from" : {
+					"x" : 475,
+					"y" : -500,
+					"cap" : "none"
+				},
+				"to" : {
+					"x" : 475,
+					"y" : -425,
+					"cap" : "s"
+				}
+			},
+			{
+				"guide_color" : "Maroon",
+				"from" : {
+					"x" : 225,
+					"y" : -500,
+					"cap" : "s"
+				},
+				"to" : {
+					"x" : 475,
+					"y" : -500,
+					"cap" : "c"
+				}
 			}
 		]
 	},
@@ -5964,6 +9164,31 @@
 		]
 	},
 	{
+		"name" : "twosuperior",
+		"compose" : [
+			{
+				"glyph" : "_2shrunk",
+				"op" : [
+					[
+						"movetoanchor",
+						"topleft"
+					],
+					[
+						"push"
+					],
+					[
+						"moveto",
+						0,
+						-600
+					],
+					[
+						"translatefromprevious"
+					]
+				]
+			}
+		]
+	},
+	{
 		"name" : "u",
 		"lines" : [
 			{
@@ -6008,6 +9233,78 @@
 		]
 	},
 	{
+		"name" : "uacute",
+		"compose" : [
+			{
+				"name" : "base",
+				"glyph" : "u"
+			},
+			{
+				"glyph" : "acute",
+				"op" : [
+					[
+						"aligndia",
+						"top"
+					]
+				]
+			}
+		]
+	},
+	{
+		"name" : "ucircumflex",
+		"compose" : [
+			{
+				"name" : "base",
+				"glyph" : "u"
+			},
+			{
+				"glyph" : "circumflex",
+				"op" : [
+					[
+						"aligndia",
+						"top"
+					]
+				]
+			}
+		]
+	},
+	{
+		"name" : "udieresis",
+		"compose" : [
+			{
+				"name" : "base",
+				"glyph" : "u"
+			},
+			{
+				"glyph" : "dieresis",
+				"op" : [
+					[
+						"aligndia",
+						"top"
+					]
+				]
+			}
+		]
+	},
+	{
+		"name" : "ugrave",
+		"compose" : [
+			{
+				"name" : "base",
+				"glyph" : "u"
+			},
+			{
+				"glyph" : "grave",
+				"op" : [
+					[
+						"aligndia",
+						"top"
+					]
+				]
+			}
+		]
+	},
+	{
 		"name" : "underscore",
 		"lines" : [
 			{
@@ -6022,6 +9319,42 @@
 					"y" : -50,
 					"cap" : "s"
 				}
+			}
+		]
+	},
+	{
+		"name" : "uring",
+		"compose" : [
+			{
+				"name" : "base",
+				"glyph" : "u"
+			},
+			{
+				"glyph" : "ring",
+				"op" : [
+					[
+						"aligndia",
+						"top"
+					]
+				]
+			}
+		]
+	},
+	{
+		"name" : "utilde",
+		"compose" : [
+			{
+				"name" : "base",
+				"glyph" : "u"
+			},
+			{
+				"glyph" : "tilde",
+				"op" : [
+					[
+						"aligndia",
+						"top"
+					]
+				]
 			}
 		]
 	},
@@ -6300,6 +9633,192 @@
 		]
 	},
 	{
+		"name" : "yacute",
+		"compose" : [
+			{
+				"name" : "base",
+				"glyph" : "y"
+			},
+			{
+				"glyph" : "acute",
+				"op" : [
+					[
+						"aligndia",
+						"top"
+					]
+				]
+			}
+		]
+	},
+	{
+		"name" : "ycircumflex",
+		"compose" : [
+			{
+				"name" : "base",
+				"glyph" : "y"
+			},
+			{
+				"glyph" : "circumflex",
+				"op" : [
+					[
+						"aligndia",
+						"top"
+					]
+				]
+			}
+		]
+	},
+	{
+		"name" : "ydieresis",
+		"compose" : [
+			{
+				"name" : "base",
+				"glyph" : "y"
+			},
+			{
+				"glyph" : "dieresis",
+				"op" : [
+					[
+						"aligndia",
+						"top"
+					]
+				]
+			}
+		]
+	},
+	{
+		"name" : "yen",
+		"lines" : [
+			{
+				"guide_color" : "Black",
+				"from" : {
+					"x" : 50,
+					"y" : -500,
+					"cap" : "s"
+				},
+				"to" : {
+					"x" : 50,
+					"y" : -450,
+					"cap" : "c"
+				}
+			},
+			{
+				"guide_color" : "Blue",
+				"from" : {
+					"x" : 50,
+					"y" : -450,
+					"cap" : "none"
+				},
+				"to" : {
+					"x" : 200,
+					"y" : -300,
+					"cap" : "none"
+				}
+			},
+			{
+				"guide_color" : "Fuchsia",
+				"from" : {
+					"x" : 200,
+					"y" : -300,
+					"cap" : "c"
+				},
+				"to" : {
+					"x" : 200,
+					"y" : -50,
+					"cap" : "s"
+				}
+			},
+			{
+				"guide_color" : "Gray",
+				"from" : {
+					"x" : 200,
+					"y" : -300,
+					"cap" : "none"
+				},
+				"to" : {
+					"x" : 350,
+					"y" : -450,
+					"cap" : "none"
+				}
+			},
+			{
+				"guide_color" : "Green",
+				"from" : {
+					"x" : 350,
+					"y" : -500,
+					"cap" : "s"
+				},
+				"to" : {
+					"x" : 350,
+					"y" : -450,
+					"cap" : "c"
+				}
+			},
+			{
+				"guide_color" : "Maroon",
+				"from" : {
+					"x" : 100,
+					"y" : -250,
+					"cap" : "s"
+				},
+				"to" : {
+					"x" : 300,
+					"y" : -250,
+					"cap" : "s"
+				}
+			},
+			{
+				"guide_color" : "Navy",
+				"from" : {
+					"x" : 100,
+					"y" : -125,
+					"cap" : "s"
+				},
+				"to" : {
+					"x" : 300,
+					"y" : -125,
+					"cap" : "s"
+				}
+			}
+		]
+	},
+	{
+		"name" : "ygrave",
+		"compose" : [
+			{
+				"name" : "base",
+				"glyph" : "y"
+			},
+			{
+				"glyph" : "grave",
+				"op" : [
+					[
+						"aligndia",
+						"top"
+					]
+				]
+			}
+		]
+	},
+	{
+		"name" : "ytilde",
+		"compose" : [
+			{
+				"name" : "base",
+				"glyph" : "y"
+			},
+			{
+				"glyph" : "tilde",
+				"op" : [
+					[
+						"aligndia",
+						"top"
+					]
+				]
+			}
+		]
+	},
+	{
 		"name" : "z",
 		"lines" : [
 			{
@@ -6340,6 +9859,24 @@
 					"y" : -400,
 					"cap" : "sc"
 				}
+			}
+		]
+	},
+	{
+		"name" : "zcaron",
+		"compose" : [
+			{
+				"name" : "base",
+				"glyph" : "z"
+			},
+			{
+				"glyph" : "caron",
+				"op" : [
+					[
+						"aligndia",
+						"top"
+					]
+				]
 			}
 		]
 	},

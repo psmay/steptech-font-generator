@@ -66,7 +66,7 @@ The `fontforge-project` target uses the tight SVG outlines and additional metada
 `Self Intersecting` Validation failure
 --------------------------------------
 
-Currently, attempting to generate an OpenType font from the FontForget project results in Self Intersecting errors for at least `%&069@‰` (more if the simplify step is omitted from the export script). I would love to get this fixed properly, especially since there is no apparent actual self-intersection going on. In the meantime, though, it is possible to ignore these warnings and generate the font anyway, and in all my testing so far these issues are not manifested by any actual problems.
+Currently, attempting to generate an OpenType font from the FontForget project results in Self Intersecting errors for several glyphs (more if the simplify step is omitted from the export script). I would love to get this fixed properly, especially since there is no apparent actual self-intersection going on. In the meantime, though, it is possible to ignore these warnings and generate the font anyway, and in all my testing so far these issues are not manifested by any actual problems.
 
 PCB
 ---
@@ -103,7 +103,7 @@ The StepTech font description is provided under the terms of the GNU General Pub
 
 #### No font exception
 
-These terms **do not include a font exception.** This means, for example, that documents embedding all or part of a font based on this description or artwork featuring such a font may qualify as a derivative work (and therefore subject to the same terms).
+These terms **do not include a font exception.** This means, for example, that documents embedding all or part of a font based on this description or artwork featuring such a font may qualify as a derivative work (and therefore may be subject to the same terms).
 
 This may change in the future as I familiarize myself with the limitations of other free software font licenses.
 
@@ -125,11 +125,15 @@ You should have received a copy of the GNU General Public License along with thi
 
 The StepTech font generator consists of the following files in this distribution:
 
-    Makefile
-    rules.mk
-    pcb-to-elements-data.pl
-    split-char-data.pl
+    ComposeRunner.pm
     element-to-loose-svg.pl
+    generate-font-project.py
+    json-files-to-array.sh
+    Makefile
+    pcb-to-elements-data.pl
+    reformat-master.pl
+    rules.mk
+    split-char-data.pl
 
 The StepTech font generator is provided under the terms of the OSI-approved MIT License (see terms below).
 
