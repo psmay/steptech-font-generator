@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Steptech-font-generator : ">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Steptech-font-generator</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/psmay/steptech-font-generator">View on GitHub</a>
+
+          <h1 id="project_title">Steptech-font-generator</h1>
+          <h2 id="project_tagline"></h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/psmay/steptech-font-generator/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/psmay/steptech-font-generator/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a id="steptech-font-generator" class="anchor" href="#steptech-font-generator" aria-hidden="true"><span class="octicon octicon-link"></span></a>StepTech font generator</h1>
+
+<p><img src="http://psmay.github.io/steptech-font-generator/images/StepTech-1stMix-sample.png" alt="StepTech 1stMix font sample"></p>
+
+<p>This is a suite of scripts used to convert JSON-based descriptions of glyphs for the StepTech typeface into SVG files and then into a FontForge project.</p>
+
+<h2>
+<a id="what-this-does" class="anchor" href="#what-this-does" aria-hidden="true"><span class="octicon octicon-link"></span></a>What this does</h2>
+
+<p>Currently, the steps involved are these:</p>
+
+<ul>
+<li>  The information in the master JSON glyphs file, <code>elements-all.json</code>, is split up into individual JSON glyph files, one per glyph.</li>
+<li>  Each JSON glyph description consists of a number of directed line segments.
+
+<ul>
+<li>  Each segment can have a <code>guide_color</code> property. This does not impact the final product but can be helpful when editing the description.</li>
+<li>  Each segment can have a <code>draw</code> property which is set to <code>true</code> (default) or <code>false</code>. If set to <code>false</code>, the segment is never actually drawn, but the bounding box for the glyph is calculated as if it were.
+
+<ul>
+<li>  This is used for space-only glyphs (as done with space (U+0020)) or to artificially extend the width of a narrow glyph (as done with <code>1</code> to make its width match that of the other digits).</li>
+</ul>
+</li>
+<li>  Each segment has two endpoints, <code>from</code> and <code>to</code>.
+
+<ul>
+<li>  Each endpoint has an <code>x</code> and a <code>y</code>, which are defined as a number of pixels right and down, respectively, from the base point.</li>
+<li>  Each endpoint has a <code>cap</code> which describes the end cap for that endpoint.
+
+<ul>
+<li>  <code>none</code> indicates no cap; the stroke ends at the endpoint, cut perpendicular to the segment.</li>
+<li>  <code>shear</code> indicates no cap; the stroke is cut diagonally to that the stroke edge counterclockwise from the endpoint is <code>S</code> farther out than the endpoint, while the stroke edge clockwise from the endpoint is <code>S</code> behind the endpoint, where <code>S</code> is the value of a separate <code>shear</code> property multiplied by the stroke width.
+
+<ul>
+<li>  If a stroke is viewed as vertical, and it is observed that <code>+y</code> is the downward direction, the <code>shear</code> value is the slope of the cut.</li>
+<li>  If the <code>shear</code> value is 0, the <code>shear</code> cap is equivalent to the <code>none</code> cap.</li>
+</ul>
+</li>
+<li>  <code>s</code> indicates a square cap; the stroke extends past the endpoint by half the stroke width before being cut perpendicular to the segment.
+
+<ul>
+<li>  The effect is the same as extending this end of the segment by half the stroke width, then specifying a <code>cap</code> of <code>none</code>.</li>
+</ul>
+</li>
+<li>  <code>c</code> indicates a circular arc with a diameter the same as the stroke width.</li>
+<li>  <code>sc</code> indicates a cap that is like <code>s</code> its counterclockwise half and like <code>c</code> on its clockwise half.</li>
+<li>  <code>cs</code> indicates a cap that is like <code>c</code> its counterclockwise half and like <code>s</code> on its clockwise half.</li>
+<li>  <code>in</code> (default for <code>from</code> endpoint) and <code>out</code> (default for <code>to</code> endpoint) indicate placeholder caps (the tail and head ends of an arrow) to help determine the orientation of segments not yet manually edited.</li>
+</ul>
+</li>
+<li>  An endpoint may have a <code>dotdir</code> value of <code>x</code>, <code>y</code>, or a number of degrees that will be used to determine the orientation of a segment having zero length.
+
+<ul>
+<li>  If the segment length is nonzero, the orientation is determined by the relative positions of the endpoints and <code>dotdir</code> is ignored.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>  Each JSON glyph file is converted to a simple "loose shapes" SVG file using <code>element-to-loose-svg.pl</code>.
+
+<ul>
+<li>  The result of this step is used to determine what modifications should be made to the master JSON.</li>
+<li>  This is where <code>guide_color</code> appears.</li>
+<li>  The "segments" from the description are rendered here as paths, not strokes, to accommodate the various end caps more easily.</li>
+<li>  This script hardcodes some parameters of the font.
+
+<ul>
+<li>  The page height is 1000 pixels.</li>
+<li>  The horizontal baseline 800 pixels from the top (200 pixels from the bottom).</li>
+<li>  The vertical baseline is 0.</li>
+<li>  The stroke width is 100 pixels.</li>
+</ul>
+</li>
+<li>  The generated loose shapes SVG contains a small amount of JSON metadata containing values produced in the drawing process, such as the advance width for the glyph.</li>
+</ul>
+</li>
+<li>  Each loose shapes SVG has its contents unioned together via <code>inkscape</code> into an SVG containing a single "unioned shape" path.
+
+<ul>
+<li>  This step takes the bulk of the processing time. <code>inkscape</code> is started and exited for each file processed. (If you know of a way this can be batched more efficiently, I'm listening.)</li>
+</ul>
+</li>
+<li>  Each unioned shapes SVG has its contents sanitized via <code>scour</code> into a "tight shape" SVG suitable for import into FontForge.
+
+<ul>
+<li>  Without the <code>scour</code> step, FontForge sees a triple outline on the shapes instead of the desired single outline.</li>
+</ul>
+</li>
+<li>  The tight shapes (with information from the JSON metadata embedded in the corresponding loose shape SVGs) are dumped into a FontForge project file (<code>build/project.sfd</code>).</li>
+</ul>
+
+<h2>
+<a id="requirements" class="anchor" href="#requirements" aria-hidden="true"><span class="octicon octicon-link"></span></a>Requirements</h2>
+
+<ul>
+<li>  Relatively recent Perl and Python</li>
+<li>  Perl JSON module (Ubuntu package <code>libjson-perl</code>)</li>
+<li>  Inkscape (Ubuntu package <code>inkscape</code>)</li>
+<li>  scour (Ubuntu package <code>python-scour</code>)</li>
+<li>  FontForge Python bindings (Ubuntu package <code>python-fontforge</code>)</li>
+</ul>
+
+<p>The <code>loose</code> target converts each JSON description into a "loose" SVG with one path per stroke. This target only requires the Perl JSON module.</p>
+
+<p>The <code>unioned</code> target unions all of the paths in each loose SVG into a single path, resulting in a "unioned" SVG. This target requires Inkscape to union the paths.</p>
+
+<p>The <code>tight</code> target sanitizes the unioned SVG output of Inkscape into a form readily consumed by FontForge. This target requires scour to remove parts of the Inkscape result too complex for FontForge to read correctly.</p>
+
+<p>The <code>ext-meta-all</code> target extracts JSON metadata produced by the loose SVG generation, adds other related data, and produces a table of glyph metadata used later by the <code>fontforge-project</code> target. This target only requires Perl.</p>
+
+<p>The <code>fontforge-project</code> target uses the tight SVG outlines and additional metadata (from <code>ext-meta-all</code>) to produce a new FontForge project file (<code>build/project.sfd</code>). This target requires Python bindings for FontForge.</p>
+
+<h2>
+<a id="self-intersecting-validation-failure" class="anchor" href="#self-intersecting-validation-failure" aria-hidden="true"><span class="octicon octicon-link"></span></a>
+<code>Self Intersecting</code> Validation failure</h2>
+
+<p>Currently, attempting to generate an OpenType font from the FontForget project results in Self Intersecting errors for several glyphs (more if the simplify step is omitted from the export script). I would love to get this fixed properly, especially since there is no apparent actual self-intersection going on. In the meantime, though, it is possible to ignore these warnings and generate the font anyway, and in all my testing so far these issues are not manifested by any actual problems.</p>
+
+<h2>
+<a id="pcb" class="anchor" href="#pcb" aria-hidden="true"><span class="octicon octicon-link"></span></a>PCB</h2>
+
+<p>The glyphs for this font were given their initial rough outlines in gEDA PCB. While that program is for circuit board design and not for graphics, per se, it has over Inkscape the ability to preserve extremely precise position information without complicated transformations, and its file format is simple enough for extraction using Perl.</p>
+
+<p>That's where <code>pcb-to-elements.pl</code> comes in. This script pulls information out of a PCB file, with the following expectations:</p>
+
+<ul>
+<li>  The PCB format hasn't changed substantially from the version the script was designed around.</li>
+<li>  Each element is a glyph.</li>
+<li>  Each element's name is the glyph's name. (See Adobe Glyph List for New Fonts (AGLFN) for appropriate values.)</li>
+<li>  Each element consists only of <code>Pad</code> lines (others will be skipped).</li>
+<li>  Each element originates at the baselines.</li>
+<li>  All pad endpoint coordinates are in <code>mil</code> or in the base unit (0.01 mil).
+
+<ul>
+<li>  Figures in <code>mm</code> will be misread.</li>
+</ul>
+</li>
+<li>  1 mil means 1 pixel.</li>
+</ul>
+
+<p>Additionally, the trace width should be 100 mil (i.e. whatever <code>element-to-loose-svg.pl</code> expects, in mil instead of pixels).</p>
+
+<p>PCB can't by itself encode the <code>none</code>, <code>shear</code>, <code>sc</code>, and <code>cs</code> endcaps I needed, so that information is added manually to the master JSON. Currently, the <code>square</code> flag on a pad will not be encoded as having a square cap, though perhaps it should.</p>
+
+<p>My original PCB file is not included here because <code>elements-all.json</code> contains all of the same information <em>plus</em> the end cap data, dotdirs, and a few other bits; it's effectively the source, and the PCB file is not.</p>
+
+<h2>
+<a id="license" class="anchor" href="#license" aria-hidden="true"><span class="octicon octicon-link"></span></a>License</h2>
+
+<h3>
+<a id="steptech-font-description" class="anchor" href="#steptech-font-description" aria-hidden="true"><span class="octicon octicon-link"></span></a>StepTech font description</h3>
+
+<p>The StepTech font description consists of the following file in this distribution:</p>
+
+<pre><code>elements-all.json
+</code></pre>
+
+<p>The StepTech font description is provided under the terms of the GNU General Public License (see notice below).</p>
+
+<h4>
+<a id="no-font-exception" class="anchor" href="#no-font-exception" aria-hidden="true"><span class="octicon octicon-link"></span></a>No font exception</h4>
+
+<p>These terms <strong>do not include a font exception.</strong> This means, for example, that documents embedding all or part of a font based on this description or artwork featuring such a font may qualify as a derivative work (and therefore may be subject to the same terms).</p>
+
+<p>This may change in the future as I familiarize myself with the limitations of other free software font licenses.</p>
+
+<p>I reserve the right to make this software available to other parties under alternate terms without offering the same to the public at large.</p>
+
+<h4>
+<a id="gnu-general-public-license-notice" class="anchor" href="#gnu-general-public-license-notice" aria-hidden="true"><span class="octicon octicon-link"></span></a>GNU General Public License (notice)</h4>
+
+<p>StepTech font description</p>
+
+<p>Copyright © 2014 Peter S. May</p>
+
+<p>This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.</p>
+
+<p>This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.</p>
+
+<p>You should have received a copy of the GNU General Public License along with this program. If not, see <a href="http://www.gnu.org/licenses/">http://www.gnu.org/licenses/</a>.</p>
+
+<h3>
+<a id="steptech-font-generator-1" class="anchor" href="#steptech-font-generator-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>StepTech font generator</h3>
+
+<p>The StepTech font generator consists of the following files in this distribution:</p>
+
+<pre><code>ComposeRunner.pm
+element-to-loose-svg.pl
+generate-font-project.py
+json-files-to-array.sh
+Makefile
+pcb-to-elements-data.pl
+reformat-master.pl
+rules.mk
+split-char-data.pl
+</code></pre>
+
+<p>The StepTech font generator is provided under the terms of the OSI-approved MIT License (see terms below).</p>
+
+<h4>
+<a id="the-mit-license" class="anchor" href="#the-mit-license" aria-hidden="true"><span class="octicon octicon-link"></span></a>The MIT License</h4>
+
+<p>Copyright © 2014 Peter S. May</p>
+
+<p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</p>
+
+<p>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</p>
+
+<p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Steptech-font-generator maintained by <a href="https://github.com/psmay">psmay</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
