@@ -1,6 +1,8 @@
 StepTech font generator
 =======================
 
+![StepTech 1stMix font sample](http://psmay.github.io/steptech-font-generator/images/StepTech-1stMix-sample.png)
+
 This is a suite of scripts used to convert JSON-based descriptions of glyphs for the StepTech typeface into SVG files and then into a FontForge project.
 
 What this does
