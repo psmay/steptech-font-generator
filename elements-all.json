@@ -1396,7 +1396,7 @@
 			{
 				"guide_color" : "Maroon",
 				"from" : {
-					"x" : 250,
+					"x" : 200,
 					"y" : -200,
 					"cap" : "s"
 				},
@@ -1404,8 +1404,7 @@
 					"x" : 250,
 					"y" : -200,
 					"cap" : "none"
-				},
-				"dotdir" : "x"
+				}
 			},
 			{
 				"guide_color" : "Black",
@@ -3537,12 +3536,12 @@
 				"from" : {
 					"x" : 50,
 					"y" : -250,
-					"cap" : "cs"
+					"cap" : "s"
 				},
 				"to" : {
 					"x" : 350,
 					"y" : -250,
-					"cap" : "cs"
+					"cap" : "s"
 				}
 			},
 			{
@@ -3550,7 +3549,7 @@
 				"from" : {
 					"x" : 300,
 					"y" : -400,
-					"cap" : "cs"
+					"cap" : "s"
 				},
 				"to" : {
 					"x" : 300,
@@ -3569,7 +3568,7 @@
 				"to" : {
 					"x" : 100,
 					"y" : -100,
-					"cap" : "cs"
+					"cap" : "s"
 				},
 				"dotdir" : "y"
 			},
@@ -3596,7 +3595,7 @@
 				"to" : {
 					"x" : 300,
 					"y" : -100,
-					"cap" : "sc"
+					"cap" : "s"
 				},
 				"dotdir" : "y"
 			},
@@ -3605,7 +3604,7 @@
 				"from" : {
 					"x" : 100,
 					"y" : -400,
-					"cap" : "sc"
+					"cap" : "s"
 				},
 				"to" : {
 					"x" : 100,
@@ -3875,7 +3874,7 @@
 				"from" : {
 					"x" : 50,
 					"y" : -275,
-					"cap" : "s"
+					"cap" : "c"
 				},
 				"to" : {
 					"x" : 125,
@@ -4543,6 +4542,62 @@
 					"cap" : "s"
 				},
 				"to" : {
+					"x" : 50,
+					"y" : -350,
+					"cap" : "c"
+				},
+				"dotdir" : "y"
+			},
+			{
+				"guide_color" : "Maroon",
+				"from" : {
+					"x" : 300,
+					"y" : -350,
+					"cap" : "s"
+				},
+				"to" : {
+					"x" : 300,
+					"y" : -350,
+					"cap" : "c"
+				},
+				"dotdir" : "y"
+			},
+			{
+				"guide_color" : "Navy",
+				"from" : {
+					"x" : 50,
+					"y" : -100,
+					"cap" : "c"
+				},
+				"to" : {
+					"x" : 50,
+					"y" : -100,
+					"cap" : "s"
+				},
+				"dotdir" : "y"
+			},
+			{
+				"guide_color" : "Olive",
+				"from" : {
+					"x" : 300,
+					"y" : -100,
+					"cap" : "c"
+				},
+				"to" : {
+					"x" : 300,
+					"y" : -100,
+					"cap" : "s"
+				},
+				"dotdir" : "y"
+			},
+			{
+				"guide_color" : "Green",
+				"from" : {
+					"x" : 50,
+					"y" : -350,
+					"cap" : "none"
+				},
+				"to" : {
 					"x" : 100,
 					"y" : -300,
 					"cap" : "c"
@@ -4558,7 +4613,7 @@
 				"to" : {
 					"x" : 300,
 					"y" : -350,
-					"cap" : "s"
+					"cap" : "none"
 				}
 			},
 			{
@@ -4566,7 +4621,7 @@
 				"from" : {
 					"x" : 50,
 					"y" : -100,
-					"cap" : "s"
+					"cap" : "none"
 				},
 				"to" : {
 					"x" : 100,
@@ -4584,7 +4639,7 @@
 				"to" : {
 					"x" : 300,
 					"y" : -100,
-					"cap" : "s"
+					"cap" : "none"
 				}
 			}
 		]
@@ -6236,12 +6291,12 @@
 				"from" : {
 					"x" : 50,
 					"y" : -250,
-					"cap" : "cs"
+					"cap" : "s"
 				},
 				"to" : {
 					"x" : 250,
 					"y" : -250,
-					"cap" : "cs"
+					"cap" : "s"
 				}
 			}
 		]
@@ -6360,12 +6415,12 @@
 			{
 				"guide_color" : "Black",
 				"from" : {
-					"x" : 50,
+					"x" : -100,
 					"y" : 100,
 					"cap" : "cs"
 				},
 				"to" : {
-					"x" : 200,
+					"x" : 50,
 					"y" : 100,
 					"cap" : "none"
 				}
@@ -6373,12 +6428,12 @@
 			{
 				"guide_color" : "Blue",
 				"from" : {
-					"x" : 200,
+					"x" : 50,
 					"y" : -400,
 					"cap" : "s"
 				},
 				"to" : {
-					"x" : 200,
+					"x" : 50,
 					"y" : 100,
 					"cap" : "c"
 				}
@@ -7314,6 +7369,10 @@
 		"name" : "ordfeminine",
 		"compose" : [
 			{
+				"name" : "place",
+				"glyph" : "_place"
+			},
+			{
 				"glyph" : "_ashrunk",
 				"op" : [
 					[
@@ -7324,9 +7383,9 @@
 						"push"
 					],
 					[
-						"moveto",
-						0,
-						-600
+						"itemmovetoanchor",
+						"place",
+						"suptopleft"
 					],
 					[
 						"translatefromprevious"
@@ -7339,6 +7398,10 @@
 		"name" : "ordmasculine",
 		"compose" : [
 			{
+				"name" : "place",
+				"glyph" : "_place"
+			},
+			{
 				"glyph" : "_oshrunk",
 				"op" : [
 					[
@@ -7349,9 +7412,9 @@
 						"push"
 					],
 					[
-						"moveto",
-						0,
-						-600
+						"itemmovetoanchor",
+						"place",
+						"suptopleft"
 					],
 					[
 						"translatefromprevious"
@@ -7530,7 +7593,7 @@
 				"to" : {
 					"x" : 150,
 					"y" : -50,
-					"cap" : "sc"
+					"cap" : "s"
 				}
 			},
 			{
@@ -7582,7 +7645,7 @@
 				"to" : {
 					"x" : 150,
 					"y" : -500,
-					"cap" : "cs"
+					"cap" : "s"
 				}
 			}
 		]
