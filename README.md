@@ -11,26 +11,40 @@ What this does
 Currently, the steps involved are these:
 
 *   The information in the master JSON glyphs file, `elements-all.json`, is split up into individual JSON glyph files, one per glyph.
-*   Each JSON glyph description consists of a number of directed line segments.
-    *   Each segment can have a `guide_color` property. This does not impact the final product but can be helpful when editing the description.
-    *   Each segment can have a `draw` property which is set to `true` (default) or `false`. If set to `false`, the segment is never actually drawn, but the bounding box for the glyph is calculated as if it were.
-        *   This is used for space-only glyphs (as done with space (U+0020)) or to artificially extend the width of a narrow glyph (as done with `1` to make its width match that of the other digits).
-    *   Each segment has two endpoints, `from` and `to`.
-        *   Each endpoint has an `x` and a `y`, which are defined as a number of pixels right and down, respectively, from the base point.
-        *   Each endpoint has a `cap` which describes the end cap for that endpoint.
-            *   `none` indicates no cap; the stroke ends at the endpoint, cut perpendicular to the segment.
-            *   `shear` indicates no cap; the stroke is cut diagonally to that the stroke edge counterclockwise from the endpoint is `S` farther out than the endpoint, while the stroke edge clockwise from the endpoint is `S` behind the endpoint, where `S` is the value of a separate `shear` property multiplied by the stroke width.
-                *   If a stroke is viewed as vertical, and it is observed that `+y` is the downward direction, the `shear` value is the slope of the cut.
-                *   If the `shear` value is 0, the `shear` cap is equivalent to the `none` cap.
-            *   `s` indicates a square cap; the stroke extends past the endpoint by half the stroke width before being cut perpendicular to the segment.
-                *   The effect is the same as extending this end of the segment by half the stroke width, then specifying a `cap` of `none`.
-            *   `c` indicates a circular arc with a diameter the same as the stroke width.
-            *   `sc` indicates a cap that is like `s` its counterclockwise half and like `c` on its clockwise half.
-            *   `cs` indicates a cap that is like `c` its counterclockwise half and like `s` on its clockwise half.
-            *   `in` (default for `from` endpoint) and `out` (default for `to` endpoint) indicate placeholder caps (the tail and head ends of an arrow) to help determine the orientation of segments not yet manually edited.
-        *   An endpoint may have a `dotdir` value of `x`, `y`, or a number of degrees that will be used to determine the orientation of a segment having zero length.
-            *   If the segment length is nonzero, the orientation is determined by the relative positions of the endpoints and `dotdir` is ignored.
-*   Each JSON glyph file is converted to a simple "loose shapes" SVG file using `element-to-loose-svg.pl`.
+    *   Glyphs whose names start with `_` are treated as fragments; they are the same as other glyphs except that they have no corresponding codepoint and are not rendered directly into SVG. Rather, they are included using a compose operation as described below.
+*   Each JSON glyph description consists of:
+    *   A list of zero or more directed line segments (`lines` key):
+        *   Each segment can have a `guide_color` property. This does not impact the final product but can be helpful when editing the description.
+        *   Each segment can have a `draw` property which is set to `true` (default) or `false`. If set to `false`, the segment is never actually drawn, but the bounding box for the glyph is calculated as if it were.
+            *   This is used for space-only glyphs (as done with space (U+0020)) or to artificially extend the width of a narrow glyph (as done with `1` to make its width match that of the other digits).
+        *   Each segment can have a `spread` property which is set to `true` (default) or `false`. If set to `false`, the bounding box for the glyph is calculated as if the segment were omitted.
+            *   This is used to omit diacritics from the width calculation (as done with `ï` since the dieresis is wider than the letter itself).
+        *   Each segment has two endpoints, `from` and `to`.
+            *   Each endpoint has an `x` and a `y`, which are defined as a number of pixels right and down, respectively, from the base point.
+            *   Each endpoint has a `cap` which describes the end cap for that endpoint.
+                *   `none` indicates no cap; the stroke ends at the endpoint, cut perpendicular to the segment.
+                *   `shear` indicates no cap; the stroke is cut diagonally to that the stroke edge counterclockwise from the endpoint is `S` farther out than the endpoint, while the stroke edge clockwise from the endpoint is `S` behind the endpoint, where `S` is the value of a separate `shear` property multiplied by the stroke width.
+                    *   If a stroke is viewed as vertical, and it is observed that `+y` is the downward direction, the `shear` value is the slope of the cut.
+                    *   If the `shear` value is 0, the `shear` cap is equivalent to the `none` cap.
+                *   `s` indicates a square cap; the stroke extends past the endpoint by half the stroke width before being cut perpendicular to the segment.
+                    *   The effect is the same as extending this end of the segment by half the stroke width, then specifying a `cap` of `none`.
+                *   `c` indicates a circular arc with a diameter the same as the stroke width.
+                *   `sc` indicates a cap that is like `s` its counterclockwise half and like `c` on its clockwise half.
+                *   `cs` indicates a cap that is like `c` its counterclockwise half and like `s` on its clockwise half.
+                *   `in` (default for `from` endpoint) and `out` (default for `to` endpoint) indicate placeholder caps (the tail and head ends of an arrow) to help determine the orientation of segments not yet manually edited.
+            *   An endpoint may have a `dotdir` value of `x`, `y`, or a number of degrees that will be used to determine the orientation of a segment having zero length.
+                *   If the segment length is nonzero, the orientation is determined by the relative positions of the endpoints and `dotdir` is ignored.
+    *   A list of zero or more composition operations (`compose` key):
+        *   Each compose item specifies a `glyph`, which is the name of another glyph defined in the master.
+            *   Theoretically, the `glyph` object can be inlined here as well (this is how dereferencing is implemented), but I haven't tested doing this directly in the master.
+        *   Each compose item may specify a `name` by which it can be referenced later.
+        *   Each compose item may specify `op`, a list of zero or more "compose operations" such as translation and scaling.
+            *   The possible operations are not documented here. The curious may look at `elements-all.json` for examples of usage and the `op_*` methods in `ComposeRunner.pm` for implementation.
+    *   A map (JSON object) of zero or more `anchors` which are simply points that can be referenced by name by compose operations.
+        *   A glyph automatically defines `top`, `topright`, `right`, `bottomright`, `bottom`, `bottomleft`, `left`, `topleft`, and `center` as the corresponding points of the bounding box, but these can be overridden by defining them explicitly. (This should be done with care.)
+        *   Diacritic glyphs usually define an anchor that specifies its placement on a letter by using a name of `d-` followed by the desired anchor name. For example, a dieresis specifies `d-top` at a certain distance below its bottom-center so that when its `d-top` is aligned with the letter's `top` the result looks correct.
+        *   If the compose item for the letter has the name `base`, this diacritic can use the `aligndia` compose op as a shorthand for a longer translation op. See glyphs `dieresis`/`idieresis` and `cedilla`/`ccedilla` in `elements-all.json` for examples.
+*   Each JSON glyph file is converted to a simple "loose shapes" SVG file using `element-to-loose-svg.pl` (which utilizes `ComposeRunner.pm` for compose op calculations).
     *   The result of this step is used to determine what modifications should be made to the master JSON.
     *   This is where `guide_color` appears.
     *   The "segments" from the description are rendered here as paths, not strokes, to accommodate the various end caps more easily.
@@ -39,7 +53,8 @@ Currently, the steps involved are these:
         *   The horizontal baseline 800 pixels from the top (200 pixels from the bottom).
         *   The vertical baseline is 0.
         *   The stroke width is 100 pixels.
-    *   The generated loose shapes SVG contains a small amount of JSON metadata containing values produced in the drawing process, such as the advance width for the glyph.
+    *   The generated loose shapes SVG contains metadata values produced in the drawing process, including the advance width for the glyph and the full list of drawn segments after compose ops are processed.
+        *   This data is included as JSON stuffed into a funny XML comment such that it can be extracted with a perl one-liner. I've done it this way so that both metadata and SVG data can appear in the same output stream. (This makes it easier to work with from make, at least intuitively.) If the SVG weren't just an intermediate file, The Right Way to include the metadata would likely be to encode the information as part of the XML proper. I saw no benefit in doing that.
 *   Each loose shapes SVG has its contents unioned together via `inkscape` into an SVG containing a single "unioned shape" path.
     *   This step takes the bulk of the processing time. `inkscape` is started and exited for each file processed. (If you know of a way this can be batched more efficiently, I'm listening.)
 *   Each unioned shapes SVG has its contents sanitized via `scour` into a "tight shape" SVG suitable for import into FontForge.
