@@ -113,7 +113,7 @@ $(UNIONED_SHAPES_DIR)/%.svg: $(LOOSE_SHAPES_DIR)/%.svg | $(UNIONED_SHAPES_DIR) $
 	@# $(RT) not used here because Inkscape considers the suffix important
 	@$(eval UNIONED_SHAPE_TEMP := $(UNIONED_SHAPES_TEMP_DIR)/$(notdir $@))
 	cp $< $(UNIONED_SHAPE_TEMP)
-	inkscape --verb EditSelectAllInAllLayers --verb SelectionUnion --verb FileSave --verb FileClose $(UNIONED_SHAPE_TEMP)
+	inkscape --verb EditSelectAllInAllLayers --verb SelectionUnion --verb FileSave --verb FileQuit $(UNIONED_SHAPE_TEMP)
 	mv $(UNIONED_SHAPE_TEMP) $@
 
 $(TIGHT_SHAPES_DIR)/%.svg: $(UNIONED_SHAPES_DIR)/%.svg | $(TIGHT_SHAPES_DIR)
