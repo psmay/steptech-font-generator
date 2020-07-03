@@ -1,0 +1,1 @@
+Before the build applies Inkscape to any generated shapes, this directory is copied into the build directory and the copy used as the `$HOME` dir for Inkscape. This allows the use of project-specific Inkscape settings, and it incidentally seems to reduce the amount of time Inkscape takes to run during the build.
