@@ -20,6 +20,10 @@ TIGHT_SHAPES_DIR=tight-shapes
 # FontForge project
 FONTFORGE_PROJECT=project.sfd
 
+# Home dir when running Inkscape
+# (NB: The .tmp suffix is because make gets confused when the dir has the same name under both source and build dirs.)
+INKSCAPE_CONTEXT_DIR=inkscape-context.tmp
+
 DEFINE_ELEMENT_FILES=element-files.dep
 
 all: tight
@@ -51,7 +55,7 @@ TIGHT_SHAPE_FILES=$(ELEMENT_FILES:$(ELEMENTS_DIR)/%.json=$(TIGHT_SHAPES_DIR)/%.s
 # Prevent auto-delete of intermediates
 .SECONDARY: $(ELEMENT_FILES) $(LOOSE_SHAPE_FILES) $(UNIONED_SHAPE_FILES) $(TIGHT_SHAPE_FILES) $(EXT_META_FILES)
 
-.PHONY: tight clean-tight unioned loose extract-ext-meta ext-meta-all
+.PHONY: tight clean-tight unioned loose extract-ext-meta ext-meta-all inkscape-context-dir
 
 tight: $(TIGHT_SHAPE_FILES)
 
@@ -68,6 +72,8 @@ ext-meta-all: $(EXT_META_ALL)
 
 fontforge-project: $(FONTFORGE_PROJECT)
 
+inkscape-context-dir: $(INKSCAPE_CONTEXT_DIR)
+
 $(EXT_META_ALL): $(EXT_META_FILES)
 	../json-files-to-array.sh $^ > $@$(RT)
 	mv $@$(RT) $@
@@ -77,6 +83,9 @@ $(FONTFORGE_PROJECT): $(EXT_META_ALL) ../generate-font-project.py $(TIGHT_SHAPE_
 	mv $@$(RT) $@
 
 $(ELEMENT_FILES): | $(ELEMENTS_DIR)
+
+$(INKSCAPE_CONTEXT_DIR): inkscape-context
+	cp -vR "$<" "$@"
 
 $(LOOSE_SHAPES_DIR):
 	+@[ -d $@ ] || mkdir -p $@
@@ -109,11 +118,11 @@ $(EXT_META_DIR)/%.json: $(ELEMENTS_DIR)/%.json $(LOOSE_SHAPES_DIR)/%.svg | $(EXT
 	echo '}' >> $@$(RT)
 	mv $@$(RT) $@
 
-$(UNIONED_SHAPES_DIR)/%.svg: $(LOOSE_SHAPES_DIR)/%.svg | $(UNIONED_SHAPES_DIR) $(UNIONED_SHAPES_TEMP_DIR)
+$(UNIONED_SHAPES_DIR)/%.svg: $(LOOSE_SHAPES_DIR)/%.svg inkscape-context-dir | $(UNIONED_SHAPES_DIR) $(UNIONED_SHAPES_TEMP_DIR)
 	@# $(RT) not used here because Inkscape considers the suffix important
 	@$(eval UNIONED_SHAPE_TEMP := $(UNIONED_SHAPES_TEMP_DIR)/$(notdir $@))
 	cp $< $(UNIONED_SHAPE_TEMP)
-	inkscape --verb EditSelectAllInAllLayers --verb SelectionUnion --verb FileSave --verb FileQuit $(UNIONED_SHAPE_TEMP)
+	HOME="`pwd`"/$(INKSCAPE_CONTEXT_DIR) inkscape --verb EditSelectAllInAllLayers --verb SelectionUnion --verb FileSave --verb FileQuit $(UNIONED_SHAPE_TEMP)
 	mv $(UNIONED_SHAPE_TEMP) $@
 
 $(TIGHT_SHAPES_DIR)/%.svg: $(UNIONED_SHAPES_DIR)/%.svg | $(TIGHT_SHAPES_DIR)
