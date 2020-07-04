@@ -16,6 +16,8 @@ EXT_META_ALL=ext-meta-all.json
 # SVG files with loose shapes unioned together
 UNIONED_SHAPES_DIR=unioned-shapes
 UNIONED_SHAPES_TEMP_DIR=.tmp.unioned-shapes
+# SVG files post-processed after unioning
+POST_UNIONED_SHAPES_DIR=post-unioned-shapes
 TIGHT_SHAPES_DIR=tight-shapes
 # FontForge project
 FONTFORGE_PROJECT=project.sfd
@@ -50,10 +52,11 @@ $(DEFINE_ELEMENT_FILES): $(ELEMENTS_DIR)
 LOOSE_SHAPE_FILES=$(ELEMENT_FILES:$(ELEMENTS_DIR)/%.json=$(LOOSE_SHAPES_DIR)/%.svg)
 EXT_META_FILES=$(ELEMENT_FILES:$(ELEMENTS_DIR)/%.json=$(EXT_META_DIR)/%.json)
 UNIONED_SHAPE_FILES=$(ELEMENT_FILES:$(ELEMENTS_DIR)/%.json=$(UNIONED_SHAPES_DIR)/%.svg)
+POST_UNIONED_SHAPE_FILES=$(ELEMENT_FILES:$(ELEMENTS_DIR)/%.json=$(POST_UNIONED_SHAPES_DIR)/%.svg)
 TIGHT_SHAPE_FILES=$(ELEMENT_FILES:$(ELEMENTS_DIR)/%.json=$(TIGHT_SHAPES_DIR)/%.svg)
 
 # Prevent auto-delete of intermediates
-.SECONDARY: $(ELEMENT_FILES) $(LOOSE_SHAPE_FILES) $(UNIONED_SHAPE_FILES) $(TIGHT_SHAPE_FILES) $(EXT_META_FILES)
+.SECONDARY: $(ELEMENT_FILES) $(LOOSE_SHAPE_FILES) $(UNIONED_SHAPE_FILES) $(POST_UNIONED_SHAPE_FILES) $(TIGHT_SHAPE_FILES) $(EXT_META_FILES)
 
 .PHONY: tight clean-tight unioned loose extract-ext-meta ext-meta-all inkscape-context-dir
 
@@ -63,6 +66,8 @@ clean-tight:
 	rm -rf $(TIGHT_SHAPES_DIR)
 
 unioned: $(UNIONED_SHAPE_FILES)
+
+post-unioned: $(POST_UNIONED_SHAPE_FILES)
 
 loose: $(LOOSE_SHAPE_FILES)
 
@@ -102,8 +107,11 @@ $(UNIONED_SHAPES_DIR):
 $(UNIONED_SHAPES_TEMP_DIR):
 	+@[ -d $@ ] || mkdir -p $@
 
+$(POST_UNIONED_SHAPES_DIR):
+	+@[ -d $@ ] || mkdir -p $@
+
 $(LOOSE_SHAPES_DIR)/%.svg: $(ELEMENTS_DIR)/%.json ../element-to-loose-svg.pl | $(LOOSE_SHAPES_DIR)
-	PERL5LIB=../ ../element-to-loose-svg.pl < $< > $@$(RT)
+	PERL5LIB=$(PERL5LIB):../ ../element-to-loose-svg.pl < $< > $@$(RT)
 	mv $@$(RT) $@
 
 $(EXT_META_DIR)/%.json: $(ELEMENTS_DIR)/%.json $(LOOSE_SHAPES_DIR)/%.svg | $(EXT_META_DIR)
@@ -125,6 +133,10 @@ $(UNIONED_SHAPES_DIR)/%.svg: $(LOOSE_SHAPES_DIR)/%.svg inkscape-context-dir | $(
 	HOME="`pwd`"/$(INKSCAPE_CONTEXT_DIR) inkscape --verb EditSelectAllInAllLayers --verb SelectionUnion --verb FileSave --verb FileQuit $(UNIONED_SHAPE_TEMP)
 	mv $(UNIONED_SHAPE_TEMP) $@
 
-$(TIGHT_SHAPES_DIR)/%.svg: $(UNIONED_SHAPES_DIR)/%.svg | $(TIGHT_SHAPES_DIR)
+$(POST_UNIONED_SHAPES_DIR)/%.svg: $(UNIONED_SHAPES_DIR)/%.svg ../unioned-to-post-unioned-svg.pl | $(POST_UNIONED_SHAPES_DIR)
+	PERL5LIB=$(PERL5LIB):../ ../unioned-to-post-unioned-svg.pl < $< > $@$(RT)
+	mv $@$(RT) $@
+
+$(TIGHT_SHAPES_DIR)/%.svg: $(POST_UNIONED_SHAPES_DIR)/%.svg | $(TIGHT_SHAPES_DIR)
 	scour -i $< -o $@
 
