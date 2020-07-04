@@ -64,12 +64,12 @@ Currently, the steps involved are these:
 Requirements
 ------------
 
-*   Python 2.7 (though a port to 3 might be good at some point)
+*   Python 2.7 (we should port this bit to Python 3)
     *   FontForge Python bindings (Ubuntu package `python-fontforge`)
 *   Relatively recent Perl
     *   Perl JSON module (Ubuntu package `libjson-perl`)
     *   Perl XML::LibXML module (Ubuntu package `libxml-libxml-perl`)
-    *   Perl Image::SVG::Path (install using CPAN)
+    *   Perl Image::SVG::Path module (install using CPAN)
 *   Inkscape (Ubuntu package `inkscape`)
 *   scour (Ubuntu package `python-scour`)
 
