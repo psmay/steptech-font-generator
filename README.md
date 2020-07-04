@@ -85,10 +85,10 @@ The `ext-meta-all` target extracts JSON metadata produced by the loose SVG gener
 
 The `fontforge-project` target uses the tight SVG outlines and additional metadata (from `ext-meta-all`) to produce a new FontForge project file (`build/project.sfd`). This target requires Python bindings for FontForge.
 
-`Self Intersecting` Validation failure
---------------------------------------
+`Missing Points at Extrema` validation failure
+----------------------------------------------
 
-Currently, attempting to generate an OpenType font from the FontForget project results in Self Intersecting errors for several glyphs (more if the simplify step is omitted from the export script). I would love to get this fixed properly, especially since there is no apparent actual self-intersection going on. In the meantime, though, it is possible to ignore these warnings and generate the font anyway, and in all my testing so far these issues are not manifested by any actual problems.
+Currently, attempting to generate an OpenType font from the FontForge project results in `Missing Points at Extrema` errors for many glyphs. It is possible to ignore these warnings and generate the font anyway, and in all my testing so far these issues have not caused any practical problems.
 
 PCB
 ---
