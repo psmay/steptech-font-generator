@@ -58,7 +58,7 @@ TIGHT_SHAPE_FILES=$(ELEMENT_FILES:$(ELEMENTS_DIR)/%.json=$(TIGHT_SHAPES_DIR)/%.s
 # Prevent auto-delete of intermediates
 .SECONDARY: $(ELEMENT_FILES) $(LOOSE_SHAPE_FILES) $(UNIONED_SHAPE_FILES) $(POST_UNIONED_SHAPE_FILES) $(TIGHT_SHAPE_FILES) $(EXT_META_FILES)
 
-.PHONY: tight clean-tight unioned loose extract-ext-meta ext-meta-all inkscape-context-dir
+.PHONY: tight clean-tight unioned post-unioned loose extract-ext-meta ext-meta-all inkscape-context-dir
 
 tight: $(TIGHT_SHAPE_FILES)
 
