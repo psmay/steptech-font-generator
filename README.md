@@ -64,26 +64,31 @@ Currently, the steps involved are these:
 Requirements
 ------------
 
-*   Relatively recent Perl and Python
-*   Perl JSON module (Ubuntu package `libjson-perl`)
+*   Python 2.7 (we should port this bit to Python 3)
+    *   FontForge Python bindings (Ubuntu package `python-fontforge`)
+*   Relatively recent Perl
+    *   Perl JSON module (Ubuntu package `libjson-perl`)
+    *   Perl XML::LibXML module (Ubuntu package `libxml-libxml-perl`)
+    *   Perl Image::SVG::Path module (install using CPAN)
 *   Inkscape (Ubuntu package `inkscape`)
 *   scour (Ubuntu package `python-scour`)
-*   FontForge Python bindings (Ubuntu package `python-fontforge`)
 
 The `loose` target converts each JSON description into a "loose" SVG with one path per stroke. This target only requires the Perl JSON module.
 
 The `unioned` target unions all of the paths in each loose SVG into a single path, resulting in a "unioned" SVG. This target requires Inkscape to union the paths.
 
-The `tight` target sanitizes the unioned SVG output of Inkscape into a form readily consumed by FontForge. This target requires scour to remove parts of the Inkscape result too complex for FontForge to read correctly.
+The `post-unioned` target performs some arbitrary post-processing on the unioned SVG output of Inkscape. This includes filtering out extremely short segments accidentally created while unioning.
+
+The `tight` target sanitizes the still Inkscape-like post-unioned SVGs into a form readily consumed by FontForge. This target requires scour to remove parts of the Inkscape result too complex for FontForge to read correctly.
 
 The `ext-meta-all` target extracts JSON metadata produced by the loose SVG generation, adds other related data, and produces a table of glyph metadata used later by the `fontforge-project` target. This target only requires Perl.
 
 The `fontforge-project` target uses the tight SVG outlines and additional metadata (from `ext-meta-all`) to produce a new FontForge project file (`build/project.sfd`). This target requires Python bindings for FontForge.
 
-`Self Intersecting` Validation failure
---------------------------------------
+`Missing Points at Extrema` validation failure
+----------------------------------------------
 
-Currently, attempting to generate an OpenType font from the FontForget project results in Self Intersecting errors for several glyphs (more if the simplify step is omitted from the export script). I would love to get this fixed properly, especially since there is no apparent actual self-intersection going on. In the meantime, though, it is possible to ignore these warnings and generate the font anyway, and in all my testing so far these issues are not manifested by any actual problems.
+Currently, attempting to generate an OpenType font from the FontForge project results in `Missing Points at Extrema` errors for many glyphs. It is possible to ignore these warnings and generate the font anyway, and in all my testing so far these issues have not caused any practical problems.
 
 PCB
 ---
@@ -130,7 +135,7 @@ I reserve the right to make this software available to other parties under alter
 
 StepTech font description
 
-Copyright © 2014 Peter S. May
+Copyright © 2014-2020 Peter S. May
 
 This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
 
@@ -156,7 +161,7 @@ The StepTech font generator is provided under the terms of the OSI-approved MIT 
 
 #### The MIT License
 
-Copyright © 2014 Peter S. May
+Copyright © 2014-2020 Peter S. May
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
