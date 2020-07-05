@@ -156,6 +156,7 @@ The StepTech font generator consists of the following files in this distribution
     reformat-master.pl
     rules.mk
     split-char-data.pl
+    unioned-to-post-unioned-svg.pl
 
 The StepTech font generator is provided under the terms of the OSI-approved MIT License (see terms below).
 
